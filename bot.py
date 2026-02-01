@@ -10,7 +10,7 @@ from aiogram import Bot, Dispatcher
 from aiogram.client.default import DefaultBotProperties
 from aiogram.enums import ParseMode
 from aiogram.fsm.storage.memory import MemoryStorage
-from aiogram.types import BotCommand, BotCommandScopeDefault, Message
+from aiogram.types import BotCommand, BotCommandScopeDefault, Message, MenuButtonCommands
 from aiogram.filters import Command
 
 # Import konfiguracji
@@ -254,7 +254,13 @@ class PremiumBot:
             
             # Ustawienie komend bota
             await self._set_bot_commands()
-            
+
+            # Przycisk menu obok pola wiadomości: Commands zamiast Mini App (Web App)
+            try:
+                await self.bot.set_chat_menu_button(menu_button=MenuButtonCommands())
+            except Exception as menu_err:
+                logger.warning("Nie udało się ustawić przycisku menu (Commands): %s", menu_err)
+
             # Uruchomienie schedulera (przekazanie pętli, żeby async joby się wykonywały)
             await self.scheduler.start(loop=asyncio.get_running_loop())
             
@@ -264,7 +270,9 @@ class PremiumBot:
                     chat_id=settings.ADMIN_ID,
                     text=(
                         f"🚀 **Premium Bot uruchomiony!**\n\n"
-                        f"Bot gotowy do pracy! "
+                        f"✅ Baza danych: OK\n"
+                        f"✅ Scheduler: OK\n"
+                        f"Bot gotowy do pracy! 🎯"
                     )
                 )
             except Exception as notify_error:
@@ -296,7 +304,7 @@ class PremiumBot:
             try:
                 await self.bot.send_message(
                     chat_id=settings.ADMIN_ID,
-                    text="🛑 **Premium Bot zatrzymany**\n"
+                    text="🛑 **Premium Bot zatrzymany**\n\nDo zobaczenia! 👋"
                 )
             except Exception:
                 pass  # Ignorujemy błędy przy zatrzymywaniu

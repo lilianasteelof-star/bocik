@@ -2586,3 +2586,171 @@ You have two options:
 2026-02-01 07:22:06 - database - INFO - Zapytanie SQL zwróciło 0 wygasłych subskrypcji
 2026-02-01 07:23:06 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T07:23:06.284659
 2026-02-01 07:23:06 - database - INFO - Zapytanie SQL zwróciło 0 wygasłych subskrypcji
+2026-02-01 07:24:06 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T07:24:06.280103
+2026-02-01 07:24:06 - database - INFO - Zapytanie SQL zwróciło 0 wygasłych subskrypcji
+2026-02-01 15:52:20 - database - INFO - Połączono z PostgreSQL – pula połączeń
+2026-02-01 15:52:20 - database - INFO - Tabele PostgreSQL (Supabase) zainicjalizowane
+2026-02-01 15:53:21 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T15:53:21.618391
+2026-02-01 15:53:21 - database - INFO - Zapytanie SQL zwróciło 0 wygasłych subskrypcji
+2026-02-01 15:54:21 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T15:54:21.606236
+2026-02-01 15:54:21 - database - INFO - Zapytanie SQL zwróciło 0 wygasłych subskrypcji
+2026-02-01 15:55:21 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T15:55:21.604885
+2026-02-01 15:55:21 - database - INFO - Zapytanie SQL zwróciło 0 wygasłych subskrypcji
+2026-02-01 15:56:21 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T15:56:21.607041
+2026-02-01 15:56:21 - database - INFO - Zapytanie SQL zwróciło 0 wygasłych subskrypcji
+2026-02-01 15:57:21 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T15:57:21.613985
+2026-02-01 15:57:21 - database - INFO - Zapytanie SQL zwróciło 0 wygasłych subskrypcji
+2026-02-01 15:58:47 - database - INFO - Połączono z PostgreSQL – pula połączeń
+2026-02-01 15:58:47 - database - INFO - Tabele PostgreSQL (Supabase) zainicjalizowane
+2026-02-01 15:59:48 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T15:59:48.126985
+2026-02-01 15:59:48 - database - INFO - Zapytanie SQL zwróciło 0 wygasłych subskrypcji
+2026-02-01 16:00:48 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T16:00:48.135456
+2026-02-01 16:00:48 - database - INFO - Zapytanie SQL zwróciło 0 wygasłych subskrypcji
+2026-02-01 16:01:48 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T16:01:48.121086
+2026-02-01 16:01:48 - database - INFO - Zapytanie SQL zwróciło 0 wygasłych subskrypcji
+2026-02-01 16:02:28 - database - INFO - Połączono z PostgreSQL – pula połączeń
+2026-02-01 16:02:29 - database - INFO - Tabele PostgreSQL (Supabase) zainicjalizowane
+2026-02-01 16:03:29 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T16:03:29.788244
+2026-02-01 16:03:29 - database - INFO - Zapytanie SQL zwróciło 0 wygasłych subskrypcji
+2026-02-01 16:04:29 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T16:04:29.785414
+2026-02-01 16:04:29 - database - INFO - Zapytanie SQL zwróciło 0 wygasłych subskrypcji
+2026-02-01 16:05:29 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T16:05:29.800794
+2026-02-01 16:05:29 - database - INFO - Zapytanie SQL zwróciło 0 wygasłych subskrypcji
+2026-02-01 16:06:29 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T16:06:29.791271
+2026-02-01 16:06:29 - database - INFO - Zapytanie SQL zwróciło 0 wygasłych subskrypcji
+2026-02-01 16:07:29 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T16:07:29.785785
+2026-02-01 16:07:29 - database - INFO - Zapytanie SQL zwróciło 0 wygasłych subskrypcji
+2026-02-01 16:08:29 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T16:08:29.782940
+2026-02-01 16:08:29 - database - INFO - Zapytanie SQL zwróciło 0 wygasłych subskrypcji
+2026-02-01 16:09:29 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T16:09:29.797116
+2026-02-01 16:09:29 - database - INFO - Zapytanie SQL zwróciło 0 wygasłych subskrypcji
+2026-02-01 16:10:29 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T16:10:29.804140
+2026-02-01 16:10:29 - database - INFO - Zapytanie SQL zwróciło 0 wygasłych subskrypcji
+2026-02-01 17:18:59 - database - INFO - Połączono z PostgreSQL – pula połączeń
+2026-02-01 17:18:59 - database - INFO - Tabele PostgreSQL (Supabase) zainicjalizowane
+2026-02-01 17:20:00 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T17:20:00.461164
+2026-02-01 17:20:00 - database - INFO - Zapytanie SQL zwróciło 0 wygasłych subskrypcji
+2026-02-01 17:21:00 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T17:21:00.450622
+2026-02-01 17:21:00 - database - INFO - Zapytanie SQL zwróciło 0 wygasłych subskrypcji
+2026-02-01 17:22:00 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T17:22:00.454956
+2026-02-01 17:22:00 - database - INFO - Zapytanie SQL zwróciło 0 wygasłych subskrypcji
+2026-02-01 17:23:00 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T17:23:00.463717
+2026-02-01 17:23:00 - database - INFO - Zapytanie SQL zwróciło 0 wygasłych subskrypcji
+2026-02-01 17:24:00 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T17:24:00.451728
+2026-02-01 17:24:00 - database - INFO - Zapytanie SQL zwróciło 0 wygasłych subskrypcji
+2026-02-01 17:25:00 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T17:25:00.453964
+2026-02-01 17:25:00 - database - INFO - Zapytanie SQL zwróciło 0 wygasłych subskrypcji
+2026-02-01 17:26:00 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T17:26:00.455811
+2026-02-01 17:26:00 - database - INFO - Zapytanie SQL zwróciło 0 wygasłych subskrypcji
+2026-02-01 17:26:10 - database - INFO - Połączono z PostgreSQL – pula połączeń
+2026-02-01 17:26:11 - database - INFO - Tabele PostgreSQL (Supabase) zainicjalizowane
+2026-02-01 17:26:11 - database - INFO - Migracja bot_users: dodano kolumnę last_username
+2026-02-01 17:26:11 - database - INFO - Migracja bot_users: dodano kolumnę last_full_name
+2026-02-01 17:27:11 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T17:27:11.958706
+2026-02-01 17:27:12 - database - INFO - Zapytanie SQL zwróciło 0 wygasłych subskrypcji
+2026-02-01 17:28:11 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T17:28:11.960970
+2026-02-01 17:28:12 - database - INFO - Zapytanie SQL zwróciło 0 wygasłych subskrypcji
+2026-02-01 17:29:11 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T17:29:11.954811
+2026-02-01 17:29:12 - database - INFO - Zapytanie SQL zwróciło 1 wygasłych subskrypcji
+2026-02-01 17:30:11 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T17:30:11.957540
+2026-02-01 17:30:12 - database - INFO - Zapytanie SQL zwróciło 1 wygasłych subskrypcji
+2026-02-01 17:31:11 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T17:31:11.962655
+2026-02-01 17:31:12 - database - INFO - Zapytanie SQL zwróciło 1 wygasłych subskrypcji
+2026-02-01 17:32:11 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T17:32:11.949358
+2026-02-01 17:32:12 - database - INFO - Zapytanie SQL zwróciło 1 wygasłych subskrypcji
+2026-02-01 17:32:20 - database - INFO - Dodano kanał 👑 Tysiulka - Premium (-1002085180516) dla 7829319839
+2026-02-01 17:33:11 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T17:33:11.962813
+2026-02-01 17:33:12 - database - INFO - Zapytanie SQL zwróciło 1 wygasłych subskrypcji
+2026-02-01 17:34:11 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T17:34:11.956548
+2026-02-01 17:34:12 - database - INFO - Zapytanie SQL zwróciło 1 wygasłych subskrypcji
+2026-02-01 17:35:11 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T17:35:11.960773
+2026-02-01 17:35:12 - database - INFO - Zapytanie SQL zwróciło 1 wygasłych subskrypcji
+2026-02-01 17:35:32 - database - INFO - Połączono z PostgreSQL – pula połączeń
+2026-02-01 17:35:32 - database - INFO - Tabele PostgreSQL (Supabase) zainicjalizowane
+2026-02-01 17:36:33 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T17:36:33.133382
+2026-02-01 17:36:33 - database - INFO - Zapytanie SQL zwróciło 1 wygasłych subskrypcji
+2026-02-01 17:37:33 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T17:37:33.137168
+2026-02-01 17:37:33 - database - INFO - Zapytanie SQL zwróciło 1 wygasłych subskrypcji
+2026-02-01 17:38:33 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T17:38:33.140102
+2026-02-01 17:38:33 - database - INFO - Zapytanie SQL zwróciło 1 wygasłych subskrypcji
+2026-02-01 17:39:19 - database - INFO - Utworzono subskrypcję dla 1342685360 w kanale -1002085180516 (sprzedamgruz) - Silver, wygasa: 2026-02-01 17:40
+2026-02-01 17:39:33 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T17:39:33.144191
+2026-02-01 17:39:33 - database - INFO - Zapytanie SQL zwróciło 1 wygasłych subskrypcji
+2026-02-01 17:40:33 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T17:40:33.155077
+2026-02-01 17:40:33 - database - INFO - Zapytanie SQL zwróciło 2 wygasłych subskrypcji
+2026-02-01 17:41:33 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T17:41:33.136531
+2026-02-01 17:41:33 - database - INFO - Zapytanie SQL zwróciło 2 wygasłych subskrypcji
+2026-02-01 17:42:33 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T17:42:33.136689
+2026-02-01 17:42:33 - database - INFO - Zapytanie SQL zwróciło 2 wygasłych subskrypcji
+2026-02-01 17:42:46 - database - INFO - Połączono z PostgreSQL – pula połączeń
+2026-02-01 17:42:46 - database - INFO - Tabele PostgreSQL (Supabase) zainicjalizowane
+2026-02-01 17:43:47 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T17:43:47.455217
+2026-02-01 17:43:47 - database - INFO - Zapytanie SQL zwróciło 2 wygasłych subskrypcji
+2026-02-01 17:44:47 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T17:44:47.456552
+2026-02-01 17:44:47 - database - INFO - Zapytanie SQL zwróciło 2 wygasłych subskrypcji
+2026-02-01 17:45:44 - database - INFO - Połączono z PostgreSQL – pula połączeń
+2026-02-01 17:45:44 - database - INFO - Tabele PostgreSQL (Supabase) zainicjalizowane
+2026-02-01 17:46:45 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T17:46:45.261363
+2026-02-01 17:46:45 - database - INFO - Zapytanie SQL zwróciło 2 wygasłych subskrypcji
+2026-02-01 17:47:45 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T17:47:45.262792
+2026-02-01 17:47:45 - database - INFO - Zapytanie SQL zwróciło 2 wygasłych subskrypcji
+2026-02-01 17:48:45 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T17:48:45.259372
+2026-02-01 17:48:45 - database - INFO - Zapytanie SQL zwróciło 2 wygasłych subskrypcji
+2026-02-01 17:49:45 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T17:49:45.260790
+2026-02-01 17:49:45 - database - INFO - Zapytanie SQL zwróciło 2 wygasłych subskrypcji
+2026-02-01 17:50:45 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T17:50:45.258834
+2026-02-01 17:50:45 - database - INFO - Zapytanie SQL zwróciło 2 wygasłych subskrypcji
+2026-02-01 17:51:45 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T17:51:45.264941
+2026-02-01 17:51:45 - database - INFO - Zapytanie SQL zwróciło 2 wygasłych subskrypcji
+2026-02-01 17:52:29 - database - INFO - Zaktualizowano status subskrypcji 1342685360 w kanale -1002085180516: banned
+2026-02-01 17:52:29 - database - INFO - Zaktualizowano status subskrypcji 1342685360 w kanale -1002085180516: banned
+2026-02-01 17:52:45 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T17:52:45.252101
+2026-02-01 17:52:45 - database - INFO - Zapytanie SQL zwróciło 1 wygasłych subskrypcji
+2026-02-01 17:52:45 - database - INFO - Zaktualizowano status subskrypcji 5794369342 w kanale -1002085180516: banned
+2026-02-01 17:52:46 - database - INFO - Zaktualizowano status subskrypcji 5794369342 w kanale -1002085180516: banned
+2026-02-01 17:53:11 - database - INFO - Zaktualizowano status subskrypcji 5794369342 w kanale -1002085180516: active
+2026-02-01 17:53:11 - database - INFO - Zaktualizowano subskrypcję user_id=5794369342, channel=-1002085180516: ['end_date = ?']
+2026-02-01 17:53:45 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T17:53:45.274525
+2026-02-01 17:53:45 - database - INFO - Zapytanie SQL zwróciło 0 wygasłych subskrypcji
+2026-02-01 17:54:45 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T17:54:45.257549
+2026-02-01 17:54:45 - database - INFO - Zapytanie SQL zwróciło 0 wygasłych subskrypcji
+2026-02-01 17:55:10 - database - INFO - Dodano kanał test2 (-1003808918566) dla 8489479793
+2026-02-01 17:55:45 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T17:55:45.266895
+2026-02-01 17:55:45 - database - INFO - Zapytanie SQL zwróciło 0 wygasłych subskrypcji
+2026-02-01 17:56:45 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T17:56:45.263585
+2026-02-01 17:56:45 - database - INFO - Zapytanie SQL zwróciło 0 wygasłych subskrypcji
+2026-02-01 17:57:08 - database - INFO - Połączono z PostgreSQL – pula połączeń
+2026-02-01 17:57:09 - database - INFO - Tabele PostgreSQL (Supabase) zainicjalizowane
+2026-02-01 17:58:10 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T17:58:10.091515
+2026-02-01 17:58:10 - database - INFO - Zapytanie SQL zwróciło 0 wygasłych subskrypcji
+2026-02-01 17:59:10 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T17:59:10.100163
+2026-02-01 17:59:10 - database - INFO - Zapytanie SQL zwróciło 0 wygasłych subskrypcji
+2026-02-01 17:59:23 - database - INFO - Połączono z PostgreSQL – pula połączeń
+2026-02-01 17:59:24 - database - INFO - Tabele PostgreSQL (Supabase) zainicjalizowane
+2026-02-01 17:59:34 - database - INFO - Zaktualizowano status subskrypcji 5794369342 w kanale -1002085180516: left
+2026-02-01 18:00:24 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T18:00:24.929800
+2026-02-01 18:00:25 - database - INFO - Zapytanie SQL zwróciło 0 wygasłych subskrypcji
+2026-02-01 18:00:32 - database - INFO - Utworzono subskrypcję dla 5794369342 w kanale -1002085180516 (quitecuute) - Bronze, wygasa: 2026-02-01 18:01
+2026-02-01 18:01:24 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T18:01:24.926479
+2026-02-01 18:01:25 - database - INFO - Zapytanie SQL zwróciło 1 wygasłych subskrypcji
+2026-02-01 18:01:25 - database - INFO - Zaktualizowano status subskrypcji 5794369342 w kanale -1002085180516: banned
+2026-02-01 18:01:25 - database - INFO - Zaktualizowano status subskrypcji 5794369342 w kanale -1002085180516: banned
+2026-02-01 18:02:24 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T18:02:24.935715
+2026-02-01 18:02:25 - database - INFO - Zapytanie SQL zwróciło 0 wygasłych subskrypcji
+2026-02-01 18:03:24 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T18:03:24.930694
+2026-02-01 18:03:25 - database - INFO - Zapytanie SQL zwróciło 0 wygasłych subskrypcji
+2026-02-01 18:03:33 - database - INFO - Zaktualizowano status subskrypcji 5794369342 w kanale -1002085180516: active
+2026-02-01 18:03:33 - database - INFO - Zaktualizowano subskrypcję user_id=5794369342, channel=-1002085180516: ['end_date = ?']
+2026-02-01 18:04:06 - database - INFO - Utworzono subskrypcję dla 5794369342 w kanale -1002085180516 (quitecuute) - Bronze, wygasa: 2026-02-01 18:05
+2026-02-01 18:04:24 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T18:04:24.937387
+2026-02-01 18:04:25 - database - INFO - Zapytanie SQL zwróciło 0 wygasłych subskrypcji
+2026-02-01 18:05:24 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T18:05:24.927037
+2026-02-01 18:05:25 - database - INFO - Zapytanie SQL zwróciło 1 wygasłych subskrypcji
+2026-02-01 18:05:25 - database - INFO - Zaktualizowano status subskrypcji 5794369342 w kanale -1002085180516: banned
+2026-02-01 18:05:25 - database - INFO - Zaktualizowano status subskrypcji 5794369342 w kanale -1002085180516: banned
+2026-02-01 18:06:24 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T18:06:24.932985
+2026-02-01 18:06:25 - database - INFO - Zapytanie SQL zwróciło 0 wygasłych subskrypcji
+2026-02-01 18:07:15 - database - INFO - Zaktualizowano status subskrypcji 5794369342 w kanale -1002085180516: left
+2026-02-01 18:07:22 - database - INFO - Zaktualizowano status subskrypcji 1342685360 w kanale -1002085180516: left
+2026-02-01 18:07:24 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T18:07:24.939039
+2026-02-01 18:07:25 - database - INFO - Zapytanie SQL zwróciło 0 wygasłych subskrypcji

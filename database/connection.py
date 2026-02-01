@@ -97,7 +97,10 @@ if USE_POSTGRES:
 
         async def connect(self):
             if not settings.DB_PASSWORD:
-                raise ValueError("DB_PASSWORD jest wymagane dla Supabase. Ustaw je w .env")
+                raise ValueError(
+                    "DB_PASSWORD jest wymagane. Ustaw w Railway Variables (lub .env): "
+                    "DB_PASSWORD=... albo dodaj plugin PostgreSQL – wtedy ustawiona jest DATABASE_URL."
+                )
             try:
                 self._pool = await asyncpg.create_pool(
                     host=settings.DB_HOST,
@@ -111,10 +114,18 @@ if USE_POSTGRES:
                     max_size=5,  # free tier Supabase – mała pula, wiele zadań może równolegle
                 )
                 self._wrapper = ConnectionWrapper(self._pool)
-                logger.info("Połączono z Supabase (PostgreSQL) – pula połączeń")
+                logger.info("Połączono z PostgreSQL – pula połączeń")
                 return self._wrapper
             except Exception as e:
-                logger.error(f"Błąd połączenia z Supabase: {e}")
+                err = str(e).lower()
+                hint = ""
+                if "password" in err and "authentication" in err:
+                    hint = (
+                        " Sprawdź: Railway → Twój serwis → PostgreSQL → Variables: "
+                        "skopiuj DATABASE_URL (albo PGPASSWORD). "
+                        "Jeśli używasz Supabase: ustaw DB_HOST, DB_USER, DB_PASSWORD w Variables."
+                    )
+                logger.error("Błąd połączenia z PostgreSQL: %s.%s", e, hint)
                 raise
 
         async def disconnect(self):
@@ -244,14 +255,38 @@ if USE_POSTGRES:
                         user_id BIGINT PRIMARY KEY
                     )
                 """)
+                    await c.execute("""
+                    CREATE TABLE IF NOT EXISTS user_interaction_logs (
+                        id SERIAL PRIMARY KEY,
+                        user_id BIGINT NOT NULL,
+                        event_type TEXT NOT NULL,
+                        content_preview TEXT,
+                        created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+                    )
+                """)
+                    await c.execute("CREATE INDEX IF NOT EXISTS idx_interaction_logs_user_created ON user_interaction_logs (user_id, created_at DESC)")
                     logger.info("Tabele PostgreSQL (Supabase) zainicjalizowane")
                     await self._migrate_bot_settings_user_id(c)
                     await self._migrate_scheduled_posts_owner_id(c)
                     await self._migrate_add_channel_id(c)
                     await self._migrate_scheduled_posts_channel_id(c)
+                    await self._migrate_bot_users_display_info(c)
                 except Exception as e:
                     logger.error(f"Błąd inicjalizacji tabel PostgreSQL: {e}")
                     raise
+
+        async def _migrate_bot_users_display_info(self, conn):
+            try:
+                for col in ("last_username", "last_full_name"):
+                    r = await conn.fetch("""
+                        SELECT column_name FROM information_schema.columns
+                        WHERE table_name = 'bot_users' AND column_name = $1
+                    """, col)
+                    if not r:
+                        await conn.execute(f"ALTER TABLE bot_users ADD COLUMN {col} TEXT")
+                        logger.info("Migracja bot_users: dodano kolumnę %s", col)
+            except Exception as e:
+                logger.error("Migracja bot_users display_info: %s", e)
 
         async def _migrate_add_channel_id(self, conn):
             try:
@@ -467,6 +502,16 @@ else:
                         user_id INTEGER PRIMARY KEY
                     )
                 """)
+                await connection.execute("""
+                    CREATE TABLE IF NOT EXISTS user_interaction_logs (
+                        id INTEGER PRIMARY KEY AUTOINCREMENT,
+                        user_id INTEGER NOT NULL,
+                        event_type TEXT NOT NULL,
+                        content_preview TEXT,
+                        created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+                    )
+                """)
+                await connection.execute("CREATE INDEX IF NOT EXISTS idx_interaction_logs_user_created ON user_interaction_logs (user_id, created_at DESC)")
                 await connection.commit()
                 logger.info("Tabele Multi-Tenant zainicjalizowane")
                 await self._migrate_bot_settings_user_id()
@@ -475,9 +520,21 @@ else:
                 await self._migrate_add_left_status()
                 await self._migrate_scheduled_posts_channel_id()
                 await self._migrate_sfs_ratings_to_owner()
+                await self._migrate_bot_users_display_info()
             except Exception as e:
                 logger.error(f"Błąd inicjalizacji tabel: {e}")
                 raise
+
+        async def _migrate_bot_users_display_info(self):
+            try:
+                async with self._connection.execute("PRAGMA table_info(bot_users)") as cursor:
+                    cols = [row[1] for row in await cursor.fetchall()]
+                for col in ("last_username", "last_full_name"):
+                    if col not in cols:
+                        await self._connection.execute(f"ALTER TABLE bot_users ADD COLUMN {col} TEXT")
+                        logger.info("Migracja bot_users: dodano kolumnę %s", col)
+            except Exception as e:
+                logger.error("Migracja bot_users display_info: %s", e)
 
         async def _migrate_add_channel_id(self):
             try:

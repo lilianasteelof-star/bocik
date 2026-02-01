@@ -199,24 +199,10 @@ async def handle_chat_member_update(event: ChatMemberUpdated, bot: Bot, state: F
 
             if channel_type == 'premium':
                 from database.models import SubscriptionManager
-                
-                # Check subscription specific to this channel
+
+                # Aktualizacja statusu w bazie (powiadomienie ownerowi tylko z schedulera – „Auto-Ban: Użytkownik usunięty…”, bez duplikatu)
                 if await SubscriptionManager.get_subscription(user_id, chat_id):
                     await SubscriptionManager.update_subscription_status(user_id, chat_id, "banned")
-
-                    try:
-                        await bot.send_message(
-                            chat_id=owner_id,
-                            text=(
-                                f"🚫 <b>Użytkownik zbanowany w Twoim kanale</b>\n\n"
-                                f"👤 <a href='tg://user?id={user_id}'>{safe_full_name}</a>\n"
-                                f"🏷️ User: @{safe_username}\n"
-                                f"ℹ️ Status w bazie zmieniony na: <b>banned</b>"
-                            ),
-                            parse_mode=ParseMode.HTML
-                        )
-                    except Exception as e:
-                        logger.warning(f"Could not notify owner {owner_id}: {e}")
 
     except Exception as e:
         logger.error(f"Błąd obsługi chat member update: {e}", exc_info=True)

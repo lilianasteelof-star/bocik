@@ -86,3 +86,8 @@ class SuperAdminBlacklist(StatesGroup):
 class SuperAdminInbox(StatesGroup):
     """Stany dla inbox (odpowiedź użytkownikowi)."""
     waiting_reply_to_user = State()
+
+
+class SuperAdminChatUser(StatesGroup):
+    """Stany dla panelu aktywni użytkownicy (chat) – napisz jako bot."""
+    waiting_message_to_user = State()

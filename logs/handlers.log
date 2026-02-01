@@ -1015,3 +1015,65 @@ data
 2026-02-01 07:21:36 - handlers - INFO - Join request (free) zapisany: channel=-1002032389748 user_id=7884096167
 2026-02-01 07:22:17 - handlers - INFO - Join request (free) zapisany: channel=-1002032389748 user_id=1365335419
 2026-02-01 07:22:36 - handlers - INFO - Join request (free) zapisany: channel=-1002032389748 user_id=7990301348
+2026-02-01 07:23:23 - handlers - INFO - Join request (free) zapisany: channel=-1002032389748 user_id=6970766109
+2026-02-01 07:24:07 - handlers - INFO - Join request (free) zapisany: channel=-1002032389748 user_id=8427635636
+2026-02-01 17:19:16 - handlers - WARNING - Błąd pobierania info o czacie -1003064435955: Telegram server says - Bad Request: chat not found
+2026-02-01 17:19:18 - handlers - WARNING - Bot nie mógł wyjść z kanału -1003064435955: Telegram server says - Bad Request: chat not found
+2026-02-01 17:30:13 - handlers - WARNING - Błąd pobierania info o czacie -1002032389748: Telegram server says - Bad Request: chat not found
+2026-02-01 17:30:28 - handlers - WARNING - Błąd pobierania info o czacie -1002085180516: Telegram server says - Bad Request: chat not found
+2026-02-01 17:30:33 - handlers - WARNING - Błąd pobierania info o czacie -1002085180516: Telegram server says - Bad Request: chat not found
+2026-02-01 17:30:35 - handlers - WARNING - Bot nie mógł wyjść z kanału -1002085180516: Telegram server says - Bad Request: chat not found
+2026-02-01 17:38:22 - handlers - ERROR - Kick error: Telegram server says - Bad Request: not enough rights to restrict/unrestrict chat member
+2026-02-01 17:38:57 - handlers - INFO - 🟢 User JOINED: 1342685360 do kanału -1002085180516 (Owner: 7829319839, Type: premium)
+2026-02-01 17:38:57 - handlers - INFO - Wysłano powiadomienie o dołączeniu do właściciela 7829319839
+2026-02-01 17:39:02 - handlers - INFO - Wybrano tier: Silver dla user 1342685360 w kanale -1002085180516
+2026-02-01 17:43:33 - handlers - ERROR - Kick error: Telegram server says - Bad Request: not enough rights to restrict/unrestrict chat member
+2026-02-01 17:43:40 - handlers - ERROR - Kick error: Telegram server says - Bad Request: not enough rights to restrict/unrestrict chat member
+2026-02-01 17:46:06 - handlers - ERROR - Kick error: Telegram server says - Bad Request: not enough rights to restrict/unrestrict chat member
+2026-02-01 17:52:29 - handlers - INFO - 🚫 User BANNED: 1342685360 z kanału -1002085180516 (Owner: 7829319839)
+2026-02-01 17:52:30 - handlers - ERROR - Kick error: 1 validation error for CallbackQuery
+data
+  Instance is frozen [type=frozen_instance, input_value='list_users_-1002085180516', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.8/v/frozen_instance
+2026-02-01 17:52:45 - handlers - INFO - 🚫 User BANNED: 5794369342 z kanału -1002085180516 (Owner: 7829319839)
+2026-02-01 17:55:39 - handlers - ERROR - console: Telegram server says - Bad Request: MESSAGE_TOO_LONG
+Traceback (most recent call last):
+  File "d:\Python\EwhorWatchdog\handlers\superadmin.py", line 835, in superadmin_console
+    await callback.message.edit_text(text, reply_markup=kb, parse_mode=ParseMode.MARKDOWN)
+  File "D:\Python\EwhorWatchdog\venv\Lib\site-packages\aiogram\methods\base.py", line 84, in emit
+    return await bot(self)
+           ^^^^^^^^^^^^^^^
+  File "D:\Python\EwhorWatchdog\venv\Lib\site-packages\aiogram\client\bot.py", line 488, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\EwhorWatchdog\venv\Lib\site-packages\aiogram\client\session\base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\EwhorWatchdog\venv\Lib\site-packages\aiogram\client\session\aiohttp.py", line 189, in make_request
+    response = self.check_response(
+               ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\EwhorWatchdog\venv\Lib\site-packages\aiogram\client\session\base.py", line 120, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: MESSAGE_TOO_LONG
+2026-02-01 17:59:27 - handlers - INFO - 🟢 User JOINED: 5794369342 do kanału -1002085180516 (Owner: 7829319839, Type: premium)
+2026-02-01 17:59:27 - handlers - INFO - Wysłano powiadomienie o dołączeniu do właściciela 7829319839
+2026-02-01 17:59:34 - handlers - INFO - 🔴 User LEFT: 5794369342 z kanału -1002085180516 (Owner: 7829319839, Type: premium)
+2026-02-01 17:59:55 - handlers - INFO - Wybrano tier: Bronze dla user 5794369342 w kanale -1002085180516
+2026-02-01 18:00:05 - handlers - INFO - 🟢 User JOINED: 5794369342 do kanału -1002085180516 (Owner: 7829319839, Type: premium)
+2026-02-01 18:00:05 - handlers - INFO - Wysłano powiadomienie o dołączeniu do właściciela 7829319839
+2026-02-01 18:00:16 - handlers - INFO - Wybrano tier: Bronze dla user 5794369342 w kanale -1002085180516
+2026-02-01 18:01:25 - handlers - INFO - 🚫 User BANNED: 5794369342 z kanału -1002085180516 (Owner: 7829319839)
+2026-02-01 18:03:50 - handlers - INFO - 🟢 User JOINED: 5794369342 do kanału -1002085180516 (Owner: 7829319839, Type: premium)
+2026-02-01 18:03:51 - handlers - INFO - Wysłano powiadomienie o dołączeniu do właściciela 7829319839
+2026-02-01 18:03:54 - handlers - INFO - Wybrano tier: Bronze dla user 5794369342 w kanale -1002085180516
+2026-02-01 18:05:25 - handlers - INFO - 🚫 User BANNED: 5794369342 z kanału -1002085180516 (Owner: 7829319839)
+2026-02-01 18:06:34 - handlers - WARNING - get_chat_member_count free channel -1002032389748: Telegram server says - Bad Request: chat not found
+2026-02-01 18:07:01 - handlers - WARNING - get_chat_member_count free channel -1002032389748: Telegram server says - Bad Request: chat not found
+2026-02-01 18:07:15 - handlers - ERROR - Unban error: 1 validation error for CallbackQuery
+data
+  Instance is frozen [type=frozen_instance, input_value='list_banned_-1002085180516', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.8/v/frozen_instance
+2026-02-01 18:07:22 - handlers - ERROR - Unban error: 1 validation error for CallbackQuery
+data
+  Instance is frozen [type=frozen_instance, input_value='list_banned_-1002085180516', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.8/v/frozen_instance

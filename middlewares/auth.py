@@ -86,6 +86,38 @@ class LoggingMiddleware(BaseMiddleware):
             # Wywołanie handlera
             result = await handler(event, data)
             
+            # Dane wyświetlania (@, imię) – dla wszystkich, żeby w panelu „Aktywni użytkownicy” było widać etykietę
+            try:
+                user_id = getattr(getattr(event, "from_user", None), "id", None)
+                from_user = getattr(event, "from_user", None)
+                if user_id and from_user:
+                    from database.models import BotUsersManager
+                    username = from_user.username if from_user else None
+                    full_name = ((from_user.first_name or "") + " " + (from_user.last_name or "")).strip() if from_user else None
+                    if not full_name and from_user:
+                        full_name = from_user.first_name or None
+                    await BotUsersManager.ensure_user(user_id)
+                    await BotUsersManager.update_user_display_info(user_id, username=username, full_name=full_name)
+            except Exception as upd_err:
+                logger.debug("update_user_display_info skip: %s", upd_err)
+            # Log interakcji tylko dla nie-superadminów (żeby nie zaśmiecać logów)
+            try:
+                user_id = getattr(getattr(event, "from_user", None), "id", None)
+                if not user_id or settings.is_superadmin(user_id):
+                    pass
+                else:
+                    from database.models import UserInteractionLog
+                    if isinstance(event, Message):
+                        chat = getattr(event, "chat", None)
+                        if chat and getattr(chat, "type", None) == "private":
+                            preview = (event.text or event.caption or "")[:200] if (event.text or event.caption) else f"[{getattr(event.content_type, 'value', event.content_type)}]"
+                            await UserInteractionLog.add(user_id, "message", preview)
+                    elif isinstance(event, CallbackQuery):
+                        preview = (event.data or "")[:200]
+                        await UserInteractionLog.add(user_id, "callback", preview)
+            except Exception as log_err:
+                logger.debug("Interaction log skip: %s", log_err)
+            
             # Logowanie pomyślnego przetworzenia
             logger.debug(f"{event_type} przetworzony pomyślnie")
             

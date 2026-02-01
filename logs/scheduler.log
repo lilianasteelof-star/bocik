@@ -346,3 +346,74 @@
 2026-02-01 06:52:48 - scheduler - INFO - Scheduler uruchomiony (publish co 1 min)
 2026-02-01 07:00:58 - scheduler - INFO - Scheduler uruchomiony (publish co 1 min)
 2026-02-01 07:18:06 - scheduler - INFO - Scheduler uruchomiony (publish co 1 min)
+2026-02-01 15:52:21 - scheduler - INFO - Scheduler uruchomiony (publish co 1 min)
+2026-02-01 15:58:48 - scheduler - INFO - Scheduler uruchomiony (publish co 1 min)
+2026-02-01 16:02:29 - scheduler - INFO - Scheduler uruchomiony (publish co 1 min)
+2026-02-01 17:19:00 - scheduler - INFO - Scheduler uruchomiony (publish co 1 min)
+2026-02-01 17:26:11 - scheduler - INFO - Scheduler uruchomiony (publish co 1 min)
+2026-02-01 17:29:12 - scheduler - INFO - Znaleziono 1 wygasłych subskrypcji
+2026-02-01 17:29:12 - scheduler - ERROR - Błąd banowania 5794369342: Telegram server says - Bad Request: chat not found
+2026-02-01 17:30:12 - scheduler - INFO - Znaleziono 1 wygasłych subskrypcji
+2026-02-01 17:30:12 - scheduler - ERROR - Błąd banowania 5794369342: Telegram server says - Bad Request: chat not found
+2026-02-01 17:31:12 - scheduler - INFO - Znaleziono 1 wygasłych subskrypcji
+2026-02-01 17:31:12 - scheduler - WARNING - Brak kanału premium dla ownera 7829319839 - skip ban for 5794369342
+2026-02-01 17:32:12 - scheduler - INFO - Znaleziono 1 wygasłych subskrypcji
+2026-02-01 17:32:12 - scheduler - WARNING - Brak kanału premium dla ownera 7829319839 - skip ban for 5794369342
+2026-02-01 17:33:12 - scheduler - INFO - Znaleziono 1 wygasłych subskrypcji
+2026-02-01 17:33:12 - scheduler - ERROR - Błąd banowania 5794369342: Telegram server says - Bad Request: not enough rights to restrict/unrestrict chat member
+2026-02-01 17:34:12 - scheduler - INFO - Znaleziono 1 wygasłych subskrypcji
+2026-02-01 17:34:12 - scheduler - ERROR - Błąd banowania 5794369342: Telegram server says - Bad Request: not enough rights to restrict/unrestrict chat member
+2026-02-01 17:35:12 - scheduler - INFO - Znaleziono 1 wygasłych subskrypcji
+2026-02-01 17:35:12 - scheduler - ERROR - Błąd banowania 5794369342: Telegram server says - Bad Request: not enough rights to restrict/unrestrict chat member
+2026-02-01 17:35:33 - scheduler - INFO - Scheduler uruchomiony (publish co 1 min)
+2026-02-01 17:36:33 - scheduler - INFO - Znaleziono 1 wygasłych subskrypcji
+2026-02-01 17:36:33 - scheduler - ERROR - Auto-kick: bot nie ma uprawnień w kanale -1002085180516. W ustawieniach kanału nadaj botowi uprawnienie „Ban users” (lub „Restrict members”).
+2026-02-01 17:37:33 - scheduler - INFO - Znaleziono 1 wygasłych subskrypcji
+2026-02-01 17:37:33 - scheduler - ERROR - Auto-kick: bot nie ma uprawnień w kanale -1002085180516. W ustawieniach kanału nadaj botowi uprawnienie „Ban users” (lub „Restrict members”).
+2026-02-01 17:38:33 - scheduler - INFO - Znaleziono 1 wygasłych subskrypcji
+2026-02-01 17:38:33 - scheduler - ERROR - Auto-kick: bot nie ma uprawnień w kanale -1002085180516. W ustawieniach kanału nadaj botowi uprawnienie „Ban users” (lub „Restrict members”).
+2026-02-01 17:39:33 - scheduler - INFO - Znaleziono 1 wygasłych subskrypcji
+2026-02-01 17:39:33 - scheduler - ERROR - Auto-kick: bot nie ma uprawnień w kanale -1002085180516. W ustawieniach kanału nadaj botowi uprawnienie „Ban users” (lub „Restrict members”).
+2026-02-01 17:40:33 - scheduler - INFO - Znaleziono 2 wygasłych subskrypcji
+2026-02-01 17:40:33 - scheduler - ERROR - Auto-kick: bot nie ma uprawnień w kanale -1002085180516. W ustawieniach kanału nadaj botowi uprawnienie „Ban users” (lub „Restrict members”).
+2026-02-01 17:40:33 - scheduler - ERROR - Auto-kick: bot nie ma uprawnień w kanale -1002085180516. W ustawieniach kanału nadaj botowi uprawnienie „Ban users” (lub „Restrict members”).
+2026-02-01 17:41:33 - scheduler - INFO - Znaleziono 2 wygasłych subskrypcji
+2026-02-01 17:41:33 - scheduler - ERROR - Auto-kick: bot nie ma uprawnień w kanale -1002085180516. W ustawieniach kanału nadaj botowi uprawnienie „Ban users” (lub „Restrict members”).
+2026-02-01 17:41:33 - scheduler - ERROR - Auto-kick: bot nie ma uprawnień w kanale -1002085180516. W ustawieniach kanału nadaj botowi uprawnienie „Ban users” (lub „Restrict members”).
+2026-02-01 17:42:33 - scheduler - INFO - Znaleziono 2 wygasłych subskrypcji
+2026-02-01 17:42:33 - scheduler - ERROR - Auto-kick: bot nie ma uprawnień w kanale -1002085180516. W ustawieniach kanału nadaj botowi uprawnienie „Ban users” (lub „Restrict members”).
+2026-02-01 17:42:33 - scheduler - ERROR - Auto-kick: bot nie ma uprawnień w kanale -1002085180516. W ustawieniach kanału nadaj botowi uprawnienie „Ban users” (lub „Restrict members”).
+2026-02-01 17:42:47 - scheduler - INFO - Scheduler uruchomiony (publish co 1 min)
+2026-02-01 17:43:47 - scheduler - INFO - Znaleziono 2 wygasłych subskrypcji
+2026-02-01 17:43:47 - scheduler - ERROR - Auto-kick: bot NIE MA uprawnienia „Restrict members” w kanale -1002085180516 (channel_id=-1002085180516). Nadaj botowi to uprawnienie w ustawieniach kanału → Administratorzy.
+2026-02-01 17:43:48 - scheduler - ERROR - Auto-kick: bot NIE MA uprawnienia „Restrict members” w kanale -1002085180516 (channel_id=-1002085180516). Nadaj botowi to uprawnienie w ustawieniach kanału → Administratorzy.
+2026-02-01 17:44:47 - scheduler - INFO - Znaleziono 2 wygasłych subskrypcji
+2026-02-01 17:44:47 - scheduler - ERROR - Auto-kick: bot NIE MA uprawnienia „Restrict members” w kanale -1002085180516 (channel_id=-1002085180516). Nadaj botowi to uprawnienie w ustawieniach kanału → Administratorzy.
+2026-02-01 17:44:47 - scheduler - ERROR - Auto-kick: bot NIE MA uprawnienia „Restrict members” w kanale -1002085180516 (channel_id=-1002085180516). Nadaj botowi to uprawnienie w ustawieniach kanału → Administratorzy.
+2026-02-01 17:45:45 - scheduler - INFO - Scheduler uruchomiony (publish co 1 min)
+2026-02-01 17:46:45 - scheduler - INFO - Znaleziono 2 wygasłych subskrypcji
+2026-02-01 17:46:45 - scheduler - ERROR - Auto-kick: błąd dla kanału -1002085180516, user 5794369342: Telegram server says - Bad Request: not enough rights to restrict/unrestrict chat member
+2026-02-01 17:46:45 - scheduler - ERROR - Auto-kick: błąd dla kanału -1002085180516, user 1342685360: Telegram server says - Bad Request: not enough rights to restrict/unrestrict chat member
+2026-02-01 17:47:45 - scheduler - INFO - Znaleziono 2 wygasłych subskrypcji
+2026-02-01 17:47:45 - scheduler - ERROR - Auto-kick: błąd dla kanału -1002085180516, user 5794369342: Telegram server says - Bad Request: not enough rights to restrict/unrestrict chat member
+2026-02-01 17:47:46 - scheduler - ERROR - Auto-kick: błąd dla kanału -1002085180516, user 1342685360: Telegram server says - Bad Request: not enough rights to restrict/unrestrict chat member
+2026-02-01 17:48:45 - scheduler - INFO - Znaleziono 2 wygasłych subskrypcji
+2026-02-01 17:48:45 - scheduler - ERROR - Auto-kick: błąd dla kanału -1002085180516, user 5794369342: Telegram server says - Bad Request: not enough rights to restrict/unrestrict chat member
+2026-02-01 17:48:46 - scheduler - ERROR - Auto-kick: błąd dla kanału -1002085180516, user 1342685360: Telegram server says - Bad Request: not enough rights to restrict/unrestrict chat member
+2026-02-01 17:49:45 - scheduler - INFO - Znaleziono 2 wygasłych subskrypcji
+2026-02-01 17:49:45 - scheduler - ERROR - Auto-kick: błąd dla kanału -1002085180516, user 5794369342: Telegram server says - Bad Request: not enough rights to restrict/unrestrict chat member
+2026-02-01 17:49:46 - scheduler - ERROR - Auto-kick: błąd dla kanału -1002085180516, user 1342685360: Telegram server says - Bad Request: not enough rights to restrict/unrestrict chat member
+2026-02-01 17:50:45 - scheduler - INFO - Znaleziono 2 wygasłych subskrypcji
+2026-02-01 17:50:45 - scheduler - ERROR - Auto-kick: błąd dla kanału -1002085180516, user 5794369342: Telegram server says - Bad Request: not enough rights to restrict/unrestrict chat member
+2026-02-01 17:50:46 - scheduler - ERROR - Auto-kick: błąd dla kanału -1002085180516, user 1342685360: Telegram server says - Bad Request: not enough rights to restrict/unrestrict chat member
+2026-02-01 17:51:45 - scheduler - INFO - Znaleziono 2 wygasłych subskrypcji
+2026-02-01 17:51:45 - scheduler - ERROR - Błąd banowania 5794369342: Telegram server says - Forbidden: bot is not a member of the channel chat
+2026-02-01 17:51:45 - scheduler - ERROR - Błąd banowania 1342685360: Telegram server says - Forbidden: bot is not a member of the channel chat
+2026-02-01 17:52:45 - scheduler - INFO - Znaleziono 1 wygasłych subskrypcji
+2026-02-01 17:52:47 - scheduler - INFO - Zbanowano 1 użytkowników
+2026-02-01 17:57:10 - scheduler - INFO - Scheduler uruchomiony (publish co 1 min)
+2026-02-01 17:59:24 - scheduler - INFO - Scheduler uruchomiony (publish co 1 min)
+2026-02-01 18:01:25 - scheduler - INFO - Znaleziono 1 wygasłych subskrypcji
+2026-02-01 18:01:26 - scheduler - INFO - Zbanowano 1 użytkowników
+2026-02-01 18:05:25 - scheduler - INFO - Znaleziono 1 wygasłych subskrypcji
+2026-02-01 18:05:26 - scheduler - INFO - Zbanowano 1 użytkowników

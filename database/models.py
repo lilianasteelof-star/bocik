@@ -254,6 +254,130 @@ class BotUsersManager:
             logger.error(f"Błąd bot_users get_all: {e}")
             return []
 
+    @staticmethod
+    async def update_user_display_info(
+        user_id: int, username: Optional[str] = None, full_name: Optional[str] = None
+    ) -> bool:
+        """Aktualizacja last_username i last_full_name (wyświetlanie w panelu aktywni użytkownicy)."""
+        try:
+            connection = await db_manager.get_connection()
+            if USE_POSTGRES:
+                async with connection.execute("""
+                    UPDATE bot_users SET last_username = COALESCE($1, last_username), last_full_name = COALESCE($2, last_full_name)
+                    WHERE user_id = $3
+                """, (username or None, full_name or None, user_id)): pass
+            else:
+                async with connection.execute("""
+                    UPDATE bot_users SET last_username = COALESCE(?, last_username), last_full_name = COALESCE(?, last_full_name)
+                    WHERE user_id = ?
+                """, (username or None, full_name or None, user_id)): pass
+            await connection.commit()
+            return True
+        except Exception as e:
+            logger.error(f"Błąd update_user_display_info: {e}")
+            return False
+
+    @staticmethod
+    async def get_users_with_activity(page: int = 0, per_page: int = 15) -> List[Dict[str, Any]]:
+        """Użytkownicy, którzy mają interakcje z botem (otwarty chat), posortowani po ostatniej aktywności."""
+        try:
+            connection = await db_manager.get_connection()
+            offset = page * per_page
+            if USE_POSTGRES:
+                sql = """
+                    SELECT u.user_id, u.last_username, u.last_full_name, MAX(l.created_at) AS last_activity
+                    FROM bot_users u
+                    INNER JOIN user_interaction_logs l ON l.user_id = u.user_id
+                    GROUP BY u.user_id, u.last_username, u.last_full_name
+                    ORDER BY last_activity DESC
+                    LIMIT $1 OFFSET $2
+                """
+                async with connection.execute(sql, (per_page, offset)) as cursor:
+                    rows = await cursor.fetchall()
+            else:
+                sql = """
+                    SELECT u.user_id, u.last_username, u.last_full_name, MAX(l.created_at) AS last_activity
+                    FROM bot_users u
+                    INNER JOIN user_interaction_logs l ON l.user_id = u.user_id
+                    GROUP BY u.user_id, u.last_username, u.last_full_name
+                    ORDER BY last_activity DESC
+                    LIMIT ? OFFSET ?
+                """
+                async with connection.execute(sql, (per_page, offset)) as cursor:
+                    rows = await cursor.fetchall()
+            return [dict(row) for row in rows]
+        except Exception as e:
+            logger.error(f"Błąd get_users_with_activity: {e}")
+            return []
+
+    @staticmethod
+    async def count_users_with_activity() -> int:
+        """Liczba użytkowników mających co najmniej jedną interakcję."""
+        try:
+            connection = await db_manager.get_connection()
+            async with connection.execute(
+                "SELECT COUNT(DISTINCT user_id) FROM user_interaction_logs"
+            ) as cursor:
+                row = await cursor.fetchone()
+            return row[0] if row else 0
+        except Exception as e:
+            logger.error(f"Błąd count_users_with_activity: {e}")
+            return 0
+
+
+class UserInteractionLog:
+    """Logi interakcji użytkowników z botem (dla panelu super-admina)."""
+
+    @staticmethod
+    async def add(user_id: int, event_type: str, content_preview: Optional[str] = None) -> bool:
+        try:
+            connection = await db_manager.get_connection()
+            prev = (content_preview or "")[:500]
+            now_dt = datetime.now()
+            now_param = now_dt if USE_POSTGRES else now_dt.isoformat()
+            if USE_POSTGRES:
+                async with connection.execute("""
+                    INSERT INTO user_interaction_logs (user_id, event_type, content_preview, created_at)
+                    VALUES ($1, $2, $3, $4)
+                """, (user_id, event_type, prev, now_param)): pass
+            else:
+                async with connection.execute("""
+                    INSERT INTO user_interaction_logs (user_id, event_type, content_preview, created_at)
+                    VALUES (?, ?, ?, ?)
+                """, (user_id, event_type, prev, now_param)): pass
+            await connection.commit()
+            return True
+        except Exception as e:
+            logger.error(f"Błąd user_interaction_log add: {e}")
+            return False
+
+    @staticmethod
+    async def get_last_for_user(user_id: int, limit: int = 20) -> List[Dict[str, Any]]:
+        try:
+            connection = await db_manager.get_connection()
+            if USE_POSTGRES:
+                async with connection.execute("""
+                    SELECT id, user_id, event_type, content_preview, created_at
+                    FROM user_interaction_logs
+                    WHERE user_id = $1
+                    ORDER BY created_at DESC
+                    LIMIT $2
+                """, (user_id, limit)) as cursor:
+                    rows = await cursor.fetchall()
+            else:
+                async with connection.execute("""
+                    SELECT id, user_id, event_type, content_preview, created_at
+                    FROM user_interaction_logs
+                    WHERE user_id = ?
+                    ORDER BY created_at DESC
+                    LIMIT ?
+                """, (user_id, limit)) as cursor:
+                    rows = await cursor.fetchall()
+            return [dict(row) for row in rows]
+        except Exception as e:
+            logger.error(f"Błąd get_last_for_user: {e}")
+            return []
+
 
 class InboxMuted:
     """Wyciszeni użytkownicy – admin nie dostaje powiadomień z inbox od tych userów."""

@@ -28,8 +28,9 @@ from database.models import (
     SettingsManager,
     BotUsersManager,
     InboxMuted,
+    UserInteractionLog,
 )
-from utils.states import SuperAdminBroadcast, SuperAdminBlacklist, SuperAdminInbox
+from utils.states import SuperAdminBroadcast, SuperAdminBlacklist, SuperAdminInbox, SuperAdminChatUser
 from utils.scheduler import BotScheduler
 from handlers.events import get_pending_join_requests, pop_pending_join_request
 
@@ -40,6 +41,7 @@ ADMIN_ID = settings.ADMIN_ID
 PER_PAGE_CHANNELS = 8
 PER_PAGE_USERS = 15
 PER_PAGE_BLACKLIST = 15
+PER_PAGE_CHAT_USERS = 12
 
 
 def _is_admin(user_id: int) -> bool:
@@ -50,6 +52,7 @@ def _main_menu_keyboard() -> InlineKeyboardMarkup:
     return InlineKeyboardMarkup(inline_keyboard=[
         [InlineKeyboardButton(text="📊 Dashboard", callback_data="superadmin_dashboard")],
         [InlineKeyboardButton(text="📋 Kanały i użytkownicy", callback_data="superadmin_channels_menu")],
+        [InlineKeyboardButton(text="💬 Aktywni użytkownicy (chat)", callback_data="superadmin_chat_users")],
         [InlineKeyboardButton(text="📢 Broadcast", callback_data="superadmin_broadcast")],
         [InlineKeyboardButton(text="📩 Inbox / Wiadomości", callback_data="superadmin_inbox_info")],
         [InlineKeyboardButton(text="🛡️ Ochrona", callback_data="superadmin_protection")],
@@ -310,6 +313,184 @@ async def _render_users_page(callback: CallbackQuery, page: int, channel_id: int
         )
     except TelegramBadRequest:
         pass
+
+
+# ---------- Aktywni użytkownicy (chat) ----------
+@superadmin_router.callback_query(F.data == "superadmin_chat_users")
+async def superadmin_chat_users(callback: CallbackQuery):
+    """Lista użytkowników z interakcjami z botem (otwarty chat)."""
+    if not _is_admin(callback.from_user.id):
+        await callback.answer("🚫 Brak dostępu.", show_alert=True)
+        return
+    await _render_chat_users_page(callback, 0)
+    await callback.answer()
+
+
+@superadmin_router.callback_query(F.data.startswith("superadmin_chat_users_page_"))
+async def superadmin_chat_users_page(callback: CallbackQuery):
+    if not _is_admin(callback.from_user.id):
+        await callback.answer("🚫 Brak dostępu.", show_alert=True)
+        return
+    try:
+        page = int(callback.data.split("_")[-1])
+    except (IndexError, ValueError):
+        page = 0
+    await _render_chat_users_page(callback, page)
+    await callback.answer()
+
+
+def _chat_user_label(u: dict) -> str:
+    """Etykieta użytkownika: @username, lub imię, lub ID (max 60 znaków na przycisk)."""
+    uid = u.get("user_id")
+    username = (u.get("last_username") or "").strip()
+    full_name = (u.get("last_full_name") or "").strip()
+    if username:
+        label = f"@{username}"
+    elif full_name:
+        label = full_name
+    else:
+        label = str(uid)
+    return (label[:60] + "…") if len(label) > 60 else label
+
+
+async def _render_chat_users_page(callback: CallbackQuery, page: int):
+    total = await BotUsersManager.count_users_with_activity()
+    users = await BotUsersManager.get_users_with_activity(page, PER_PAGE_CHAT_USERS)
+    lines = []
+    for u in users:
+        uid = u.get("user_id")
+        label = _chat_user_label(u)
+        last = u.get("last_activity")
+        last_str = last.strftime("%Y-%m-%d %H:%M") if hasattr(last, "strftime") else str(last)[:16] if last else "—"
+        lines.append(f"• **{label}** (`{uid}`) — ostatnia aktywność: {last_str}")
+    npages = max(1, (total + PER_PAGE_CHAT_USERS - 1) // PER_PAGE_CHAT_USERS)
+    text = (
+        "💬 **Aktywni użytkownicy (chat)**\n\n"
+        "Użytkownicy, którzy nawiązali interakcję z botem.\n\n"
+        + ("\n".join(lines) if lines else "_Brak aktywnych użytkowników._")
+        + f"\n\nStrona {page + 1}/{npages} (łącznie: {total})"
+    )
+    kb = []
+    for u in users:
+        uid = u["user_id"]
+        label = _chat_user_label(u)
+        kb.append([InlineKeyboardButton(text=f"👤 {label}", callback_data=f"superadmin_chat_user_{uid}")])
+    if page > 0:
+        kb.append([InlineKeyboardButton(text="◀", callback_data=f"superadmin_chat_users_page_{page - 1}")])
+    if page < npages - 1:
+        kb.append([InlineKeyboardButton(text="▶", callback_data=f"superadmin_chat_users_page_{page + 1}")])
+    kb.append([InlineKeyboardButton(text="🔙 Menu", callback_data="superadmin_panel")])
+    try:
+        await callback.message.edit_text(
+            text,
+            reply_markup=InlineKeyboardMarkup(inline_keyboard=kb),
+            parse_mode=ParseMode.MARKDOWN,
+        )
+    except TelegramBadRequest:
+        pass
+
+
+@superadmin_router.callback_query(F.data.startswith("superadmin_chat_user_"))
+async def superadmin_chat_user_detail(callback: CallbackQuery, bot: Bot, state: FSMContext):
+    """Szczegóły użytkownika: ostatnie 20 logów, blok/odblok, napisz jako bot."""
+    if not _is_admin(callback.from_user.id):
+        await callback.answer("🚫 Brak dostępu.", show_alert=True)
+        return
+    part = callback.data.replace("superadmin_chat_user_", "")
+    if "_" in part:
+        action, uid_str = part.split("_", 1)
+        try:
+            uid = int(uid_str)
+        except ValueError:
+            await callback.answer("Błąd", show_alert=True)
+            return
+        if action == "block":
+            if settings.is_superadmin(uid):
+                await callback.answer("Nie możesz zablokować superadmina.", show_alert=True)
+                return
+            await GlobalBlacklist.add(uid)
+            await callback.answer("Użytkownik zablokowany.", show_alert=True)
+            await _render_chat_user_detail(callback, uid)
+            return
+        if action == "unblock":
+            await GlobalBlacklist.remove(uid)
+            await callback.answer("Użytkownik odblokowany.", show_alert=True)
+            await _render_chat_user_detail(callback, uid)
+            return
+        if action == "msg":
+            await callback.answer()
+            await callback.message.answer(
+                f"Napisz **wiadomość jako bot** do użytkownika `{uid}` (wyślij tekst).\n\n_/start — anuluj_",
+                parse_mode=ParseMode.MARKDOWN,
+            )
+            await state.set_state(SuperAdminChatUser.waiting_message_to_user)
+            await state.update_data(chat_user_target_uid=uid)
+            return
+        await _render_chat_user_detail(callback, uid)
+        await callback.answer()
+        return
+    try:
+        uid = int(part)
+    except ValueError:
+        await callback.answer("Błąd", show_alert=True)
+        return
+    await _render_chat_user_detail(callback, uid)
+    await callback.answer()
+
+
+async def _render_chat_user_detail(callback: CallbackQuery, user_id: int):
+    logs = await UserInteractionLog.get_last_for_user(user_id, 20)
+    is_banned = await GlobalBlacklist.is_banned(user_id)
+    log_lines = []
+    for L in logs:
+        created = L.get("created_at")
+        ts = created.strftime("%m-%d %H:%M") if hasattr(created, "strftime") else str(created)[:16] if created else "?"
+        typ = L.get("event_type") or "?"
+        prev = (L.get("content_preview") or "")[:60].replace("\n", " ")
+        log_lines.append(f"  {ts} [{typ}] {prev}")
+    log_block = "\n".join(log_lines) if log_lines else "  (brak logów)"
+    if len(log_block) > 2500:
+        log_block = log_block[-2500:]
+    status = "🚫 **Zablokowany**" if is_banned else "✅ Aktywny"
+    text = (
+        f"👤 **Użytkownik** `{user_id}`\n\n"
+        f"Status: {status}\n\n"
+        "**Ostatnie 20 logów:**\n```\n" + log_block + "\n```"
+    )
+    kb = []
+    if is_banned:
+        kb.append([InlineKeyboardButton(text="✅ Odblokuj", callback_data=f"superadmin_chat_user_unblock_{user_id}")])
+    else:
+        kb.append([InlineKeyboardButton(text="🚫 Zablokuj", callback_data=f"superadmin_chat_user_block_{user_id}")])
+    kb.append([InlineKeyboardButton(text="✉️ Napisz jako bot", callback_data=f"superadmin_chat_user_msg_{user_id}")])
+    kb.append([InlineKeyboardButton(text="🔙 Lista", callback_data="superadmin_chat_users")])
+    try:
+        await callback.message.edit_text(
+            text,
+            reply_markup=InlineKeyboardMarkup(inline_keyboard=kb),
+            parse_mode=ParseMode.MARKDOWN,
+        )
+    except TelegramBadRequest:
+        pass
+
+
+@superadmin_router.message(StateFilter(SuperAdminChatUser.waiting_message_to_user), F.text)
+async def superadmin_chat_user_send_message(message: Message, state: FSMContext, bot: Bot):
+    """Wysłanie wiadomości jako bot do wybranego użytkownika."""
+    if not _is_admin(message.from_user.id):
+        return
+    data = await state.get_data()
+    uid = data.get("chat_user_target_uid")
+    await state.clear()
+    if uid is None:
+        await message.reply("Sesja wygasła.")
+        return
+    try:
+        await bot.send_message(uid, message.text or "-", parse_mode=ParseMode.MARKDOWN)
+        await message.reply(f"✅ Wysłano wiadomość do użytkownika `{uid}`.", parse_mode=ParseMode.MARKDOWN)
+    except Exception as e:
+        logger.warning("chat_user send_message: %s", e)
+        await message.reply(f"❌ Nie udało się wysłać: {e}")
 
 
 # ---------- Ochrona ----------

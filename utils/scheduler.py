@@ -7,12 +7,15 @@ import asyncio
 from datetime import datetime
 from typing import Optional
 from aiogram import Bot
+from aiogram.exceptions import TelegramBadRequest
+from aiogram.enums import ChatMemberStatus
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
 from apscheduler.triggers.interval import IntervalTrigger
 from apscheduler.triggers.date import DateTrigger
 from apscheduler.jobstores.base import JobLookupError
 
 from aiogram.enums import ParseMode
+from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from config import settings
 from database.models import SubscriptionManager, PostManager
 from handlers.admin_posts import send_post_to_channel
@@ -116,63 +119,159 @@ class BotScheduler:
             from database.models import SettingsManager
 
             kicked_count = 0
+            # Kanały, dla których już powiadomiliśmy o braku uprawnienia "Ban users" (unikanie duplikatów)
+            channels_no_ban_right: set[int] = set()
+
             for subscription in expired_subs:
                 try:
-                    # Get owner specific premium channel
                     premium_channel_id = await SettingsManager.get_premium_channel_id(subscription.owner_id)
-                    
                     if not premium_channel_id:
                         logger.warning(f"Brak kanału premium dla ownera {subscription.owner_id} - skip ban for {subscription.user_id}")
                         continue
 
-                    # 1. BANOWANIE NA TELEGRAMIE
-                    # Nie robimy unban_chat_member -> użytkownik zostaje na czarnej liście
-                    await self.bot.ban_chat_member(
-                        chat_id=premium_channel_id,
-                        user_id=subscription.user_id
-                    )
+                    # 0. Sprawdzenie: czy bot ma uprawnienie "Ban users" (can_restrict_members) – bez tego ban_chat_member zwraca "not enough rights to restrict"
+                    if premium_channel_id not in channels_no_ban_right:
+                        try:
+                            bot_member = await self.bot.get_chat_member(premium_channel_id, self.bot.id)
+                            if getattr(bot_member, "status", None) == ChatMemberStatus.ADMINISTRATOR:
+                                if not getattr(bot_member, "can_restrict_members", True):
+                                    channels_no_ban_right.add(premium_channel_id)
+                                    logger.warning(
+                                        "Auto-kick: bot w kanale %s nie ma uprawnienia «Ban users» (can_restrict_members=False)",
+                                        premium_channel_id,
+                                    )
+                                    try:
+                                        await self.bot.send_message(
+                                            chat_id=subscription.owner_id,
+                                            text=(
+                                                "⚠️ <b>Auto-kick nie może działać</b>\n\n"
+                                                "Bot jest administratorem kanału, ale <b>bez uprawnienia „Ban users”</b>.\n\n"
+                                                "📌 <b>Jak włączyć:</b>\n"
+                                                "Kanał → Ustawienia (nazwa kanału) → <b>Administratorzy</b> → wybierz bota → "
+                                                "włącz opcję <b>„Ban users”</b> (Banowanie użytkowników).\n\n"
+                                                "Bez tego prawa Telegram nie pozwala botowi nikogo usunąć z kanału."
+                                            ),
+                                            parse_mode=ParseMode.HTML,
+                                        )
+                                    except Exception:
+                                        pass
+                                    await SubscriptionManager.update_subscription_status(
+                                        subscription.user_id, subscription.channel_id, "banned"
+                                    )
+                                    continue
+                        except Exception as e:
+                            logger.debug("Sprawdzenie uprawnień bota w kanale %s: %s", premium_channel_id, e)
 
-                    # 2. AKTUALIZACJA STATUSU W BAZIE -> BANNED
+                    if premium_channel_id in channels_no_ban_right:
+                        await SubscriptionManager.update_subscription_status(
+                            subscription.user_id, subscription.channel_id, "banned"
+                        )
+                        continue
+
+                    # 1. Sprawdzenie: czy użytkownik jest adminem/właścicielem – bota nie można zbanować
+                    try:
+                        member = await self.bot.get_chat_member(premium_channel_id, subscription.user_id)
+                        status = getattr(member, "status", None)
+                        if status in (ChatMemberStatus.ADMINISTRATOR, ChatMemberStatus.CREATOR):
+                            logger.warning(
+                                "Auto-kick: użytkownik %s jest administratorem/właścicielem kanału %s – tylko Ty możesz go usunąć ręcznie.",
+                                subscription.user_id, premium_channel_id
+                            )
+                            await SubscriptionManager.update_subscription_status(
+                                subscription.user_id, subscription.channel_id, "banned"
+                            )
+                            try:
+                                await self.bot.send_message(
+                                    chat_id=subscription.owner_id,
+                                    text=(
+                                        f"⚠️ <b>Auto-kick nie wykonał się</b>\n\n"
+                                        f"Użytkownik <code>{subscription.user_id}</code> (subskrypcja wygasła) "
+                                        f"jest <b>administratorem lub właścicielem</b> kanału.\n\n"
+                                        f"Bot nie może usuwać adminów – <b>usuń go ręcznie</b> z ustawień kanału "
+                                        f"(Administratorzy → wybierz użytkownika → Usuń).\n\n"
+                                        f"Status w bazie został ustawiony na „banned”."
+                                    ),
+                                    parse_mode=ParseMode.HTML,
+                                )
+                            except Exception:
+                                pass
+                            continue
+                    except Exception as member_err:
+                        logger.debug("get_chat_member(user): %s", member_err)
+
+                    # 2. USUNIĘCIE Z KANAŁU (w Bot API = ban_chat_member)
+                    try:
+                        await self.bot.ban_chat_member(
+                            chat_id=premium_channel_id,
+                            user_id=subscription.user_id
+                        )
+                    except TelegramBadRequest as e:
+                        err_str = str(e).lower()
+                        if "not enough rights" in err_str or "restrict" in err_str:
+                            first_time_channel = premium_channel_id not in channels_no_ban_right
+                            channels_no_ban_right.add(premium_channel_id)
+                            logger.error(
+                                "Auto-kick: błąd dla kanału %s, user %s: %s",
+                                premium_channel_id, subscription.user_id, e
+                            )
+                            if first_time_channel:
+                                try:
+                                    await self.bot.send_message(
+                                        chat_id=subscription.owner_id,
+                                        text=(
+                                            "⚠️ <b>Auto-kick nie wykonał się</b>\n\n"
+                                            "Bot jest administratorem kanału, ale <b>nie ma uprawnienia „Ban users”</b>.\n\n"
+                                            "📌 <b>Jak włączyć:</b>\n"
+                                            "Kanał → Ustawienia (nazwa kanału) → <b>Administratorzy</b> → wybierz bota → "
+                                            "włącz opcję <b>„Ban users”</b> (Banowanie użytkowników).\n\n"
+                                            "Bez tego prawa Telegram nie pozwala botowi nikogo usunąć z kanału."
+                                        ),
+                                        parse_mode=ParseMode.HTML,
+                                    )
+                                except Exception:
+                                    pass
+                        continue
+
+                    # 3. AKTUALIZACJA STATUSU W BAZIE -> BANNED
                     await SubscriptionManager.update_subscription_status(
                         subscription.user_id, subscription.channel_id, "banned"
                     )
 
-                    # 3. POWIADOMIENIE ADMINA (OWNERA)
+                    # 4. POWIADOMIENIE ADMINA (OWNERA) – z powodem i przyciskiem cofnięcia bana
                     safe_name = html.escape(subscription.full_name)
                     safe_user = html.escape(subscription.username or "brak")
+                    reason = "wygaśnięcie subskrypcji"
 
                     notification = (
-                        f"🚫 <b>Auto-Ban: Subskrypcja wygasła</b>\n\n"
+                        f"🚫 <b>Auto-Ban: Użytkownik usunięty z kanału</b>\n\n"
                         f"👤 <a href='tg://user?id={subscription.user_id}'>{safe_name}</a>\n"
                         f"🏷️ Username: @{safe_user}\n"
                         f"💎 Tier: {subscription.tier}\n"
-                        f"📅 Wygasła: {subscription.end_date.strftime('%Y-%m-%d %H:%M')}"
+                        f"📅 Wygasła: {subscription.end_date.strftime('%Y-%m-%d %H:%M')}\n\n"
+                        f"📝 <b>Powód usunięcia:</b> {reason}"
                     )
 
+                    undo_cb = f"undo_ban_{subscription.user_id}_{subscription.channel_id}_{subscription.owner_id}"
+                    keyboard = InlineKeyboardMarkup(inline_keyboard=[
+                        [InlineKeyboardButton(text="↩️ Cofnij bana", callback_data=undo_cb)]
+                    ])
                     await self.bot.send_message(
                         chat_id=subscription.owner_id,
                         text=notification,
-                        parse_mode=ParseMode.HTML
+                        parse_mode=ParseMode.HTML,
+                        reply_markup=keyboard,
                     )
 
-                    # 4. POWIADOMIENIE UŻYTKOWNIKA
-                    try:
-                        expiry_message = (
-                            f"⏰ <b>Twoja subskrypcja wygasła</b>\n\n"
-                            f"Zostałeś usunięty z kanału.\n"
-                            f"Aby odnowić dostęp, skontaktuj się z administratorem."
-                        )
-                        await self.bot.send_message(
-                            chat_id=subscription.user_id,
-                            text=expiry_message,
-                            parse_mode=ParseMode.HTML
-                        )
-                    except Exception:
-                        pass  # Często niemożliwe jeśli bot zbanowany
-
+                    # Powiadomienie do zbanowanego użytkownika wyłączone (na życzenie)
                     kicked_count += 1
                     await asyncio.sleep(1)  # Unikanie rate limitów
 
+                except TelegramBadRequest as kick_error:
+                    if "not enough rights" in str(kick_error).lower() or "restrict" in str(kick_error).lower():
+                        pass  # już zalogowano i powiadomiono ownera wyżej
+                    else:
+                        logger.error("Błąd usuwania użytkownika %s z kanału: %s", subscription.user_id, kick_error)
+                    continue
                 except Exception as kick_error:
                     logger.error(f"Błąd banowania {subscription.user_id}: {kick_error}")
                     continue

@@ -11588,3 +11588,892 @@ aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: messa
 2026-02-01 07:23:06 - apscheduler.executors.default - INFO - Job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 07:24:06 CET)" executed successfully
 2026-02-01 07:23:06 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T07:23:06.284659
 2026-02-01 07:23:06 - database - INFO - Zapytanie SQL zwróciło 0 wygasłych subskrypcji
+2026-02-01 07:23:23 - handlers - INFO - Join request (free) zapisany: channel=-1002032389748 user_id=6970766109
+2026-02-01 07:23:23 - aiogram.event - INFO - Update id=619261700 is handled. Duration 110 ms by bot id=8208421266
+2026-02-01 07:24:06 - apscheduler.executors.default - INFO - Running job "Automatyczne usuwanie wygasłych subskrypcji (trigger: interval[0:01:00], next run at: 2026-02-01 07:25:06 CET)" (scheduled at 2026-02-01 07:24:06.268997+01:00)
+2026-02-01 07:24:06 - apscheduler.executors.default - INFO - Running job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 07:25:06 CET)" (scheduled at 2026-02-01 07:24:06.268997+01:00)
+2026-02-01 07:24:06 - apscheduler.executors.default - INFO - Job "Automatyczne usuwanie wygasłych subskrypcji (trigger: interval[0:01:00], next run at: 2026-02-01 07:25:06 CET)" executed successfully
+2026-02-01 07:24:06 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T07:24:06.280103
+2026-02-01 07:24:06 - apscheduler.executors.default - INFO - Job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 07:25:06 CET)" executed successfully
+2026-02-01 07:24:06 - database - INFO - Zapytanie SQL zwróciło 0 wygasłych subskrypcji
+2026-02-01 07:24:07 - handlers - INFO - Join request (free) zapisany: channel=-1002032389748 user_id=8427635636
+2026-02-01 07:24:07 - aiogram.event - INFO - Update id=619261701 is handled. Duration 93 ms by bot id=8208421266
+2026-02-01 15:52:20 - __main__ - INFO - Middleware skonfigurowane
+2026-02-01 15:52:20 - __main__ - INFO - Routery skonfigurowane
+2026-02-01 15:52:20 - __main__ - INFO - Podstawowe komendy skonfigurowane
+2026-02-01 15:52:20 - __main__ - INFO - Uruchamianie Premium Bota...
+2026-02-01 15:52:20 - database - INFO - Połączono z PostgreSQL – pula połączeń
+2026-02-01 15:52:20 - database - INFO - Tabele PostgreSQL (Supabase) zainicjalizowane
+2026-02-01 15:52:21 - __main__ - INFO - Baza danych zainicjalizowana
+2026-02-01 15:52:21 - __main__ - INFO - Komendy bota ustawione
+2026-02-01 15:52:21 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-01 15:52:21 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-01 15:52:21 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-01 15:52:21 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-01 15:52:21 - apscheduler.scheduler - INFO - Added job "Automatyczne usuwanie wygasłych subskrypcji" to job store "default"
+2026-02-01 15:52:21 - apscheduler.scheduler - INFO - Added job "Publikowanie zaplanowanych postów" to job store "default"
+2026-02-01 15:52:21 - apscheduler.scheduler - INFO - Added job "SFS – sprawdzanie co 24h (placeholder)" to job store "default"
+2026-02-01 15:52:21 - apscheduler.scheduler - INFO - Added job "SFS – aktualizacja subów co 6h" to job store "default"
+2026-02-01 15:52:21 - apscheduler.scheduler - INFO - Scheduler started
+2026-02-01 15:52:21 - scheduler - INFO - Scheduler uruchomiony (publish co 1 min)
+2026-02-01 15:52:21 - __main__ - INFO - Bot rozpoczyna pobieranie aktualizacji...
+2026-02-01 15:52:21 - aiogram.dispatcher - INFO - Start polling
+2026-02-01 15:52:21 - aiogram.dispatcher - INFO - Run polling for bot @ThreadsStealerBot id=8217774793 - 'ThreadsStealerBot'
+2026-02-01 15:53:21 - apscheduler.executors.default - INFO - Running job "Automatyczne usuwanie wygasłych subskrypcji (trigger: interval[0:01:00], next run at: 2026-02-01 15:54:21 CET)" (scheduled at 2026-02-01 15:53:21.601651+01:00)
+2026-02-01 15:53:21 - apscheduler.executors.default - INFO - Running job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 15:54:21 CET)" (scheduled at 2026-02-01 15:53:21.601651+01:00)
+2026-02-01 15:53:21 - apscheduler.executors.default - INFO - Job "Automatyczne usuwanie wygasłych subskrypcji (trigger: interval[0:01:00], next run at: 2026-02-01 15:54:21 CET)" executed successfully
+2026-02-01 15:53:21 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T15:53:21.618391
+2026-02-01 15:53:21 - apscheduler.executors.default - INFO - Job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 15:54:21 CET)" executed successfully
+2026-02-01 15:53:21 - database - INFO - Zapytanie SQL zwróciło 0 wygasłych subskrypcji
+2026-02-01 15:54:21 - apscheduler.executors.default - INFO - Running job "Automatyczne usuwanie wygasłych subskrypcji (trigger: interval[0:01:00], next run at: 2026-02-01 15:55:21 CET)" (scheduled at 2026-02-01 15:54:21.601651+01:00)
+2026-02-01 15:54:21 - apscheduler.executors.default - INFO - Running job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 15:55:21 CET)" (scheduled at 2026-02-01 15:54:21.601651+01:00)
+2026-02-01 15:54:21 - apscheduler.executors.default - INFO - Job "Automatyczne usuwanie wygasłych subskrypcji (trigger: interval[0:01:00], next run at: 2026-02-01 15:55:21 CET)" executed successfully
+2026-02-01 15:54:21 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T15:54:21.606236
+2026-02-01 15:54:21 - apscheduler.executors.default - INFO - Job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 15:55:21 CET)" executed successfully
+2026-02-01 15:54:21 - database - INFO - Zapytanie SQL zwróciło 0 wygasłych subskrypcji
+2026-02-01 15:55:21 - apscheduler.executors.default - INFO - Running job "Automatyczne usuwanie wygasłych subskrypcji (trigger: interval[0:01:00], next run at: 2026-02-01 15:56:21 CET)" (scheduled at 2026-02-01 15:55:21.601651+01:00)
+2026-02-01 15:55:21 - apscheduler.executors.default - INFO - Running job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 15:56:21 CET)" (scheduled at 2026-02-01 15:55:21.601651+01:00)
+2026-02-01 15:55:21 - apscheduler.executors.default - INFO - Job "Automatyczne usuwanie wygasłych subskrypcji (trigger: interval[0:01:00], next run at: 2026-02-01 15:56:21 CET)" executed successfully
+2026-02-01 15:55:21 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T15:55:21.604885
+2026-02-01 15:55:21 - apscheduler.executors.default - INFO - Job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 15:56:21 CET)" executed successfully
+2026-02-01 15:55:21 - database - INFO - Zapytanie SQL zwróciło 0 wygasłych subskrypcji
+2026-02-01 15:56:21 - apscheduler.executors.default - INFO - Running job "Automatyczne usuwanie wygasłych subskrypcji (trigger: interval[0:01:00], next run at: 2026-02-01 15:57:21 CET)" (scheduled at 2026-02-01 15:56:21.601651+01:00)
+2026-02-01 15:56:21 - apscheduler.executors.default - INFO - Running job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 15:57:21 CET)" (scheduled at 2026-02-01 15:56:21.601651+01:00)
+2026-02-01 15:56:21 - apscheduler.executors.default - INFO - Job "Automatyczne usuwanie wygasłych subskrypcji (trigger: interval[0:01:00], next run at: 2026-02-01 15:57:21 CET)" executed successfully
+2026-02-01 15:56:21 - apscheduler.executors.default - INFO - Job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 15:57:21 CET)" executed successfully
+2026-02-01 15:56:21 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T15:56:21.607041
+2026-02-01 15:56:21 - database - INFO - Zapytanie SQL zwróciło 0 wygasłych subskrypcji
+2026-02-01 15:57:21 - apscheduler.executors.default - INFO - Running job "Automatyczne usuwanie wygasłych subskrypcji (trigger: interval[0:01:00], next run at: 2026-02-01 15:58:21 CET)" (scheduled at 2026-02-01 15:57:21.601651+01:00)
+2026-02-01 15:57:21 - apscheduler.executors.default - INFO - Running job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 15:58:21 CET)" (scheduled at 2026-02-01 15:57:21.601651+01:00)
+2026-02-01 15:57:21 - apscheduler.executors.default - INFO - Job "Automatyczne usuwanie wygasłych subskrypcji (trigger: interval[0:01:00], next run at: 2026-02-01 15:58:21 CET)" executed successfully
+2026-02-01 15:57:21 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T15:57:21.613985
+2026-02-01 15:57:21 - apscheduler.executors.default - INFO - Job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 15:58:21 CET)" executed successfully
+2026-02-01 15:57:21 - database - INFO - Zapytanie SQL zwróciło 0 wygasłych subskrypcji
+2026-02-01 15:58:46 - __main__ - INFO - Middleware skonfigurowane
+2026-02-01 15:58:46 - __main__ - INFO - Routery skonfigurowane
+2026-02-01 15:58:46 - __main__ - INFO - Podstawowe komendy skonfigurowane
+2026-02-01 15:58:46 - __main__ - INFO - Uruchamianie Premium Bota...
+2026-02-01 15:58:47 - database - INFO - Połączono z PostgreSQL – pula połączeń
+2026-02-01 15:58:47 - database - INFO - Tabele PostgreSQL (Supabase) zainicjalizowane
+2026-02-01 15:58:47 - __main__ - INFO - Baza danych zainicjalizowana
+2026-02-01 15:58:48 - __main__ - INFO - Komendy bota ustawione
+2026-02-01 15:58:48 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-01 15:58:48 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-01 15:58:48 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-01 15:58:48 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-01 15:58:48 - apscheduler.scheduler - INFO - Added job "Automatyczne usuwanie wygasłych subskrypcji" to job store "default"
+2026-02-01 15:58:48 - apscheduler.scheduler - INFO - Added job "Publikowanie zaplanowanych postów" to job store "default"
+2026-02-01 15:58:48 - apscheduler.scheduler - INFO - Added job "SFS – sprawdzanie co 24h (placeholder)" to job store "default"
+2026-02-01 15:58:48 - apscheduler.scheduler - INFO - Added job "SFS – aktualizacja subów co 6h" to job store "default"
+2026-02-01 15:58:48 - apscheduler.scheduler - INFO - Scheduler started
+2026-02-01 15:58:48 - scheduler - INFO - Scheduler uruchomiony (publish co 1 min)
+2026-02-01 15:58:48 - __main__ - INFO - Bot rozpoczyna pobieranie aktualizacji...
+2026-02-01 15:58:48 - aiogram.dispatcher - INFO - Start polling
+2026-02-01 15:58:48 - aiogram.dispatcher - INFO - Run polling for bot @ThreadsStealerBot id=8217774793 - 'ThreadsStealerBot'
+2026-02-01 15:59:37 - aiogram.event - INFO - Update id=352263540 is handled. Duration 546 ms by bot id=8217774793
+2026-02-01 15:59:48 - apscheduler.executors.default - INFO - Running job "Automatyczne usuwanie wygasłych subskrypcji (trigger: interval[0:01:00], next run at: 2026-02-01 16:00:48 CET)" (scheduled at 2026-02-01 15:59:48.113642+01:00)
+2026-02-01 15:59:48 - apscheduler.executors.default - INFO - Running job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 16:00:48 CET)" (scheduled at 2026-02-01 15:59:48.113642+01:00)
+2026-02-01 15:59:48 - apscheduler.executors.default - INFO - Job "Automatyczne usuwanie wygasłych subskrypcji (trigger: interval[0:01:00], next run at: 2026-02-01 16:00:48 CET)" executed successfully
+2026-02-01 15:59:48 - apscheduler.executors.default - INFO - Job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 16:00:48 CET)" executed successfully
+2026-02-01 15:59:48 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T15:59:48.126985
+2026-02-01 15:59:48 - database - INFO - Zapytanie SQL zwróciło 0 wygasłych subskrypcji
+2026-02-01 16:00:48 - apscheduler.executors.default - INFO - Running job "Automatyczne usuwanie wygasłych subskrypcji (trigger: interval[0:01:00], next run at: 2026-02-01 16:01:48 CET)" (scheduled at 2026-02-01 16:00:48.113642+01:00)
+2026-02-01 16:00:48 - apscheduler.executors.default - INFO - Running job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 16:01:48 CET)" (scheduled at 2026-02-01 16:00:48.113642+01:00)
+2026-02-01 16:00:48 - apscheduler.executors.default - INFO - Job "Automatyczne usuwanie wygasłych subskrypcji (trigger: interval[0:01:00], next run at: 2026-02-01 16:01:48 CET)" executed successfully
+2026-02-01 16:00:48 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T16:00:48.135456
+2026-02-01 16:00:48 - apscheduler.executors.default - INFO - Job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 16:01:48 CET)" executed successfully
+2026-02-01 16:00:48 - database - INFO - Zapytanie SQL zwróciło 0 wygasłych subskrypcji
+2026-02-01 16:01:48 - apscheduler.executors.default - INFO - Running job "Automatyczne usuwanie wygasłych subskrypcji (trigger: interval[0:01:00], next run at: 2026-02-01 16:02:48 CET)" (scheduled at 2026-02-01 16:01:48.113642+01:00)
+2026-02-01 16:01:48 - apscheduler.executors.default - INFO - Running job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 16:02:48 CET)" (scheduled at 2026-02-01 16:01:48.113642+01:00)
+2026-02-01 16:01:48 - apscheduler.executors.default - INFO - Job "Automatyczne usuwanie wygasłych subskrypcji (trigger: interval[0:01:00], next run at: 2026-02-01 16:02:48 CET)" executed successfully
+2026-02-01 16:01:48 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T16:01:48.121086
+2026-02-01 16:01:48 - apscheduler.executors.default - INFO - Job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 16:02:48 CET)" executed successfully
+2026-02-01 16:01:48 - database - INFO - Zapytanie SQL zwróciło 0 wygasłych subskrypcji
+2026-02-01 16:02:28 - __main__ - INFO - Middleware skonfigurowane
+2026-02-01 16:02:28 - __main__ - INFO - Routery skonfigurowane
+2026-02-01 16:02:28 - __main__ - INFO - Podstawowe komendy skonfigurowane
+2026-02-01 16:02:28 - __main__ - INFO - Uruchamianie Premium Bota...
+2026-02-01 16:02:28 - database - INFO - Połączono z PostgreSQL – pula połączeń
+2026-02-01 16:02:29 - database - INFO - Tabele PostgreSQL (Supabase) zainicjalizowane
+2026-02-01 16:02:29 - __main__ - INFO - Baza danych zainicjalizowana
+2026-02-01 16:02:29 - __main__ - INFO - Komendy bota ustawione
+2026-02-01 16:02:29 - __main__ - INFO - Przycisk menu (Web App z grafiką) ustawiony
+2026-02-01 16:02:29 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-01 16:02:29 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-01 16:02:29 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-01 16:02:29 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-01 16:02:29 - apscheduler.scheduler - INFO - Added job "Automatyczne usuwanie wygasłych subskrypcji" to job store "default"
+2026-02-01 16:02:29 - apscheduler.scheduler - INFO - Added job "Publikowanie zaplanowanych postów" to job store "default"
+2026-02-01 16:02:29 - apscheduler.scheduler - INFO - Added job "SFS – sprawdzanie co 24h (placeholder)" to job store "default"
+2026-02-01 16:02:29 - apscheduler.scheduler - INFO - Added job "SFS – aktualizacja subów co 6h" to job store "default"
+2026-02-01 16:02:29 - apscheduler.scheduler - INFO - Scheduler started
+2026-02-01 16:02:29 - scheduler - INFO - Scheduler uruchomiony (publish co 1 min)
+2026-02-01 16:02:29 - __main__ - INFO - Bot rozpoczyna pobieranie aktualizacji...
+2026-02-01 16:02:29 - aiogram.dispatcher - INFO - Start polling
+2026-02-01 16:02:29 - aiogram.dispatcher - INFO - Run polling for bot @ThreadsStealerBot id=8217774793 - 'ThreadsStealerBot'
+2026-02-01 16:03:29 - apscheduler.executors.default - INFO - Running job "Automatyczne usuwanie wygasłych subskrypcji (trigger: interval[0:01:00], next run at: 2026-02-01 16:04:29 CET)" (scheduled at 2026-02-01 16:03:29.782102+01:00)
+2026-02-01 16:03:29 - apscheduler.executors.default - INFO - Running job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 16:04:29 CET)" (scheduled at 2026-02-01 16:03:29.782102+01:00)
+2026-02-01 16:03:29 - apscheduler.executors.default - INFO - Job "Automatyczne usuwanie wygasłych subskrypcji (trigger: interval[0:01:00], next run at: 2026-02-01 16:04:29 CET)" executed successfully
+2026-02-01 16:03:29 - apscheduler.executors.default - INFO - Job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 16:04:29 CET)" executed successfully
+2026-02-01 16:03:29 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T16:03:29.788244
+2026-02-01 16:03:29 - database - INFO - Zapytanie SQL zwróciło 0 wygasłych subskrypcji
+2026-02-01 16:04:29 - apscheduler.executors.default - INFO - Running job "Automatyczne usuwanie wygasłych subskrypcji (trigger: interval[0:01:00], next run at: 2026-02-01 16:05:29 CET)" (scheduled at 2026-02-01 16:04:29.782102+01:00)
+2026-02-01 16:04:29 - apscheduler.executors.default - INFO - Running job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 16:05:29 CET)" (scheduled at 2026-02-01 16:04:29.782102+01:00)
+2026-02-01 16:04:29 - apscheduler.executors.default - INFO - Job "Automatyczne usuwanie wygasłych subskrypcji (trigger: interval[0:01:00], next run at: 2026-02-01 16:05:29 CET)" executed successfully
+2026-02-01 16:04:29 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T16:04:29.785414
+2026-02-01 16:04:29 - apscheduler.executors.default - INFO - Job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 16:05:29 CET)" executed successfully
+2026-02-01 16:04:29 - database - INFO - Zapytanie SQL zwróciło 0 wygasłych subskrypcji
+2026-02-01 16:05:29 - apscheduler.executors.default - INFO - Running job "Automatyczne usuwanie wygasłych subskrypcji (trigger: interval[0:01:00], next run at: 2026-02-01 16:06:29 CET)" (scheduled at 2026-02-01 16:05:29.782102+01:00)
+2026-02-01 16:05:29 - apscheduler.executors.default - INFO - Running job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 16:06:29 CET)" (scheduled at 2026-02-01 16:05:29.782102+01:00)
+2026-02-01 16:05:29 - apscheduler.executors.default - INFO - Job "Automatyczne usuwanie wygasłych subskrypcji (trigger: interval[0:01:00], next run at: 2026-02-01 16:06:29 CET)" executed successfully
+2026-02-01 16:05:29 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T16:05:29.800794
+2026-02-01 16:05:29 - apscheduler.executors.default - INFO - Job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 16:06:29 CET)" executed successfully
+2026-02-01 16:05:29 - database - INFO - Zapytanie SQL zwróciło 0 wygasłych subskrypcji
+2026-02-01 16:06:29 - apscheduler.executors.default - INFO - Running job "Automatyczne usuwanie wygasłych subskrypcji (trigger: interval[0:01:00], next run at: 2026-02-01 16:07:29 CET)" (scheduled at 2026-02-01 16:06:29.782102+01:00)
+2026-02-01 16:06:29 - apscheduler.executors.default - INFO - Running job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 16:07:29 CET)" (scheduled at 2026-02-01 16:06:29.782102+01:00)
+2026-02-01 16:06:29 - apscheduler.executors.default - INFO - Job "Automatyczne usuwanie wygasłych subskrypcji (trigger: interval[0:01:00], next run at: 2026-02-01 16:07:29 CET)" executed successfully
+2026-02-01 16:06:29 - apscheduler.executors.default - INFO - Job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 16:07:29 CET)" executed successfully
+2026-02-01 16:06:29 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T16:06:29.791271
+2026-02-01 16:06:29 - database - INFO - Zapytanie SQL zwróciło 0 wygasłych subskrypcji
+2026-02-01 16:07:29 - apscheduler.executors.default - INFO - Running job "Automatyczne usuwanie wygasłych subskrypcji (trigger: interval[0:01:00], next run at: 2026-02-01 16:08:29 CET)" (scheduled at 2026-02-01 16:07:29.782102+01:00)
+2026-02-01 16:07:29 - apscheduler.executors.default - INFO - Running job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 16:08:29 CET)" (scheduled at 2026-02-01 16:07:29.782102+01:00)
+2026-02-01 16:07:29 - apscheduler.executors.default - INFO - Job "Automatyczne usuwanie wygasłych subskrypcji (trigger: interval[0:01:00], next run at: 2026-02-01 16:08:29 CET)" executed successfully
+2026-02-01 16:07:29 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T16:07:29.785785
+2026-02-01 16:07:29 - apscheduler.executors.default - INFO - Job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 16:08:29 CET)" executed successfully
+2026-02-01 16:07:29 - database - INFO - Zapytanie SQL zwróciło 0 wygasłych subskrypcji
+2026-02-01 16:08:29 - apscheduler.executors.default - INFO - Running job "Automatyczne usuwanie wygasłych subskrypcji (trigger: interval[0:01:00], next run at: 2026-02-01 16:09:29 CET)" (scheduled at 2026-02-01 16:08:29.782102+01:00)
+2026-02-01 16:08:29 - apscheduler.executors.default - INFO - Running job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 16:09:29 CET)" (scheduled at 2026-02-01 16:08:29.782102+01:00)
+2026-02-01 16:08:29 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T16:08:29.782940
+2026-02-01 16:08:29 - apscheduler.executors.default - INFO - Job "Automatyczne usuwanie wygasłych subskrypcji (trigger: interval[0:01:00], next run at: 2026-02-01 16:09:29 CET)" executed successfully
+2026-02-01 16:08:29 - apscheduler.executors.default - INFO - Job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 16:09:29 CET)" executed successfully
+2026-02-01 16:08:29 - database - INFO - Zapytanie SQL zwróciło 0 wygasłych subskrypcji
+2026-02-01 16:09:29 - apscheduler.executors.default - INFO - Running job "Automatyczne usuwanie wygasłych subskrypcji (trigger: interval[0:01:00], next run at: 2026-02-01 16:10:29 CET)" (scheduled at 2026-02-01 16:09:29.782102+01:00)
+2026-02-01 16:09:29 - apscheduler.executors.default - INFO - Running job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 16:10:29 CET)" (scheduled at 2026-02-01 16:09:29.782102+01:00)
+2026-02-01 16:09:29 - apscheduler.executors.default - INFO - Job "Automatyczne usuwanie wygasłych subskrypcji (trigger: interval[0:01:00], next run at: 2026-02-01 16:10:29 CET)" executed successfully
+2026-02-01 16:09:29 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T16:09:29.797116
+2026-02-01 16:09:29 - apscheduler.executors.default - INFO - Job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 16:10:29 CET)" executed successfully
+2026-02-01 16:09:29 - database - INFO - Zapytanie SQL zwróciło 0 wygasłych subskrypcji
+2026-02-01 16:10:29 - apscheduler.executors.default - INFO - Running job "Automatyczne usuwanie wygasłych subskrypcji (trigger: interval[0:01:00], next run at: 2026-02-01 16:11:29 CET)" (scheduled at 2026-02-01 16:10:29.782102+01:00)
+2026-02-01 16:10:29 - apscheduler.executors.default - INFO - Running job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 16:11:29 CET)" (scheduled at 2026-02-01 16:10:29.782102+01:00)
+2026-02-01 16:10:29 - apscheduler.executors.default - INFO - Job "Automatyczne usuwanie wygasłych subskrypcji (trigger: interval[0:01:00], next run at: 2026-02-01 16:11:29 CET)" executed successfully
+2026-02-01 16:10:29 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T16:10:29.804140
+2026-02-01 16:10:29 - apscheduler.executors.default - INFO - Job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 16:11:29 CET)" executed successfully
+2026-02-01 16:10:29 - database - INFO - Zapytanie SQL zwróciło 0 wygasłych subskrypcji
+2026-02-01 17:18:59 - __main__ - INFO - Middleware skonfigurowane
+2026-02-01 17:18:59 - __main__ - INFO - Routery skonfigurowane
+2026-02-01 17:18:59 - __main__ - INFO - Podstawowe komendy skonfigurowane
+2026-02-01 17:18:59 - __main__ - INFO - Uruchamianie Premium Bota...
+2026-02-01 17:18:59 - database - INFO - Połączono z PostgreSQL – pula połączeń
+2026-02-01 17:18:59 - database - INFO - Tabele PostgreSQL (Supabase) zainicjalizowane
+2026-02-01 17:19:00 - __main__ - INFO - Baza danych zainicjalizowana
+2026-02-01 17:19:00 - __main__ - INFO - Komendy bota ustawione
+2026-02-01 17:19:00 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-01 17:19:00 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-01 17:19:00 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-01 17:19:00 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-01 17:19:00 - apscheduler.scheduler - INFO - Added job "Automatyczne usuwanie wygasłych subskrypcji" to job store "default"
+2026-02-01 17:19:00 - apscheduler.scheduler - INFO - Added job "Publikowanie zaplanowanych postów" to job store "default"
+2026-02-01 17:19:00 - apscheduler.scheduler - INFO - Added job "SFS – sprawdzanie co 24h (placeholder)" to job store "default"
+2026-02-01 17:19:00 - apscheduler.scheduler - INFO - Added job "SFS – aktualizacja subów co 6h" to job store "default"
+2026-02-01 17:19:00 - apscheduler.scheduler - INFO - Scheduler started
+2026-02-01 17:19:00 - scheduler - INFO - Scheduler uruchomiony (publish co 1 min)
+2026-02-01 17:19:00 - __main__ - INFO - Bot rozpoczyna pobieranie aktualizacji...
+2026-02-01 17:19:00 - aiogram.dispatcher - INFO - Start polling
+2026-02-01 17:19:00 - aiogram.dispatcher - INFO - Run polling for bot @ThreadsStealerBot id=8217774793 - 'ThreadsStealerBot'
+2026-02-01 17:19:12 - aiogram.event - INFO - Update id=352263541 is handled. Duration 343 ms by bot id=8217774793
+2026-02-01 17:19:16 - handlers - WARNING - Błąd pobierania info o czacie -1003064435955: Telegram server says - Bad Request: chat not found
+2026-02-01 17:19:16 - aiogram.event - INFO - Update id=352263542 is handled. Duration 250 ms by bot id=8217774793
+2026-02-01 17:19:18 - aiogram.event - INFO - Update id=352263543 is handled. Duration 63 ms by bot id=8217774793
+2026-02-01 17:19:18 - handlers - WARNING - Bot nie mógł wyjść z kanału -1003064435955: Telegram server says - Bad Request: chat not found
+2026-02-01 17:19:19 - aiogram.event - INFO - Update id=352263544 is handled. Duration 281 ms by bot id=8217774793
+2026-02-01 17:19:21 - aiogram.event - INFO - Update id=352263545 is handled. Duration 218 ms by bot id=8217774793
+2026-02-01 17:19:33 - aiogram.event - INFO - Update id=352263546 is handled. Duration 265 ms by bot id=8217774793
+2026-02-01 17:19:35 - aiogram.event - INFO - Update id=352263547 is handled. Duration 125 ms by bot id=8217774793
+2026-02-01 17:19:39 - aiogram.event - INFO - Update id=352263548 is handled. Duration 343 ms by bot id=8217774793
+2026-02-01 17:20:00 - apscheduler.executors.default - INFO - Running job "Automatyczne usuwanie wygasłych subskrypcji (trigger: interval[0:01:00], next run at: 2026-02-01 17:21:00 CET)" (scheduled at 2026-02-01 17:20:00.446191+01:00)
+2026-02-01 17:20:00 - apscheduler.executors.default - INFO - Running job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 17:21:00 CET)" (scheduled at 2026-02-01 17:20:00.446191+01:00)
+2026-02-01 17:20:00 - apscheduler.executors.default - INFO - Job "Automatyczne usuwanie wygasłych subskrypcji (trigger: interval[0:01:00], next run at: 2026-02-01 17:21:00 CET)" executed successfully
+2026-02-01 17:20:00 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T17:20:00.461164
+2026-02-01 17:20:00 - apscheduler.executors.default - INFO - Job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 17:21:00 CET)" executed successfully
+2026-02-01 17:20:00 - database - INFO - Zapytanie SQL zwróciło 0 wygasłych subskrypcji
+2026-02-01 17:20:23 - aiogram.event - INFO - Update id=352263549 is handled. Duration 688 ms by bot id=8217774793
+2026-02-01 17:20:26 - aiogram.event - INFO - Update id=352263550 is handled. Duration 327 ms by bot id=8217774793
+2026-02-01 17:20:38 - aiogram.event - INFO - Update id=352263551 is handled. Duration 140 ms by bot id=8217774793
+2026-02-01 17:20:41 - aiogram.event - INFO - Update id=352263552 is handled. Duration 375 ms by bot id=8217774793
+2026-02-01 17:20:46 - aiogram.event - INFO - Update id=352263553 is handled. Duration 327 ms by bot id=8217774793
+2026-02-01 17:20:48 - aiogram.event - INFO - Update id=352263554 is handled. Duration 110 ms by bot id=8217774793
+2026-02-01 17:20:55 - aiogram.event - INFO - Update id=352263555 is handled. Duration 344 ms by bot id=8217774793
+2026-02-01 17:20:59 - aiogram.event - INFO - Update id=352263556 is handled. Duration 234 ms by bot id=8217774793
+2026-02-01 17:21:00 - apscheduler.executors.default - INFO - Running job "Automatyczne usuwanie wygasłych subskrypcji (trigger: interval[0:01:00], next run at: 2026-02-01 17:22:00 CET)" (scheduled at 2026-02-01 17:21:00.446191+01:00)
+2026-02-01 17:21:00 - apscheduler.executors.default - INFO - Running job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 17:22:00 CET)" (scheduled at 2026-02-01 17:21:00.446191+01:00)
+2026-02-01 17:21:00 - apscheduler.executors.default - INFO - Job "Automatyczne usuwanie wygasłych subskrypcji (trigger: interval[0:01:00], next run at: 2026-02-01 17:22:00 CET)" executed successfully
+2026-02-01 17:21:00 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T17:21:00.450622
+2026-02-01 17:21:00 - apscheduler.executors.default - INFO - Job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 17:22:00 CET)" executed successfully
+2026-02-01 17:21:00 - database - INFO - Zapytanie SQL zwróciło 0 wygasłych subskrypcji
+2026-02-01 17:22:00 - apscheduler.executors.default - INFO - Running job "Automatyczne usuwanie wygasłych subskrypcji (trigger: interval[0:01:00], next run at: 2026-02-01 17:23:00 CET)" (scheduled at 2026-02-01 17:22:00.446191+01:00)
+2026-02-01 17:22:00 - apscheduler.executors.default - INFO - Running job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 17:23:00 CET)" (scheduled at 2026-02-01 17:22:00.446191+01:00)
+2026-02-01 17:22:00 - apscheduler.executors.default - INFO - Job "Automatyczne usuwanie wygasłych subskrypcji (trigger: interval[0:01:00], next run at: 2026-02-01 17:23:00 CET)" executed successfully
+2026-02-01 17:22:00 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T17:22:00.454956
+2026-02-01 17:22:00 - apscheduler.executors.default - INFO - Job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 17:23:00 CET)" executed successfully
+2026-02-01 17:22:00 - database - INFO - Zapytanie SQL zwróciło 0 wygasłych subskrypcji
+2026-02-01 17:23:00 - apscheduler.executors.default - INFO - Running job "Automatyczne usuwanie wygasłych subskrypcji (trigger: interval[0:01:00], next run at: 2026-02-01 17:24:00 CET)" (scheduled at 2026-02-01 17:23:00.446191+01:00)
+2026-02-01 17:23:00 - apscheduler.executors.default - INFO - Running job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 17:24:00 CET)" (scheduled at 2026-02-01 17:23:00.446191+01:00)
+2026-02-01 17:23:00 - apscheduler.executors.default - INFO - Job "Automatyczne usuwanie wygasłych subskrypcji (trigger: interval[0:01:00], next run at: 2026-02-01 17:24:00 CET)" executed successfully
+2026-02-01 17:23:00 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T17:23:00.463717
+2026-02-01 17:23:00 - apscheduler.executors.default - INFO - Job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 17:24:00 CET)" executed successfully
+2026-02-01 17:23:00 - database - INFO - Zapytanie SQL zwróciło 0 wygasłych subskrypcji
+2026-02-01 17:23:31 - aiogram.event - INFO - Update id=352263557 is handled. Duration 188 ms by bot id=8217774793
+2026-02-01 17:23:32 - aiogram.event - INFO - Update id=352263558 is handled. Duration 235 ms by bot id=8217774793
+2026-02-01 17:23:36 - aiogram.event - INFO - Update id=352263559 is handled. Duration 202 ms by bot id=8217774793
+2026-02-01 17:23:37 - aiogram.event - INFO - Update id=352263560 is handled. Duration 141 ms by bot id=8217774793
+2026-02-01 17:23:41 - aiogram.event - INFO - Update id=352263561 is handled. Duration 469 ms by bot id=8217774793
+2026-02-01 17:24:00 - apscheduler.executors.default - INFO - Running job "Automatyczne usuwanie wygasłych subskrypcji (trigger: interval[0:01:00], next run at: 2026-02-01 17:25:00 CET)" (scheduled at 2026-02-01 17:24:00.446191+01:00)
+2026-02-01 17:24:00 - apscheduler.executors.default - INFO - Running job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 17:25:00 CET)" (scheduled at 2026-02-01 17:24:00.446191+01:00)
+2026-02-01 17:24:00 - apscheduler.executors.default - INFO - Job "Automatyczne usuwanie wygasłych subskrypcji (trigger: interval[0:01:00], next run at: 2026-02-01 17:25:00 CET)" executed successfully
+2026-02-01 17:24:00 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T17:24:00.451728
+2026-02-01 17:24:00 - apscheduler.executors.default - INFO - Job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 17:25:00 CET)" executed successfully
+2026-02-01 17:24:00 - database - INFO - Zapytanie SQL zwróciło 0 wygasłych subskrypcji
+2026-02-01 17:25:00 - apscheduler.executors.default - INFO - Running job "Automatyczne usuwanie wygasłych subskrypcji (trigger: interval[0:01:00], next run at: 2026-02-01 17:26:00 CET)" (scheduled at 2026-02-01 17:25:00.446191+01:00)
+2026-02-01 17:25:00 - apscheduler.executors.default - INFO - Running job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 17:26:00 CET)" (scheduled at 2026-02-01 17:25:00.446191+01:00)
+2026-02-01 17:25:00 - apscheduler.executors.default - INFO - Job "Automatyczne usuwanie wygasłych subskrypcji (trigger: interval[0:01:00], next run at: 2026-02-01 17:26:00 CET)" executed successfully
+2026-02-01 17:25:00 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T17:25:00.453964
+2026-02-01 17:25:00 - apscheduler.executors.default - INFO - Job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 17:26:00 CET)" executed successfully
+2026-02-01 17:25:00 - database - INFO - Zapytanie SQL zwróciło 0 wygasłych subskrypcji
+2026-02-01 17:26:00 - apscheduler.executors.default - INFO - Running job "Automatyczne usuwanie wygasłych subskrypcji (trigger: interval[0:01:00], next run at: 2026-02-01 17:27:00 CET)" (scheduled at 2026-02-01 17:26:00.446191+01:00)
+2026-02-01 17:26:00 - apscheduler.executors.default - INFO - Running job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 17:27:00 CET)" (scheduled at 2026-02-01 17:26:00.446191+01:00)
+2026-02-01 17:26:00 - apscheduler.executors.default - INFO - Job "Automatyczne usuwanie wygasłych subskrypcji (trigger: interval[0:01:00], next run at: 2026-02-01 17:27:00 CET)" executed successfully
+2026-02-01 17:26:00 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T17:26:00.455811
+2026-02-01 17:26:00 - apscheduler.executors.default - INFO - Job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 17:27:00 CET)" executed successfully
+2026-02-01 17:26:00 - database - INFO - Zapytanie SQL zwróciło 0 wygasłych subskrypcji
+2026-02-01 17:26:10 - __main__ - INFO - Middleware skonfigurowane
+2026-02-01 17:26:10 - __main__ - INFO - Routery skonfigurowane
+2026-02-01 17:26:10 - __main__ - INFO - Podstawowe komendy skonfigurowane
+2026-02-01 17:26:10 - __main__ - INFO - Uruchamianie Premium Bota...
+2026-02-01 17:26:10 - database - INFO - Połączono z PostgreSQL – pula połączeń
+2026-02-01 17:26:11 - database - INFO - Tabele PostgreSQL (Supabase) zainicjalizowane
+2026-02-01 17:26:11 - database - INFO - Migracja bot_users: dodano kolumnę last_username
+2026-02-01 17:26:11 - database - INFO - Migracja bot_users: dodano kolumnę last_full_name
+2026-02-01 17:26:11 - __main__ - INFO - Baza danych zainicjalizowana
+2026-02-01 17:26:11 - __main__ - INFO - Komendy bota ustawione
+2026-02-01 17:26:11 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-01 17:26:11 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-01 17:26:11 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-01 17:26:11 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-01 17:26:11 - apscheduler.scheduler - INFO - Added job "Automatyczne usuwanie wygasłych subskrypcji" to job store "default"
+2026-02-01 17:26:11 - apscheduler.scheduler - INFO - Added job "Publikowanie zaplanowanych postów" to job store "default"
+2026-02-01 17:26:11 - apscheduler.scheduler - INFO - Added job "SFS – sprawdzanie co 24h (placeholder)" to job store "default"
+2026-02-01 17:26:11 - apscheduler.scheduler - INFO - Added job "SFS – aktualizacja subów co 6h" to job store "default"
+2026-02-01 17:26:11 - apscheduler.scheduler - INFO - Scheduler started
+2026-02-01 17:26:11 - scheduler - INFO - Scheduler uruchomiony (publish co 1 min)
+2026-02-01 17:26:12 - __main__ - INFO - Bot rozpoczyna pobieranie aktualizacji...
+2026-02-01 17:26:12 - aiogram.dispatcher - INFO - Start polling
+2026-02-01 17:26:12 - aiogram.dispatcher - INFO - Run polling for bot @ThreadsStealerBot id=8217774793 - 'ThreadsStealerBot'
+2026-02-01 17:26:16 - aiogram.event - INFO - Update id=352263562 is handled. Duration 343 ms by bot id=8217774793
+2026-02-01 17:27:11 - apscheduler.executors.default - INFO - Running job "Automatyczne usuwanie wygasłych subskrypcji (trigger: interval[0:01:00], next run at: 2026-02-01 17:28:11 CET)" (scheduled at 2026-02-01 17:27:11.946412+01:00)
+2026-02-01 17:27:11 - apscheduler.executors.default - INFO - Running job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 17:28:11 CET)" (scheduled at 2026-02-01 17:27:11.947548+01:00)
+2026-02-01 17:27:11 - apscheduler.executors.default - INFO - Job "Automatyczne usuwanie wygasłych subskrypcji (trigger: interval[0:01:00], next run at: 2026-02-01 17:28:11 CET)" executed successfully
+2026-02-01 17:27:11 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T17:27:11.958706
+2026-02-01 17:27:11 - apscheduler.executors.default - INFO - Job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 17:28:11 CET)" executed successfully
+2026-02-01 17:27:12 - database - INFO - Zapytanie SQL zwróciło 0 wygasłych subskrypcji
+2026-02-01 17:27:54 - aiogram.event - INFO - Update id=352263563 is handled. Duration 327 ms by bot id=8217774793
+2026-02-01 17:27:56 - aiogram.event - INFO - Update id=352263564 is handled. Duration 313 ms by bot id=8217774793
+2026-02-01 17:27:58 - aiogram.event - INFO - Update id=352263565 is handled. Duration 407 ms by bot id=8217774793
+2026-02-01 17:28:02 - aiogram.event - INFO - Update id=352263566 is handled. Duration 342 ms by bot id=8217774793
+2026-02-01 17:28:05 - aiogram.event - INFO - Update id=352263567 is handled. Duration 311 ms by bot id=8217774793
+2026-02-01 17:28:11 - apscheduler.executors.default - INFO - Running job "Automatyczne usuwanie wygasłych subskrypcji (trigger: interval[0:01:00], next run at: 2026-02-01 17:29:11 CET)" (scheduled at 2026-02-01 17:28:11.946412+01:00)
+2026-02-01 17:28:11 - apscheduler.executors.default - INFO - Running job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 17:29:11 CET)" (scheduled at 2026-02-01 17:28:11.947548+01:00)
+2026-02-01 17:28:11 - apscheduler.executors.default - INFO - Job "Automatyczne usuwanie wygasłych subskrypcji (trigger: interval[0:01:00], next run at: 2026-02-01 17:29:11 CET)" executed successfully
+2026-02-01 17:28:11 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T17:28:11.960970
+2026-02-01 17:28:11 - apscheduler.executors.default - INFO - Job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 17:29:11 CET)" executed successfully
+2026-02-01 17:28:12 - database - INFO - Zapytanie SQL zwróciło 0 wygasłych subskrypcji
+2026-02-01 17:29:11 - apscheduler.executors.default - INFO - Running job "Automatyczne usuwanie wygasłych subskrypcji (trigger: interval[0:01:00], next run at: 2026-02-01 17:30:11 CET)" (scheduled at 2026-02-01 17:29:11.946412+01:00)
+2026-02-01 17:29:11 - apscheduler.executors.default - INFO - Running job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 17:30:11 CET)" (scheduled at 2026-02-01 17:29:11.947548+01:00)
+2026-02-01 17:29:11 - apscheduler.executors.default - INFO - Job "Automatyczne usuwanie wygasłych subskrypcji (trigger: interval[0:01:00], next run at: 2026-02-01 17:30:11 CET)" executed successfully
+2026-02-01 17:29:11 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T17:29:11.954811
+2026-02-01 17:29:11 - apscheduler.executors.default - INFO - Job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 17:30:11 CET)" executed successfully
+2026-02-01 17:29:12 - database - INFO - Zapytanie SQL zwróciło 1 wygasłych subskrypcji
+2026-02-01 17:29:12 - scheduler - INFO - Znaleziono 1 wygasłych subskrypcji
+2026-02-01 17:29:12 - scheduler - ERROR - Błąd banowania 5794369342: Telegram server says - Bad Request: chat not found
+2026-02-01 17:30:03 - aiogram.event - INFO - Update id=352263568 is handled. Duration 202 ms by bot id=8217774793
+2026-02-01 17:30:10 - aiogram.event - INFO - Update id=352263569 is handled. Duration 265 ms by bot id=8217774793
+2026-02-01 17:30:11 - apscheduler.executors.default - INFO - Running job "Automatyczne usuwanie wygasłych subskrypcji (trigger: interval[0:01:00], next run at: 2026-02-01 17:31:11 CET)" (scheduled at 2026-02-01 17:30:11.946412+01:00)
+2026-02-01 17:30:11 - apscheduler.executors.default - INFO - Running job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 17:31:11 CET)" (scheduled at 2026-02-01 17:30:11.947548+01:00)
+2026-02-01 17:30:11 - apscheduler.executors.default - INFO - Job "Automatyczne usuwanie wygasłych subskrypcji (trigger: interval[0:01:00], next run at: 2026-02-01 17:31:11 CET)" executed successfully
+2026-02-01 17:30:11 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T17:30:11.957540
+2026-02-01 17:30:11 - apscheduler.executors.default - INFO - Job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 17:31:11 CET)" executed successfully
+2026-02-01 17:30:12 - database - INFO - Zapytanie SQL zwróciło 1 wygasłych subskrypcji
+2026-02-01 17:30:12 - scheduler - INFO - Znaleziono 1 wygasłych subskrypcji
+2026-02-01 17:30:12 - scheduler - ERROR - Błąd banowania 5794369342: Telegram server says - Bad Request: chat not found
+2026-02-01 17:30:13 - handlers - WARNING - Błąd pobierania info o czacie -1002032389748: Telegram server says - Bad Request: chat not found
+2026-02-01 17:30:13 - aiogram.event - INFO - Update id=352263570 is handled. Duration 264 ms by bot id=8217774793
+2026-02-01 17:30:25 - aiogram.event - INFO - Update id=352263571 is handled. Duration 265 ms by bot id=8217774793
+2026-02-01 17:30:28 - handlers - WARNING - Błąd pobierania info o czacie -1002085180516: Telegram server says - Bad Request: chat not found
+2026-02-01 17:30:28 - aiogram.event - INFO - Update id=352263572 is handled. Duration 234 ms by bot id=8217774793
+2026-02-01 17:30:32 - aiogram.event - INFO - Update id=352263573 is handled. Duration 280 ms by bot id=8217774793
+2026-02-01 17:30:33 - handlers - WARNING - Błąd pobierania info o czacie -1002085180516: Telegram server says - Bad Request: chat not found
+2026-02-01 17:30:33 - aiogram.event - INFO - Update id=352263574 is handled. Duration 218 ms by bot id=8217774793
+2026-02-01 17:30:34 - aiogram.event - INFO - Update id=352263575 is handled. Duration 94 ms by bot id=8217774793
+2026-02-01 17:30:35 - handlers - WARNING - Bot nie mógł wyjść z kanału -1002085180516: Telegram server says - Bad Request: chat not found
+2026-02-01 17:30:36 - aiogram.event - INFO - Update id=352263576 is handled. Duration 328 ms by bot id=8217774793
+2026-02-01 17:30:56 - aiogram.event - INFO - Update id=352263577 is handled. Duration 327 ms by bot id=8217774793
+2026-02-01 17:30:58 - aiogram.event - INFO - Update id=352263578 is handled. Duration 63 ms by bot id=8217774793
+2026-02-01 17:31:06 - aiogram.event - INFO - Update id=352263579 is handled. Duration 125 ms by bot id=8217774793
+2026-02-01 17:31:11 - apscheduler.executors.default - INFO - Running job "Automatyczne usuwanie wygasłych subskrypcji (trigger: interval[0:01:00], next run at: 2026-02-01 17:32:11 CET)" (scheduled at 2026-02-01 17:31:11.946412+01:00)
+2026-02-01 17:31:11 - apscheduler.executors.default - INFO - Running job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 17:32:11 CET)" (scheduled at 2026-02-01 17:31:11.947548+01:00)
+2026-02-01 17:31:11 - apscheduler.executors.default - INFO - Job "Automatyczne usuwanie wygasłych subskrypcji (trigger: interval[0:01:00], next run at: 2026-02-01 17:32:11 CET)" executed successfully
+2026-02-01 17:31:11 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T17:31:11.962655
+2026-02-01 17:31:11 - apscheduler.executors.default - INFO - Job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 17:32:11 CET)" executed successfully
+2026-02-01 17:31:12 - database - INFO - Zapytanie SQL zwróciło 1 wygasłych subskrypcji
+2026-02-01 17:31:12 - scheduler - INFO - Znaleziono 1 wygasłych subskrypcji
+2026-02-01 17:31:12 - scheduler - WARNING - Brak kanału premium dla ownera 7829319839 - skip ban for 5794369342
+2026-02-01 17:32:11 - apscheduler.executors.default - INFO - Running job "Automatyczne usuwanie wygasłych subskrypcji (trigger: interval[0:01:00], next run at: 2026-02-01 17:33:11 CET)" (scheduled at 2026-02-01 17:32:11.946412+01:00)
+2026-02-01 17:32:11 - apscheduler.executors.default - INFO - Running job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 17:33:11 CET)" (scheduled at 2026-02-01 17:32:11.947548+01:00)
+2026-02-01 17:32:11 - apscheduler.executors.default - INFO - Job "Automatyczne usuwanie wygasłych subskrypcji (trigger: interval[0:01:00], next run at: 2026-02-01 17:33:11 CET)" executed successfully
+2026-02-01 17:32:11 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T17:32:11.949358
+2026-02-01 17:32:11 - apscheduler.executors.default - INFO - Job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 17:33:11 CET)" executed successfully
+2026-02-01 17:32:12 - database - INFO - Zapytanie SQL zwróciło 1 wygasłych subskrypcji
+2026-02-01 17:32:12 - scheduler - INFO - Znaleziono 1 wygasłych subskrypcji
+2026-02-01 17:32:12 - scheduler - WARNING - Brak kanału premium dla ownera 7829319839 - skip ban for 5794369342
+2026-02-01 17:32:18 - aiogram.event - INFO - Update id=352263580 is handled. Duration 328 ms by bot id=8217774793
+2026-02-01 17:32:20 - database - INFO - Dodano kanał 👑 Tysiulka - Premium (-1002085180516) dla 7829319839
+2026-02-01 17:32:20 - aiogram.event - INFO - Update id=352263581 is handled. Duration 359 ms by bot id=8217774793
+2026-02-01 17:33:11 - apscheduler.executors.default - INFO - Running job "Automatyczne usuwanie wygasłych subskrypcji (trigger: interval[0:01:00], next run at: 2026-02-01 17:34:11 CET)" (scheduled at 2026-02-01 17:33:11.946412+01:00)
+2026-02-01 17:33:11 - apscheduler.executors.default - INFO - Running job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 17:34:11 CET)" (scheduled at 2026-02-01 17:33:11.947548+01:00)
+2026-02-01 17:33:11 - apscheduler.executors.default - INFO - Job "Automatyczne usuwanie wygasłych subskrypcji (trigger: interval[0:01:00], next run at: 2026-02-01 17:34:11 CET)" executed successfully
+2026-02-01 17:33:11 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T17:33:11.962813
+2026-02-01 17:33:11 - apscheduler.executors.default - INFO - Job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 17:34:11 CET)" executed successfully
+2026-02-01 17:33:12 - database - INFO - Zapytanie SQL zwróciło 1 wygasłych subskrypcji
+2026-02-01 17:33:12 - scheduler - INFO - Znaleziono 1 wygasłych subskrypcji
+2026-02-01 17:33:12 - scheduler - ERROR - Błąd banowania 5794369342: Telegram server says - Bad Request: not enough rights to restrict/unrestrict chat member
+2026-02-01 17:34:11 - apscheduler.executors.default - INFO - Running job "Automatyczne usuwanie wygasłych subskrypcji (trigger: interval[0:01:00], next run at: 2026-02-01 17:35:11 CET)" (scheduled at 2026-02-01 17:34:11.946412+01:00)
+2026-02-01 17:34:11 - apscheduler.executors.default - INFO - Running job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 17:35:11 CET)" (scheduled at 2026-02-01 17:34:11.947548+01:00)
+2026-02-01 17:34:11 - apscheduler.executors.default - INFO - Job "Automatyczne usuwanie wygasłych subskrypcji (trigger: interval[0:01:00], next run at: 2026-02-01 17:35:11 CET)" executed successfully
+2026-02-01 17:34:11 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T17:34:11.956548
+2026-02-01 17:34:11 - apscheduler.executors.default - INFO - Job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 17:35:11 CET)" executed successfully
+2026-02-01 17:34:12 - database - INFO - Zapytanie SQL zwróciło 1 wygasłych subskrypcji
+2026-02-01 17:34:12 - scheduler - INFO - Znaleziono 1 wygasłych subskrypcji
+2026-02-01 17:34:12 - scheduler - ERROR - Błąd banowania 5794369342: Telegram server says - Bad Request: not enough rights to restrict/unrestrict chat member
+2026-02-01 17:35:11 - apscheduler.executors.default - INFO - Running job "Automatyczne usuwanie wygasłych subskrypcji (trigger: interval[0:01:00], next run at: 2026-02-01 17:36:11 CET)" (scheduled at 2026-02-01 17:35:11.946412+01:00)
+2026-02-01 17:35:11 - apscheduler.executors.default - INFO - Running job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 17:36:11 CET)" (scheduled at 2026-02-01 17:35:11.947548+01:00)
+2026-02-01 17:35:11 - apscheduler.executors.default - INFO - Job "Automatyczne usuwanie wygasłych subskrypcji (trigger: interval[0:01:00], next run at: 2026-02-01 17:36:11 CET)" executed successfully
+2026-02-01 17:35:11 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T17:35:11.960773
+2026-02-01 17:35:11 - apscheduler.executors.default - INFO - Job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 17:36:11 CET)" executed successfully
+2026-02-01 17:35:12 - database - INFO - Zapytanie SQL zwróciło 1 wygasłych subskrypcji
+2026-02-01 17:35:12 - scheduler - INFO - Znaleziono 1 wygasłych subskrypcji
+2026-02-01 17:35:12 - scheduler - ERROR - Błąd banowania 5794369342: Telegram server says - Bad Request: not enough rights to restrict/unrestrict chat member
+2026-02-01 17:35:31 - __main__ - INFO - Middleware skonfigurowane
+2026-02-01 17:35:31 - __main__ - INFO - Routery skonfigurowane
+2026-02-01 17:35:31 - __main__ - INFO - Podstawowe komendy skonfigurowane
+2026-02-01 17:35:31 - __main__ - INFO - Uruchamianie Premium Bota...
+2026-02-01 17:35:32 - database - INFO - Połączono z PostgreSQL – pula połączeń
+2026-02-01 17:35:32 - database - INFO - Tabele PostgreSQL (Supabase) zainicjalizowane
+2026-02-01 17:35:32 - __main__ - INFO - Baza danych zainicjalizowana
+2026-02-01 17:35:33 - __main__ - INFO - Komendy bota ustawione
+2026-02-01 17:35:33 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-01 17:35:33 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-01 17:35:33 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-01 17:35:33 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-01 17:35:33 - apscheduler.scheduler - INFO - Added job "Automatyczne usuwanie wygasłych subskrypcji" to job store "default"
+2026-02-01 17:35:33 - apscheduler.scheduler - INFO - Added job "Publikowanie zaplanowanych postów" to job store "default"
+2026-02-01 17:35:33 - apscheduler.scheduler - INFO - Added job "SFS – sprawdzanie co 24h (placeholder)" to job store "default"
+2026-02-01 17:35:33 - apscheduler.scheduler - INFO - Added job "SFS – aktualizacja subów co 6h" to job store "default"
+2026-02-01 17:35:33 - apscheduler.scheduler - INFO - Scheduler started
+2026-02-01 17:35:33 - scheduler - INFO - Scheduler uruchomiony (publish co 1 min)
+2026-02-01 17:35:33 - __main__ - INFO - Bot rozpoczyna pobieranie aktualizacji...
+2026-02-01 17:35:33 - aiogram.dispatcher - INFO - Start polling
+2026-02-01 17:35:33 - aiogram.dispatcher - INFO - Run polling for bot @ThreadsStealerBot id=8217774793 - 'ThreadsStealerBot'
+2026-02-01 17:36:31 - aiogram.event - INFO - Update id=352263582 is handled. Duration 500 ms by bot id=8217774793
+2026-02-01 17:36:33 - apscheduler.executors.default - INFO - Running job "Automatyczne usuwanie wygasłych subskrypcji (trigger: interval[0:01:00], next run at: 2026-02-01 17:37:33 CET)" (scheduled at 2026-02-01 17:36:33.131386+01:00)
+2026-02-01 17:36:33 - apscheduler.executors.default - INFO - Job "Automatyczne usuwanie wygasłych subskrypcji (trigger: interval[0:01:00], next run at: 2026-02-01 17:37:33 CET)" executed successfully
+2026-02-01 17:36:33 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T17:36:33.133382
+2026-02-01 17:36:33 - apscheduler.executors.default - INFO - Running job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 17:37:33 CET)" (scheduled at 2026-02-01 17:36:33.132383+01:00)
+2026-02-01 17:36:33 - apscheduler.executors.default - INFO - Job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 17:37:33 CET)" executed successfully
+2026-02-01 17:36:33 - database - INFO - Zapytanie SQL zwróciło 1 wygasłych subskrypcji
+2026-02-01 17:36:33 - scheduler - INFO - Znaleziono 1 wygasłych subskrypcji
+2026-02-01 17:36:33 - scheduler - ERROR - Auto-kick: bot nie ma uprawnień w kanale -1002085180516. W ustawieniach kanału nadaj botowi uprawnienie „Ban users” (lub „Restrict members”).
+2026-02-01 17:37:33 - apscheduler.executors.default - INFO - Running job "Automatyczne usuwanie wygasłych subskrypcji (trigger: interval[0:01:00], next run at: 2026-02-01 17:38:33 CET)" (scheduled at 2026-02-01 17:37:33.131386+01:00)
+2026-02-01 17:37:33 - apscheduler.executors.default - INFO - Running job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 17:38:33 CET)" (scheduled at 2026-02-01 17:37:33.132383+01:00)
+2026-02-01 17:37:33 - apscheduler.executors.default - INFO - Job "Automatyczne usuwanie wygasłych subskrypcji (trigger: interval[0:01:00], next run at: 2026-02-01 17:38:33 CET)" executed successfully
+2026-02-01 17:37:33 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T17:37:33.137168
+2026-02-01 17:37:33 - apscheduler.executors.default - INFO - Job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 17:38:33 CET)" executed successfully
+2026-02-01 17:37:33 - database - INFO - Zapytanie SQL zwróciło 1 wygasłych subskrypcji
+2026-02-01 17:37:33 - scheduler - INFO - Znaleziono 1 wygasłych subskrypcji
+2026-02-01 17:37:33 - scheduler - ERROR - Auto-kick: bot nie ma uprawnień w kanale -1002085180516. W ustawieniach kanału nadaj botowi uprawnienie „Ban users” (lub „Restrict members”).
+2026-02-01 17:38:18 - aiogram.event - INFO - Update id=352263583 is handled. Duration 577 ms by bot id=8217774793
+2026-02-01 17:38:20 - aiogram.event - INFO - Update id=352263584 is handled. Duration 344 ms by bot id=8217774793
+2026-02-01 17:38:21 - aiogram.event - INFO - Update id=352263585 is handled. Duration 344 ms by bot id=8217774793
+2026-02-01 17:38:22 - handlers - ERROR - Kick error: Telegram server says - Bad Request: not enough rights to restrict/unrestrict chat member
+2026-02-01 17:38:22 - aiogram.event - INFO - Update id=352263586 is handled. Duration 264 ms by bot id=8217774793
+2026-02-01 17:38:33 - apscheduler.executors.default - INFO - Running job "Automatyczne usuwanie wygasłych subskrypcji (trigger: interval[0:01:00], next run at: 2026-02-01 17:39:33 CET)" (scheduled at 2026-02-01 17:38:33.131386+01:00)
+2026-02-01 17:38:33 - apscheduler.executors.default - INFO - Running job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 17:39:33 CET)" (scheduled at 2026-02-01 17:38:33.132383+01:00)
+2026-02-01 17:38:33 - apscheduler.executors.default - INFO - Job "Automatyczne usuwanie wygasłych subskrypcji (trigger: interval[0:01:00], next run at: 2026-02-01 17:39:33 CET)" executed successfully
+2026-02-01 17:38:33 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T17:38:33.140102
+2026-02-01 17:38:33 - apscheduler.executors.default - INFO - Job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 17:39:33 CET)" executed successfully
+2026-02-01 17:38:33 - database - INFO - Zapytanie SQL zwróciło 1 wygasłych subskrypcji
+2026-02-01 17:38:33 - scheduler - INFO - Znaleziono 1 wygasłych subskrypcji
+2026-02-01 17:38:33 - scheduler - ERROR - Auto-kick: bot nie ma uprawnień w kanale -1002085180516. W ustawieniach kanału nadaj botowi uprawnienie „Ban users” (lub „Restrict members”).
+2026-02-01 17:38:57 - handlers - INFO - 🟢 User JOINED: 1342685360 do kanału -1002085180516 (Owner: 7829319839, Type: premium)
+2026-02-01 17:38:57 - handlers - INFO - Wysłano powiadomienie o dołączeniu do właściciela 7829319839
+2026-02-01 17:38:58 - aiogram.event - INFO - Update id=352263587 is handled. Duration 483 ms by bot id=8217774793
+2026-02-01 17:39:02 - handlers - INFO - Wybrano tier: Silver dla user 1342685360 w kanale -1002085180516
+2026-02-01 17:39:03 - aiogram.event - INFO - Update id=352263588 is handled. Duration 390 ms by bot id=8217774793
+2026-02-01 17:39:05 - aiogram.event - INFO - Update id=352263589 is handled. Duration 297 ms by bot id=8217774793
+2026-02-01 17:39:19 - helpers - INFO - Sparsowano datę: 2026-02-01 17:40 → 2026-02-01 17:40:00 (format: YYYY-MM-DD HH:MM)
+2026-02-01 17:39:19 - database - INFO - Utworzono subskrypcję dla 1342685360 w kanale -1002085180516 (sprzedamgruz) - Silver, wygasa: 2026-02-01 17:40
+2026-02-01 17:39:19 - aiogram.event - INFO - Update id=352263590 is handled. Duration 375 ms by bot id=8217774793
+2026-02-01 17:39:33 - apscheduler.executors.default - INFO - Running job "Automatyczne usuwanie wygasłych subskrypcji (trigger: interval[0:01:00], next run at: 2026-02-01 17:40:33 CET)" (scheduled at 2026-02-01 17:39:33.131386+01:00)
+2026-02-01 17:39:33 - apscheduler.executors.default - INFO - Running job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 17:40:33 CET)" (scheduled at 2026-02-01 17:39:33.132383+01:00)
+2026-02-01 17:39:33 - apscheduler.executors.default - INFO - Job "Automatyczne usuwanie wygasłych subskrypcji (trigger: interval[0:01:00], next run at: 2026-02-01 17:40:33 CET)" executed successfully
+2026-02-01 17:39:33 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T17:39:33.144191
+2026-02-01 17:39:33 - apscheduler.executors.default - INFO - Job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 17:40:33 CET)" executed successfully
+2026-02-01 17:39:33 - database - INFO - Zapytanie SQL zwróciło 1 wygasłych subskrypcji
+2026-02-01 17:39:33 - scheduler - INFO - Znaleziono 1 wygasłych subskrypcji
+2026-02-01 17:39:33 - scheduler - ERROR - Auto-kick: bot nie ma uprawnień w kanale -1002085180516. W ustawieniach kanału nadaj botowi uprawnienie „Ban users” (lub „Restrict members”).
+2026-02-01 17:40:33 - apscheduler.executors.default - INFO - Running job "Automatyczne usuwanie wygasłych subskrypcji (trigger: interval[0:01:00], next run at: 2026-02-01 17:41:33 CET)" (scheduled at 2026-02-01 17:40:33.131386+01:00)
+2026-02-01 17:40:33 - apscheduler.executors.default - INFO - Running job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 17:41:33 CET)" (scheduled at 2026-02-01 17:40:33.132383+01:00)
+2026-02-01 17:40:33 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T17:40:33.155077
+2026-02-01 17:40:33 - apscheduler.executors.default - INFO - Job "Automatyczne usuwanie wygasłych subskrypcji (trigger: interval[0:01:00], next run at: 2026-02-01 17:41:33 CET)" executed successfully
+2026-02-01 17:40:33 - apscheduler.executors.default - INFO - Job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 17:41:33 CET)" executed successfully
+2026-02-01 17:40:33 - database - INFO - Zapytanie SQL zwróciło 2 wygasłych subskrypcji
+2026-02-01 17:40:33 - scheduler - INFO - Znaleziono 2 wygasłych subskrypcji
+2026-02-01 17:40:33 - scheduler - ERROR - Auto-kick: bot nie ma uprawnień w kanale -1002085180516. W ustawieniach kanału nadaj botowi uprawnienie „Ban users” (lub „Restrict members”).
+2026-02-01 17:40:33 - scheduler - ERROR - Auto-kick: bot nie ma uprawnień w kanale -1002085180516. W ustawieniach kanału nadaj botowi uprawnienie „Ban users” (lub „Restrict members”).
+2026-02-01 17:41:33 - apscheduler.executors.default - INFO - Running job "Automatyczne usuwanie wygasłych subskrypcji (trigger: interval[0:01:00], next run at: 2026-02-01 17:42:33 CET)" (scheduled at 2026-02-01 17:41:33.131386+01:00)
+2026-02-01 17:41:33 - apscheduler.executors.default - INFO - Running job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 17:42:33 CET)" (scheduled at 2026-02-01 17:41:33.132383+01:00)
+2026-02-01 17:41:33 - apscheduler.executors.default - INFO - Job "Automatyczne usuwanie wygasłych subskrypcji (trigger: interval[0:01:00], next run at: 2026-02-01 17:42:33 CET)" executed successfully
+2026-02-01 17:41:33 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T17:41:33.136531
+2026-02-01 17:41:33 - apscheduler.executors.default - INFO - Job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 17:42:33 CET)" executed successfully
+2026-02-01 17:41:33 - database - INFO - Zapytanie SQL zwróciło 2 wygasłych subskrypcji
+2026-02-01 17:41:33 - scheduler - INFO - Znaleziono 2 wygasłych subskrypcji
+2026-02-01 17:41:33 - scheduler - ERROR - Auto-kick: bot nie ma uprawnień w kanale -1002085180516. W ustawieniach kanału nadaj botowi uprawnienie „Ban users” (lub „Restrict members”).
+2026-02-01 17:41:33 - scheduler - ERROR - Auto-kick: bot nie ma uprawnień w kanale -1002085180516. W ustawieniach kanału nadaj botowi uprawnienie „Ban users” (lub „Restrict members”).
+2026-02-01 17:42:22 - aiogram.event - INFO - Update id=352263591 is handled. Duration 485 ms by bot id=8217774793
+2026-02-01 17:42:25 - aiogram.event - INFO - Update id=352263592 is handled. Duration 328 ms by bot id=8217774793
+2026-02-01 17:42:27 - aiogram.event - INFO - Update id=352263593 is handled. Duration 359 ms by bot id=8217774793
+2026-02-01 17:42:28 - aiogram.event - INFO - Update id=352263594 is handled. Duration 452 ms by bot id=8217774793
+2026-02-01 17:42:29 - aiogram.event - INFO - Update id=352263595 is handled. Duration 500 ms by bot id=8217774793
+2026-02-01 17:42:32 - aiogram.event - INFO - Update id=352263596 is handled. Duration 750 ms by bot id=8217774793
+2026-02-01 17:42:33 - apscheduler.executors.default - INFO - Running job "Automatyczne usuwanie wygasłych subskrypcji (trigger: interval[0:01:00], next run at: 2026-02-01 17:43:33 CET)" (scheduled at 2026-02-01 17:42:33.131386+01:00)
+2026-02-01 17:42:33 - apscheduler.executors.default - INFO - Running job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 17:43:33 CET)" (scheduled at 2026-02-01 17:42:33.132383+01:00)
+2026-02-01 17:42:33 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T17:42:33.136689
+2026-02-01 17:42:33 - apscheduler.executors.default - INFO - Job "Automatyczne usuwanie wygasłych subskrypcji (trigger: interval[0:01:00], next run at: 2026-02-01 17:43:33 CET)" executed successfully
+2026-02-01 17:42:33 - apscheduler.executors.default - INFO - Job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 17:43:33 CET)" executed successfully
+2026-02-01 17:42:33 - database - INFO - Zapytanie SQL zwróciło 2 wygasłych subskrypcji
+2026-02-01 17:42:33 - scheduler - INFO - Znaleziono 2 wygasłych subskrypcji
+2026-02-01 17:42:33 - scheduler - ERROR - Auto-kick: bot nie ma uprawnień w kanale -1002085180516. W ustawieniach kanału nadaj botowi uprawnienie „Ban users” (lub „Restrict members”).
+2026-02-01 17:42:33 - scheduler - ERROR - Auto-kick: bot nie ma uprawnień w kanale -1002085180516. W ustawieniach kanału nadaj botowi uprawnienie „Ban users” (lub „Restrict members”).
+2026-02-01 17:42:45 - __main__ - INFO - Middleware skonfigurowane
+2026-02-01 17:42:45 - __main__ - INFO - Routery skonfigurowane
+2026-02-01 17:42:45 - __main__ - INFO - Podstawowe komendy skonfigurowane
+2026-02-01 17:42:45 - __main__ - INFO - Uruchamianie Premium Bota...
+2026-02-01 17:42:46 - database - INFO - Połączono z PostgreSQL – pula połączeń
+2026-02-01 17:42:46 - database - INFO - Tabele PostgreSQL (Supabase) zainicjalizowane
+2026-02-01 17:42:47 - __main__ - INFO - Baza danych zainicjalizowana
+2026-02-01 17:42:47 - __main__ - INFO - Komendy bota ustawione
+2026-02-01 17:42:47 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-01 17:42:47 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-01 17:42:47 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-01 17:42:47 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-01 17:42:47 - apscheduler.scheduler - INFO - Added job "Automatyczne usuwanie wygasłych subskrypcji" to job store "default"
+2026-02-01 17:42:47 - apscheduler.scheduler - INFO - Added job "Publikowanie zaplanowanych postów" to job store "default"
+2026-02-01 17:42:47 - apscheduler.scheduler - INFO - Added job "SFS – sprawdzanie co 24h (placeholder)" to job store "default"
+2026-02-01 17:42:47 - apscheduler.scheduler - INFO - Added job "SFS – aktualizacja subów co 6h" to job store "default"
+2026-02-01 17:42:47 - apscheduler.scheduler - INFO - Scheduler started
+2026-02-01 17:42:47 - scheduler - INFO - Scheduler uruchomiony (publish co 1 min)
+2026-02-01 17:42:47 - __main__ - INFO - Bot rozpoczyna pobieranie aktualizacji...
+2026-02-01 17:42:47 - aiogram.dispatcher - INFO - Start polling
+2026-02-01 17:42:47 - aiogram.dispatcher - INFO - Run polling for bot @ThreadsStealerBot id=8217774793 - 'ThreadsStealerBot'
+2026-02-01 17:42:55 - aiogram.event - INFO - Update id=352263597 is handled. Duration 577 ms by bot id=8217774793
+2026-02-01 17:43:28 - aiogram.event - INFO - Update id=352263598 is handled. Duration 547 ms by bot id=8217774793
+2026-02-01 17:43:30 - aiogram.event - INFO - Update id=352263599 is handled. Duration 328 ms by bot id=8217774793
+2026-02-01 17:43:32 - aiogram.event - INFO - Update id=352263600 is handled. Duration 343 ms by bot id=8217774793
+2026-02-01 17:43:33 - handlers - ERROR - Kick error: Telegram server says - Bad Request: not enough rights to restrict/unrestrict chat member
+2026-02-01 17:43:33 - aiogram.event - INFO - Update id=352263601 is handled. Duration 264 ms by bot id=8217774793
+2026-02-01 17:43:35 - aiogram.event - INFO - Update id=352263602 is handled. Duration 343 ms by bot id=8217774793
+2026-02-01 17:43:36 - aiogram.event - INFO - Update id=352263603 is handled. Duration 359 ms by bot id=8217774793
+2026-02-01 17:43:38 - aiogram.event - INFO - Update id=352263604 is handled. Duration 359 ms by bot id=8217774793
+2026-02-01 17:43:39 - aiogram.event - INFO - Update id=352263605 is handled. Duration 375 ms by bot id=8217774793
+2026-02-01 17:43:40 - handlers - ERROR - Kick error: Telegram server says - Bad Request: not enough rights to restrict/unrestrict chat member
+2026-02-01 17:43:41 - aiogram.event - INFO - Update id=352263606 is handled. Duration 312 ms by bot id=8217774793
+2026-02-01 17:43:46 - aiogram.event - INFO - Update id=352263607 is handled. Duration 344 ms by bot id=8217774793
+2026-02-01 17:43:47 - apscheduler.executors.default - INFO - Running job "Automatyczne usuwanie wygasłych subskrypcji (trigger: interval[0:01:00], next run at: 2026-02-01 17:44:47 CET)" (scheduled at 2026-02-01 17:43:47.443460+01:00)
+2026-02-01 17:43:47 - apscheduler.executors.default - INFO - Running job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 17:44:47 CET)" (scheduled at 2026-02-01 17:43:47.443460+01:00)
+2026-02-01 17:43:47 - apscheduler.executors.default - INFO - Job "Automatyczne usuwanie wygasłych subskrypcji (trigger: interval[0:01:00], next run at: 2026-02-01 17:44:47 CET)" executed successfully
+2026-02-01 17:43:47 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T17:43:47.455217
+2026-02-01 17:43:47 - apscheduler.executors.default - INFO - Job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 17:44:47 CET)" executed successfully
+2026-02-01 17:43:47 - database - INFO - Zapytanie SQL zwróciło 2 wygasłych subskrypcji
+2026-02-01 17:43:47 - scheduler - INFO - Znaleziono 2 wygasłych subskrypcji
+2026-02-01 17:43:47 - aiogram.event - INFO - Update id=352263608 is handled. Duration 453 ms by bot id=8217774793
+2026-02-01 17:43:47 - scheduler - ERROR - Auto-kick: bot NIE MA uprawnienia „Restrict members” w kanale -1002085180516 (channel_id=-1002085180516). Nadaj botowi to uprawnienie w ustawieniach kanału → Administratorzy.
+2026-02-01 17:43:48 - scheduler - ERROR - Auto-kick: bot NIE MA uprawnienia „Restrict members” w kanale -1002085180516 (channel_id=-1002085180516). Nadaj botowi to uprawnienie w ustawieniach kanału → Administratorzy.
+2026-02-01 17:44:47 - apscheduler.executors.default - INFO - Running job "Automatyczne usuwanie wygasłych subskrypcji (trigger: interval[0:01:00], next run at: 2026-02-01 17:45:47 CET)" (scheduled at 2026-02-01 17:44:47.443460+01:00)
+2026-02-01 17:44:47 - apscheduler.executors.default - INFO - Running job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 17:45:47 CET)" (scheduled at 2026-02-01 17:44:47.443460+01:00)
+2026-02-01 17:44:47 - apscheduler.executors.default - INFO - Job "Automatyczne usuwanie wygasłych subskrypcji (trigger: interval[0:01:00], next run at: 2026-02-01 17:45:47 CET)" executed successfully
+2026-02-01 17:44:47 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T17:44:47.456552
+2026-02-01 17:44:47 - apscheduler.executors.default - INFO - Job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 17:45:47 CET)" executed successfully
+2026-02-01 17:44:47 - database - INFO - Zapytanie SQL zwróciło 2 wygasłych subskrypcji
+2026-02-01 17:44:47 - scheduler - INFO - Znaleziono 2 wygasłych subskrypcji
+2026-02-01 17:44:47 - scheduler - ERROR - Auto-kick: bot NIE MA uprawnienia „Restrict members” w kanale -1002085180516 (channel_id=-1002085180516). Nadaj botowi to uprawnienie w ustawieniach kanału → Administratorzy.
+2026-02-01 17:44:47 - scheduler - ERROR - Auto-kick: bot NIE MA uprawnienia „Restrict members” w kanale -1002085180516 (channel_id=-1002085180516). Nadaj botowi to uprawnienie w ustawieniach kanału → Administratorzy.
+2026-02-01 17:45:43 - __main__ - INFO - Middleware skonfigurowane
+2026-02-01 17:45:43 - __main__ - INFO - Routery skonfigurowane
+2026-02-01 17:45:43 - __main__ - INFO - Podstawowe komendy skonfigurowane
+2026-02-01 17:45:43 - __main__ - INFO - Uruchamianie Premium Bota...
+2026-02-01 17:45:44 - database - INFO - Połączono z PostgreSQL – pula połączeń
+2026-02-01 17:45:44 - database - INFO - Tabele PostgreSQL (Supabase) zainicjalizowane
+2026-02-01 17:45:45 - __main__ - INFO - Baza danych zainicjalizowana
+2026-02-01 17:45:45 - __main__ - INFO - Komendy bota ustawione
+2026-02-01 17:45:45 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-01 17:45:45 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-01 17:45:45 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-01 17:45:45 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-01 17:45:45 - apscheduler.scheduler - INFO - Added job "Automatyczne usuwanie wygasłych subskrypcji" to job store "default"
+2026-02-01 17:45:45 - apscheduler.scheduler - INFO - Added job "Publikowanie zaplanowanych postów" to job store "default"
+2026-02-01 17:45:45 - apscheduler.scheduler - INFO - Added job "SFS – sprawdzanie co 24h (placeholder)" to job store "default"
+2026-02-01 17:45:45 - apscheduler.scheduler - INFO - Added job "SFS – aktualizacja subów co 6h" to job store "default"
+2026-02-01 17:45:45 - apscheduler.scheduler - INFO - Scheduler started
+2026-02-01 17:45:45 - scheduler - INFO - Scheduler uruchomiony (publish co 1 min)
+2026-02-01 17:45:45 - __main__ - INFO - Bot rozpoczyna pobieranie aktualizacji...
+2026-02-01 17:45:45 - aiogram.dispatcher - INFO - Start polling
+2026-02-01 17:45:45 - aiogram.dispatcher - INFO - Run polling for bot @ThreadsStealerBot id=8217774793 - 'ThreadsStealerBot'
+2026-02-01 17:46:00 - aiogram.event - INFO - Update id=352263609 is handled. Duration 514 ms by bot id=8217774793
+2026-02-01 17:46:03 - aiogram.event - INFO - Update id=352263610 is handled. Duration 469 ms by bot id=8217774793
+2026-02-01 17:46:04 - aiogram.event - INFO - Update id=352263611 is handled. Duration 359 ms by bot id=8217774793
+2026-02-01 17:46:05 - aiogram.event - INFO - Update id=352263612 is handled. Duration 360 ms by bot id=8217774793
+2026-02-01 17:46:06 - handlers - ERROR - Kick error: Telegram server says - Bad Request: not enough rights to restrict/unrestrict chat member
+2026-02-01 17:46:06 - aiogram.event - INFO - Update id=352263613 is handled. Duration 297 ms by bot id=8217774793
+2026-02-01 17:46:37 - aiogram.event - INFO - Update id=352263614 is handled. Duration 468 ms by bot id=8217774793
+2026-02-01 17:46:38 - aiogram.event - INFO - Update id=352263615 is handled. Duration 360 ms by bot id=8217774793
+2026-02-01 17:46:39 - aiogram.event - INFO - Update id=352263616 is handled. Duration 343 ms by bot id=8217774793
+2026-02-01 17:46:42 - aiogram.event - INFO - Update id=352263617 is handled. Duration 422 ms by bot id=8217774793
+2026-02-01 17:46:44 - aiogram.event - INFO - Update id=352263618 is handled. Duration 421 ms by bot id=8217774793
+2026-02-01 17:46:45 - apscheduler.executors.default - INFO - Running job "Automatyczne usuwanie wygasłych subskrypcji (trigger: interval[0:01:00], next run at: 2026-02-01 17:47:45 CET)" (scheduled at 2026-02-01 17:46:45.251155+01:00)
+2026-02-01 17:46:45 - apscheduler.executors.default - INFO - Running job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 17:47:45 CET)" (scheduled at 2026-02-01 17:46:45.251155+01:00)
+2026-02-01 17:46:45 - apscheduler.executors.default - INFO - Job "Automatyczne usuwanie wygasłych subskrypcji (trigger: interval[0:01:00], next run at: 2026-02-01 17:47:45 CET)" executed successfully
+2026-02-01 17:46:45 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T17:46:45.261363
+2026-02-01 17:46:45 - apscheduler.executors.default - INFO - Job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 17:47:45 CET)" executed successfully
+2026-02-01 17:46:45 - database - INFO - Zapytanie SQL zwróciło 2 wygasłych subskrypcji
+2026-02-01 17:46:45 - scheduler - INFO - Znaleziono 2 wygasłych subskrypcji
+2026-02-01 17:46:45 - scheduler - ERROR - Auto-kick: błąd dla kanału -1002085180516, user 5794369342: Telegram server says - Bad Request: not enough rights to restrict/unrestrict chat member
+2026-02-01 17:46:45 - scheduler - ERROR - Auto-kick: błąd dla kanału -1002085180516, user 1342685360: Telegram server says - Bad Request: not enough rights to restrict/unrestrict chat member
+2026-02-01 17:47:45 - apscheduler.executors.default - INFO - Running job "Automatyczne usuwanie wygasłych subskrypcji (trigger: interval[0:01:00], next run at: 2026-02-01 17:48:45 CET)" (scheduled at 2026-02-01 17:47:45.251155+01:00)
+2026-02-01 17:47:45 - apscheduler.executors.default - INFO - Running job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 17:48:45 CET)" (scheduled at 2026-02-01 17:47:45.251155+01:00)
+2026-02-01 17:47:45 - apscheduler.executors.default - INFO - Job "Automatyczne usuwanie wygasłych subskrypcji (trigger: interval[0:01:00], next run at: 2026-02-01 17:48:45 CET)" executed successfully
+2026-02-01 17:47:45 - apscheduler.executors.default - INFO - Job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 17:48:45 CET)" executed successfully
+2026-02-01 17:47:45 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T17:47:45.262792
+2026-02-01 17:47:45 - database - INFO - Zapytanie SQL zwróciło 2 wygasłych subskrypcji
+2026-02-01 17:47:45 - scheduler - INFO - Znaleziono 2 wygasłych subskrypcji
+2026-02-01 17:47:45 - scheduler - ERROR - Auto-kick: błąd dla kanału -1002085180516, user 5794369342: Telegram server says - Bad Request: not enough rights to restrict/unrestrict chat member
+2026-02-01 17:47:46 - scheduler - ERROR - Auto-kick: błąd dla kanału -1002085180516, user 1342685360: Telegram server says - Bad Request: not enough rights to restrict/unrestrict chat member
+2026-02-01 17:48:45 - apscheduler.executors.default - INFO - Running job "Automatyczne usuwanie wygasłych subskrypcji (trigger: interval[0:01:00], next run at: 2026-02-01 17:49:45 CET)" (scheduled at 2026-02-01 17:48:45.251155+01:00)
+2026-02-01 17:48:45 - apscheduler.executors.default - INFO - Running job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 17:49:45 CET)" (scheduled at 2026-02-01 17:48:45.251155+01:00)
+2026-02-01 17:48:45 - apscheduler.executors.default - INFO - Job "Automatyczne usuwanie wygasłych subskrypcji (trigger: interval[0:01:00], next run at: 2026-02-01 17:49:45 CET)" executed successfully
+2026-02-01 17:48:45 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T17:48:45.259372
+2026-02-01 17:48:45 - apscheduler.executors.default - INFO - Job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 17:49:45 CET)" executed successfully
+2026-02-01 17:48:45 - database - INFO - Zapytanie SQL zwróciło 2 wygasłych subskrypcji
+2026-02-01 17:48:45 - scheduler - INFO - Znaleziono 2 wygasłych subskrypcji
+2026-02-01 17:48:45 - scheduler - ERROR - Auto-kick: błąd dla kanału -1002085180516, user 5794369342: Telegram server says - Bad Request: not enough rights to restrict/unrestrict chat member
+2026-02-01 17:48:46 - scheduler - ERROR - Auto-kick: błąd dla kanału -1002085180516, user 1342685360: Telegram server says - Bad Request: not enough rights to restrict/unrestrict chat member
+2026-02-01 17:49:45 - apscheduler.executors.default - INFO - Running job "Automatyczne usuwanie wygasłych subskrypcji (trigger: interval[0:01:00], next run at: 2026-02-01 17:50:45 CET)" (scheduled at 2026-02-01 17:49:45.251155+01:00)
+2026-02-01 17:49:45 - apscheduler.executors.default - INFO - Running job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 17:50:45 CET)" (scheduled at 2026-02-01 17:49:45.251155+01:00)
+2026-02-01 17:49:45 - apscheduler.executors.default - INFO - Job "Automatyczne usuwanie wygasłych subskrypcji (trigger: interval[0:01:00], next run at: 2026-02-01 17:50:45 CET)" executed successfully
+2026-02-01 17:49:45 - apscheduler.executors.default - INFO - Job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 17:50:45 CET)" executed successfully
+2026-02-01 17:49:45 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T17:49:45.260790
+2026-02-01 17:49:45 - database - INFO - Zapytanie SQL zwróciło 2 wygasłych subskrypcji
+2026-02-01 17:49:45 - scheduler - INFO - Znaleziono 2 wygasłych subskrypcji
+2026-02-01 17:49:45 - scheduler - ERROR - Auto-kick: błąd dla kanału -1002085180516, user 5794369342: Telegram server says - Bad Request: not enough rights to restrict/unrestrict chat member
+2026-02-01 17:49:46 - scheduler - ERROR - Auto-kick: błąd dla kanału -1002085180516, user 1342685360: Telegram server says - Bad Request: not enough rights to restrict/unrestrict chat member
+2026-02-01 17:50:45 - apscheduler.executors.default - INFO - Running job "Automatyczne usuwanie wygasłych subskrypcji (trigger: interval[0:01:00], next run at: 2026-02-01 17:51:45 CET)" (scheduled at 2026-02-01 17:50:45.251155+01:00)
+2026-02-01 17:50:45 - apscheduler.executors.default - INFO - Running job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 17:51:45 CET)" (scheduled at 2026-02-01 17:50:45.251155+01:00)
+2026-02-01 17:50:45 - apscheduler.executors.default - INFO - Job "Automatyczne usuwanie wygasłych subskrypcji (trigger: interval[0:01:00], next run at: 2026-02-01 17:51:45 CET)" executed successfully
+2026-02-01 17:50:45 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T17:50:45.258834
+2026-02-01 17:50:45 - apscheduler.executors.default - INFO - Job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 17:51:45 CET)" executed successfully
+2026-02-01 17:50:45 - database - INFO - Zapytanie SQL zwróciło 2 wygasłych subskrypcji
+2026-02-01 17:50:45 - scheduler - INFO - Znaleziono 2 wygasłych subskrypcji
+2026-02-01 17:50:45 - scheduler - ERROR - Auto-kick: błąd dla kanału -1002085180516, user 5794369342: Telegram server says - Bad Request: not enough rights to restrict/unrestrict chat member
+2026-02-01 17:50:46 - scheduler - ERROR - Auto-kick: błąd dla kanału -1002085180516, user 1342685360: Telegram server says - Bad Request: not enough rights to restrict/unrestrict chat member
+2026-02-01 17:51:45 - apscheduler.executors.default - INFO - Running job "Automatyczne usuwanie wygasłych subskrypcji (trigger: interval[0:01:00], next run at: 2026-02-01 17:52:45 CET)" (scheduled at 2026-02-01 17:51:45.251155+01:00)
+2026-02-01 17:51:45 - apscheduler.executors.default - INFO - Running job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 17:52:45 CET)" (scheduled at 2026-02-01 17:51:45.251155+01:00)
+2026-02-01 17:51:45 - apscheduler.executors.default - INFO - Job "Automatyczne usuwanie wygasłych subskrypcji (trigger: interval[0:01:00], next run at: 2026-02-01 17:52:45 CET)" executed successfully
+2026-02-01 17:51:45 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T17:51:45.264941
+2026-02-01 17:51:45 - apscheduler.executors.default - INFO - Job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 17:52:45 CET)" executed successfully
+2026-02-01 17:51:45 - database - INFO - Zapytanie SQL zwróciło 2 wygasłych subskrypcji
+2026-02-01 17:51:45 - scheduler - INFO - Znaleziono 2 wygasłych subskrypcji
+2026-02-01 17:51:45 - scheduler - ERROR - Błąd banowania 5794369342: Telegram server says - Forbidden: bot is not a member of the channel chat
+2026-02-01 17:51:45 - scheduler - ERROR - Błąd banowania 1342685360: Telegram server says - Forbidden: bot is not a member of the channel chat
+2026-02-01 17:52:23 - aiogram.event - INFO - Update id=352263619 is handled. Duration 500 ms by bot id=8217774793
+2026-02-01 17:52:25 - aiogram.event - INFO - Update id=352263620 is handled. Duration 342 ms by bot id=8217774793
+2026-02-01 17:52:28 - aiogram.event - INFO - Update id=352263621 is handled. Duration 342 ms by bot id=8217774793
+2026-02-01 17:52:29 - handlers - INFO - 🚫 User BANNED: 1342685360 z kanału -1002085180516 (Owner: 7829319839)
+2026-02-01 17:52:29 - database - INFO - Zaktualizowano status subskrypcji 1342685360 w kanale -1002085180516: banned
+2026-02-01 17:52:29 - database - INFO - Zaktualizowano status subskrypcji 1342685360 w kanale -1002085180516: banned
+2026-02-01 17:52:30 - handlers - ERROR - Kick error: 1 validation error for CallbackQuery
+data
+  Instance is frozen [type=frozen_instance, input_value='list_users_-1002085180516', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.8/v/frozen_instance
+2026-02-01 17:52:30 - aiogram.event - INFO - Update id=352263622 is handled. Duration 764 ms by bot id=8217774793
+2026-02-01 17:52:30 - aiogram.event - INFO - Update id=352263623 is handled. Duration 625 ms by bot id=8217774793
+2026-02-01 17:52:30 - aiogram.event - INFO - Update id=352263624 is handled. Duration 500 ms by bot id=8217774793
+2026-02-01 17:52:45 - apscheduler.executors.default - INFO - Running job "Automatyczne usuwanie wygasłych subskrypcji (trigger: interval[0:01:00], next run at: 2026-02-01 17:53:45 CET)" (scheduled at 2026-02-01 17:52:45.251155+01:00)
+2026-02-01 17:52:45 - apscheduler.executors.default - INFO - Running job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 17:53:45 CET)" (scheduled at 2026-02-01 17:52:45.251155+01:00)
+2026-02-01 17:52:45 - apscheduler.executors.default - INFO - Job "Automatyczne usuwanie wygasłych subskrypcji (trigger: interval[0:01:00], next run at: 2026-02-01 17:53:45 CET)" executed successfully
+2026-02-01 17:52:45 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T17:52:45.252101
+2026-02-01 17:52:45 - apscheduler.executors.default - INFO - Job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 17:53:45 CET)" executed successfully
+2026-02-01 17:52:45 - database - INFO - Zapytanie SQL zwróciło 1 wygasłych subskrypcji
+2026-02-01 17:52:45 - scheduler - INFO - Znaleziono 1 wygasłych subskrypcji
+2026-02-01 17:52:45 - database - INFO - Zaktualizowano status subskrypcji 5794369342 w kanale -1002085180516: banned
+2026-02-01 17:52:45 - handlers - INFO - 🚫 User BANNED: 5794369342 z kanału -1002085180516 (Owner: 7829319839)
+2026-02-01 17:52:46 - database - INFO - Zaktualizowano status subskrypcji 5794369342 w kanale -1002085180516: banned
+2026-02-01 17:52:46 - aiogram.event - INFO - Update id=352263625 is handled. Duration 639 ms by bot id=8217774793
+2026-02-01 17:52:47 - scheduler - INFO - Zbanowano 1 użytkowników
+2026-02-01 17:53:11 - database - INFO - Zaktualizowano status subskrypcji 5794369342 w kanale -1002085180516: active
+2026-02-01 17:53:11 - database - INFO - Zaktualizowano subskrypcję user_id=5794369342, channel=-1002085180516: ['end_date = ?']
+2026-02-01 17:53:12 - aiogram.event - INFO - Update id=352263627 is handled. Duration 282 ms by bot id=8217774793
+2026-02-01 17:53:12 - aiogram.event - INFO - Update id=352263626 is handled. Duration 686 ms by bot id=8217774793
+2026-02-01 17:53:45 - apscheduler.executors.default - INFO - Running job "Automatyczne usuwanie wygasłych subskrypcji (trigger: interval[0:01:00], next run at: 2026-02-01 17:54:45 CET)" (scheduled at 2026-02-01 17:53:45.251155+01:00)
+2026-02-01 17:53:45 - apscheduler.executors.default - INFO - Running job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 17:54:45 CET)" (scheduled at 2026-02-01 17:53:45.251155+01:00)
+2026-02-01 17:53:45 - apscheduler.executors.default - INFO - Job "Automatyczne usuwanie wygasłych subskrypcji (trigger: interval[0:01:00], next run at: 2026-02-01 17:54:45 CET)" executed successfully
+2026-02-01 17:53:45 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T17:53:45.274525
+2026-02-01 17:53:45 - apscheduler.executors.default - INFO - Job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 17:54:45 CET)" executed successfully
+2026-02-01 17:53:45 - database - INFO - Zapytanie SQL zwróciło 0 wygasłych subskrypcji
+2026-02-01 17:54:13 - aiogram.event - INFO - Update id=352263628 is handled. Duration 594 ms by bot id=8217774793
+2026-02-01 17:54:15 - aiogram.event - INFO - Update id=352263629 is handled. Duration 235 ms by bot id=8217774793
+2026-02-01 17:54:25 - aiogram.event - INFO - Update id=352263630 is handled. Duration 296 ms by bot id=8217774793
+2026-02-01 17:54:45 - apscheduler.executors.default - INFO - Running job "Automatyczne usuwanie wygasłych subskrypcji (trigger: interval[0:01:00], next run at: 2026-02-01 17:55:45 CET)" (scheduled at 2026-02-01 17:54:45.251155+01:00)
+2026-02-01 17:54:45 - apscheduler.executors.default - INFO - Running job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 17:55:45 CET)" (scheduled at 2026-02-01 17:54:45.251155+01:00)
+2026-02-01 17:54:45 - apscheduler.executors.default - INFO - Job "Automatyczne usuwanie wygasłych subskrypcji (trigger: interval[0:01:00], next run at: 2026-02-01 17:55:45 CET)" executed successfully
+2026-02-01 17:54:45 - apscheduler.executors.default - INFO - Job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 17:55:45 CET)" executed successfully
+2026-02-01 17:54:45 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T17:54:45.257549
+2026-02-01 17:54:45 - database - INFO - Zapytanie SQL zwróciło 0 wygasłych subskrypcji
+2026-02-01 17:55:07 - aiogram.event - INFO - Update id=352263631 is handled. Duration 500 ms by bot id=8217774793
+2026-02-01 17:55:10 - database - INFO - Dodano kanał test2 (-1003808918566) dla 8489479793
+2026-02-01 17:55:10 - aiogram.event - INFO - Update id=352263632 is handled. Duration 547 ms by bot id=8217774793
+2026-02-01 17:55:12 - aiogram.event - INFO - Update id=352263633 is handled. Duration 453 ms by bot id=8217774793
+2026-02-01 17:55:15 - aiogram.event - INFO - Update id=352263634 is handled. Duration 420 ms by bot id=8217774793
+2026-02-01 17:55:18 - aiogram.event - INFO - Update id=352263635 is handled. Duration 530 ms by bot id=8217774793
+2026-02-01 17:55:20 - aiogram.event - INFO - Update id=352263636 is handled. Duration 733 ms by bot id=8217774793
+2026-02-01 17:55:30 - aiogram.event - INFO - Update id=352263637 is handled. Duration 484 ms by bot id=8217774793
+2026-02-01 17:55:37 - aiogram.event - INFO - Update id=352263638 is handled. Duration 327 ms by bot id=8217774793
+2026-02-01 17:55:39 - handlers - ERROR - console: Telegram server says - Bad Request: MESSAGE_TOO_LONG
+Traceback (most recent call last):
+  File "d:\Python\EwhorWatchdog\handlers\superadmin.py", line 835, in superadmin_console
+    await callback.message.edit_text(text, reply_markup=kb, parse_mode=ParseMode.MARKDOWN)
+  File "D:\Python\EwhorWatchdog\venv\Lib\site-packages\aiogram\methods\base.py", line 84, in emit
+    return await bot(self)
+           ^^^^^^^^^^^^^^^
+  File "D:\Python\EwhorWatchdog\venv\Lib\site-packages\aiogram\client\bot.py", line 488, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\EwhorWatchdog\venv\Lib\site-packages\aiogram\client\session\base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\EwhorWatchdog\venv\Lib\site-packages\aiogram\client\session\aiohttp.py", line 189, in make_request
+    response = self.check_response(
+               ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\EwhorWatchdog\venv\Lib\site-packages\aiogram\client\session\base.py", line 120, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: MESSAGE_TOO_LONG
+2026-02-01 17:55:39 - aiogram.event - INFO - Update id=352263639 is handled. Duration 359 ms by bot id=8217774793
+2026-02-01 17:55:45 - apscheduler.executors.default - INFO - Running job "Automatyczne usuwanie wygasłych subskrypcji (trigger: interval[0:01:00], next run at: 2026-02-01 17:56:45 CET)" (scheduled at 2026-02-01 17:55:45.251155+01:00)
+2026-02-01 17:55:45 - apscheduler.executors.default - INFO - Running job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 17:56:45 CET)" (scheduled at 2026-02-01 17:55:45.251155+01:00)
+2026-02-01 17:55:45 - apscheduler.executors.default - INFO - Job "Automatyczne usuwanie wygasłych subskrypcji (trigger: interval[0:01:00], next run at: 2026-02-01 17:56:45 CET)" executed successfully
+2026-02-01 17:55:45 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T17:55:45.266895
+2026-02-01 17:55:45 - apscheduler.executors.default - INFO - Job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 17:56:45 CET)" executed successfully
+2026-02-01 17:55:45 - database - INFO - Zapytanie SQL zwróciło 0 wygasłych subskrypcji
+2026-02-01 17:56:45 - apscheduler.executors.default - INFO - Running job "Automatyczne usuwanie wygasłych subskrypcji (trigger: interval[0:01:00], next run at: 2026-02-01 17:57:45 CET)" (scheduled at 2026-02-01 17:56:45.251155+01:00)
+2026-02-01 17:56:45 - apscheduler.executors.default - INFO - Running job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 17:57:45 CET)" (scheduled at 2026-02-01 17:56:45.251155+01:00)
+2026-02-01 17:56:45 - apscheduler.executors.default - INFO - Job "Automatyczne usuwanie wygasłych subskrypcji (trigger: interval[0:01:00], next run at: 2026-02-01 17:57:45 CET)" executed successfully
+2026-02-01 17:56:45 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T17:56:45.263585
+2026-02-01 17:56:45 - apscheduler.executors.default - INFO - Job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 17:57:45 CET)" executed successfully
+2026-02-01 17:56:45 - database - INFO - Zapytanie SQL zwróciło 0 wygasłych subskrypcji
+2026-02-01 17:57:08 - __main__ - INFO - Middleware skonfigurowane
+2026-02-01 17:57:08 - __main__ - INFO - Routery skonfigurowane
+2026-02-01 17:57:08 - __main__ - INFO - Podstawowe komendy skonfigurowane
+2026-02-01 17:57:08 - __main__ - INFO - Uruchamianie Premium Bota...
+2026-02-01 17:57:08 - database - INFO - Połączono z PostgreSQL – pula połączeń
+2026-02-01 17:57:09 - database - INFO - Tabele PostgreSQL (Supabase) zainicjalizowane
+2026-02-01 17:57:09 - __main__ - INFO - Baza danych zainicjalizowana
+2026-02-01 17:57:10 - __main__ - INFO - Komendy bota ustawione
+2026-02-01 17:57:10 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-01 17:57:10 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-01 17:57:10 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-01 17:57:10 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-01 17:57:10 - apscheduler.scheduler - INFO - Added job "Automatyczne usuwanie wygasłych subskrypcji" to job store "default"
+2026-02-01 17:57:10 - apscheduler.scheduler - INFO - Added job "Publikowanie zaplanowanych postów" to job store "default"
+2026-02-01 17:57:10 - apscheduler.scheduler - INFO - Added job "SFS – sprawdzanie co 24h (placeholder)" to job store "default"
+2026-02-01 17:57:10 - apscheduler.scheduler - INFO - Added job "SFS – aktualizacja subów co 6h" to job store "default"
+2026-02-01 17:57:10 - apscheduler.scheduler - INFO - Scheduler started
+2026-02-01 17:57:10 - scheduler - INFO - Scheduler uruchomiony (publish co 1 min)
+2026-02-01 17:57:10 - __main__ - INFO - Bot rozpoczyna pobieranie aktualizacji...
+2026-02-01 17:57:10 - aiogram.dispatcher - INFO - Start polling
+2026-02-01 17:57:10 - aiogram.dispatcher - INFO - Run polling for bot @ThreadsStealerBot id=8217774793 - 'ThreadsStealerBot'
+2026-02-01 17:57:11 - aiogram.event - INFO - Update id=352263640 is handled. Duration 500 ms by bot id=8217774793
+2026-02-01 17:57:28 - aiogram.event - INFO - Update id=352263641 is handled. Duration 764 ms by bot id=8217774793
+2026-02-01 17:57:30 - aiogram.event - INFO - Update id=352263642 is handled. Duration 937 ms by bot id=8217774793
+2026-02-01 17:57:33 - aiogram.event - INFO - Update id=352263643 is handled. Duration 765 ms by bot id=8217774793
+2026-02-01 17:57:34 - aiogram.event - INFO - Update id=352263644 is handled. Duration 594 ms by bot id=8217774793
+2026-02-01 17:58:10 - apscheduler.executors.default - INFO - Running job "Automatyczne usuwanie wygasłych subskrypcji (trigger: interval[0:01:00], next run at: 2026-02-01 17:59:10 CET)" (scheduled at 2026-02-01 17:58:10.086425+01:00)
+2026-02-01 17:58:10 - apscheduler.executors.default - INFO - Running job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 17:59:10 CET)" (scheduled at 2026-02-01 17:58:10.087425+01:00)
+2026-02-01 17:58:10 - apscheduler.executors.default - INFO - Job "Automatyczne usuwanie wygasłych subskrypcji (trigger: interval[0:01:00], next run at: 2026-02-01 17:59:10 CET)" executed successfully
+2026-02-01 17:58:10 - apscheduler.executors.default - INFO - Job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 17:59:10 CET)" executed successfully
+2026-02-01 17:58:10 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T17:58:10.091515
+2026-02-01 17:58:10 - database - INFO - Zapytanie SQL zwróciło 0 wygasłych subskrypcji
+2026-02-01 17:59:10 - apscheduler.executors.default - INFO - Running job "Automatyczne usuwanie wygasłych subskrypcji (trigger: interval[0:01:00], next run at: 2026-02-01 18:00:10 CET)" (scheduled at 2026-02-01 17:59:10.086425+01:00)
+2026-02-01 17:59:10 - apscheduler.executors.default - INFO - Running job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 18:00:10 CET)" (scheduled at 2026-02-01 17:59:10.087425+01:00)
+2026-02-01 17:59:10 - apscheduler.executors.default - INFO - Job "Automatyczne usuwanie wygasłych subskrypcji (trigger: interval[0:01:00], next run at: 2026-02-01 18:00:10 CET)" executed successfully
+2026-02-01 17:59:10 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T17:59:10.100163
+2026-02-01 17:59:10 - apscheduler.executors.default - INFO - Job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 18:00:10 CET)" executed successfully
+2026-02-01 17:59:10 - database - INFO - Zapytanie SQL zwróciło 0 wygasłych subskrypcji
+2026-02-01 17:59:23 - __main__ - INFO - Middleware skonfigurowane
+2026-02-01 17:59:23 - __main__ - INFO - Routery skonfigurowane
+2026-02-01 17:59:23 - __main__ - INFO - Podstawowe komendy skonfigurowane
+2026-02-01 17:59:23 - __main__ - INFO - Uruchamianie Premium Bota...
+2026-02-01 17:59:23 - database - INFO - Połączono z PostgreSQL – pula połączeń
+2026-02-01 17:59:24 - database - INFO - Tabele PostgreSQL (Supabase) zainicjalizowane
+2026-02-01 17:59:24 - __main__ - INFO - Baza danych zainicjalizowana
+2026-02-01 17:59:24 - __main__ - INFO - Komendy bota ustawione
+2026-02-01 17:59:24 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-01 17:59:24 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-01 17:59:24 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-01 17:59:24 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-01 17:59:24 - apscheduler.scheduler - INFO - Added job "Automatyczne usuwanie wygasłych subskrypcji" to job store "default"
+2026-02-01 17:59:24 - apscheduler.scheduler - INFO - Added job "Publikowanie zaplanowanych postów" to job store "default"
+2026-02-01 17:59:24 - apscheduler.scheduler - INFO - Added job "SFS – sprawdzanie co 24h (placeholder)" to job store "default"
+2026-02-01 17:59:24 - apscheduler.scheduler - INFO - Added job "SFS – aktualizacja subów co 6h" to job store "default"
+2026-02-01 17:59:24 - apscheduler.scheduler - INFO - Scheduler started
+2026-02-01 17:59:24 - scheduler - INFO - Scheduler uruchomiony (publish co 1 min)
+2026-02-01 17:59:25 - __main__ - INFO - Bot rozpoczyna pobieranie aktualizacji...
+2026-02-01 17:59:25 - aiogram.dispatcher - INFO - Start polling
+2026-02-01 17:59:25 - aiogram.dispatcher - INFO - Run polling for bot @ThreadsStealerBot id=8217774793 - 'ThreadsStealerBot'
+2026-02-01 17:59:27 - handlers - INFO - 🟢 User JOINED: 5794369342 do kanału -1002085180516 (Owner: 7829319839, Type: premium)
+2026-02-01 17:59:27 - handlers - INFO - Wysłano powiadomienie o dołączeniu do właściciela 7829319839
+2026-02-01 17:59:27 - aiogram.event - INFO - Update id=352263645 is handled. Duration 484 ms by bot id=8217774793
+2026-02-01 17:59:34 - handlers - INFO - 🔴 User LEFT: 5794369342 z kanału -1002085180516 (Owner: 7829319839, Type: premium)
+2026-02-01 17:59:34 - database - INFO - Zaktualizowano status subskrypcji 5794369342 w kanale -1002085180516: left
+2026-02-01 17:59:35 - aiogram.event - INFO - Update id=352263646 is handled. Duration 546 ms by bot id=8217774793
+2026-02-01 17:59:55 - handlers - INFO - Wybrano tier: Bronze dla user 5794369342 w kanale -1002085180516
+2026-02-01 17:59:55 - aiogram.event - INFO - Update id=352263647 is handled. Duration 562 ms by bot id=8217774793
+2026-02-01 18:00:05 - handlers - INFO - 🟢 User JOINED: 5794369342 do kanału -1002085180516 (Owner: 7829319839, Type: premium)
+2026-02-01 18:00:05 - handlers - INFO - Wysłano powiadomienie o dołączeniu do właściciela 7829319839
+2026-02-01 18:00:05 - aiogram.event - INFO - Update id=352263648 is handled. Duration 437 ms by bot id=8217774793
+2026-02-01 18:00:16 - handlers - INFO - Wybrano tier: Bronze dla user 5794369342 w kanale -1002085180516
+2026-02-01 18:00:16 - aiogram.event - INFO - Update id=352263649 is handled. Duration 469 ms by bot id=8217774793
+2026-02-01 18:00:18 - aiogram.event - INFO - Update id=352263650 is handled. Duration 344 ms by bot id=8217774793
+2026-02-01 18:00:24 - apscheduler.executors.default - INFO - Running job "Automatyczne usuwanie wygasłych subskrypcji (trigger: interval[0:01:00], next run at: 2026-02-01 18:01:24 CET)" (scheduled at 2026-02-01 18:00:24.925203+01:00)
+2026-02-01 18:00:24 - apscheduler.executors.default - INFO - Running job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 18:01:24 CET)" (scheduled at 2026-02-01 18:00:24.925203+01:00)
+2026-02-01 18:00:24 - apscheduler.executors.default - INFO - Job "Automatyczne usuwanie wygasłych subskrypcji (trigger: interval[0:01:00], next run at: 2026-02-01 18:01:24 CET)" executed successfully
+2026-02-01 18:00:24 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T18:00:24.929800
+2026-02-01 18:00:24 - apscheduler.executors.default - INFO - Job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 18:01:24 CET)" executed successfully
+2026-02-01 18:00:25 - database - INFO - Zapytanie SQL zwróciło 0 wygasłych subskrypcji
+2026-02-01 18:00:32 - helpers - INFO - Sparsowano datę: 2026-02-01 18:01 → 2026-02-01 18:01:00 (format: YYYY-MM-DD HH:MM)
+2026-02-01 18:00:32 - database - INFO - Utworzono subskrypcję dla 5794369342 w kanale -1002085180516 (quitecuute) - Bronze, wygasa: 2026-02-01 18:01
+2026-02-01 18:00:33 - aiogram.event - INFO - Update id=352263651 is handled. Duration 454 ms by bot id=8217774793
+2026-02-01 18:00:40 - aiogram.event - INFO - Update id=352263652 is handled. Duration 422 ms by bot id=8217774793
+2026-02-01 18:01:24 - apscheduler.executors.default - INFO - Running job "Automatyczne usuwanie wygasłych subskrypcji (trigger: interval[0:01:00], next run at: 2026-02-01 18:02:24 CET)" (scheduled at 2026-02-01 18:01:24.925203+01:00)
+2026-02-01 18:01:24 - apscheduler.executors.default - INFO - Running job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 18:02:24 CET)" (scheduled at 2026-02-01 18:01:24.925203+01:00)
+2026-02-01 18:01:24 - apscheduler.executors.default - INFO - Job "Automatyczne usuwanie wygasłych subskrypcji (trigger: interval[0:01:00], next run at: 2026-02-01 18:02:24 CET)" executed successfully
+2026-02-01 18:01:24 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T18:01:24.926479
+2026-02-01 18:01:24 - apscheduler.executors.default - INFO - Job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 18:02:24 CET)" executed successfully
+2026-02-01 18:01:25 - database - INFO - Zapytanie SQL zwróciło 1 wygasłych subskrypcji
+2026-02-01 18:01:25 - scheduler - INFO - Znaleziono 1 wygasłych subskrypcji
+2026-02-01 18:01:25 - database - INFO - Zaktualizowano status subskrypcji 5794369342 w kanale -1002085180516: banned
+2026-02-01 18:01:25 - handlers - INFO - 🚫 User BANNED: 5794369342 z kanału -1002085180516 (Owner: 7829319839)
+2026-02-01 18:01:25 - database - INFO - Zaktualizowano status subskrypcji 5794369342 w kanale -1002085180516: banned
+2026-02-01 18:01:26 - aiogram.event - INFO - Update id=352263653 is handled. Duration 530 ms by bot id=8217774793
+2026-02-01 18:01:26 - scheduler - INFO - Zbanowano 1 użytkowników
+2026-02-01 18:02:24 - apscheduler.executors.default - INFO - Running job "Automatyczne usuwanie wygasłych subskrypcji (trigger: interval[0:01:00], next run at: 2026-02-01 18:03:24 CET)" (scheduled at 2026-02-01 18:02:24.925203+01:00)
+2026-02-01 18:02:24 - apscheduler.executors.default - INFO - Running job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 18:03:24 CET)" (scheduled at 2026-02-01 18:02:24.925203+01:00)
+2026-02-01 18:02:24 - apscheduler.executors.default - INFO - Job "Automatyczne usuwanie wygasłych subskrypcji (trigger: interval[0:01:00], next run at: 2026-02-01 18:03:24 CET)" executed successfully
+2026-02-01 18:02:24 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T18:02:24.935715
+2026-02-01 18:02:24 - apscheduler.executors.default - INFO - Job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 18:03:24 CET)" executed successfully
+2026-02-01 18:02:25 - database - INFO - Zapytanie SQL zwróciło 0 wygasłych subskrypcji
+2026-02-01 18:03:24 - apscheduler.executors.default - INFO - Running job "Automatyczne usuwanie wygasłych subskrypcji (trigger: interval[0:01:00], next run at: 2026-02-01 18:04:24 CET)" (scheduled at 2026-02-01 18:03:24.925203+01:00)
+2026-02-01 18:03:24 - apscheduler.executors.default - INFO - Running job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 18:04:24 CET)" (scheduled at 2026-02-01 18:03:24.925203+01:00)
+2026-02-01 18:03:24 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T18:03:24.930694
+2026-02-01 18:03:24 - apscheduler.executors.default - INFO - Job "Automatyczne usuwanie wygasłych subskrypcji (trigger: interval[0:01:00], next run at: 2026-02-01 18:04:24 CET)" executed successfully
+2026-02-01 18:03:24 - apscheduler.executors.default - INFO - Job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 18:04:24 CET)" executed successfully
+2026-02-01 18:03:25 - database - INFO - Zapytanie SQL zwróciło 0 wygasłych subskrypcji
+2026-02-01 18:03:33 - database - INFO - Zaktualizowano status subskrypcji 5794369342 w kanale -1002085180516: active
+2026-02-01 18:03:33 - database - INFO - Zaktualizowano subskrypcję user_id=5794369342, channel=-1002085180516: ['end_date = ?']
+2026-02-01 18:03:33 - aiogram.event - INFO - Update id=352263655 is handled. Duration 265 ms by bot id=8217774793
+2026-02-01 18:03:34 - aiogram.event - INFO - Update id=352263654 is handled. Duration 640 ms by bot id=8217774793
+2026-02-01 18:03:50 - handlers - INFO - 🟢 User JOINED: 5794369342 do kanału -1002085180516 (Owner: 7829319839, Type: premium)
+2026-02-01 18:03:51 - handlers - INFO - Wysłano powiadomienie o dołączeniu do właściciela 7829319839
+2026-02-01 18:03:51 - aiogram.event - INFO - Update id=352263656 is handled. Duration 452 ms by bot id=8217774793
+2026-02-01 18:03:54 - handlers - INFO - Wybrano tier: Bronze dla user 5794369342 w kanale -1002085180516
+2026-02-01 18:03:55 - aiogram.event - INFO - Update id=352263657 is handled. Duration 389 ms by bot id=8217774793
+2026-02-01 18:03:58 - aiogram.event - INFO - Update id=352263658 is handled. Duration 328 ms by bot id=8217774793
+2026-02-01 18:04:06 - helpers - INFO - Sparsowano datę: 2026-02-01 18:05 → 2026-02-01 18:05:00 (format: YYYY-MM-DD HH:MM)
+2026-02-01 18:04:06 - database - INFO - Utworzono subskrypcję dla 5794369342 w kanale -1002085180516 (quitecuute) - Bronze, wygasa: 2026-02-01 18:05
+2026-02-01 18:04:07 - aiogram.event - INFO - Update id=352263659 is handled. Duration 469 ms by bot id=8217774793
+2026-02-01 18:04:24 - apscheduler.executors.default - INFO - Running job "Automatyczne usuwanie wygasłych subskrypcji (trigger: interval[0:01:00], next run at: 2026-02-01 18:05:24 CET)" (scheduled at 2026-02-01 18:04:24.925203+01:00)
+2026-02-01 18:04:24 - apscheduler.executors.default - INFO - Running job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 18:05:24 CET)" (scheduled at 2026-02-01 18:04:24.925203+01:00)
+2026-02-01 18:04:24 - apscheduler.executors.default - INFO - Job "Automatyczne usuwanie wygasłych subskrypcji (trigger: interval[0:01:00], next run at: 2026-02-01 18:05:24 CET)" executed successfully
+2026-02-01 18:04:24 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T18:04:24.937387
+2026-02-01 18:04:24 - apscheduler.executors.default - INFO - Job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 18:05:24 CET)" executed successfully
+2026-02-01 18:04:25 - database - INFO - Zapytanie SQL zwróciło 0 wygasłych subskrypcji
+2026-02-01 18:04:45 - aiogram.event - INFO - Update id=352263660 is handled. Duration 609 ms by bot id=8217774793
+2026-02-01 18:04:49 - aiogram.event - INFO - Update id=352263661 is handled. Duration 375 ms by bot id=8217774793
+2026-02-01 18:04:54 - aiogram.event - INFO - Update id=352263662 is handled. Duration 405 ms by bot id=8217774793
+2026-02-01 18:04:56 - aiogram.event - INFO - Update id=352263663 is handled. Duration 359 ms by bot id=8217774793
+2026-02-01 18:05:02 - aiogram.event - INFO - Update id=352263664 is handled. Duration 469 ms by bot id=8217774793
+2026-02-01 18:05:04 - aiogram.event - INFO - Update id=352263665 is handled. Duration 375 ms by bot id=8217774793
+2026-02-01 18:05:08 - aiogram.event - INFO - Update id=352263666 is handled. Duration 422 ms by bot id=8217774793
+2026-02-01 18:05:09 - aiogram.event - INFO - Update id=352263667 is handled. Duration 530 ms by bot id=8217774793
+2026-02-01 18:05:11 - aiogram.event - INFO - Update id=352263668 is handled. Duration 530 ms by bot id=8217774793
+2026-02-01 18:05:12 - aiogram.event - INFO - Update id=352263669 is handled. Duration 546 ms by bot id=8217774793
+2026-02-01 18:05:15 - aiogram.event - INFO - Update id=352263670 is handled. Duration 483 ms by bot id=8217774793
+2026-02-01 18:05:16 - aiogram.event - INFO - Update id=352263671 is handled. Duration 452 ms by bot id=8217774793
+2026-02-01 18:05:23 - aiogram.event - INFO - Update id=352263672 is handled. Duration 390 ms by bot id=8217774793
+2026-02-01 18:05:24 - apscheduler.executors.default - INFO - Running job "Automatyczne usuwanie wygasłych subskrypcji (trigger: interval[0:01:00], next run at: 2026-02-01 18:06:24 CET)" (scheduled at 2026-02-01 18:05:24.925203+01:00)
+2026-02-01 18:05:24 - apscheduler.executors.default - INFO - Running job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 18:06:24 CET)" (scheduled at 2026-02-01 18:05:24.925203+01:00)
+2026-02-01 18:05:24 - apscheduler.executors.default - INFO - Job "Automatyczne usuwanie wygasłych subskrypcji (trigger: interval[0:01:00], next run at: 2026-02-01 18:06:24 CET)" executed successfully
+2026-02-01 18:05:24 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T18:05:24.927037
+2026-02-01 18:05:24 - apscheduler.executors.default - INFO - Job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 18:06:24 CET)" executed successfully
+2026-02-01 18:05:25 - database - INFO - Zapytanie SQL zwróciło 1 wygasłych subskrypcji
+2026-02-01 18:05:25 - scheduler - INFO - Znaleziono 1 wygasłych subskrypcji
+2026-02-01 18:05:25 - handlers - INFO - 🚫 User BANNED: 5794369342 z kanału -1002085180516 (Owner: 7829319839)
+2026-02-01 18:05:25 - database - INFO - Zaktualizowano status subskrypcji 5794369342 w kanale -1002085180516: banned
+2026-02-01 18:05:25 - database - INFO - Zaktualizowano status subskrypcji 5794369342 w kanale -1002085180516: banned
+2026-02-01 18:05:25 - aiogram.event - INFO - Update id=352263673 is handled. Duration 594 ms by bot id=8217774793
+2026-02-01 18:05:26 - scheduler - INFO - Zbanowano 1 użytkowników
+2026-02-01 18:06:24 - apscheduler.executors.default - INFO - Running job "Automatyczne usuwanie wygasłych subskrypcji (trigger: interval[0:01:00], next run at: 2026-02-01 18:07:24 CET)" (scheduled at 2026-02-01 18:06:24.925203+01:00)
+2026-02-01 18:06:24 - apscheduler.executors.default - INFO - Running job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 18:07:24 CET)" (scheduled at 2026-02-01 18:06:24.925203+01:00)
+2026-02-01 18:06:24 - apscheduler.executors.default - INFO - Job "Automatyczne usuwanie wygasłych subskrypcji (trigger: interval[0:01:00], next run at: 2026-02-01 18:07:24 CET)" executed successfully
+2026-02-01 18:06:24 - apscheduler.executors.default - INFO - Job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 18:07:24 CET)" executed successfully
+2026-02-01 18:06:24 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T18:06:24.932985
+2026-02-01 18:06:25 - database - INFO - Zapytanie SQL zwróciło 0 wygasłych subskrypcji
+2026-02-01 18:06:34 - handlers - WARNING - get_chat_member_count free channel -1002032389748: Telegram server says - Bad Request: chat not found
+2026-02-01 18:06:34 - aiogram.event - INFO - Update id=352263674 is handled. Duration 1109 ms by bot id=8217774793
+2026-02-01 18:06:46 - aiogram.event - INFO - Update id=352263675 is handled. Duration 421 ms by bot id=8217774793
+2026-02-01 18:07:01 - handlers - WARNING - get_chat_member_count free channel -1002032389748: Telegram server says - Bad Request: chat not found
+2026-02-01 18:07:02 - aiogram.event - INFO - Update id=352263676 is handled. Duration 921 ms by bot id=8217774793
+2026-02-01 18:07:03 - aiogram.event - INFO - Update id=352263677 is handled. Duration 437 ms by bot id=8217774793
+2026-02-01 18:07:04 - aiogram.event - INFO - Update id=352263678 is handled. Duration 547 ms by bot id=8217774793
+2026-02-01 18:07:06 - aiogram.event - INFO - Update id=352263679 is handled. Duration 375 ms by bot id=8217774793
+2026-02-01 18:07:09 - aiogram.event - INFO - Update id=352263680 is handled. Duration 562 ms by bot id=8217774793
+2026-02-01 18:07:12 - aiogram.event - INFO - Update id=352263681 is handled. Duration 391 ms by bot id=8217774793
+2026-02-01 18:07:14 - aiogram.event - INFO - Update id=352263682 is handled. Duration 360 ms by bot id=8217774793
+2026-02-01 18:07:15 - database - INFO - Zaktualizowano status subskrypcji 5794369342 w kanale -1002085180516: left
+2026-02-01 18:07:15 - handlers - ERROR - Unban error: 1 validation error for CallbackQuery
+data
+  Instance is frozen [type=frozen_instance, input_value='list_banned_-1002085180516', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.8/v/frozen_instance
+2026-02-01 18:07:15 - aiogram.event - INFO - Update id=352263684 is handled. Duration 264 ms by bot id=8217774793
+2026-02-01 18:07:15 - aiogram.event - INFO - Update id=352263683 is handled. Duration 453 ms by bot id=8217774793
+2026-02-01 18:07:17 - aiogram.event - INFO - Update id=352263685 is handled. Duration 359 ms by bot id=8217774793
+2026-02-01 18:07:18 - aiogram.event - INFO - Update id=352263686 is handled. Duration 360 ms by bot id=8217774793
+2026-02-01 18:07:22 - database - INFO - Zaktualizowano status subskrypcji 1342685360 w kanale -1002085180516: left
+2026-02-01 18:07:22 - handlers - ERROR - Unban error: 1 validation error for CallbackQuery
+data
+  Instance is frozen [type=frozen_instance, input_value='list_banned_-1002085180516', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.8/v/frozen_instance
+2026-02-01 18:07:22 - aiogram.event - INFO - Update id=352263687 is handled. Duration 437 ms by bot id=8217774793
+2026-02-01 18:07:24 - apscheduler.executors.default - INFO - Running job "Automatyczne usuwanie wygasłych subskrypcji (trigger: interval[0:01:00], next run at: 2026-02-01 18:08:24 CET)" (scheduled at 2026-02-01 18:07:24.925203+01:00)
+2026-02-01 18:07:24 - apscheduler.executors.default - INFO - Running job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 18:08:24 CET)" (scheduled at 2026-02-01 18:07:24.925203+01:00)
+2026-02-01 18:07:24 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T18:07:24.939039
+2026-02-01 18:07:24 - apscheduler.executors.default - INFO - Job "Automatyczne usuwanie wygasłych subskrypcji (trigger: interval[0:01:00], next run at: 2026-02-01 18:08:24 CET)" executed successfully
+2026-02-01 18:07:24 - apscheduler.executors.default - INFO - Job "Publikowanie zaplanowanych postów (trigger: interval[0:01:00], next run at: 2026-02-01 18:08:24 CET)" executed successfully
+2026-02-01 18:07:25 - database - INFO - Zapytanie SQL zwróciło 0 wygasłych subskrypcji
+2026-02-01 18:07:26 - aiogram.event - INFO - Update id=352263688 is handled. Duration 375 ms by bot id=8217774793
+2026-02-01 18:07:28 - aiogram.event - INFO - Update id=352263689 is handled. Duration 688 ms by bot id=8217774793

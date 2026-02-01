@@ -4,7 +4,7 @@ POPRAWIONA WERSJA: Multi-Channel Support
 """
 import logging
 import html
-from datetime import datetime
+from datetime import datetime, timedelta
 
 from aiogram import Router, Bot, F
 from aiogram.types import CallbackQuery, Message
@@ -24,6 +24,49 @@ from utils.helpers import (
 
 logger = logging.getLogger("handlers")
 admin_subs_router = Router()
+
+# =================================================================================================
+# COFNIĘCIE BANA (auto-ban wygasłej subskrypcji)
+# =================================================================================================
+
+@admin_subs_router.callback_query(F.data.startswith("undo_ban_"))
+async def undo_expired_ban(callback: CallbackQuery, bot: Bot):
+    """Cofnięcie bana po auto-usunięciu (wygaśnięcie subskrypcji). Odbanowanie + przedłużenie o 7 dni."""
+    try:
+        parts = callback.data.split("_")
+        if len(parts) != 5 or parts[0] != "undo" or parts[1] != "ban":
+            await callback.answer("Błąd danych.", show_alert=True)
+            return
+        user_id = int(parts[2])
+        channel_id = int(parts[3])
+        owner_id = int(parts[4])
+        if callback.from_user.id != owner_id:
+            await callback.answer("Tylko właściciel kanału może cofnąć bana.", show_alert=True)
+            return
+        # Odbanowanie na Telegramie (użytkownik może wrócić na kanał)
+        await bot.unban_chat_member(chat_id=channel_id, user_id=user_id)
+        # Status w bazie: banned -> active
+        await SubscriptionManager.update_subscription_status(user_id, channel_id, "active")
+        # Przedłużenie o 7 dni, żeby nie został od razu ponownie usunięty
+        new_end = datetime.now() + timedelta(days=7)
+        await SubscriptionManager.update_subscription_details(
+            user_id, channel_id=channel_id, new_end_date=new_end
+        )
+        await callback.answer("✅ Cofnięto bana. Subskrypcja przedłużona o 7 dni.", show_alert=True)
+        # Aktualizacja wiadomości – dopisz info i usuń przycisk
+        try:
+            old_text = callback.message.text or ""
+            new_text = old_text + "\n\n✅ <i>Cofnięto bana. Użytkownik może wrócić na kanał. Subskrypcja przedłużona o 7 dni.</i>"
+            await callback.message.edit_text(new_text, parse_mode=ParseMode.HTML, reply_markup=None)
+        except Exception as edit_err:
+            logger.debug("undo_ban edit message: %s", edit_err)
+    except (ValueError, IndexError) as e:
+        logger.warning("undo_ban parse: %s", e)
+        await callback.answer("Błąd danych.", show_alert=True)
+    except Exception as e:
+        logger.exception("undo_ban: %s", e)
+        await callback.answer("Nie udało się cofnąć bana.", show_alert=True)
+
 
 # =================================================================================================
 # MANUALNY DODAWANIE UŻYTKOWNIKA (START)

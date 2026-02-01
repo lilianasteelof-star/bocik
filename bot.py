@@ -288,7 +288,7 @@ class PremiumBot:
                 await self.bot.send_message(
                     chat_id=settings.ADMIN_ID,
                     text=(
-                        f"🚀 **Premium Bot uruchomiony!**\n\n"
+                        f"🚀 **Bot uruchomiony!**\n\n"
                         f"✅ Baza danych: OK\n"
                         f"✅ Scheduler: OK\n"
                         f"Bot gotowy do pracy! 🎯"

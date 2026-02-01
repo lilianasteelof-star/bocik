@@ -1,0 +1,15 @@
+# Railway — konfiguracja deployu
+# https://docs.railway.app/reference/config-as-code
+# Bot Telegram (worker, bez HTTP) — nie wymaga PORT ani healthcheckPath
+
+[build]
+# Domyślnie Railway używa Railpack; można wymusić nixpacks
+# builder = "nixpacks"
+
+[deploy]
+startCommand = "python bot.py"
+# Worker bez serwera HTTP — nie ustawiaj healthcheckPath (brak HTTP)
+restartPolicyType = "ON_FAILURE"
+restartPolicyMaxRetries = 10
+# Czas na graceful shutdown przy SIGTERM (zatrzymanie schedulera, zamknięcie DB)
+drainingSeconds = 15

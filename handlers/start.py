@@ -126,7 +126,10 @@ async def add_new_channel_help(callback: CallbackQuery, state: FSMContext):
         "1. Dodaj bota jako Administratora do swojego kanału.\n"
         "2. Wyślij tam dowolną wiadomość.\n"
         "3. Przekaż ją tutaj.\n"
-        "4. Wybierz typ kanału (Premium lub Free).",
+        "4. Wybierz typ kanału (Premium lub Free).\n"
+        "WAGA: Bot NIE potrzebuje ŻADNYCH uprawnień do kanału\n ale jeśli chcesz zachować pełną funkcjonalność\n managera subskrybcji, SFS i powiadomień\n to zachęcamy włączyć zarządzanie członkami i publikowanie wiadomości",
+
+        
         parse_mode=ParseMode.HTML,
         reply_markup=InlineKeyboardMarkup(inline_keyboard=[[
             InlineKeyboardButton(text="🔙 Wróć", callback_data="refresh_channels")

@@ -2554,3 +2554,35 @@ You have two options:
 2026-02-01 07:03:58 - database - INFO - Zapytanie SQL zwróciło 0 wygasłych subskrypcji
 2026-02-01 07:04:58 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T07:04:58.820973
 2026-02-01 07:04:58 - database - INFO - Zapytanie SQL zwróciło 0 wygasłych subskrypcji
+2026-02-01 07:05:58 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T07:05:58.826156
+2026-02-01 07:05:58 - database - INFO - Zapytanie SQL zwróciło 0 wygasłych subskrypcji
+2026-02-01 07:06:58 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T07:06:58.822814
+2026-02-01 07:06:58 - database - INFO - Zapytanie SQL zwróciło 0 wygasłych subskrypcji
+2026-02-01 07:07:49 - database - INFO - Dodano kanał aaa (-1003646762466) dla 5794369342
+2026-02-01 07:07:58 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T07:07:58.824726
+2026-02-01 07:07:58 - database - INFO - Zapytanie SQL zwróciło 0 wygasłych subskrypcji
+2026-02-01 07:08:58 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T07:08:58.815743
+2026-02-01 07:08:58 - database - INFO - Zapytanie SQL zwróciło 0 wygasłych subskrypcji
+2026-02-01 07:09:58 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T07:09:58.839447
+2026-02-01 07:09:58 - database - INFO - Zapytanie SQL zwróciło 0 wygasłych subskrypcji
+2026-02-01 07:10:58 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T07:10:58.814723
+2026-02-01 07:10:58 - database - INFO - Zapytanie SQL zwróciło 0 wygasłych subskrypcji
+2026-02-01 07:11:58 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T07:11:58.829155
+2026-02-01 07:11:58 - database - INFO - Zapytanie SQL zwróciło 0 wygasłych subskrypcji
+2026-02-01 07:12:58 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T07:12:58.824686
+2026-02-01 07:12:58 - database - INFO - Zapytanie SQL zwróciło 0 wygasłych subskrypcji
+2026-02-01 07:17:56 - database - INFO - Połączono z Supabase (PostgreSQL) – pula połączeń
+2026-02-01 07:17:56 - database - INFO - Tabele PostgreSQL (Supabase) zainicjalizowane
+2026-02-01 07:17:57 - database - INFO - Rozłączono z bazą danych
+2026-02-01 07:18:05 - database - INFO - Połączono z Supabase (PostgreSQL) – pula połączeń
+2026-02-01 07:18:05 - database - INFO - Tabele PostgreSQL (Supabase) zainicjalizowane
+2026-02-01 07:19:06 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T07:19:06.284675
+2026-02-01 07:19:06 - database - INFO - Zapytanie SQL zwróciło 0 wygasłych subskrypcji
+2026-02-01 07:20:06 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T07:20:06.281416
+2026-02-01 07:20:06 - database - INFO - Zapytanie SQL zwróciło 0 wygasłych subskrypcji
+2026-02-01 07:21:06 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T07:21:06.287838
+2026-02-01 07:21:06 - database - INFO - Zapytanie SQL zwróciło 0 wygasłych subskrypcji
+2026-02-01 07:22:06 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T07:22:06.275793
+2026-02-01 07:22:06 - database - INFO - Zapytanie SQL zwróciło 0 wygasłych subskrypcji
+2026-02-01 07:23:06 - database - INFO - Sprawdzam wygasłe subskrypcje, teraz: 2026-02-01T07:23:06.284659
+2026-02-01 07:23:06 - database - INFO - Zapytanie SQL zwróciło 0 wygasłych subskrypcji

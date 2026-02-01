@@ -1,11 +1,11 @@
 """
 Konfiguracja bota - ładowanie zmiennych środowiskowych z walidacją
 """
-import os
 import logging
 from pathlib import Path
 from typing import Optional
-from pydantic import validator
+from urllib.parse import urlparse
+from pydantic import model_validator, validator
 from pydantic_settings import BaseSettings
 
 
@@ -26,13 +26,14 @@ class Settings(BaseSettings):
     TELEGRAM_API_ID: Optional[int] = None
     TELEGRAM_API_HASH: Optional[str] = None
     
-    # Database – Supabase (PostgreSQL); jeśli ustawione, używana jest Supabase zamiast SQLite
-    DATABASE_PATH: str = "database/bot.db"  # używane tylko gdy brak DB_HOST
+    # Database – Supabase (PostgreSQL) lub Railway PostgreSQL (DATABASE_URL)
+    DATABASE_PATH: str = "database/bot.db"  # używane tylko gdy brak DB_HOST/DB_PASSWORD
+    DATABASE_URL: Optional[str] = None  # Railway: postgresql://user:pass@host:port/dbname
     DB_HOST: Optional[str] = "aws-1-eu-central-1.pooler.supabase.com"
     DB_PORT: int = 6543
     DB_NAME: str = "postgres"
     DB_USER: str = "postgres.cflzgaosomhshxffjevf"
-    DB_PASSWORD: str = ""  # ustaw w .env (np. DB_PASSWORD=Wektor420##)
+    DB_PASSWORD: str = ""  # ustaw w .env lub przez DATABASE_URL
     
     # Logging
     LOG_LEVEL: str = "INFO"
@@ -43,6 +44,31 @@ class Settings(BaseSettings):
     class Config:
         env_file = ".env"
         env_file_encoding = "utf-8"
+        extra = "ignore"
+    
+    @model_validator(mode="after")
+    def parse_database_url(self) -> "Settings":
+        """Jeśli Railway (lub inny host) ustawia DATABASE_URL, nadpisz DB_*."""
+        url = getattr(self, "DATABASE_URL", None)
+        if not url or not url.strip():
+            return self
+        try:
+            parsed = urlparse(url)
+            if parsed.scheme not in ("postgres", "postgresql"):
+                return self
+            host = parsed.hostname or self.DB_HOST
+            port = parsed.port or self.DB_PORT
+            name = (parsed.path or "").strip("/") or self.DB_NAME
+            user = parsed.username or self.DB_USER
+            password = parsed.password or self.DB_PASSWORD
+            object.__setattr__(self, "DB_HOST", host)
+            object.__setattr__(self, "DB_PORT", port)
+            object.__setattr__(self, "DB_NAME", name)
+            object.__setattr__(self, "DB_USER", user)
+            object.__setattr__(self, "DB_PASSWORD", password)
+        except Exception:
+            pass
+        return self
     
     @validator("BOT_TOKEN")
     def validate_bot_token(cls, v):
@@ -84,48 +110,32 @@ class Settings(BaseSettings):
         return v
 
     def setup_logging(self) -> None:
-        """Konfiguracja systemu logowania"""
-        # Utworzenie katalogu logs jeśli nie istnieje
-        Path("logs").mkdir(exist_ok=True)
-        
-        # Format logów
+        """Konfiguracja systemu logowania (stdout zawsze; pliki tylko gdy zapisywalne, np. lokalnie)."""
         log_format = "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
         date_format = "%Y-%m-%d %H:%M:%S"
-        
-        # Konfiguracja głównego loggera
+        handlers: list = [logging.StreamHandler()]
+        try:
+            Path("logs").mkdir(exist_ok=True)
+            handlers.append(
+                logging.FileHandler("logs/bot.log", encoding="utf-8")
+            )
+        except OSError:
+            pass  # Railway / read-only: tylko stdout
         logging.basicConfig(
             level=getattr(logging, self.LOG_LEVEL),
             format=log_format,
             datefmt=date_format,
-            handlers=[
-                # Handler do pliku
-                logging.FileHandler(
-                    "logs/bot.log", 
-                    encoding="utf-8"
-                ),
-                # Handler do konsoli
-                logging.StreamHandler()
-            ]
+            handlers=handlers,
         )
-        
-        # Oddzielne logi dla różnych modułów
-        modules_to_log = [
-            "aiogram",
-            "database",
-            "scheduler",
-            "handlers"
-        ]
-        
+        modules_to_log = ["aiogram", "database", "scheduler", "handlers"]
         for module in modules_to_log:
-            logger = logging.getLogger(module)
-            file_handler = logging.FileHandler(
-                f"logs/{module}.log", 
-                encoding="utf-8"
-            )
-            file_handler.setFormatter(
-                logging.Formatter(log_format, date_format)
-            )
-            logger.addHandler(file_handler)
+            log = logging.getLogger(module)
+            try:
+                fh = logging.FileHandler(f"logs/{module}.log", encoding="utf-8")
+                fh.setFormatter(logging.Formatter(log_format, date_format))
+                log.addHandler(fh)
+            except OSError:
+                pass
 
 
 # Globalna instancja konfiguracji

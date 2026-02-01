@@ -316,30 +316,30 @@ class PremiumBot:
 
 async def main():
     """Główna funkcja aplikacji"""
-    
-    # Inicjalizacja bota
     bot = PremiumBot()
-    
-    # Obsługa sygnałów zatrzymania (Ctrl+C)
+    run_task = asyncio.create_task(bot.start_bot())
+
     def signal_handler(signum, frame):
-        logger.info(f"Otrzymano sygnał {signum}")
-        asyncio.create_task(bot.stop_bot())
-        sys.exit(0)
-    
+        logger.info(f"Otrzymano sygnał {signum} (graceful shutdown)")
+        run_task.cancel()
+
     signal.signal(signal.SIGINT, signal_handler)
     signal.signal(signal.SIGTERM, signal_handler)
-    
+
     try:
-        # Uruchomienie bota
-        await bot.start_bot()
-        
+        await run_task
+    except asyncio.CancelledError:
+        logger.info("Zatrzymywanie bota (sygnał)...")
     except KeyboardInterrupt:
         logger.info("Przerwano przez użytkownika")
     except Exception as e:
         logger.critical(f"Krytyczny błąd: {e}")
-        sys.exit(1)
+        raise
     finally:
-        await bot.stop_bot()
+        try:
+            await bot.stop_bot()
+        except Exception as e:
+            logger.error(f"Błąd przy zatrzymywaniu bota: {e}")
 
 
 if __name__ == "__main__":

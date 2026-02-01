@@ -264,11 +264,7 @@ class PremiumBot:
                     chat_id=settings.ADMIN_ID,
                     text=(
                         f"🚀 **Premium Bot uruchomiony!**\n\n"
-                        f"✅ Baza danych: OK\n"
-                        f"✅ Scheduler: OK\n"
-                        f"✅ Middleware: OK\n"
-                        f"✅ Routery: OK\n\n"
-                        f"Bot gotowy do pracy! 🎯"
+                        f"Bot gotowy do pracy! "
                     )
                 )
             except Exception as notify_error:
@@ -300,7 +296,7 @@ class PremiumBot:
             try:
                 await self.bot.send_message(
                     chat_id=settings.ADMIN_ID,
-                    text="🛑 **Premium Bot zatrzymany**\n\nDo zobaczenia! 👋"
+                    text="🛑 **Premium Bot zatrzymany**\n"
                 )
             except Exception:
                 pass  # Ignorujemy błędy przy zatrzymywaniu

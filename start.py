@@ -126,7 +126,7 @@ async def add_new_channel_help(callback: CallbackQuery, state: FSMContext):
         "2. Wyślij tam dowolną wiadomość.\n"
         "3. Przekaż ją tutaj.\n"
         "4. Wybierz typ kanału (Premium lub Free).\n\n"
-        "WAGA: Bot NIE potrzebuje ŻADNYCH uprawnień do kanału, ale jeśli chcesz zachować pełną funkcjonalność managera subskrybcji, SFS i powiadomień, to zachęcamy włączyć zarządzanie członkami i publikowanie wiadomości."
+        "<b>UWAGA</b>: Bot NIE potrzebuje <b>ŻADNYCH</b> uprawnień do kanału, ale jeśli chcesz zachować pełną funkcjonalność managera subskrybcji, SFS i powiadomień, to zachęcamy włączyć zarządzanie członkami i publikowanie wiadomości."
     )
     reply_markup = InlineKeyboardMarkup(inline_keyboard=[[
         InlineKeyboardButton(text="🔙 Wróć", callback_data="refresh_channels")

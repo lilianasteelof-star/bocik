@@ -353,26 +353,44 @@ def _chat_user_label(u: dict) -> str:
     return (label[:60] + "…") if len(label) > 60 else label
 
 
+def _html_esc(s: str) -> str:
+    """Escape dla HTML (żeby @ i znaki specjalne nie psuły wiadomości)."""
+    if not s:
+        return ""
+    return str(s).replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+
+
 async def _render_chat_users_page(callback: CallbackQuery, page: int):
+    await BotUsersManager.ensure_user(callback.from_user.id)
+    await BotUsersManager.update_user_display_info(
+        callback.from_user.id,
+        username=callback.from_user.username,
+        full_name=(callback.from_user.first_name or "") + " " + (callback.from_user.last_name or "").strip(),
+    )
     total = await BotUsersManager.count_users_with_activity()
     users = await BotUsersManager.get_users_with_activity(page, PER_PAGE_CHAT_USERS)
+    logger.info("Aktywni użytkownicy: total=%s, page=%s, len(users)=%s", total, page, len(users))
+
     lines = []
     for u in users:
         uid = u.get("user_id")
         label = _chat_user_label(u)
         last = u.get("last_activity")
-        last_str = last.strftime("%Y-%m-%d %H:%M") if hasattr(last, "strftime") else str(last)[:16] if last else "—"
-        lines.append(f"• **{label}** (`{uid}`) — ostatnia aktywność: {last_str}")
+        last_str = last.strftime("%Y-%m-%d %H:%M") if hasattr(last, "strftime") else (str(last)[:16] if last else "—")
+        lines.append(f"• <b>{_html_esc(label)}</b> <code>{uid}</code> — ostatnia aktywność: {_html_esc(last_str)}")
     npages = max(1, (total + PER_PAGE_CHAT_USERS - 1) // PER_PAGE_CHAT_USERS)
+    body = "\n".join(lines) if lines else "<i>Brak użytkowników w bazie (bot_users).</i>"
     text = (
-        "💬 **Aktywni użytkownicy (chat)**\n\n"
-        "Użytkownicy, którzy nawiązali interakcję z botem.\n\n"
-        + ("\n".join(lines) if lines else "_Brak aktywnych użytkowników._")
-        + f"\n\nStrona {page + 1}/{npages} (łącznie: {total})"
+        "💬 <b>Aktywni użytkownicy (chat)</b>\n\n"
+        "Użytkownicy, którzy nawiązali kontakt z botem (np. /start).\n\n"
+        f"{body}\n\n"
+        f"Strona {page + 1}/{npages} (łącznie: {total})"
     )
     kb = []
     for u in users:
-        uid = u["user_id"]
+        uid = u.get("user_id")
+        if uid is None:
+            continue
         label = _chat_user_label(u)
         kb.append([InlineKeyboardButton(text=f"👤 {label}", callback_data=f"superadmin_chat_user_{uid}")])
     if page > 0:
@@ -380,14 +398,23 @@ async def _render_chat_users_page(callback: CallbackQuery, page: int):
     if page < npages - 1:
         kb.append([InlineKeyboardButton(text="▶", callback_data=f"superadmin_chat_users_page_{page + 1}")])
     kb.append([InlineKeyboardButton(text="🔙 Menu", callback_data="superadmin_panel")])
+
     try:
         await callback.message.edit_text(
             text,
             reply_markup=InlineKeyboardMarkup(inline_keyboard=kb),
-            parse_mode=ParseMode.MARKDOWN,
+            parse_mode=ParseMode.HTML,
         )
-    except TelegramBadRequest:
-        pass
+    except TelegramBadRequest as e:
+        logger.warning("Aktywni użytkownicy: edit_text failed: %s", e)
+        try:
+            await callback.message.answer(
+                text,
+                reply_markup=InlineKeyboardMarkup(inline_keyboard=kb),
+                parse_mode=ParseMode.HTML,
+            )
+        except Exception as e2:
+            logger.error("Aktywni użytkownicy: answer failed: %s", e2)
 
 
 @superadmin_router.callback_query(F.data.startswith("superadmin_chat_user_"))
@@ -439,6 +466,15 @@ async def superadmin_chat_user_detail(callback: CallbackQuery, bot: Bot, state: 
 
 
 async def _render_chat_user_detail(callback: CallbackQuery, user_id: int):
+    display = await BotUsersManager.get_user_display(user_id)
+    username = (display.get("last_username") or "").strip() if display else ""
+    full_name = (display.get("last_full_name") or "").strip() if display else ""
+    user_line = f"@{username}" if username else (full_name or f"ID: {user_id}")
+    if username and full_name:
+        user_line = f"@{username} — {full_name}"
+    elif full_name:
+        user_line = full_name
+
     logs = await UserInteractionLog.get_last_for_user(user_id, 20)
     is_banned = await GlobalBlacklist.is_banned(user_id)
     log_lines = []
@@ -453,7 +489,8 @@ async def _render_chat_user_detail(callback: CallbackQuery, user_id: int):
         log_block = log_block[-2500:]
     status = "🚫 **Zablokowany**" if is_banned else "✅ Aktywny"
     text = (
-        f"👤 **Użytkownik** `{user_id}`\n\n"
+        f"👤 **Użytkownik** {user_line}\n"
+        f"🆔 ID: `{user_id}`\n\n"
         f"Status: {status}\n\n"
         "**Ostatnie 20 logów:**\n```\n" + log_block + "\n```"
     )
@@ -476,8 +513,12 @@ async def _render_chat_user_detail(callback: CallbackQuery, user_id: int):
 
 @superadmin_router.message(StateFilter(SuperAdminChatUser.waiting_message_to_user), F.text)
 async def superadmin_chat_user_send_message(message: Message, state: FSMContext, bot: Bot):
-    """Wysłanie wiadomości jako bot do wybranego użytkownika."""
+    """Wysłanie wiadomości jako bot do wybranego użytkownika. /start = anuluj."""
     if not _is_admin(message.from_user.id):
+        return
+    if message.text and message.text.strip() == "/start":
+        await state.clear()
+        await message.reply("Anulowano. Wiadomość nie została wysłana.")
         return
     data = await state.get_data()
     uid = data.get("chat_user_target_uid")
@@ -786,6 +827,10 @@ async def inbox_reply_start(callback: CallbackQuery, state: FSMContext):
 @superadmin_router.message(StateFilter(SuperAdminInbox.waiting_reply_to_user), F.text)
 async def inbox_reply_send(message: Message, state: FSMContext, bot: Bot):
     if not _is_admin(message.from_user.id):
+        return
+    if message.text and message.text.strip() == "/start":
+        await state.clear()
+        await message.reply("Anulowano. Odpowiedź nie została wysłana.")
         return
     data = await state.get_data()
     uid = data.get("inbox_reply_to_uid")

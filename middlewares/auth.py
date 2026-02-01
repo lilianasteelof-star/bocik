@@ -82,11 +82,8 @@ class LoggingMiddleware(BaseMiddleware):
                 user_info = "no_user"
             
             logger.debug(f"{event_type}: {user_info}, {chat_info}")
-            
-            # Wywołanie handlera
-            result = await handler(event, data)
-            
-            # Dane wyświetlania (@, imię) – dla wszystkich, żeby w panelu „Aktywni użytkownicy” było widać etykietę
+
+            # Przed handlerem: zapisz użytkownika i log interakcji (żeby panel „Aktywni użytkownicy” miał dane nawet gdy handler się wywali)
             try:
                 user_id = getattr(getattr(event, "from_user", None), "id", None)
                 from_user = getattr(event, "from_user", None)
@@ -98,29 +95,23 @@ class LoggingMiddleware(BaseMiddleware):
                         full_name = from_user.first_name or None
                     await BotUsersManager.ensure_user(user_id)
                     await BotUsersManager.update_user_display_info(user_id, username=username, full_name=full_name)
+                    if not settings.is_superadmin(user_id):
+                        from database.models import UserInteractionLog
+                        if isinstance(event, Message):
+                            chat = getattr(event, "chat", None)
+                            if chat and getattr(chat, "type", None) == "private":
+                                preview = (event.text or event.caption or "")[:200] if (event.text or event.caption) else f"[{getattr(event.content_type, 'value', event.content_type)}]"
+                                await UserInteractionLog.add(user_id, "message", preview)
+                        elif isinstance(event, CallbackQuery):
+                            preview = (event.data or "")[:200]
+                            await UserInteractionLog.add(user_id, "callback", preview)
             except Exception as upd_err:
-                logger.debug("update_user_display_info skip: %s", upd_err)
-            # Log interakcji tylko dla nie-superadminów (żeby nie zaśmiecać logów)
-            try:
-                user_id = getattr(getattr(event, "from_user", None), "id", None)
-                if not user_id or settings.is_superadmin(user_id):
-                    pass
-                else:
-                    from database.models import UserInteractionLog
-                    if isinstance(event, Message):
-                        chat = getattr(event, "chat", None)
-                        if chat and getattr(chat, "type", None) == "private":
-                            preview = (event.text or event.caption or "")[:200] if (event.text or event.caption) else f"[{getattr(event.content_type, 'value', event.content_type)}]"
-                            await UserInteractionLog.add(user_id, "message", preview)
-                    elif isinstance(event, CallbackQuery):
-                        preview = (event.data or "")[:200]
-                        await UserInteractionLog.add(user_id, "callback", preview)
-            except Exception as log_err:
-                logger.debug("Interaction log skip: %s", log_err)
-            
-            # Logowanie pomyślnego przetworzenia
+                logger.debug("ensure_user / interaction_log skip: %s", upd_err)
+
+            # Wywołanie handlera
+            result = await handler(event, data)
+
             logger.debug(f"{event_type} przetworzony pomyślnie")
-            
             return result
             
         except Exception as e:

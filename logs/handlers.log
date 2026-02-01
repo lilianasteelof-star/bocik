@@ -1077,3 +1077,5 @@ data
 data
   Instance is frozen [type=frozen_instance, input_value='list_banned_-1002085180516', input_type=str]
     For further information visit https://errors.pydantic.dev/2.8/v/frozen_instance
+2026-02-01 18:46:32 - handlers - INFO - Aktywni użytkownicy: total=14, page=0, len(users)=12
+2026-02-01 18:48:36 - handlers - INFO - Aktywni użytkownicy: total=15, page=1, len(users)=3

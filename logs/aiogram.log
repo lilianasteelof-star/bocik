@@ -2129,3 +2129,36 @@ aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: messa
 2026-02-01 18:23:36 - aiogram.event - INFO - Update id=352263699 is handled. Duration 813 ms by bot id=8217774793
 2026-02-01 18:23:39 - aiogram.event - INFO - Update id=352263700 is handled. Duration 812 ms by bot id=8217774793
 2026-02-01 18:23:42 - aiogram.event - INFO - Update id=352263701 is handled. Duration 764 ms by bot id=8217774793
+2026-02-01 18:39:36 - aiogram.dispatcher - INFO - Start polling
+2026-02-01 18:39:37 - aiogram.dispatcher - INFO - Run polling for bot @ThreadsStealerBot id=8217774793 - 'ThreadsStealerBot'
+2026-02-01 18:39:41 - aiogram.event - INFO - Update id=352263702 is handled. Duration 375 ms by bot id=8217774793
+2026-02-01 18:39:42 - aiogram.event - INFO - Update id=352263703 is handled. Duration 469 ms by bot id=8217774793
+2026-02-01 18:39:47 - aiogram.event - INFO - Update id=352263704 is handled. Duration 452 ms by bot id=8217774793
+2026-02-01 18:42:20 - aiogram.event - INFO - Update id=352263705 is handled. Duration 515 ms by bot id=8217774793
+2026-02-01 18:42:21 - aiogram.event - INFO - Update id=352263706 is handled. Duration 453 ms by bot id=8217774793
+2026-02-01 18:42:22 - aiogram.event - INFO - Update id=352263707 is handled. Duration 469 ms by bot id=8217774793
+2026-02-01 18:42:34 - aiogram.dispatcher - INFO - Start polling
+2026-02-01 18:42:34 - aiogram.dispatcher - INFO - Run polling for bot @ThreadsStealerBot id=8217774793 - 'ThreadsStealerBot'
+2026-02-01 18:42:36 - aiogram.event - INFO - Update id=352263708 is handled. Duration 594 ms by bot id=8217774793
+2026-02-01 18:42:38 - aiogram.event - INFO - Update id=352263709 is handled. Duration 437 ms by bot id=8217774793
+2026-02-01 18:42:39 - aiogram.event - INFO - Update id=352263710 is handled. Duration 295 ms by bot id=8217774793
+2026-02-01 18:42:41 - aiogram.event - INFO - Update id=352263711 is handled. Duration 500 ms by bot id=8217774793
+2026-02-01 18:42:42 - aiogram.event - INFO - Update id=352263712 is handled. Duration 469 ms by bot id=8217774793
+2026-02-01 18:43:14 - aiogram.event - INFO - Update id=352263713 is handled. Duration 422 ms by bot id=8217774793
+2026-02-01 18:43:17 - aiogram.event - INFO - Update id=352263714 is handled. Duration 469 ms by bot id=8217774793
+2026-02-01 18:43:20 - aiogram.event - INFO - Update id=352263715 is handled. Duration 468 ms by bot id=8217774793
+2026-02-01 18:43:26 - aiogram.event - INFO - Update id=352263716 is handled. Duration 812 ms by bot id=8217774793
+2026-02-01 18:43:27 - aiogram.event - INFO - Update id=352263717 is handled. Duration 344 ms by bot id=8217774793
+2026-02-01 18:43:29 - aiogram.event - INFO - Update id=352263718 is handled. Duration 717 ms by bot id=8217774793
+2026-02-01 18:46:28 - aiogram.dispatcher - INFO - Start polling
+2026-02-01 18:46:28 - aiogram.dispatcher - INFO - Run polling for bot @ThreadsStealerBot id=8217774793 - 'ThreadsStealerBot'
+2026-02-01 18:46:29 - aiogram.event - INFO - Update id=352263719 is handled. Duration 561 ms by bot id=8217774793
+2026-02-01 18:46:30 - aiogram.event - INFO - Update id=352263720 is handled. Duration 311 ms by bot id=8217774793
+2026-02-01 18:46:32 - aiogram.event - INFO - Update id=352263721 is handled. Duration 671 ms by bot id=8217774793
+2026-02-01 18:47:31 - aiogram.event - INFO - Update id=352263722 is handled. Duration 421 ms by bot id=8217774793
+2026-02-01 18:48:36 - aiogram.event - INFO - Update id=352263723 is handled. Duration 844 ms by bot id=8217774793
+2026-02-01 18:48:39 - aiogram.event - INFO - Update id=352263724 is handled. Duration 296 ms by bot id=8217774793
+2026-02-01 18:52:46 - aiogram.dispatcher - INFO - Start polling
+2026-02-01 18:52:46 - aiogram.dispatcher - INFO - Run polling for bot @ThreadsStealerBot id=8217774793 - 'ThreadsStealerBot'
+2026-02-01 18:52:51 - aiogram.event - INFO - Update id=352263725 is handled. Duration 203 ms by bot id=8217774793
+2026-02-01 18:53:05 - aiogram.event - INFO - Update id=352263726 is handled. Duration 860 ms by bot id=8217774793

@@ -1,5 +1,5 @@
 """
-Inbox: przekazywanie do super-admina wiadomości od użytkowników (prywatne, tekst, nie komenda).
+Inbox: przekazywanie do wszystkich superadminów wiadomości od użytkowników (prywatne, tekst, nie komenda).
 Router powinien być rejestrowany NA KOŃCU, żeby łapać tylko wiadomości nieobsłużone przez inne handlery.
 """
 import logging
@@ -12,8 +12,6 @@ from database.models import InboxMuted
 
 logger = logging.getLogger("handlers")
 inbox_router = Router(name="inbox")
-
-ADMIN_ID = settings.ADMIN_ID
 
 
 def _escape_html(s: str) -> str:
@@ -37,16 +35,23 @@ class NotCommandFilter(BaseFilter):
         return not message.text.strip().startswith("/")
 
 
+def _inbox_admin_ids() -> list:
+    """ID wszystkich superadminów (główny admin + SUPERADMIN_IDS) – każdy dostaje powiadomienia inbox."""
+    ids = [settings.ADMIN_ID]
+    ids.extend(settings.superadmin_ids or [])
+    return list(dict.fromkeys(ids))
+
+
 @inbox_router.message(F.chat.type == "private", F.text, NotCommandFilter())
 async def inbox_forward_to_admin(message: Message, bot: Bot):
     """
     Łapie prywatne wiadomości tekstowe, które nie są komendą (żaden wcześniejszy handler ich nie obsłużył).
-    Przekazuje do admina z przyciskami Odpowiedz / Wycisz (jeśli user nie jest wyciszony).
+    Przekazuje do wszystkich superadminów z przyciskami Odpowiedz / Wycisz (jeśli user nie jest wyciszony).
     """
     if not message.text or not message.from_user:
         return
     user_id = message.from_user.id
-    if user_id == ADMIN_ID:
+    if settings.is_superadmin(user_id):
         return
     if await InboxMuted.is_muted(user_id):
         return
@@ -65,12 +70,13 @@ async def inbox_forward_to_admin(message: Message, bot: Bot):
         [InlineKeyboardButton(text="↩️ Odpowiedz", callback_data=f"inbox_reply_{user_id}")],
         [InlineKeyboardButton(text="🔇 Wycisz powiadomienia", callback_data=f"inbox_mute_{user_id}")],
     ])
-    try:
-        await bot.send_message(
-            ADMIN_ID,
-            admin_text,
-            reply_markup=keyboard,
-            parse_mode="HTML",
-        )
-    except Exception as e:
-        logger.warning("inbox forward to admin: %s", e)
+    for admin_id in _inbox_admin_ids():
+        try:
+            await bot.send_message(
+                admin_id,
+                admin_text,
+                reply_markup=keyboard,
+                parse_mode="HTML",
+            )
+        except Exception as e:
+            logger.warning("inbox forward to admin %s: %s", admin_id, e)

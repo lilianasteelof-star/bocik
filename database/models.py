@@ -11,6 +11,18 @@ from .connection import db_manager, USE_POSTGRES
 logger = logging.getLogger("database")
 
 
+def _record_to_dict(row) -> Optional[Dict[str, Any]]:
+    """Konwersja wiersza (aiosqlite Row / asyncpg Record) na dict."""
+    if row is None:
+        return None
+    try:
+        if hasattr(row, "keys"):
+            return {k: row[k] for k in row.keys()}
+        return dict(row)
+    except (TypeError, AttributeError, KeyError):
+        return None
+
+
 def _row_datetime(value):
     """Z wartości z wiersza (datetime lub string) zwraca datetime. Dla PostgreSQL asyncpg zwraca datetime."""
     if value is None:
@@ -255,6 +267,28 @@ class BotUsersManager:
             return []
 
     @staticmethod
+    async def get_user_display(user_id: int) -> Optional[Dict[str, Any]]:
+        """Pobranie last_username, last_full_name dla wyświetlenia w panelu."""
+        try:
+            connection = await db_manager.get_connection()
+            if USE_POSTGRES:
+                async with connection.execute(
+                    "SELECT user_id, last_username, last_full_name FROM bot_users WHERE user_id = $1",
+                    (user_id,),
+                ) as cursor:
+                    row = await cursor.fetchone()
+            else:
+                async with connection.execute(
+                    "SELECT user_id, last_username, last_full_name FROM bot_users WHERE user_id = ?",
+                    (user_id,),
+                ) as cursor:
+                    row = await cursor.fetchone()
+            return _record_to_dict(row)
+        except Exception as e:
+            logger.error(f"Błąd get_user_display: {e}")
+            return None
+
+    @staticmethod
     async def update_user_display_info(
         user_id: int, username: Optional[str] = None, full_name: Optional[str] = None
     ) -> bool:
@@ -279,47 +313,58 @@ class BotUsersManager:
 
     @staticmethod
     async def get_users_with_activity(page: int = 0, per_page: int = 15) -> List[Dict[str, Any]]:
-        """Użytkownicy, którzy mają interakcje z botem (otwarty chat), posortowani po ostatniej aktywności."""
+        """Użytkownicy bota (z bot_users), posortowani po ostatniej aktywności (logi lub first_seen)."""
         try:
             connection = await db_manager.get_connection()
             offset = page * per_page
             if USE_POSTGRES:
                 sql = """
-                    SELECT u.user_id, u.last_username, u.last_full_name, MAX(l.created_at) AS last_activity
+                    SELECT u.user_id, u.last_username, u.last_full_name,
+                           COALESCE(MAX(l.created_at), u.first_seen) AS last_activity
                     FROM bot_users u
-                    INNER JOIN user_interaction_logs l ON l.user_id = u.user_id
-                    GROUP BY u.user_id, u.last_username, u.last_full_name
-                    ORDER BY last_activity DESC
+                    LEFT JOIN user_interaction_logs l ON l.user_id = u.user_id
+                    GROUP BY u.user_id, u.last_username, u.last_full_name, u.first_seen
+                    ORDER BY last_activity DESC NULLS LAST
                     LIMIT $1 OFFSET $2
                 """
                 async with connection.execute(sql, (per_page, offset)) as cursor:
                     rows = await cursor.fetchall()
             else:
                 sql = """
-                    SELECT u.user_id, u.last_username, u.last_full_name, MAX(l.created_at) AS last_activity
+                    SELECT u.user_id, u.last_username, u.last_full_name,
+                           COALESCE(MAX(l.created_at), u.first_seen) AS last_activity
                     FROM bot_users u
-                    INNER JOIN user_interaction_logs l ON l.user_id = u.user_id
-                    GROUP BY u.user_id, u.last_username, u.last_full_name
+                    LEFT JOIN user_interaction_logs l ON l.user_id = u.user_id
+                    GROUP BY u.user_id, u.last_username, u.last_full_name, u.first_seen
                     ORDER BY last_activity DESC
                     LIMIT ? OFFSET ?
                 """
                 async with connection.execute(sql, (per_page, offset)) as cursor:
                     rows = await cursor.fetchall()
-            return [dict(row) for row in rows]
+            result = []
+            for row in rows:
+                d = _record_to_dict(row)
+                if d is not None:
+                    result.append(d)
+            return result
         except Exception as e:
             logger.error(f"Błąd get_users_with_activity: {e}")
             return []
 
     @staticmethod
     async def count_users_with_activity() -> int:
-        """Liczba użytkowników mających co najmniej jedną interakcję."""
+        """Liczba użytkowników w bot_users (którzy kiedykolwiek nawiązali kontakt z botem)."""
         try:
             connection = await db_manager.get_connection()
-            async with connection.execute(
-                "SELECT COUNT(DISTINCT user_id) FROM user_interaction_logs"
-            ) as cursor:
+            async with connection.execute("SELECT COUNT(*) FROM bot_users") as cursor:
                 row = await cursor.fetchone()
-            return row[0] if row else 0
+            if row is None:
+                return 0
+            try:
+                val = row[0] if hasattr(row, "__getitem__") else row.get("count")
+                return int(val) if val is not None else 0
+            except (TypeError, KeyError):
+                return 0
         except Exception as e:
             logger.error(f"Błąd count_users_with_activity: {e}")
             return 0

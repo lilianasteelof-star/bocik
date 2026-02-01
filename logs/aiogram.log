@@ -1,0 +1,1888 @@
+2026-01-31 04:57:10 - aiogram.dispatcher - INFO - Start polling
+2026-01-31 04:57:10 - aiogram.dispatcher - INFO - Run polling for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-01-31 04:57:19 - aiogram.event - INFO - Update id=619260424 is not handled. Duration 0 ms by bot id=8208421266
+2026-01-31 04:57:19 - aiogram.event - ERROR - Cause exception while process update id=619260424 by bot id=8208421266
+AttributeError: 'Update' object has no attribute 'get'
+Traceback (most recent call last):
+  File "D:\Python\EwhorWatchdog\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\EwhorWatchdog\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\EwhorWatchdog\venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\EwhorWatchdog\venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\EwhorWatchdog\venv\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\EwhorWatchdog\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\EwhorWatchdog\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "D:\Python\EwhorWatchdog\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\EwhorWatchdog\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\EwhorWatchdog\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\EwhorWatchdog\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\EwhorWatchdog\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Python\EwhorWatchdog\middlewares\auth.py", line 243, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Python\EwhorWatchdog\middlewares\auth.py", line 186, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Python\EwhorWatchdog\middlewares\auth.py", line 110, in __call__
+    start_time = data.get('event_update', {}).get('date')
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\EwhorWatchdog\venv\Lib\site-packages\pydantic\main.py", line 828, in __getattr__
+    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}')
+AttributeError: 'Update' object has no attribute 'get'
+2026-01-31 04:58:06 - aiogram.dispatcher - INFO - Polling stopped for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-01-31 04:58:06 - aiogram.dispatcher - INFO - Polling stopped
+2026-01-31 04:58:17 - aiogram.dispatcher - INFO - Start polling
+2026-01-31 04:58:17 - aiogram.dispatcher - INFO - Run polling for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-01-31 04:58:28 - aiogram.event - INFO - Update id=619260425 is handled. Duration 171 ms by bot id=8208421266
+2026-01-31 05:03:34 - aiogram.dispatcher - INFO - Polling stopped for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-01-31 05:03:34 - aiogram.dispatcher - INFO - Polling stopped
+2026-01-31 05:04:06 - aiogram.dispatcher - INFO - Start polling
+2026-01-31 05:04:06 - aiogram.dispatcher - INFO - Run polling for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-01-31 05:04:45 - aiogram.event - INFO - Update id=619260426 is handled. Duration 171 ms by bot id=8208421266
+2026-01-31 05:05:01 - aiogram.event - INFO - Update id=619260427 is handled. Duration 139 ms by bot id=8208421266
+2026-01-31 05:05:25 - aiogram.event - INFO - Update id=619260428 is handled. Duration 140 ms by bot id=8208421266
+2026-01-31 05:05:40 - aiogram.event - INFO - Update id=619260429 is handled. Duration 46 ms by bot id=8208421266
+2026-01-31 05:05:56 - aiogram.event - INFO - Update id=619260430 is handled. Duration 218 ms by bot id=8208421266
+2026-01-31 05:06:19 - aiogram.event - INFO - Update id=619260431 is not handled. Duration 0 ms by bot id=8208421266
+2026-01-31 05:06:34 - aiogram.event - INFO - Update id=619260432 is handled. Duration 139 ms by bot id=8208421266
+2026-01-31 05:11:10 - aiogram.dispatcher - INFO - Polling stopped
+2026-01-31 05:11:10 - aiogram.dispatcher - INFO - Polling stopped for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-01-31 05:11:16 - aiogram.dispatcher - INFO - Start polling
+2026-01-31 05:11:16 - aiogram.dispatcher - INFO - Run polling for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-01-31 05:11:34 - aiogram.event - INFO - Update id=619260433 is handled. Duration 0 ms by bot id=8208421266
+2026-01-31 05:11:41 - aiogram.event - INFO - Update id=619260434 is handled. Duration 0 ms by bot id=8208421266
+2026-01-31 05:14:09 - aiogram.dispatcher - INFO - Polling stopped
+2026-01-31 05:14:09 - aiogram.dispatcher - INFO - Polling stopped for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-01-31 05:14:17 - aiogram.dispatcher - INFO - Start polling
+2026-01-31 05:14:17 - aiogram.dispatcher - INFO - Run polling for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-01-31 05:14:27 - aiogram.event - INFO - Update id=619260435 is handled. Duration 0 ms by bot id=8208421266
+2026-01-31 05:14:31 - aiogram.event - INFO - Update id=619260436 is handled. Duration 156 ms by bot id=8208421266
+2026-01-31 05:14:43 - aiogram.event - INFO - Update id=619260437 is not handled. Duration 0 ms by bot id=8208421266
+2026-01-31 05:15:00 - aiogram.event - INFO - Update id=619260438 is not handled. Duration 0 ms by bot id=8208421266
+2026-01-31 05:15:15 - aiogram.event - INFO - Update id=619260439 is not handled. Duration 0 ms by bot id=8208421266
+2026-01-31 05:15:15 - aiogram.event - INFO - Update id=619260440 is not handled. Duration 0 ms by bot id=8208421266
+2026-01-31 05:17:22 - aiogram.dispatcher - INFO - Polling stopped for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-01-31 05:17:22 - aiogram.dispatcher - INFO - Polling stopped
+2026-01-31 05:17:26 - aiogram.dispatcher - INFO - Start polling
+2026-01-31 05:17:26 - aiogram.dispatcher - INFO - Run polling for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-01-31 05:17:33 - aiogram.event - INFO - Update id=619260441 is handled. Duration 0 ms by bot id=8208421266
+2026-01-31 05:17:36 - aiogram.event - INFO - Update id=619260442 is handled. Duration 171 ms by bot id=8208421266
+2026-01-31 05:17:44 - aiogram.event - INFO - Update id=619260443 is handled. Duration 235 ms by bot id=8208421266
+2026-01-31 05:20:43 - aiogram.dispatcher - INFO - Polling stopped
+2026-01-31 05:20:43 - aiogram.dispatcher - INFO - Polling stopped for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-01-31 05:20:48 - aiogram.dispatcher - INFO - Start polling
+2026-01-31 05:20:48 - aiogram.dispatcher - INFO - Run polling for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-01-31 05:20:56 - aiogram.event - INFO - Update id=619260444 is handled. Duration 0 ms by bot id=8208421266
+2026-01-31 05:20:59 - aiogram.event - INFO - Update id=619260445 is handled. Duration 203 ms by bot id=8208421266
+2026-01-31 05:21:03 - aiogram.event - INFO - Update id=619260446 is handled. Duration 250 ms by bot id=8208421266
+2026-01-31 05:21:04 - aiogram.event - INFO - Update id=619260447 is handled. Duration 46 ms by bot id=8208421266
+2026-01-31 05:21:09 - aiogram.event - INFO - Update id=619260448 is handled. Duration 46 ms by bot id=8208421266
+2026-01-31 05:21:16 - aiogram.event - INFO - Update id=619260449 is handled. Duration 61 ms by bot id=8208421266
+2026-01-31 05:22:31 - aiogram.dispatcher - INFO - Polling stopped
+2026-01-31 05:22:31 - aiogram.dispatcher - INFO - Polling stopped for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-01-31 05:22:35 - aiogram.dispatcher - INFO - Start polling
+2026-01-31 05:22:35 - aiogram.dispatcher - INFO - Run polling for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-01-31 05:22:44 - aiogram.event - INFO - Update id=619260450 is handled. Duration 0 ms by bot id=8208421266
+2026-01-31 05:22:47 - aiogram.event - INFO - Update id=619260451 is handled. Duration 156 ms by bot id=8208421266
+2026-01-31 05:22:49 - aiogram.event - INFO - Update id=619260452 is handled. Duration 203 ms by bot id=8208421266
+2026-01-31 05:22:50 - aiogram.event - INFO - Update id=619260453 is handled. Duration 125 ms by bot id=8208421266
+2026-01-31 05:23:25 - aiogram.event - INFO - Update id=619260454 is handled. Duration 141 ms by bot id=8208421266
+2026-01-31 05:23:46 - aiogram.event - INFO - Update id=619260455 is handled. Duration 156 ms by bot id=8208421266
+2026-01-31 05:24:28 - aiogram.event - INFO - Update id=619260456 is handled. Duration 188 ms by bot id=8208421266
+2026-01-31 05:24:35 - aiogram.event - INFO - Update id=619260457 is handled. Duration 78 ms by bot id=8208421266
+2026-01-31 05:24:40 - aiogram.event - INFO - Update id=619260458 is handled. Duration 78 ms by bot id=8208421266
+2026-01-31 05:24:56 - aiogram.event - INFO - Update id=619260459 is handled. Duration 235 ms by bot id=8208421266
+2026-01-31 05:25:04 - aiogram.event - INFO - Update id=619260460 is handled. Duration 78 ms by bot id=8208421266
+2026-01-31 05:27:09 - aiogram.dispatcher - INFO - Polling stopped for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-01-31 05:27:09 - aiogram.dispatcher - INFO - Polling stopped
+2026-01-31 05:27:12 - aiogram.dispatcher - INFO - Start polling
+2026-01-31 05:27:13 - aiogram.dispatcher - INFO - Run polling for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-01-31 05:27:22 - aiogram.event - INFO - Update id=619260461 is handled. Duration 0 ms by bot id=8208421266
+2026-01-31 05:27:24 - aiogram.event - INFO - Update id=619260462 is handled. Duration 250 ms by bot id=8208421266
+2026-01-31 05:27:27 - aiogram.event - INFO - Update id=619260463 is handled. Duration 233 ms by bot id=8208421266
+2026-01-31 05:27:28 - aiogram.event - INFO - Update id=619260464 is handled. Duration 108 ms by bot id=8208421266
+2026-01-31 05:27:40 - aiogram.event - INFO - Update id=619260465 is handled. Duration 93 ms by bot id=8208421266
+2026-01-31 05:28:03 - aiogram.event - INFO - Update id=619260466 is handled. Duration 265 ms by bot id=8208421266
+2026-01-31 05:29:28 - aiogram.event - INFO - Update id=619260467 is handled. Duration 172 ms by bot id=8208421266
+2026-01-31 05:30:18 - aiogram.event - INFO - Update id=619260468 is handled. Duration 203 ms by bot id=8208421266
+2026-01-31 05:33:04 - aiogram.event - INFO - Update id=619260469 is handled. Duration 139 ms by bot id=8208421266
+2026-01-31 05:33:22 - aiogram.dispatcher - INFO - Start polling
+2026-01-31 05:33:22 - aiogram.dispatcher - INFO - Run polling for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-01-31 05:33:27 - aiogram.event - INFO - Update id=619260470 is handled. Duration 156 ms by bot id=8208421266
+2026-01-31 05:33:56 - aiogram.event - INFO - Update id=619260471 is handled. Duration 0 ms by bot id=8208421266
+2026-01-31 05:34:05 - aiogram.event - INFO - Update id=619260472 is handled. Duration 141 ms by bot id=8208421266
+2026-01-31 05:36:39 - aiogram.dispatcher - INFO - Start polling
+2026-01-31 05:36:39 - aiogram.dispatcher - INFO - Run polling for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-01-31 05:36:57 - aiogram.dispatcher - INFO - Start polling
+2026-01-31 05:36:57 - aiogram.dispatcher - INFO - Run polling for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-01-31 05:36:57 - aiogram.event - INFO - Update id=619260473 is handled. Duration 171 ms by bot id=8208421266
+2026-01-31 05:37:03 - aiogram.event - INFO - Update id=619260474 is handled. Duration 62 ms by bot id=8208421266
+2026-01-31 05:37:09 - aiogram.event - INFO - Update id=619260475 is handled. Duration 0 ms by bot id=8208421266
+2026-01-31 05:37:18 - aiogram.event - INFO - Update id=619260476 is handled. Duration 203 ms by bot id=8208421266
+2026-01-31 05:37:49 - aiogram.event - INFO - Update id=619260477 is handled. Duration 141 ms by bot id=8208421266
+2026-01-31 05:39:25 - aiogram.event - INFO - Update id=619260478 is handled. Duration 140 ms by bot id=8208421266
+2026-01-31 05:39:41 - aiogram.dispatcher - INFO - Start polling
+2026-01-31 05:39:41 - aiogram.dispatcher - INFO - Run polling for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-01-31 05:39:44 - aiogram.event - INFO - Update id=619260479 is handled. Duration 155 ms by bot id=8208421266
+2026-01-31 05:39:50 - aiogram.event - INFO - Update id=619260480 is handled. Duration 0 ms by bot id=8208421266
+2026-01-31 05:39:59 - aiogram.event - INFO - Update id=619260481 is handled. Duration 141 ms by bot id=8208421266
+2026-01-31 05:41:06 - aiogram.event - INFO - Update id=619260482 is handled. Duration 171 ms by bot id=8208421266
+2026-01-31 05:41:16 - aiogram.event - INFO - Update id=619260483 is handled. Duration 78 ms by bot id=8208421266
+2026-01-31 05:41:27 - aiogram.event - INFO - Update id=619260485 is handled. Duration 0 ms by bot id=8208421266
+2026-01-31 05:41:27 - aiogram.event - INFO - Update id=619260486 is handled. Duration 0 ms by bot id=8208421266
+2026-01-31 05:41:27 - aiogram.event - INFO - Update id=619260484 is handled. Duration 235 ms by bot id=8208421266
+2026-01-31 05:41:30 - aiogram.event - INFO - Update id=619260487 is handled. Duration 61 ms by bot id=8208421266
+2026-01-31 05:41:35 - aiogram.event - INFO - Update id=619260488 is handled. Duration 0 ms by bot id=8208421266
+2026-01-31 05:42:05 - aiogram.event - INFO - Update id=619260489 is handled. Duration 0 ms by bot id=8208421266
+2026-01-31 05:42:46 - aiogram.dispatcher - INFO - Start polling
+2026-01-31 05:42:46 - aiogram.dispatcher - INFO - Run polling for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-01-31 05:42:49 - aiogram.event - INFO - Update id=619260490 is handled. Duration 155 ms by bot id=8208421266
+2026-01-31 05:43:08 - aiogram.event - INFO - Update id=619260491 is handled. Duration 203 ms by bot id=8208421266
+2026-01-31 05:43:14 - aiogram.event - INFO - Update id=619260492 is not handled. Duration 0 ms by bot id=8208421266
+2026-01-31 05:43:30 - aiogram.event - INFO - Update id=619260493 is handled. Duration 203 ms by bot id=8208421266
+2026-01-31 05:46:42 - aiogram.dispatcher - INFO - Start polling
+2026-01-31 05:46:42 - aiogram.dispatcher - INFO - Run polling for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-01-31 05:46:47 - aiogram.event - INFO - Update id=619260494 is not handled. Duration 0 ms by bot id=8208421266
+2026-01-31 05:46:49 - aiogram.event - INFO - Update id=619260495 is handled. Duration 141 ms by bot id=8208421266
+2026-01-31 05:46:55 - aiogram.event - INFO - Update id=619260496 is handled. Duration 0 ms by bot id=8208421266
+2026-01-31 05:46:57 - aiogram.event - INFO - Update id=619260497 is handled. Duration 78 ms by bot id=8208421266
+2026-01-31 05:47:01 - aiogram.event - INFO - Update id=619260498 is not handled. Duration 0 ms by bot id=8208421266
+2026-01-31 13:13:51 - aiogram.dispatcher - INFO - Start polling
+2026-01-31 13:13:51 - aiogram.dispatcher - INFO - Run polling for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-01-31 13:14:09 - aiogram.event - INFO - Update id=619260499 is handled. Duration 155 ms by bot id=8208421266
+2026-01-31 13:14:42 - aiogram.event - INFO - Update id=619260500 is handled. Duration 157 ms by bot id=8208421266
+2026-01-31 13:17:14 - aiogram.dispatcher - INFO - Polling stopped for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-01-31 13:17:14 - aiogram.dispatcher - INFO - Polling stopped
+2026-01-31 13:17:18 - aiogram.dispatcher - INFO - Start polling
+2026-01-31 13:17:18 - aiogram.dispatcher - INFO - Run polling for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-01-31 13:17:22 - aiogram.event - INFO - Update id=619260501 is handled. Duration 141 ms by bot id=8208421266
+2026-01-31 13:17:35 - aiogram.event - INFO - Update id=619260502 is handled. Duration 0 ms by bot id=8208421266
+2026-01-31 13:19:03 - aiogram.event - INFO - Update id=619260503 is handled. Duration 0 ms by bot id=8208421266
+2026-01-31 13:20:29 - aiogram.dispatcher - INFO - Polling stopped for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-01-31 13:20:29 - aiogram.dispatcher - INFO - Polling stopped
+2026-01-31 13:20:34 - aiogram.dispatcher - INFO - Start polling
+2026-01-31 13:20:34 - aiogram.dispatcher - INFO - Run polling for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-01-31 13:20:39 - aiogram.event - INFO - Update id=619260504 is handled. Duration 155 ms by bot id=8208421266
+2026-01-31 13:20:48 - aiogram.event - INFO - Update id=619260505 is handled. Duration 61 ms by bot id=8208421266
+2026-01-31 13:20:59 - aiogram.event - INFO - Update id=619260506 is handled. Duration 186 ms by bot id=8208421266
+2026-01-31 13:21:00 - aiogram.event - INFO - Update id=619260507 is handled. Duration 110 ms by bot id=8208421266
+2026-01-31 13:21:18 - aiogram.event - INFO - Update id=619260508 is handled. Duration 375 ms by bot id=8208421266
+2026-01-31 13:21:31 - aiogram.event - INFO - Update id=619260509 is handled. Duration 92 ms by bot id=8208421266
+2026-01-31 13:21:34 - aiogram.event - INFO - Update id=619260511 is handled. Duration 0 ms by bot id=8208421266
+2026-01-31 13:21:34 - aiogram.event - INFO - Update id=619260510 is handled. Duration 172 ms by bot id=8208421266
+2026-01-31 13:21:52 - aiogram.event - INFO - Update id=619260512 is handled. Duration 172 ms by bot id=8208421266
+2026-01-31 13:25:39 - aiogram.dispatcher - INFO - Polling stopped for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-01-31 13:25:39 - aiogram.dispatcher - INFO - Polling stopped
+2026-01-31 13:25:54 - aiogram.dispatcher - INFO - Start polling
+2026-01-31 13:25:54 - aiogram.dispatcher - INFO - Run polling for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-01-31 13:25:54 - aiogram.event - INFO - Update id=619260513 is handled. Duration 170 ms by bot id=8208421266
+2026-01-31 13:26:11 - aiogram.event - INFO - Update id=619260514 is handled. Duration 141 ms by bot id=8208421266
+2026-01-31 13:26:15 - aiogram.event - INFO - Update id=619260515 is handled. Duration 202 ms by bot id=8208421266
+2026-01-31 13:26:17 - aiogram.event - INFO - Update id=619260516 is handled. Duration 141 ms by bot id=8208421266
+2026-01-31 13:26:27 - aiogram.event - INFO - Update id=619260517 is handled. Duration 172 ms by bot id=8208421266
+2026-01-31 13:26:54 - aiogram.event - INFO - Update id=619260518 is handled. Duration 125 ms by bot id=8208421266
+2026-01-31 13:27:41 - aiogram.dispatcher - INFO - Polling stopped for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-01-31 13:27:41 - aiogram.dispatcher - INFO - Polling stopped
+2026-01-31 13:29:11 - aiogram.dispatcher - INFO - Start polling
+2026-01-31 13:29:11 - aiogram.dispatcher - INFO - Run polling for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-01-31 13:29:31 - aiogram.event - INFO - Update id=619260519 is handled. Duration 155 ms by bot id=8208421266
+2026-01-31 13:31:52 - aiogram.event - INFO - Update id=619260520 is handled. Duration 125 ms by bot id=8208421266
+2026-01-31 13:31:57 - aiogram.event - INFO - Update id=619260521 is handled. Duration 94 ms by bot id=8208421266
+2026-01-31 13:31:58 - aiogram.event - INFO - Update id=619260522 is handled. Duration 170 ms by bot id=8208421266
+2026-01-31 13:32:12 - aiogram.event - INFO - Update id=619260523 is handled. Duration 77 ms by bot id=8208421266
+2026-01-31 13:32:16 - aiogram.event - INFO - Update id=619260524 is handled. Duration 77 ms by bot id=8208421266
+2026-01-31 13:32:17 - aiogram.event - INFO - Update id=619260525 is handled. Duration 110 ms by bot id=8208421266
+2026-01-31 13:32:19 - aiogram.event - INFO - Update id=619260526 is handled. Duration 264 ms by bot id=8208421266
+2026-01-31 13:32:25 - aiogram.event - INFO - Update id=619260527 is handled. Duration 63 ms by bot id=8208421266
+2026-01-31 13:32:29 - aiogram.event - INFO - Update id=619260528 is handled. Duration 77 ms by bot id=8208421266
+2026-01-31 13:32:53 - aiogram.event - INFO - Update id=619260529 is handled. Duration 188 ms by bot id=8208421266
+2026-01-31 13:32:55 - aiogram.event - INFO - Update id=619260530 is handled. Duration 297 ms by bot id=8208421266
+2026-01-31 13:33:11 - aiogram.event - INFO - Update id=619260531 is handled. Duration 155 ms by bot id=8208421266
+2026-01-31 13:34:04 - aiogram.event - INFO - Update id=619260532 is handled. Duration 170 ms by bot id=8208421266
+2026-01-31 13:34:46 - aiogram.event - INFO - Update id=619260533 is handled. Duration 141 ms by bot id=8208421266
+2026-01-31 13:35:01 - aiogram.event - INFO - Update id=619260534 is handled. Duration 63 ms by bot id=8208421266
+2026-01-31 13:35:24 - aiogram.event - INFO - Update id=619260535 is handled. Duration 155 ms by bot id=8208421266
+2026-01-31 13:35:29 - aiogram.event - INFO - Update id=619260536 is handled. Duration 77 ms by bot id=8208421266
+2026-01-31 13:35:45 - aiogram.event - INFO - Update id=619260537 is not handled. Duration 0 ms by bot id=8208421266
+2026-01-31 13:35:48 - aiogram.event - INFO - Update id=619260538 is not handled. Duration 0 ms by bot id=8208421266
+2026-01-31 13:35:53 - aiogram.event - INFO - Update id=619260539 is handled. Duration 188 ms by bot id=8208421266
+2026-01-31 13:35:58 - aiogram.event - INFO - Update id=619260541 is handled. Duration 0 ms by bot id=8208421266
+2026-01-31 13:35:58 - aiogram.event - INFO - Update id=619260540 is handled. Duration 233 ms by bot id=8208421266
+2026-01-31 13:36:00 - aiogram.event - INFO - Update id=619260542 is handled. Duration 202 ms by bot id=8208421266
+2026-01-31 13:36:20 - aiogram.event - INFO - Update id=619260543 is handled. Duration 452 ms by bot id=8208421266
+2026-01-31 13:36:23 - aiogram.event - INFO - Update id=619260544 is handled. Duration 77 ms by bot id=8208421266
+2026-01-31 13:40:13 - aiogram.dispatcher - INFO - Polling stopped for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-01-31 13:40:13 - aiogram.dispatcher - INFO - Polling stopped
+2026-01-31 13:40:18 - aiogram.dispatcher - INFO - Start polling
+2026-01-31 13:40:18 - aiogram.dispatcher - INFO - Run polling for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-01-31 13:41:01 - aiogram.dispatcher - INFO - Polling stopped for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-01-31 13:41:01 - aiogram.dispatcher - INFO - Polling stopped
+2026-01-31 13:41:06 - aiogram.dispatcher - INFO - Start polling
+2026-01-31 13:41:06 - aiogram.dispatcher - INFO - Run polling for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-01-31 13:41:13 - aiogram.event - INFO - Update id=619260545 is handled. Duration 219 ms by bot id=8208421266
+2026-01-31 13:41:17 - aiogram.event - INFO - Update id=619260546 is handled. Duration 77 ms by bot id=8208421266
+2026-01-31 13:46:57 - aiogram.dispatcher - INFO - Polling stopped for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-01-31 13:46:57 - aiogram.dispatcher - INFO - Polling stopped
+2026-01-31 13:47:02 - aiogram.dispatcher - INFO - Start polling
+2026-01-31 13:47:02 - aiogram.dispatcher - INFO - Run polling for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-01-31 13:47:14 - aiogram.event - INFO - Update id=619260547 is handled. Duration 155 ms by bot id=8208421266
+2026-01-31 13:47:36 - aiogram.event - INFO - Update id=619260548 is not handled. Duration 0 ms by bot id=8208421266
+2026-01-31 13:48:20 - aiogram.dispatcher - INFO - Polling stopped for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-01-31 13:48:20 - aiogram.dispatcher - INFO - Polling stopped
+2026-01-31 13:48:54 - aiogram.dispatcher - INFO - Start polling
+2026-01-31 13:48:54 - aiogram.dispatcher - INFO - Run polling for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-01-31 13:48:57 - aiogram.event - INFO - Update id=619260549 is handled. Duration 155 ms by bot id=8208421266
+2026-01-31 13:50:27 - aiogram.dispatcher - INFO - Polling stopped
+2026-01-31 13:50:27 - aiogram.dispatcher - INFO - Polling stopped for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-01-31 13:50:32 - aiogram.dispatcher - INFO - Start polling
+2026-01-31 13:50:32 - aiogram.dispatcher - INFO - Run polling for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-01-31 13:50:34 - aiogram.event - INFO - Update id=619260550 is handled. Duration 172 ms by bot id=8208421266
+2026-01-31 13:50:41 - aiogram.event - INFO - Update id=619260551 is handled. Duration 109 ms by bot id=8208421266
+2026-01-31 13:51:00 - aiogram.event - INFO - Update id=619260552 is handled. Duration 155 ms by bot id=8208421266
+2026-01-31 13:51:07 - aiogram.event - INFO - Update id=619260553 is handled. Duration 110 ms by bot id=8208421266
+2026-01-31 13:52:47 - aiogram.dispatcher - INFO - Polling stopped
+2026-01-31 13:52:47 - aiogram.dispatcher - INFO - Polling stopped for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-01-31 13:52:50 - aiogram.dispatcher - INFO - Start polling
+2026-01-31 13:52:50 - aiogram.dispatcher - INFO - Run polling for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-01-31 13:52:58 - aiogram.event - INFO - Update id=619260554 is handled. Duration 172 ms by bot id=8208421266
+2026-01-31 13:53:03 - aiogram.event - INFO - Update id=619260555 is handled. Duration 77 ms by bot id=8208421266
+2026-01-31 13:53:25 - aiogram.event - INFO - Update id=619260556 is handled. Duration 203 ms by bot id=8208421266
+2026-01-31 13:56:56 - aiogram.event - INFO - Update id=619260557 is handled. Duration 140 ms by bot id=8208421266
+2026-01-31 14:02:52 - aiogram.event - INFO - Update id=619260558 is handled. Duration 140 ms by bot id=8208421266
+2026-01-31 14:06:17 - aiogram.event - INFO - Update id=619260559 is handled. Duration 219 ms by bot id=8208421266
+2026-01-31 14:06:25 - aiogram.event - INFO - Update id=619260560 is handled. Duration 78 ms by bot id=8208421266
+2026-01-31 14:11:05 - aiogram.dispatcher - INFO - Polling stopped for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-01-31 14:11:05 - aiogram.dispatcher - INFO - Polling stopped
+2026-01-31 14:11:13 - aiogram.dispatcher - INFO - Start polling
+2026-01-31 14:11:13 - aiogram.dispatcher - INFO - Run polling for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-01-31 14:11:20 - aiogram.event - INFO - Update id=619260561 is handled. Duration 172 ms by bot id=8208421266
+2026-01-31 14:21:13 - aiogram.dispatcher - INFO - Polling stopped for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-01-31 14:21:13 - aiogram.dispatcher - INFO - Polling stopped
+2026-01-31 15:09:42 - aiogram.dispatcher - INFO - Start polling
+2026-01-31 15:09:42 - aiogram.dispatcher - INFO - Run polling for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-01-31 15:10:16 - aiogram.event - INFO - Update id=619260562 is handled. Duration 156 ms by bot id=8208421266
+2026-01-31 15:10:46 - aiogram.event - INFO - Update id=619260563 is not handled. Duration 0 ms by bot id=8208421266
+2026-01-31 15:13:38 - aiogram.event - INFO - Update id=619260564 is handled. Duration 156 ms by bot id=8208421266
+2026-01-31 15:13:41 - aiogram.event - INFO - Update id=619260565 is handled. Duration 94 ms by bot id=8208421266
+2026-01-31 15:14:20 - aiogram.event - INFO - Update id=619260566 is handled. Duration 156 ms by bot id=8208421266
+2026-01-31 15:14:26 - aiogram.event - INFO - Update id=619260567 is handled. Duration 77 ms by bot id=8208421266
+2026-01-31 15:14:50 - aiogram.event - INFO - Update id=619260568 is handled. Duration 186 ms by bot id=8208421266
+2026-01-31 15:20:04 - aiogram.dispatcher - INFO - Polling stopped
+2026-01-31 15:20:04 - aiogram.dispatcher - INFO - Polling stopped for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-01-31 15:20:08 - aiogram.dispatcher - INFO - Start polling
+2026-01-31 15:20:08 - aiogram.dispatcher - INFO - Run polling for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-01-31 15:20:12 - aiogram.event - INFO - Update id=619260569 is handled. Duration 172 ms by bot id=8208421266
+2026-01-31 15:20:19 - aiogram.event - INFO - Update id=619260570 is handled. Duration 108 ms by bot id=8208421266
+2026-01-31 15:20:37 - aiogram.event - INFO - Update id=619260571 is not handled. Duration 0 ms by bot id=8208421266
+2026-01-31 15:20:51 - aiogram.event - INFO - Update id=619260572 is handled. Duration 202 ms by bot id=8208421266
+2026-01-31 15:20:56 - aiogram.event - INFO - Update id=619260573 is handled. Duration 93 ms by bot id=8208421266
+2026-01-31 15:21:03 - aiogram.event - INFO - Update id=619260574 is handled. Duration 61 ms by bot id=8208421266
+2026-01-31 15:21:13 - aiogram.event - INFO - Update id=619260575 is not handled. Duration 0 ms by bot id=8208421266
+2026-01-31 15:21:13 - aiogram.event - ERROR - Cause exception while process update id=619260575 by bot id=8208421266
+AttributeError: 'CallbackQuery' object has no attribute 'element'
+Traceback (most recent call last):
+  File "D:\Python\EwhorWatchdog\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\EwhorWatchdog\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\EwhorWatchdog\venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\EwhorWatchdog\venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\EwhorWatchdog\venv\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\EwhorWatchdog\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\EwhorWatchdog\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "D:\Python\EwhorWatchdog\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\EwhorWatchdog\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\EwhorWatchdog\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\EwhorWatchdog\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 170, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\EwhorWatchdog\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\EwhorWatchdog\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\EwhorWatchdog\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\EwhorWatchdog\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\EwhorWatchdog\middlewares\auth.py", line 188, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\EwhorWatchdog\middlewares\auth.py", line 131, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\EwhorWatchdog\middlewares\auth.py", line 72, in __call__
+    result = await handler(event, data)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\EwhorWatchdog\middlewares\auth.py", line 39, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\EwhorWatchdog\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "D:\Python\EwhorWatchdog\handlers\start.py", line 56, in refresh_channels
+    await callback.element.delete()
+          ^^^^^^^^^^^^^^^^
+  File "D:\Python\EwhorWatchdog\venv\Lib\site-packages\pydantic\main.py", line 828, in __getattr__
+    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}')
+AttributeError: 'CallbackQuery' object has no attribute 'element'
+2026-01-31 15:22:39 - aiogram.dispatcher - INFO - Polling stopped
+2026-01-31 15:22:39 - aiogram.dispatcher - INFO - Polling stopped for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-01-31 15:22:43 - aiogram.dispatcher - INFO - Start polling
+2026-01-31 15:22:43 - aiogram.dispatcher - INFO - Run polling for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-01-31 15:22:46 - aiogram.event - INFO - Update id=619260576 is handled. Duration 140 ms by bot id=8208421266
+2026-01-31 15:22:53 - aiogram.event - INFO - Update id=619260577 is handled. Duration 63 ms by bot id=8208421266
+2026-01-31 15:22:54 - aiogram.event - INFO - Update id=619260578 is not handled. Duration 93 ms by bot id=8208421266
+2026-01-31 15:22:54 - aiogram.event - ERROR - Cause exception while process update id=619260578 by bot id=8208421266
+TelegramBadRequest: Telegram server says - Bad Request: message to be replied not found
+Traceback (most recent call last):
+  File "D:\Python\EwhorWatchdog\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\EwhorWatchdog\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\EwhorWatchdog\venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\EwhorWatchdog\venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\EwhorWatchdog\venv\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\EwhorWatchdog\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\EwhorWatchdog\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "D:\Python\EwhorWatchdog\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\EwhorWatchdog\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\EwhorWatchdog\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\EwhorWatchdog\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 170, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\EwhorWatchdog\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\EwhorWatchdog\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\EwhorWatchdog\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\EwhorWatchdog\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\EwhorWatchdog\middlewares\auth.py", line 188, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\EwhorWatchdog\middlewares\auth.py", line 131, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\EwhorWatchdog\middlewares\auth.py", line 72, in __call__
+    result = await handler(event, data)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\EwhorWatchdog\middlewares\auth.py", line 39, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\EwhorWatchdog\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "D:\Python\EwhorWatchdog\handlers\start.py", line 60, in refresh_channels
+    await cmd_start(callback.message, state)
+  File "D:\Python\EwhorWatchdog\handlers\start.py", line 21, in cmd_start
+    await message.reply(
+  File "D:\Python\EwhorWatchdog\venv\Lib\site-packages\aiogram\methods\base.py", line 84, in emit
+    return await bot(self)
+           ^^^^^^^^^^^^^^^
+  File "D:\Python\EwhorWatchdog\venv\Lib\site-packages\aiogram\client\bot.py", line 488, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\EwhorWatchdog\venv\Lib\site-packages\aiogram\client\session\base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\EwhorWatchdog\venv\Lib\site-packages\aiogram\client\session\aiohttp.py", line 189, in make_request
+    response = self.check_response(
+               ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\EwhorWatchdog\venv\Lib\site-packages\aiogram\client\session\base.py", line 120, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: message to be replied not found
+2026-01-31 15:23:52 - aiogram.dispatcher - INFO - Polling stopped
+2026-01-31 15:23:52 - aiogram.dispatcher - INFO - Polling stopped for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-01-31 15:23:55 - aiogram.dispatcher - INFO - Start polling
+2026-01-31 15:23:55 - aiogram.dispatcher - INFO - Run polling for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-01-31 15:23:59 - aiogram.event - INFO - Update id=619260579 is handled. Duration 155 ms by bot id=8208421266
+2026-01-31 15:24:04 - aiogram.event - INFO - Update id=619260580 is handled. Duration 63 ms by bot id=8208421266
+2026-01-31 15:24:05 - aiogram.event - INFO - Update id=619260581 is handled. Duration 63 ms by bot id=8208421266
+2026-01-31 15:24:09 - aiogram.event - INFO - Update id=619260582 is not handled. Duration 0 ms by bot id=8208421266
+2026-01-31 15:24:12 - aiogram.event - INFO - Update id=619260583 is handled. Duration 139 ms by bot id=8208421266
+2026-01-31 15:25:24 - aiogram.event - INFO - Update id=619260584 is handled. Duration 140 ms by bot id=8208421266
+2026-01-31 15:25:26 - aiogram.event - INFO - Update id=619260585 is handled. Duration 218 ms by bot id=8208421266
+2026-01-31 15:28:20 - aiogram.event - INFO - Update id=619260586 is handled. Duration 140 ms by bot id=8208421266
+2026-01-31 15:34:45 - aiogram.dispatcher - INFO - Polling stopped
+2026-01-31 15:34:45 - aiogram.dispatcher - INFO - Polling stopped for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-01-31 15:34:49 - aiogram.dispatcher - INFO - Start polling
+2026-01-31 15:34:49 - aiogram.dispatcher - INFO - Run polling for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-01-31 15:34:55 - aiogram.event - INFO - Update id=619260587 is handled. Duration 172 ms by bot id=8208421266
+2026-01-31 15:35:02 - aiogram.event - INFO - Update id=619260588 is not handled. Duration 15 ms by bot id=8208421266
+2026-01-31 15:35:11 - aiogram.event - INFO - Update id=619260589 is handled. Duration 156 ms by bot id=8208421266
+2026-01-31 15:35:13 - aiogram.event - INFO - Update id=619260590 is not handled. Duration 14 ms by bot id=8208421266
+2026-01-31 15:37:09 - aiogram.event - INFO - Update id=619260591 is handled. Duration 265 ms by bot id=8208421266
+2026-01-31 15:37:26 - aiogram.event - INFO - Update id=619260592 is handled. Duration 156 ms by bot id=8208421266
+2026-01-31 15:37:33 - aiogram.event - INFO - Update id=619260593 is handled. Duration 125 ms by bot id=8208421266
+2026-01-31 15:37:37 - aiogram.event - INFO - Update id=619260594 is handled. Duration 78 ms by bot id=8208421266
+2026-01-31 15:37:40 - aiogram.event - INFO - Update id=619260595 is handled. Duration 78 ms by bot id=8208421266
+2026-01-31 15:37:44 - aiogram.event - INFO - Update id=619260596 is handled. Duration 140 ms by bot id=8208421266
+2026-01-31 15:37:46 - aiogram.event - INFO - Update id=619260597 is handled. Duration 77 ms by bot id=8208421266
+2026-01-31 15:37:48 - aiogram.event - INFO - Update id=619260598 is handled. Duration 77 ms by bot id=8208421266
+2026-01-31 15:37:52 - aiogram.event - INFO - Update id=619260599 is not handled. Duration 0 ms by bot id=8208421266
+2026-01-31 15:37:54 - aiogram.event - INFO - Update id=619260600 is handled. Duration 77 ms by bot id=8208421266
+2026-01-31 15:38:39 - aiogram.event - INFO - Update id=619260601 is handled. Duration 155 ms by bot id=8208421266
+2026-01-31 15:38:46 - aiogram.event - INFO - Update id=619260602 is handled. Duration 77 ms by bot id=8208421266
+2026-01-31 15:38:51 - aiogram.event - INFO - Update id=619260603 is handled. Duration 141 ms by bot id=8208421266
+2026-01-31 15:39:35 - aiogram.dispatcher - INFO - Polling stopped for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-01-31 15:39:35 - aiogram.dispatcher - INFO - Polling stopped
+2026-01-31 15:39:39 - aiogram.dispatcher - INFO - Start polling
+2026-01-31 15:39:39 - aiogram.dispatcher - INFO - Run polling for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-01-31 15:39:43 - aiogram.event - INFO - Update id=619260604 is handled. Duration 171 ms by bot id=8208421266
+2026-01-31 15:39:48 - aiogram.event - INFO - Update id=619260605 is handled. Duration 93 ms by bot id=8208421266
+2026-01-31 15:39:54 - aiogram.event - INFO - Update id=619260606 is handled. Duration 77 ms by bot id=8208421266
+2026-01-31 15:40:16 - aiogram.event - INFO - Update id=619260607 is handled. Duration 188 ms by bot id=8208421266
+2026-01-31 15:40:20 - aiogram.event - INFO - Update id=619260608 is handled. Duration 93 ms by bot id=8208421266
+2026-01-31 15:40:24 - aiogram.event - INFO - Update id=619260609 is handled. Duration 93 ms by bot id=8208421266
+2026-01-31 15:40:38 - aiogram.event - INFO - Update id=619260610 is handled. Duration 0 ms by bot id=8208421266
+2026-01-31 15:40:41 - aiogram.event - INFO - Update id=619260611 is handled. Duration 0 ms by bot id=8208421266
+2026-01-31 15:41:51 - aiogram.event - INFO - Update id=619260612 is handled. Duration 0 ms by bot id=8208421266
+2026-01-31 15:41:55 - aiogram.event - INFO - Update id=619260613 is handled. Duration 15 ms by bot id=8208421266
+2026-01-31 15:43:33 - aiogram.dispatcher - INFO - Polling stopped
+2026-01-31 15:43:33 - aiogram.dispatcher - INFO - Polling stopped for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-01-31 15:43:37 - aiogram.dispatcher - INFO - Start polling
+2026-01-31 15:43:37 - aiogram.dispatcher - INFO - Run polling for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-01-31 15:43:43 - aiogram.event - INFO - Update id=619260614 is handled. Duration 0 ms by bot id=8208421266
+2026-01-31 15:43:46 - aiogram.event - INFO - Update id=619260615 is handled. Duration 311 ms by bot id=8208421266
+2026-01-31 15:45:57 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2026-01-31 15:45:57 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8208421266)
+2026-01-31 15:46:13 - aiogram.dispatcher - INFO - Connection established (tryings = 1, bot id = 8208421266)
+2026-01-31 15:46:13 - aiogram.event - INFO - Update id=619260616 is handled. Duration 156 ms by bot id=8208421266
+2026-01-31 15:46:13 - aiogram.event - INFO - Update id=619260618 is handled. Duration 203 ms by bot id=8208421266
+2026-01-31 15:46:13 - aiogram.event - INFO - Update id=619260617 is handled. Duration 250 ms by bot id=8208421266
+2026-01-31 15:46:13 - aiogram.event - INFO - Update id=619260619 is handled. Duration 485 ms by bot id=8208421266
+2026-01-31 15:46:18 - aiogram.event - INFO - Update id=619260620 is handled. Duration 389 ms by bot id=8208421266
+2026-01-31 15:46:28 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientOSError: [WinError 64] Określona nazwa sieciowa już jest niedostępna
+2026-01-31 15:46:28 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8208421266)
+2026-01-31 15:46:29 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientOSError: [WinError 64] Określona nazwa sieciowa już jest niedostępna
+2026-01-31 15:46:29 - aiogram.dispatcher - WARNING - Sleep for 1.338874 seconds and try again... (tryings = 1, bot id = 8208421266)
+2026-01-31 15:46:41 - aiogram.dispatcher - INFO - Connection established (tryings = 2, bot id = 8208421266)
+2026-01-31 16:00:29 - aiogram.event - INFO - Update id=619260621 is handled. Duration 156 ms by bot id=8208421266
+2026-01-31 16:00:31 - aiogram.event - INFO - Update id=619260622 is handled. Duration 94 ms by bot id=8208421266
+2026-01-31 16:00:35 - aiogram.event - INFO - Update id=619260623 is not handled. Duration 0 ms by bot id=8208421266
+2026-01-31 16:00:42 - aiogram.event - INFO - Update id=619260624 is handled. Duration 202 ms by bot id=8208421266
+2026-01-31 16:00:46 - aiogram.event - INFO - Update id=619260625 is not handled. Duration 0 ms by bot id=8208421266
+2026-01-31 16:01:23 - aiogram.event - INFO - Update id=619260626 is handled. Duration 172 ms by bot id=8208421266
+2026-01-31 16:01:34 - aiogram.event - INFO - Update id=619260627 is handled. Duration 61 ms by bot id=8208421266
+2026-01-31 16:01:37 - aiogram.event - INFO - Update id=619260628 is handled. Duration 139 ms by bot id=8208421266
+2026-01-31 16:01:41 - aiogram.event - INFO - Update id=619260629 is handled. Duration 93 ms by bot id=8208421266
+2026-01-31 16:03:03 - aiogram.event - INFO - Update id=619260630 is handled. Duration 156 ms by bot id=8208421266
+2026-01-31 16:03:08 - aiogram.event - INFO - Update id=619260631 is handled. Duration 77 ms by bot id=8208421266
+2026-01-31 17:11:11 - aiogram.event - INFO - Update id=619260632 is handled. Duration 139 ms by bot id=8208421266
+2026-01-31 17:12:22 - aiogram.event - INFO - Update id=619260633 is handled. Duration 219 ms by bot id=8208421266
+2026-01-31 17:12:25 - aiogram.event - INFO - Update id=619260634 is handled. Duration 235 ms by bot id=8208421266
+2026-01-31 17:12:28 - aiogram.event - INFO - Update id=619260635 is handled. Duration 125 ms by bot id=8208421266
+2026-01-31 17:12:31 - aiogram.event - INFO - Update id=619260636 is handled. Duration 109 ms by bot id=8208421266
+2026-01-31 17:13:18 - aiogram.event - INFO - Update id=619260637 is handled. Duration 155 ms by bot id=8208421266
+2026-01-31 17:17:15 - aiogram.event - INFO - Update id=619260638 is handled. Duration 219 ms by bot id=8208421266
+2026-01-31 17:26:39 - aiogram.event - INFO - Update id=619260639 is handled. Duration 187 ms by bot id=8208421266
+2026-01-31 17:26:50 - aiogram.event - INFO - Update id=619260640 is handled. Duration 110 ms by bot id=8208421266
+2026-01-31 17:28:21 - aiogram.event - INFO - Update id=619260641 is not handled. Duration 14 ms by bot id=8208421266
+2026-01-31 17:28:33 - aiogram.event - INFO - Update id=619260642 is handled. Duration 155 ms by bot id=8208421266
+2026-01-31 17:28:50 - aiogram.event - INFO - Update id=619260643 is handled. Duration 157 ms by bot id=8208421266
+2026-01-31 17:28:56 - aiogram.event - INFO - Update id=619260644 is handled. Duration 217 ms by bot id=8208421266
+2026-01-31 17:29:00 - aiogram.event - INFO - Update id=619260645 is handled. Duration 140 ms by bot id=8208421266
+2026-01-31 17:29:13 - aiogram.event - INFO - Update id=619260646 is handled. Duration 311 ms by bot id=8208421266
+2026-01-31 17:40:56 - aiogram.dispatcher - INFO - Polling stopped
+2026-01-31 17:40:56 - aiogram.dispatcher - INFO - Polling stopped for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-01-31 17:42:50 - aiogram.dispatcher - INFO - Start polling
+2026-01-31 17:42:50 - aiogram.dispatcher - INFO - Run polling for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-01-31 17:42:56 - aiogram.event - INFO - Update id=619260647 is handled. Duration 436 ms by bot id=8208421266
+2026-01-31 17:43:00 - aiogram.event - INFO - Update id=619260648 is handled. Duration 78 ms by bot id=8208421266
+2026-01-31 17:43:08 - aiogram.event - INFO - Update id=619260649 is handled. Duration 110 ms by bot id=8208421266
+2026-01-31 17:43:18 - aiogram.event - INFO - Update id=619260650 is handled. Duration 203 ms by bot id=8208421266
+2026-01-31 17:43:22 - aiogram.event - INFO - Update id=619260651 is handled. Duration 406 ms by bot id=8208421266
+2026-01-31 17:43:28 - aiogram.event - INFO - Update id=619260652 is handled. Duration 78 ms by bot id=8208421266
+2026-01-31 17:44:17 - aiogram.event - INFO - Update id=619260653 is not handled. Duration 0 ms by bot id=8208421266
+2026-01-31 17:44:26 - aiogram.event - INFO - Update id=619260654 is handled. Duration 235 ms by bot id=8208421266
+2026-01-31 17:44:28 - aiogram.event - INFO - Update id=619260655 is handled. Duration 94 ms by bot id=8208421266
+2026-01-31 17:44:36 - aiogram.event - INFO - Update id=619260656 is handled. Duration 155 ms by bot id=8208421266
+2026-01-31 17:44:37 - aiogram.event - INFO - Update id=619260657 is handled. Duration 219 ms by bot id=8208421266
+2026-01-31 17:44:41 - aiogram.event - INFO - Update id=619260658 is handled. Duration 219 ms by bot id=8208421266
+2026-01-31 17:44:44 - aiogram.event - INFO - Update id=619260659 is handled. Duration 78 ms by bot id=8208421266
+2026-01-31 17:44:46 - aiogram.event - INFO - Update id=619260660 is handled. Duration 78 ms by bot id=8208421266
+2026-01-31 17:44:49 - aiogram.event - INFO - Update id=619260661 is handled. Duration 108 ms by bot id=8208421266
+2026-01-31 17:44:54 - aiogram.event - INFO - Update id=619260662 is not handled. Duration 15 ms by bot id=8208421266
+2026-01-31 17:47:16 - aiogram.dispatcher - INFO - Polling stopped
+2026-01-31 17:47:16 - aiogram.dispatcher - INFO - Polling stopped for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-01-31 17:47:21 - aiogram.dispatcher - INFO - Start polling
+2026-01-31 17:47:21 - aiogram.dispatcher - INFO - Run polling for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-01-31 17:47:23 - aiogram.event - INFO - Update id=619260663 is handled. Duration 141 ms by bot id=8208421266
+2026-01-31 17:47:28 - aiogram.event - INFO - Update id=619260664 is handled. Duration 125 ms by bot id=8208421266
+2026-01-31 17:47:34 - aiogram.event - INFO - Update id=619260665 is handled. Duration 171 ms by bot id=8208421266
+2026-01-31 17:47:36 - aiogram.event - INFO - Update id=619260666 is handled. Duration 110 ms by bot id=8208421266
+2026-01-31 17:47:38 - aiogram.event - INFO - Update id=619260667 is handled. Duration 94 ms by bot id=8208421266
+2026-01-31 17:47:46 - aiogram.event - INFO - Update id=619260668 is handled. Duration 109 ms by bot id=8208421266
+2026-01-31 17:48:02 - aiogram.event - INFO - Update id=619260669 is handled. Duration 405 ms by bot id=8208421266
+2026-01-31 17:48:04 - aiogram.event - INFO - Update id=619260670 is handled. Duration 94 ms by bot id=8208421266
+2026-01-31 17:48:16 - aiogram.event - INFO - Update id=619260671 is handled. Duration 139 ms by bot id=8208421266
+2026-01-31 17:48:20 - aiogram.event - INFO - Update id=619260672 is handled. Duration 312 ms by bot id=8208421266
+2026-01-31 17:48:48 - aiogram.event - INFO - Update id=619260673 is handled. Duration 219 ms by bot id=8208421266
+2026-01-31 17:48:52 - aiogram.event - INFO - Update id=619260674 is handled. Duration 125 ms by bot id=8208421266
+2026-01-31 17:49:17 - aiogram.event - INFO - Update id=619260675 is handled. Duration 204 ms by bot id=8208421266
+2026-01-31 17:49:22 - aiogram.event - INFO - Update id=619260676 is handled. Duration 94 ms by bot id=8208421266
+2026-01-31 17:49:27 - aiogram.event - INFO - Update id=619260677 is handled. Duration 155 ms by bot id=8208421266
+2026-01-31 17:49:32 - aiogram.event - INFO - Update id=619260678 is handled. Duration 295 ms by bot id=8208421266
+2026-01-31 17:49:39 - aiogram.event - INFO - Update id=619260679 is handled. Duration 45 ms by bot id=8208421266
+2026-01-31 17:49:40 - aiogram.event - INFO - Update id=619260680 is handled. Duration 78 ms by bot id=8208421266
+2026-01-31 17:49:54 - aiogram.event - INFO - Update id=619260681 is handled. Duration 156 ms by bot id=8208421266
+2026-01-31 17:49:55 - aiogram.event - INFO - Update id=619260682 is handled. Duration 188 ms by bot id=8208421266
+2026-01-31 17:50:03 - aiogram.event - INFO - Update id=619260683 is handled. Duration 110 ms by bot id=8208421266
+2026-01-31 17:50:05 - aiogram.event - INFO - Update id=619260684 is handled. Duration 61 ms by bot id=8208421266
+2026-01-31 17:50:09 - aiogram.event - INFO - Update id=619260685 is handled. Duration 62 ms by bot id=8208421266
+2026-01-31 17:50:14 - aiogram.event - INFO - Update id=619260686 is handled. Duration 155 ms by bot id=8208421266
+2026-01-31 17:50:28 - aiogram.event - INFO - Update id=619260687 is handled. Duration 0 ms by bot id=8208421266
+2026-01-31 17:50:33 - aiogram.event - INFO - Update id=619260688 is handled. Duration 140 ms by bot id=8208421266
+2026-01-31 17:50:35 - aiogram.event - INFO - Update id=619260689 is handled. Duration 77 ms by bot id=8208421266
+2026-01-31 17:50:36 - aiogram.event - INFO - Update id=619260690 is handled. Duration 62 ms by bot id=8208421266
+2026-01-31 17:50:37 - aiogram.event - INFO - Update id=619260691 is handled. Duration 77 ms by bot id=8208421266
+2026-01-31 17:50:38 - aiogram.event - INFO - Update id=619260692 is handled. Duration 110 ms by bot id=8208421266
+2026-01-31 17:51:51 - aiogram.dispatcher - INFO - Polling stopped
+2026-01-31 17:51:51 - aiogram.dispatcher - INFO - Polling stopped for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-01-31 17:52:02 - aiogram.dispatcher - INFO - Start polling
+2026-01-31 17:52:02 - aiogram.dispatcher - INFO - Run polling for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-01-31 17:52:03 - aiogram.event - INFO - Update id=619260693 is handled. Duration 235 ms by bot id=8208421266
+2026-01-31 17:52:36 - aiogram.event - INFO - Update id=619260694 is handled. Duration 140 ms by bot id=8208421266
+2026-01-31 17:52:42 - aiogram.event - INFO - Update id=619260695 is handled. Duration 250 ms by bot id=8208421266
+2026-01-31 17:52:43 - aiogram.event - INFO - Update id=619260696 is handled. Duration 125 ms by bot id=8208421266
+2026-01-31 17:53:04 - aiogram.event - INFO - Update id=619260697 is handled. Duration 218 ms by bot id=8208421266
+2026-01-31 17:56:15 - aiogram.dispatcher - INFO - Polling stopped
+2026-01-31 17:56:15 - aiogram.dispatcher - INFO - Polling stopped for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-01-31 17:56:26 - aiogram.dispatcher - INFO - Start polling
+2026-01-31 17:56:26 - aiogram.dispatcher - INFO - Run polling for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-01-31 17:56:26 - aiogram.event - INFO - Update id=619260698 is handled. Duration 219 ms by bot id=8208421266
+2026-01-31 17:56:37 - aiogram.event - INFO - Update id=619260699 is handled. Duration 110 ms by bot id=8208421266
+2026-01-31 17:56:40 - aiogram.event - INFO - Update id=619260700 is handled. Duration 282 ms by bot id=8208421266
+2026-01-31 17:56:43 - aiogram.event - INFO - Update id=619260701 is handled. Duration 141 ms by bot id=8208421266
+2026-01-31 17:56:54 - aiogram.event - INFO - Update id=619260702 is handled. Duration 125 ms by bot id=8208421266
+2026-01-31 17:56:59 - aiogram.event - INFO - Update id=619260703 is handled. Duration 79 ms by bot id=8208421266
+2026-01-31 17:57:26 - aiogram.event - INFO - Update id=619260704 is handled. Duration 93 ms by bot id=8208421266
+2026-01-31 18:00:07 - aiogram.event - INFO - Update id=619260705 is handled. Duration 235 ms by bot id=8208421266
+2026-01-31 18:01:14 - aiogram.event - INFO - Update id=619260706 is handled. Duration 140 ms by bot id=8208421266
+2026-01-31 18:02:32 - aiogram.dispatcher - INFO - Polling stopped for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-01-31 18:02:32 - aiogram.dispatcher - INFO - Polling stopped
+2026-01-31 18:02:37 - aiogram.dispatcher - INFO - Start polling
+2026-01-31 18:02:37 - aiogram.dispatcher - INFO - Run polling for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-01-31 18:02:39 - aiogram.event - INFO - Update id=619260707 is handled. Duration 157 ms by bot id=8208421266
+2026-01-31 18:07:14 - aiogram.event - INFO - Update id=619260708 is handled. Duration 157 ms by bot id=8208421266
+2026-01-31 18:07:16 - aiogram.event - INFO - Update id=619260709 is handled. Duration 110 ms by bot id=8208421266
+2026-01-31 18:07:17 - aiogram.event - INFO - Update id=619260710 is handled. Duration 264 ms by bot id=8208421266
+2026-01-31 18:07:19 - aiogram.event - INFO - Update id=619260711 is handled. Duration 125 ms by bot id=8208421266
+2026-01-31 18:07:22 - aiogram.event - INFO - Update id=619260712 is handled. Duration 234 ms by bot id=8208421266
+2026-01-31 18:07:23 - aiogram.event - INFO - Update id=619260713 is handled. Duration 170 ms by bot id=8208421266
+2026-01-31 18:07:25 - aiogram.event - INFO - Update id=619260714 is handled. Duration 78 ms by bot id=8208421266
+2026-01-31 18:07:37 - aiogram.event - INFO - Update id=619260715 is handled. Duration 94 ms by bot id=8208421266
+2026-01-31 18:07:47 - aiogram.event - INFO - Update id=619260716 is handled. Duration 187 ms by bot id=8208421266
+2026-01-31 18:07:49 - aiogram.event - INFO - Update id=619260717 is handled. Duration 77 ms by bot id=8208421266
+2026-01-31 18:07:51 - aiogram.event - INFO - Update id=619260718 is handled. Duration 140 ms by bot id=8208421266
+2026-01-31 18:07:53 - aiogram.event - INFO - Update id=619260719 is handled. Duration 78 ms by bot id=8208421266
+2026-01-31 18:07:56 - aiogram.event - INFO - Update id=619260720 is handled. Duration 77 ms by bot id=8208421266
+2026-01-31 18:07:59 - aiogram.event - INFO - Update id=619260721 is handled. Duration 78 ms by bot id=8208421266
+2026-01-31 18:08:00 - aiogram.event - INFO - Update id=619260722 is handled. Duration 125 ms by bot id=8208421266
+2026-01-31 18:08:10 - aiogram.event - INFO - Update id=619260723 is handled. Duration 79 ms by bot id=8208421266
+2026-01-31 18:12:39 - aiogram.dispatcher - INFO - Polling stopped for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-01-31 18:12:39 - aiogram.dispatcher - INFO - Polling stopped
+2026-01-31 18:12:45 - aiogram.dispatcher - INFO - Start polling
+2026-01-31 18:12:45 - aiogram.dispatcher - INFO - Run polling for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-01-31 18:12:47 - aiogram.event - INFO - Update id=619260724 is handled. Duration 170 ms by bot id=8208421266
+2026-01-31 18:12:49 - aiogram.event - INFO - Update id=619260725 is handled. Duration 108 ms by bot id=8208421266
+2026-01-31 18:13:15 - aiogram.event - INFO - Update id=619260726 is handled. Duration 203 ms by bot id=8208421266
+2026-01-31 18:13:17 - aiogram.event - INFO - Update id=619260727 is handled. Duration 108 ms by bot id=8208421266
+2026-01-31 18:22:56 - aiogram.dispatcher - INFO - Polling stopped
+2026-01-31 18:22:56 - aiogram.dispatcher - INFO - Polling stopped for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-01-31 18:23:01 - aiogram.dispatcher - INFO - Start polling
+2026-01-31 18:23:01 - aiogram.dispatcher - INFO - Run polling for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-01-31 18:23:03 - aiogram.event - INFO - Update id=619260728 is handled. Duration 140 ms by bot id=8208421266
+2026-01-31 18:23:19 - aiogram.event - INFO - Update id=619260729 is handled. Duration 203 ms by bot id=8208421266
+2026-01-31 18:23:29 - aiogram.event - INFO - Update id=619260730 is handled. Duration 344 ms by bot id=8208421266
+2026-01-31 18:23:38 - aiogram.event - INFO - Update id=619260731 is handled. Duration 78 ms by bot id=8208421266
+2026-01-31 18:23:50 - aiogram.event - INFO - Update id=619260732 is handled. Duration 156 ms by bot id=8208421266
+2026-01-31 18:23:52 - aiogram.event - INFO - Update id=619260733 is handled. Duration 78 ms by bot id=8208421266
+2026-01-31 18:25:40 - aiogram.event - INFO - Update id=619260734 is handled. Duration 157 ms by bot id=8208421266
+2026-01-31 18:25:59 - aiogram.dispatcher - INFO - Polling stopped
+2026-01-31 18:25:59 - aiogram.dispatcher - INFO - Polling stopped for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-01-31 18:26:05 - aiogram.dispatcher - INFO - Start polling
+2026-01-31 18:26:05 - aiogram.dispatcher - INFO - Run polling for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-01-31 18:26:38 - aiogram.event - INFO - Update id=619260735 is handled. Duration 217 ms by bot id=8208421266
+2026-01-31 18:27:12 - aiogram.event - INFO - Update id=619260736 is handled. Duration 203 ms by bot id=8208421266
+2026-01-31 18:27:17 - aiogram.event - INFO - Update id=619260737 is handled. Duration 94 ms by bot id=8208421266
+2026-01-31 18:27:21 - aiogram.event - INFO - Update id=619260738 is handled. Duration 94 ms by bot id=8208421266
+2026-01-31 18:27:26 - aiogram.event - INFO - Update id=619260739 is handled. Duration 109 ms by bot id=8208421266
+2026-01-31 18:27:27 - aiogram.event - INFO - Update id=619260740 is handled. Duration 78 ms by bot id=8208421266
+2026-01-31 18:27:29 - aiogram.event - INFO - Update id=619260741 is handled. Duration 110 ms by bot id=8208421266
+2026-01-31 18:27:38 - aiogram.event - INFO - Update id=619260742 is handled. Duration 62 ms by bot id=8208421266
+2026-01-31 18:27:40 - aiogram.event - INFO - Update id=619260743 is handled. Duration 94 ms by bot id=8208421266
+2026-01-31 18:27:42 - aiogram.event - INFO - Update id=619260744 is handled. Duration 94 ms by bot id=8208421266
+2026-01-31 18:31:27 - aiogram.dispatcher - INFO - Polling stopped for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-01-31 18:31:27 - aiogram.dispatcher - INFO - Polling stopped
+2026-01-31 18:31:34 - aiogram.dispatcher - INFO - Start polling
+2026-01-31 18:31:34 - aiogram.dispatcher - INFO - Run polling for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-01-31 18:31:42 - aiogram.event - INFO - Update id=619260745 is handled. Duration 219 ms by bot id=8208421266
+2026-01-31 18:32:24 - aiogram.event - INFO - Update id=619260746 is handled. Duration 155 ms by bot id=8208421266
+2026-01-31 18:34:23 - aiogram.dispatcher - INFO - Polling stopped
+2026-01-31 18:34:23 - aiogram.dispatcher - INFO - Polling stopped for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-01-31 18:34:29 - aiogram.dispatcher - INFO - Start polling
+2026-01-31 18:34:29 - aiogram.dispatcher - INFO - Run polling for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-01-31 18:34:36 - aiogram.event - INFO - Update id=619260747 is handled. Duration 156 ms by bot id=8208421266
+2026-01-31 18:34:39 - aiogram.event - INFO - Update id=619260748 is handled. Duration 140 ms by bot id=8208421266
+2026-01-31 18:34:41 - aiogram.event - INFO - Update id=619260749 is handled. Duration 78 ms by bot id=8208421266
+2026-01-31 18:34:43 - aiogram.event - INFO - Update id=619260750 is handled. Duration 78 ms by bot id=8208421266
+2026-01-31 18:34:46 - aiogram.event - INFO - Update id=619260751 is handled. Duration 139 ms by bot id=8208421266
+2026-01-31 18:34:53 - aiogram.event - INFO - Update id=619260752 is handled. Duration 155 ms by bot id=8208421266
+2026-01-31 18:34:55 - aiogram.event - INFO - Update id=619260753 is handled. Duration 93 ms by bot id=8208421266
+2026-01-31 18:35:29 - aiogram.event - INFO - Update id=619260754 is handled. Duration 250 ms by bot id=8208421266
+2026-01-31 18:37:41 - aiogram.dispatcher - INFO - Polling stopped
+2026-01-31 18:37:41 - aiogram.dispatcher - INFO - Polling stopped for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-01-31 18:37:47 - aiogram.dispatcher - INFO - Start polling
+2026-01-31 18:37:47 - aiogram.dispatcher - INFO - Run polling for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-01-31 18:37:50 - aiogram.event - INFO - Update id=619260755 is handled. Duration 140 ms by bot id=8208421266
+2026-01-31 18:37:52 - aiogram.event - INFO - Update id=619260756 is handled. Duration 280 ms by bot id=8208421266
+2026-01-31 18:37:54 - aiogram.event - INFO - Update id=619260757 is handled. Duration 250 ms by bot id=8208421266
+2026-01-31 18:38:01 - aiogram.event - INFO - Update id=619260758 is handled. Duration 155 ms by bot id=8208421266
+2026-01-31 18:38:03 - aiogram.event - INFO - Update id=619260759 is handled. Duration 110 ms by bot id=8208421266
+2026-01-31 18:38:08 - aiogram.event - INFO - Update id=619260760 is handled. Duration 125 ms by bot id=8208421266
+2026-01-31 18:38:09 - aiogram.event - INFO - Update id=619260761 is handled. Duration 157 ms by bot id=8208421266
+2026-01-31 18:38:27 - aiogram.event - INFO - Update id=619260762 is not handled. Duration 0 ms by bot id=8208421266
+2026-01-31 18:38:29 - aiogram.event - INFO - Update id=619260763 is handled. Duration 141 ms by bot id=8208421266
+2026-01-31 18:38:33 - aiogram.event - INFO - Update id=619260764 is handled. Duration 125 ms by bot id=8208421266
+2026-01-31 18:38:56 - aiogram.event - INFO - Update id=619260765 is handled. Duration 187 ms by bot id=8208421266
+2026-01-31 18:38:58 - aiogram.event - INFO - Update id=619260766 is handled. Duration 62 ms by bot id=8208421266
+2026-01-31 18:39:04 - aiogram.event - INFO - Update id=619260767 is handled. Duration 141 ms by bot id=8208421266
+2026-01-31 18:39:09 - aiogram.event - INFO - Update id=619260768 is handled. Duration 79 ms by bot id=8208421266
+2026-01-31 18:39:27 - aiogram.event - INFO - Update id=619260769 is handled. Duration 281 ms by bot id=8208421266
+2026-01-31 18:40:01 - aiogram.event - INFO - Update id=619260770 is handled. Duration 360 ms by bot id=8208421266
+2026-01-31 18:40:02 - aiogram.event - INFO - Update id=619260771 is handled. Duration 140 ms by bot id=8208421266
+2026-01-31 18:40:03 - aiogram.event - INFO - Update id=619260772 is handled. Duration 139 ms by bot id=8208421266
+2026-01-31 18:43:11 - aiogram.event - INFO - Update id=619260773 is handled. Duration 296 ms by bot id=8208421266
+2026-01-31 18:43:15 - aiogram.event - INFO - Update id=619260774 is handled. Duration 78 ms by bot id=8208421266
+2026-01-31 18:43:18 - aiogram.event - INFO - Update id=619260775 is handled. Duration 125 ms by bot id=8208421266
+2026-01-31 18:43:20 - aiogram.event - INFO - Update id=619260776 is handled. Duration 328 ms by bot id=8208421266
+2026-01-31 18:43:57 - aiogram.event - INFO - Update id=619260777 is handled. Duration 281 ms by bot id=8208421266
+2026-01-31 18:44:00 - aiogram.event - INFO - Update id=619260778 is handled. Duration 109 ms by bot id=8208421266
+2026-01-31 18:44:05 - aiogram.event - INFO - Update id=619260779 is handled. Duration 219 ms by bot id=8208421266
+2026-01-31 18:44:06 - aiogram.event - INFO - Update id=619260780 is handled. Duration 406 ms by bot id=8208421266
+2026-01-31 18:44:38 - aiogram.event - INFO - Update id=619260781 is handled. Duration 203 ms by bot id=8208421266
+2026-01-31 18:44:40 - aiogram.event - INFO - Update id=619260782 is handled. Duration 202 ms by bot id=8208421266
+2026-01-31 18:44:42 - aiogram.event - INFO - Update id=619260783 is handled. Duration 92 ms by bot id=8208421266
+2026-01-31 18:44:48 - aiogram.event - INFO - Update id=619260784 is handled. Duration 157 ms by bot id=8208421266
+2026-01-31 18:44:49 - aiogram.event - INFO - Update id=619260785 is handled. Duration 140 ms by bot id=8208421266
+2026-01-31 18:44:51 - aiogram.event - INFO - Update id=619260786 is handled. Duration 92 ms by bot id=8208421266
+2026-01-31 18:45:31 - aiogram.event - INFO - Update id=619260789 is handled. Duration 16 ms by bot id=8208421266
+2026-01-31 18:45:31 - aiogram.event - INFO - Update id=619260787 is handled. Duration 313 ms by bot id=8208421266
+2026-01-31 18:45:31 - aiogram.event - INFO - Update id=619260788 is handled. Duration 156 ms by bot id=8208421266
+2026-01-31 19:17:00 - aiogram.event - INFO - Update id=619260790 is handled. Duration 204 ms by bot id=8208421266
+2026-01-31 19:17:02 - aiogram.event - INFO - Update id=619260791 is handled. Duration 311 ms by bot id=8208421266
+2026-01-31 19:17:03 - aiogram.event - INFO - Update id=619260792 is handled. Duration 94 ms by bot id=8208421266
+2026-01-31 19:17:04 - aiogram.event - INFO - Update id=619260793 is handled. Duration 219 ms by bot id=8208421266
+2026-01-31 19:39:40 - aiogram.dispatcher - INFO - Polling stopped
+2026-01-31 19:39:40 - aiogram.dispatcher - INFO - Polling stopped for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-01-31 19:41:44 - aiogram.dispatcher - INFO - Start polling
+2026-01-31 19:41:44 - aiogram.dispatcher - INFO - Run polling for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-01-31 19:41:47 - aiogram.event - INFO - Update id=619260794 is handled. Duration 187 ms by bot id=8208421266
+2026-01-31 19:41:48 - aiogram.event - INFO - Update id=619260795 is handled. Duration 171 ms by bot id=8208421266
+2026-01-31 19:41:49 - aiogram.event - INFO - Update id=619260796 is handled. Duration 93 ms by bot id=8208421266
+2026-01-31 19:41:51 - aiogram.event - INFO - Update id=619260797 is handled. Duration 77 ms by bot id=8208421266
+2026-01-31 19:41:53 - aiogram.event - INFO - Update id=619260799 is handled. Duration 15 ms by bot id=8208421266
+2026-01-31 19:41:53 - aiogram.event - INFO - Update id=619260798 is handled. Duration 483 ms by bot id=8208421266
+2026-01-31 19:41:55 - aiogram.event - INFO - Update id=619260800 is handled. Duration 62 ms by bot id=8208421266
+2026-01-31 19:41:56 - aiogram.event - INFO - Update id=619260801 is handled. Duration 94 ms by bot id=8208421266
+2026-01-31 19:41:57 - aiogram.event - INFO - Update id=619260802 is handled. Duration 188 ms by bot id=8208421266
+2026-01-31 19:41:59 - aiogram.event - INFO - Update id=619260803 is handled. Duration 62 ms by bot id=8208421266
+2026-01-31 19:42:00 - aiogram.event - INFO - Update id=619260804 is handled. Duration 172 ms by bot id=8208421266
+2026-01-31 19:42:31 - aiogram.event - INFO - Update id=619260805 is handled. Duration 204 ms by bot id=8208421266
+2026-01-31 19:42:33 - aiogram.event - INFO - Update id=619260806 is handled. Duration 77 ms by bot id=8208421266
+2026-01-31 19:42:35 - aiogram.event - INFO - Update id=619260807 is handled. Duration 156 ms by bot id=8208421266
+2026-01-31 19:42:37 - aiogram.event - INFO - Update id=619260808 is handled. Duration 172 ms by bot id=8208421266
+2026-01-31 19:42:39 - aiogram.event - INFO - Update id=619260809 is handled. Duration 265 ms by bot id=8208421266
+2026-01-31 19:42:40 - aiogram.event - INFO - Update id=619260810 is handled. Duration 140 ms by bot id=8208421266
+2026-01-31 19:42:44 - aiogram.event - INFO - Update id=619260811 is handled. Duration 94 ms by bot id=8208421266
+2026-01-31 21:14:10 - aiogram.dispatcher - INFO - Polling stopped for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-01-31 21:14:10 - aiogram.dispatcher - INFO - Polling stopped
+2026-01-31 21:14:18 - aiogram.dispatcher - INFO - Start polling
+2026-01-31 21:14:18 - aiogram.dispatcher - INFO - Run polling for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-01-31 21:14:22 - aiogram.event - INFO - Update id=619260812 is handled. Duration 264 ms by bot id=8208421266
+2026-01-31 21:14:25 - aiogram.event - INFO - Update id=619260813 is handled. Duration 250 ms by bot id=8208421266
+2026-01-31 21:14:32 - aiogram.event - INFO - Update id=619260814 is handled. Duration 296 ms by bot id=8208421266
+2026-01-31 21:14:36 - aiogram.event - INFO - Update id=619260815 is handled. Duration 94 ms by bot id=8208421266
+2026-01-31 21:14:44 - aiogram.event - INFO - Update id=619260816 is not handled. Duration 0 ms by bot id=8208421266
+2026-01-31 21:14:46 - aiogram.event - INFO - Update id=619260817 is handled. Duration 125 ms by bot id=8208421266
+2026-01-31 21:14:56 - aiogram.event - INFO - Update id=619260818 is handled. Duration 77 ms by bot id=8208421266
+2026-01-31 21:15:05 - aiogram.event - INFO - Update id=619260819 is handled. Duration 344 ms by bot id=8208421266
+2026-01-31 21:15:31 - aiogram.event - INFO - Update id=619260820 is handled. Duration 155 ms by bot id=8208421266
+2026-01-31 21:15:36 - aiogram.event - INFO - Update id=619260821 is handled. Duration 202 ms by bot id=8208421266
+2026-01-31 21:15:44 - aiogram.event - INFO - Update id=619260822 is handled. Duration 203 ms by bot id=8208421266
+2026-01-31 21:15:53 - aiogram.event - INFO - Update id=619260823 is handled. Duration 609 ms by bot id=8208421266
+2026-01-31 21:16:14 - aiogram.event - INFO - Update id=619260824 is handled. Duration 437 ms by bot id=8208421266
+2026-01-31 21:19:05 - aiogram.event - INFO - Update id=619260825 is handled. Duration 0 ms by bot id=8208421266
+2026-01-31 21:19:39 - aiogram.event - INFO - Update id=619260826 is handled. Duration 202 ms by bot id=8208421266
+2026-01-31 21:20:29 - aiogram.event - INFO - Update id=619260827 is handled. Duration 203 ms by bot id=8208421266
+2026-01-31 21:20:39 - aiogram.event - INFO - Update id=619260828 is handled. Duration 157 ms by bot id=8208421266
+2026-01-31 21:20:44 - aiogram.event - INFO - Update id=619260829 is handled. Duration 250 ms by bot id=8208421266
+2026-01-31 21:21:00 - aiogram.event - INFO - Update id=619260830 is handled. Duration 171 ms by bot id=8208421266
+2026-01-31 21:21:02 - aiogram.event - INFO - Update id=619260831 is handled. Duration 172 ms by bot id=8208421266
+2026-01-31 21:21:05 - aiogram.event - INFO - Update id=619260832 is handled. Duration 296 ms by bot id=8208421266
+2026-01-31 21:22:15 - aiogram.event - INFO - Update id=619260833 is handled. Duration 328 ms by bot id=8208421266
+2026-01-31 21:22:16 - aiogram.event - INFO - Update id=619260834 is handled. Duration 250 ms by bot id=8208421266
+2026-01-31 21:28:42 - aiogram.dispatcher - INFO - Start polling
+2026-01-31 21:28:42 - aiogram.dispatcher - INFO - Run polling for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-01-31 21:28:49 - aiogram.event - INFO - Update id=619260835 is handled. Duration 187 ms by bot id=8208421266
+2026-01-31 21:29:15 - aiogram.event - INFO - Update id=619260836 is handled. Duration 234 ms by bot id=8208421266
+2026-01-31 21:29:19 - aiogram.event - INFO - Update id=619260837 is handled. Duration 235 ms by bot id=8208421266
+2026-01-31 21:29:33 - aiogram.event - INFO - Update id=619260838 is handled. Duration 235 ms by bot id=8208421266
+2026-01-31 21:29:37 - aiogram.event - INFO - Update id=619260839 is handled. Duration 93 ms by bot id=8208421266
+2026-01-31 21:29:39 - aiogram.event - INFO - Update id=619260840 is handled. Duration 172 ms by bot id=8208421266
+2026-01-31 21:32:40 - aiogram.dispatcher - INFO - Polling stopped for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-01-31 21:32:40 - aiogram.dispatcher - INFO - Polling stopped
+2026-01-31 21:32:44 - aiogram.dispatcher - INFO - Start polling
+2026-01-31 21:32:44 - aiogram.dispatcher - INFO - Run polling for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-01-31 21:32:53 - aiogram.event - INFO - Update id=619260841 is handled. Duration 172 ms by bot id=8208421266
+2026-01-31 21:33:03 - aiogram.event - INFO - Update id=619260842 is handled. Duration 219 ms by bot id=8208421266
+2026-01-31 21:33:12 - aiogram.event - INFO - Update id=619260843 is handled. Duration 311 ms by bot id=8208421266
+2026-01-31 21:33:14 - aiogram.event - INFO - Update id=619260844 is handled. Duration 202 ms by bot id=8208421266
+2026-01-31 21:33:23 - aiogram.event - INFO - Update id=619260845 is handled. Duration 125 ms by bot id=8208421266
+2026-01-31 21:42:12 - aiogram.event - INFO - Update id=619260846 is handled. Duration 186 ms by bot id=8208421266
+2026-01-31 21:42:13 - aiogram.event - INFO - Update id=619260847 is handled. Duration 155 ms by bot id=8208421266
+2026-01-31 21:42:15 - aiogram.event - INFO - Update id=619260848 is handled. Duration 218 ms by bot id=8208421266
+2026-01-31 21:42:20 - aiogram.event - INFO - Update id=619260849 is handled. Duration 109 ms by bot id=8208421266
+2026-01-31 21:42:33 - aiogram.event - INFO - Update id=619260850 is handled. Duration 125 ms by bot id=8208421266
+2026-01-31 21:42:39 - aiogram.event - INFO - Update id=619260851 is handled. Duration 203 ms by bot id=8208421266
+2026-01-31 21:42:40 - aiogram.event - INFO - Update id=619260852 is handled. Duration 77 ms by bot id=8208421266
+2026-01-31 21:42:47 - aiogram.event - INFO - Update id=619260853 is handled. Duration 218 ms by bot id=8208421266
+2026-01-31 21:42:48 - aiogram.event - INFO - Update id=619260854 is handled. Duration 125 ms by bot id=8208421266
+2026-01-31 21:44:11 - aiogram.event - INFO - Update id=619260855 is handled. Duration 233 ms by bot id=8208421266
+2026-01-31 21:44:58 - aiogram.event - INFO - Update id=619260856 is handled. Duration 389 ms by bot id=8208421266
+2026-01-31 21:45:01 - aiogram.event - INFO - Update id=619260857 is handled. Duration 296 ms by bot id=8208421266
+2026-01-31 21:45:23 - aiogram.event - INFO - Update id=619260858 is handled. Duration 234 ms by bot id=8208421266
+2026-01-31 21:45:26 - aiogram.event - INFO - Update id=619260859 is handled. Duration 125 ms by bot id=8208421266
+2026-01-31 21:45:27 - aiogram.event - INFO - Update id=619260860 is handled. Duration 139 ms by bot id=8208421266
+2026-01-31 21:46:25 - aiogram.event - INFO - Update id=619260861 is handled. Duration 281 ms by bot id=8208421266
+2026-01-31 21:46:36 - aiogram.event - INFO - Update id=619260862 is handled. Duration 266 ms by bot id=8208421266
+2026-01-31 21:46:47 - aiogram.event - INFO - Update id=619260863 is handled. Duration 250 ms by bot id=8208421266
+2026-01-31 21:48:19 - aiogram.event - INFO - Update id=619260864 is handled. Duration 186 ms by bot id=8208421266
+2026-01-31 21:48:40 - aiogram.event - INFO - Update id=619260865 is handled. Duration 219 ms by bot id=8208421266
+2026-01-31 21:48:56 - aiogram.event - INFO - Update id=619260866 is handled. Duration 172 ms by bot id=8208421266
+2026-01-31 21:51:59 - aiogram.event - INFO - Update id=619260867 is handled. Duration 453 ms by bot id=8208421266
+2026-01-31 21:52:00 - aiogram.event - INFO - Update id=619260868 is handled. Duration 156 ms by bot id=8208421266
+2026-01-31 21:52:02 - aiogram.event - INFO - Update id=619260869 is handled. Duration 218 ms by bot id=8208421266
+2026-01-31 21:55:19 - aiogram.dispatcher - INFO - Start polling
+2026-01-31 21:55:19 - aiogram.dispatcher - INFO - Run polling for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-01-31 21:55:23 - aiogram.event - INFO - Update id=619260870 is handled. Duration 186 ms by bot id=8208421266
+2026-01-31 21:55:30 - aiogram.event - INFO - Update id=619260871 is handled. Duration 140 ms by bot id=8208421266
+2026-01-31 21:55:41 - aiogram.event - INFO - Update id=619260872 is handled. Duration 203 ms by bot id=8208421266
+2026-01-31 21:55:45 - aiogram.event - INFO - Update id=619260873 is handled. Duration 671 ms by bot id=8208421266
+2026-01-31 21:55:49 - aiogram.event - INFO - Update id=619260874 is handled. Duration 171 ms by bot id=8208421266
+2026-01-31 21:55:51 - aiogram.event - INFO - Update id=619260875 is handled. Duration 62 ms by bot id=8208421266
+2026-01-31 21:57:00 - aiogram.event - INFO - Update id=619260876 is handled. Duration 233 ms by bot id=8208421266
+2026-01-31 21:57:04 - aiogram.event - INFO - Update id=619260877 is handled. Duration 437 ms by bot id=8208421266
+2026-01-31 21:57:06 - aiogram.event - INFO - Update id=619260878 is handled. Duration 109 ms by bot id=8208421266
+2026-01-31 21:57:07 - aiogram.event - INFO - Update id=619260879 is handled. Duration 171 ms by bot id=8208421266
+2026-01-31 21:57:10 - aiogram.event - INFO - Update id=619260880 is handled. Duration 61 ms by bot id=8208421266
+2026-01-31 21:57:12 - aiogram.event - INFO - Update id=619260881 is handled. Duration 78 ms by bot id=8208421266
+2026-01-31 21:57:13 - aiogram.event - INFO - Update id=619260883 is handled. Duration 0 ms by bot id=8208421266
+2026-01-31 21:57:13 - aiogram.event - INFO - Update id=619260882 is handled. Duration 203 ms by bot id=8208421266
+2026-01-31 21:57:14 - aiogram.event - INFO - Update id=619260884 is handled. Duration 108 ms by bot id=8208421266
+2026-01-31 21:57:19 - aiogram.event - INFO - Update id=619260885 is handled. Duration 108 ms by bot id=8208421266
+2026-01-31 22:01:00 - aiogram.dispatcher - INFO - Start polling
+2026-01-31 22:01:00 - aiogram.dispatcher - INFO - Run polling for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-01-31 22:01:06 - aiogram.event - INFO - Update id=619260886 is handled. Duration 312 ms by bot id=8208421266
+2026-01-31 22:01:08 - aiogram.event - INFO - Update id=619260887 is handled. Duration 108 ms by bot id=8208421266
+2026-01-31 22:01:09 - aiogram.event - INFO - Update id=619260888 is handled. Duration 296 ms by bot id=8208421266
+2026-01-31 22:01:10 - aiogram.event - INFO - Update id=619260890 is handled. Duration 0 ms by bot id=8208421266
+2026-01-31 22:01:10 - aiogram.event - INFO - Update id=619260889 is handled. Duration 218 ms by bot id=8208421266
+2026-01-31 22:01:12 - aiogram.event - INFO - Update id=619260891 is handled. Duration 78 ms by bot id=8208421266
+2026-01-31 22:01:14 - aiogram.event - INFO - Update id=619260892 is handled. Duration 186 ms by bot id=8208421266
+2026-01-31 22:01:22 - aiogram.event - INFO - Update id=619260893 is handled. Duration 94 ms by bot id=8208421266
+2026-01-31 22:02:13 - aiogram.event - INFO - Update id=619260894 is handled. Duration 266 ms by bot id=8208421266
+2026-01-31 22:02:23 - aiogram.event - INFO - Update id=619260895 is handled. Duration 171 ms by bot id=8208421266
+2026-01-31 22:06:37 - aiogram.dispatcher - INFO - Start polling
+2026-01-31 22:06:37 - aiogram.dispatcher - INFO - Run polling for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-01-31 22:06:41 - aiogram.event - INFO - Update id=619260896 is handled. Duration 281 ms by bot id=8208421266
+2026-01-31 22:07:07 - aiogram.event - INFO - Update id=619260897 is handled. Duration 311 ms by bot id=8208421266
+2026-01-31 22:07:10 - aiogram.event - INFO - Update id=619260898 is handled. Duration 233 ms by bot id=8208421266
+2026-01-31 22:07:12 - aiogram.event - INFO - Update id=619260899 is handled. Duration 110 ms by bot id=8208421266
+2026-01-31 22:07:27 - aiogram.event - INFO - Update id=619260900 is handled. Duration 858 ms by bot id=8208421266
+2026-01-31 22:08:23 - aiogram.dispatcher - INFO - Start polling
+2026-01-31 22:08:23 - aiogram.dispatcher - INFO - Run polling for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-01-31 22:08:27 - aiogram.event - INFO - Update id=619260901 is handled. Duration 578 ms by bot id=8208421266
+2026-01-31 22:09:25 - aiogram.dispatcher - INFO - Start polling
+2026-01-31 22:09:25 - aiogram.dispatcher - INFO - Run polling for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-01-31 22:09:29 - aiogram.event - INFO - Update id=619260902 is handled. Duration 218 ms by bot id=8208421266
+2026-01-31 22:10:09 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-01-31 22:10:09 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8208421266)
+2026-01-31 22:10:21 - aiogram.dispatcher - INFO - Connection established (tryings = 1, bot id = 8208421266)
+2026-01-31 22:24:33 - aiogram.dispatcher - INFO - Start polling
+2026-01-31 22:24:33 - aiogram.dispatcher - INFO - Run polling for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-01-31 22:24:36 - aiogram.event - INFO - Update id=619260903 is handled. Duration 688 ms by bot id=8208421266
+2026-01-31 22:24:44 - aiogram.event - INFO - Update id=619260904 is handled. Duration 156 ms by bot id=8208421266
+2026-01-31 22:24:47 - aiogram.event - INFO - Update id=619260905 is handled. Duration 171 ms by bot id=8208421266
+2026-01-31 22:25:10 - aiogram.event - INFO - Update id=619260906 is handled. Duration 250 ms by bot id=8208421266
+2026-01-31 22:25:17 - aiogram.event - INFO - Update id=619260907 is handled. Duration 343 ms by bot id=8208421266
+2026-01-31 22:25:20 - aiogram.event - INFO - Update id=619260908 is handled. Duration 453 ms by bot id=8208421266
+2026-01-31 22:25:43 - aiogram.event - INFO - Update id=619260909 is not handled. Duration 14 ms by bot id=8208421266
+2026-01-31 22:26:03 - aiogram.event - INFO - Update id=619260910 is not handled. Duration 0 ms by bot id=8208421266
+2026-01-31 22:26:05 - aiogram.event - INFO - Update id=619260911 is handled. Duration 937 ms by bot id=8208421266
+2026-01-31 22:26:09 - aiogram.event - INFO - Update id=619260912 is handled. Duration 219 ms by bot id=8208421266
+2026-01-31 22:26:15 - aiogram.event - INFO - Update id=619260913 is handled. Duration 264 ms by bot id=8208421266
+2026-01-31 22:26:38 - aiogram.event - INFO - Update id=619260914 is handled. Duration 266 ms by bot id=8208421266
+2026-01-31 22:26:43 - aiogram.event - INFO - Update id=619260915 is handled. Duration 468 ms by bot id=8208421266
+2026-01-31 22:26:49 - aiogram.event - INFO - Update id=619260916 is handled. Duration 186 ms by bot id=8208421266
+2026-01-31 22:26:57 - aiogram.event - INFO - Update id=619260917 is handled. Duration 500 ms by bot id=8208421266
+2026-01-31 22:27:13 - aiogram.event - INFO - Update id=619260918 is handled. Duration 718 ms by bot id=8208421266
+2026-01-31 22:28:38 - aiogram.dispatcher - INFO - Start polling
+2026-01-31 22:28:38 - aiogram.dispatcher - INFO - Run polling for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-01-31 22:29:43 - aiogram.event - INFO - Update id=619260919 is handled. Duration 594 ms by bot id=8208421266
+2026-01-31 22:29:55 - aiogram.event - INFO - Update id=619260920 is handled. Duration 561 ms by bot id=8208421266
+2026-01-31 22:29:57 - aiogram.event - INFO - Update id=619260921 is handled. Duration 328 ms by bot id=8208421266
+2026-01-31 22:30:07 - aiogram.event - INFO - Update id=619260922 is handled. Duration 594 ms by bot id=8208421266
+2026-01-31 22:30:39 - aiogram.event - INFO - Update id=619260923 is handled. Duration 578 ms by bot id=8208421266
+2026-01-31 22:30:44 - aiogram.event - INFO - Update id=619260924 is handled. Duration 594 ms by bot id=8208421266
+2026-01-31 22:30:46 - aiogram.event - INFO - Update id=619260925 is handled. Duration 515 ms by bot id=8208421266
+2026-01-31 22:34:38 - aiogram.event - INFO - Update id=619260926 is handled. Duration 188 ms by bot id=8208421266
+2026-01-31 22:34:40 - aiogram.event - INFO - Update id=619260927 is handled. Duration 139 ms by bot id=8208421266
+2026-01-31 22:34:50 - aiogram.event - INFO - Update id=619260928 is handled. Duration 593 ms by bot id=8208421266
+2026-01-31 22:35:02 - aiogram.event - INFO - Update id=619260929 is handled. Duration 139 ms by bot id=8208421266
+2026-01-31 22:35:04 - aiogram.event - INFO - Update id=619260930 is handled. Duration 203 ms by bot id=8208421266
+2026-01-31 22:35:14 - aiogram.event - INFO - Update id=619260931 is handled. Duration 343 ms by bot id=8208421266
+2026-01-31 22:37:30 - aiogram.event - INFO - Update id=619260932 is handled. Duration 139 ms by bot id=8208421266
+2026-01-31 22:37:43 - aiogram.event - INFO - Update id=619260933 is handled. Duration 171 ms by bot id=8208421266
+2026-01-31 22:37:51 - aiogram.event - INFO - Update id=619260934 is handled. Duration 686 ms by bot id=8208421266
+2026-01-31 22:43:26 - aiogram.dispatcher - INFO - Start polling
+2026-01-31 22:43:26 - aiogram.dispatcher - INFO - Run polling for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-01-31 22:43:33 - aiogram.event - INFO - Update id=619260935 is handled. Duration 266 ms by bot id=8208421266
+2026-01-31 22:44:10 - aiogram.event - INFO - Update id=619260936 is handled. Duration 360 ms by bot id=8208421266
+2026-01-31 22:44:14 - aiogram.event - INFO - Update id=619260937 is handled. Duration 735 ms by bot id=8208421266
+2026-01-31 22:44:26 - aiogram.event - INFO - Update id=619260938 is handled. Duration 203 ms by bot id=8208421266
+2026-01-31 22:44:32 - aiogram.event - INFO - Update id=619260939 is handled. Duration 187 ms by bot id=8208421266
+2026-01-31 22:44:34 - aiogram.event - INFO - Update id=619260940 is handled. Duration 203 ms by bot id=8208421266
+2026-01-31 22:44:38 - aiogram.event - INFO - Update id=619260941 is handled. Duration 77 ms by bot id=8208421266
+2026-01-31 22:44:41 - aiogram.event - INFO - Update id=619260942 is handled. Duration 139 ms by bot id=8208421266
+2026-01-31 22:44:43 - aiogram.event - INFO - Update id=619260943 is handled. Duration 436 ms by bot id=8208421266
+2026-01-31 22:44:52 - aiogram.event - INFO - Update id=619260944 is handled. Duration 141 ms by bot id=8208421266
+2026-01-31 22:50:43 - aiogram.dispatcher - INFO - Start polling
+2026-01-31 22:50:43 - aiogram.dispatcher - INFO - Run polling for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-01-31 22:51:17 - aiogram.event - INFO - Update id=619260945 is handled. Duration 219 ms by bot id=8208421266
+2026-01-31 22:51:23 - aiogram.event - INFO - Update id=619260946 is handled. Duration 233 ms by bot id=8208421266
+2026-01-31 22:51:28 - aiogram.event - INFO - Update id=619260947 is handled. Duration 436 ms by bot id=8208421266
+2026-01-31 22:51:35 - aiogram.event - INFO - Update id=619260948 is handled. Duration 202 ms by bot id=8208421266
+2026-01-31 22:51:37 - aiogram.event - INFO - Update id=619260949 is handled. Duration 296 ms by bot id=8208421266
+2026-01-31 22:52:37 - aiogram.event - INFO - Update id=619260950 is handled. Duration 390 ms by bot id=8208421266
+2026-01-31 22:52:38 - aiogram.event - INFO - Update id=619260951 is handled. Duration 328 ms by bot id=8208421266
+2026-01-31 22:52:39 - aiogram.event - INFO - Update id=619260952 is handled. Duration 328 ms by bot id=8208421266
+2026-01-31 22:52:42 - aiogram.event - INFO - Update id=619260953 is handled. Duration 218 ms by bot id=8208421266
+2026-01-31 22:52:44 - aiogram.event - INFO - Update id=619260954 is handled. Duration 93 ms by bot id=8208421266
+2026-01-31 22:52:46 - aiogram.event - INFO - Update id=619260955 is handled. Duration 125 ms by bot id=8208421266
+2026-01-31 22:52:53 - aiogram.event - INFO - Update id=619260956 is handled. Duration 93 ms by bot id=8208421266
+2026-01-31 22:54:00 - aiogram.dispatcher - INFO - Start polling
+2026-01-31 22:54:01 - aiogram.dispatcher - INFO - Run polling for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-01-31 22:56:25 - aiogram.dispatcher - INFO - Start polling
+2026-01-31 22:56:25 - aiogram.dispatcher - INFO - Run polling for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-01-31 22:56:29 - aiogram.event - INFO - Update id=619260957 is handled. Duration 139 ms by bot id=8208421266
+2026-01-31 22:56:33 - aiogram.event - INFO - Update id=619260958 is handled. Duration 125 ms by bot id=8208421266
+2026-01-31 22:56:35 - aiogram.event - INFO - Update id=619260959 is handled. Duration 422 ms by bot id=8208421266
+2026-01-31 22:59:37 - aiogram.event - INFO - Update id=619260960 is not handled. Duration 0 ms by bot id=8208421266
+2026-01-31 23:05:21 - aiogram.dispatcher - INFO - Start polling
+2026-01-31 23:05:22 - aiogram.dispatcher - INFO - Run polling for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-01-31 23:05:26 - aiogram.event - INFO - Update id=619260961 is handled. Duration 203 ms by bot id=8208421266
+2026-01-31 23:05:28 - aiogram.event - INFO - Update id=619260962 is handled. Duration 156 ms by bot id=8208421266
+2026-01-31 23:05:29 - aiogram.event - INFO - Update id=619260963 is handled. Duration 125 ms by bot id=8208421266
+2026-01-31 23:05:31 - aiogram.event - INFO - Update id=619260964 is handled. Duration 171 ms by bot id=8208421266
+2026-01-31 23:05:59 - aiogram.event - INFO - Update id=619260965 is handled. Duration 860 ms by bot id=8208421266
+2026-01-31 23:06:07 - aiogram.event - INFO - Update id=619260966 is handled. Duration 156 ms by bot id=8208421266
+2026-01-31 23:06:08 - aiogram.event - INFO - Update id=619260967 is handled. Duration 328 ms by bot id=8208421266
+2026-01-31 23:06:16 - aiogram.event - INFO - Update id=619260968 is handled. Duration 188 ms by bot id=8208421266
+2026-01-31 23:06:25 - aiogram.event - INFO - Update id=619260969 is handled. Duration 78 ms by bot id=8208421266
+2026-01-31 23:06:47 - aiogram.event - INFO - Update id=619260970 is handled. Duration 530 ms by bot id=8208421266
+2026-01-31 23:06:48 - aiogram.event - INFO - Update id=619260971 is handled. Duration 139 ms by bot id=8208421266
+2026-01-31 23:06:54 - aiogram.event - INFO - Update id=619260972 is handled. Duration 264 ms by bot id=8208421266
+2026-01-31 23:06:56 - aiogram.event - INFO - Update id=619260973 is handled. Duration 218 ms by bot id=8208421266
+2026-01-31 23:06:58 - aiogram.event - INFO - Update id=619260974 is handled. Duration 140 ms by bot id=8208421266
+2026-01-31 23:07:00 - aiogram.event - INFO - Update id=619260975 is handled. Duration 187 ms by bot id=8208421266
+2026-01-31 23:07:04 - aiogram.event - INFO - Update id=619260976 is handled. Duration 344 ms by bot id=8208421266
+2026-01-31 23:07:10 - aiogram.event - INFO - Update id=619260977 is handled. Duration 140 ms by bot id=8208421266
+2026-01-31 23:07:13 - aiogram.event - INFO - Update id=619260978 is handled. Duration 250 ms by bot id=8208421266
+2026-01-31 23:07:50 - aiogram.event - INFO - Update id=619260979 is handled. Duration 796 ms by bot id=8208421266
+2026-01-31 23:07:58 - aiogram.event - INFO - Update id=619260980 is handled. Duration 141 ms by bot id=8208421266
+2026-01-31 23:07:59 - aiogram.event - INFO - Update id=619260981 is handled. Duration 78 ms by bot id=8208421266
+2026-01-31 23:08:37 - aiogram.event - INFO - Update id=619260982 is handled. Duration 234 ms by bot id=8208421266
+2026-01-31 23:12:40 - aiogram.dispatcher - INFO - Start polling
+2026-01-31 23:12:40 - aiogram.dispatcher - INFO - Run polling for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-01-31 23:12:45 - aiogram.event - INFO - Update id=619260983 is handled. Duration 187 ms by bot id=8208421266
+2026-01-31 23:13:31 - aiogram.event - INFO - Update id=619260984 is handled. Duration 344 ms by bot id=8208421266
+2026-01-31 23:13:37 - aiogram.event - INFO - Update id=619260985 is handled. Duration 639 ms by bot id=8208421266
+2026-01-31 23:13:39 - aiogram.event - INFO - Update id=619260986 is handled. Duration 266 ms by bot id=8208421266
+2026-01-31 23:13:43 - aiogram.event - INFO - Update id=619260987 is handled. Duration 93 ms by bot id=8208421266
+2026-01-31 23:13:46 - aiogram.event - INFO - Update id=619260988 is handled. Duration 78 ms by bot id=8208421266
+2026-01-31 23:13:49 - aiogram.event - INFO - Update id=619260989 is handled. Duration 125 ms by bot id=8208421266
+2026-01-31 23:13:50 - aiogram.event - INFO - Update id=619260990 is handled. Duration 110 ms by bot id=8208421266
+2026-01-31 23:14:37 - aiogram.event - INFO - Update id=619260991 is handled. Duration 234 ms by bot id=8208421266
+2026-01-31 23:18:56 - aiogram.dispatcher - INFO - Start polling
+2026-01-31 23:18:57 - aiogram.dispatcher - INFO - Run polling for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-01-31 23:19:01 - aiogram.event - INFO - Update id=619260992 is handled. Duration 218 ms by bot id=8208421266
+2026-01-31 23:19:40 - aiogram.event - INFO - Update id=619260993 is handled. Duration 843 ms by bot id=8208421266
+2026-01-31 23:19:41 - aiogram.event - INFO - Update id=619260994 is handled. Duration 656 ms by bot id=8208421266
+2026-01-31 23:19:42 - aiogram.event - INFO - Update id=619260995 is handled. Duration 234 ms by bot id=8208421266
+2026-01-31 23:19:50 - aiogram.event - INFO - Update id=619260996 is handled. Duration 78 ms by bot id=8208421266
+2026-01-31 23:19:55 - aiogram.event - INFO - Update id=619260997 is handled. Duration 264 ms by bot id=8208421266
+2026-01-31 23:19:56 - aiogram.event - INFO - Update id=619260998 is handled. Duration 203 ms by bot id=8208421266
+2026-01-31 23:20:08 - aiogram.event - INFO - Update id=619260999 is handled. Duration 125 ms by bot id=8208421266
+2026-01-31 23:20:10 - aiogram.event - INFO - Update id=619261000 is handled. Duration 546 ms by bot id=8208421266
+2026-01-31 23:20:10 - aiogram.event - INFO - Update id=619261001 is handled. Duration 140 ms by bot id=8208421266
+2026-01-31 23:20:20 - aiogram.event - INFO - Update id=619261002 is handled. Duration 156 ms by bot id=8208421266
+2026-01-31 23:20:24 - aiogram.event - INFO - Update id=619261003 is handled. Duration 156 ms by bot id=8208421266
+2026-01-31 23:20:26 - aiogram.event - INFO - Update id=619261004 is handled. Duration 156 ms by bot id=8208421266
+2026-01-31 23:27:07 - aiogram.dispatcher - INFO - Start polling
+2026-01-31 23:27:07 - aiogram.dispatcher - INFO - Run polling for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-01-31 23:27:11 - aiogram.event - INFO - Update id=619261005 is handled. Duration 1156 ms by bot id=8208421266
+2026-01-31 23:27:16 - aiogram.event - INFO - Update id=619261006 is handled. Duration 264 ms by bot id=8208421266
+2026-01-31 23:27:29 - aiogram.event - INFO - Update id=619261007 is handled. Duration 156 ms by bot id=8208421266
+2026-01-31 23:27:30 - aiogram.event - INFO - Update id=619261008 is handled. Duration 94 ms by bot id=8208421266
+2026-01-31 23:27:32 - aiogram.event - INFO - Update id=619261009 is handled. Duration 250 ms by bot id=8208421266
+2026-01-31 23:27:59 - aiogram.event - INFO - Update id=619261010 is handled. Duration 218 ms by bot id=8208421266
+2026-01-31 23:28:00 - aiogram.event - INFO - Update id=619261011 is handled. Duration 78 ms by bot id=8208421266
+2026-01-31 23:28:01 - aiogram.event - INFO - Update id=619261012 is handled. Duration 78 ms by bot id=8208421266
+2026-01-31 23:28:04 - aiogram.event - INFO - Update id=619261013 is handled. Duration 203 ms by bot id=8208421266
+2026-01-31 23:28:17 - aiogram.event - INFO - Update id=619261014 is handled. Duration 93 ms by bot id=8208421266
+2026-01-31 23:28:28 - aiogram.event - INFO - Update id=619261015 is handled. Duration 78 ms by bot id=8208421266
+2026-01-31 23:28:29 - aiogram.event - INFO - Update id=619261016 is handled. Duration 63 ms by bot id=8208421266
+2026-01-31 23:28:30 - aiogram.event - INFO - Update id=619261017 is handled. Duration 139 ms by bot id=8208421266
+2026-01-31 23:28:32 - aiogram.event - INFO - Update id=619261018 is handled. Duration 94 ms by bot id=8208421266
+2026-01-31 23:28:40 - aiogram.event - INFO - Update id=619261019 is handled. Duration 688 ms by bot id=8208421266
+2026-01-31 23:28:41 - aiogram.event - INFO - Update id=619261020 is handled. Duration 171 ms by bot id=8208421266
+2026-01-31 23:29:18 - aiogram.event - INFO - Update id=619261021 is handled. Duration 375 ms by bot id=8208421266
+2026-01-31 23:29:21 - aiogram.event - INFO - Update id=619261022 is handled. Duration 796 ms by bot id=8208421266
+2026-01-31 23:29:22 - aiogram.event - INFO - Update id=619261023 is handled. Duration 125 ms by bot id=8208421266
+2026-01-31 23:29:24 - aiogram.event - INFO - Update id=619261024 is handled. Duration 203 ms by bot id=8208421266
+2026-01-31 23:29:30 - aiogram.event - INFO - Update id=619261025 is handled. Duration 186 ms by bot id=8208421266
+2026-01-31 23:29:33 - aiogram.event - INFO - Update id=619261026 is handled. Duration 296 ms by bot id=8208421266
+2026-01-31 23:29:37 - aiogram.event - INFO - Update id=619261027 is handled. Duration 594 ms by bot id=8208421266
+2026-01-31 23:29:39 - aiogram.event - INFO - Update id=619261028 is handled. Duration 375 ms by bot id=8208421266
+2026-01-31 23:29:40 - aiogram.event - INFO - Update id=619261029 is handled. Duration 344 ms by bot id=8208421266
+2026-01-31 23:29:46 - aiogram.event - INFO - Update id=619261030 is handled. Duration 62 ms by bot id=8208421266
+2026-01-31 23:32:34 - aiogram.dispatcher - INFO - Start polling
+2026-01-31 23:32:34 - aiogram.dispatcher - INFO - Run polling for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-01-31 23:32:37 - aiogram.event - INFO - Update id=619261031 is handled. Duration 608 ms by bot id=8208421266
+2026-01-31 23:32:39 - aiogram.event - INFO - Update id=619261032 is handled. Duration 359 ms by bot id=8208421266
+2026-01-31 23:32:41 - aiogram.event - INFO - Update id=619261033 is handled. Duration 250 ms by bot id=8208421266
+2026-01-31 23:32:47 - aiogram.event - INFO - Update id=619261034 is handled. Duration 108 ms by bot id=8208421266
+2026-01-31 23:33:10 - aiogram.event - INFO - Update id=619261035 is handled. Duration 500 ms by bot id=8208421266
+2026-01-31 23:33:29 - aiogram.event - INFO - Update id=619261036 is handled. Duration 187 ms by bot id=8208421266
+2026-01-31 23:33:30 - aiogram.event - INFO - Update id=619261037 is handled. Duration 62 ms by bot id=8208421266
+2026-01-31 23:34:40 - aiogram.dispatcher - INFO - Start polling
+2026-01-31 23:34:40 - aiogram.dispatcher - INFO - Run polling for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-01-31 23:34:52 - aiogram.event - INFO - Update id=619261038 is handled. Duration 296 ms by bot id=8208421266
+2026-01-31 23:34:54 - aiogram.event - INFO - Update id=619261039 is handled. Duration 406 ms by bot id=8208421266
+2026-01-31 23:34:55 - aiogram.event - INFO - Update id=619261040 is handled. Duration 156 ms by bot id=8208421266
+2026-01-31 23:34:59 - aiogram.event - INFO - Update id=619261041 is handled. Duration 110 ms by bot id=8208421266
+2026-01-31 23:59:11 - aiogram.event - INFO - Update id=619261042 is handled. Duration 546 ms by bot id=8208421266
+2026-02-01 00:10:07 - aiogram.event - INFO - Update id=619261043 is not handled. Duration 0 ms by bot id=8208421266
+2026-02-01 00:10:20 - aiogram.event - INFO - Update id=619261044 is handled. Duration 187 ms by bot id=8208421266
+2026-02-01 00:10:25 - aiogram.event - INFO - Update id=619261045 is not handled. Duration 14 ms by bot id=8208421266
+2026-02-01 00:11:06 - aiogram.event - INFO - Update id=619261046 is handled. Duration 313 ms by bot id=8208421266
+2026-02-01 00:11:28 - aiogram.event - INFO - Update id=619261047 is handled. Duration 500 ms by bot id=8208421266
+2026-02-01 00:11:35 - aiogram.event - INFO - Update id=619261048 is handled. Duration 218 ms by bot id=8208421266
+2026-02-01 00:11:38 - aiogram.event - INFO - Update id=619261049 is handled. Duration 188 ms by bot id=8208421266
+2026-02-01 00:12:33 - aiogram.event - INFO - Update id=619261050 is handled. Duration 437 ms by bot id=8208421266
+2026-02-01 00:12:42 - aiogram.event - INFO - Update id=619261051 is handled. Duration 125 ms by bot id=8208421266
+2026-02-01 00:12:47 - aiogram.event - INFO - Update id=619261052 is not handled. Duration 0 ms by bot id=8208421266
+2026-02-01 00:16:48 - aiogram.event - INFO - Update id=619261053 is handled. Duration 515 ms by bot id=8208421266
+2026-02-01 00:16:55 - aiogram.event - INFO - Update id=619261054 is handled. Duration 344 ms by bot id=8208421266
+2026-02-01 00:18:36 - aiogram.event - INFO - Update id=619261055 is handled. Duration 468 ms by bot id=8208421266
+2026-02-01 00:18:41 - aiogram.event - INFO - Update id=619261056 is handled. Duration 125 ms by bot id=8208421266
+2026-02-01 00:21:36 - aiogram.event - INFO - Update id=619261057 is not handled. Duration 0 ms by bot id=8208421266
+2026-02-01 00:21:54 - aiogram.event - INFO - Update id=619261058 is handled. Duration 375 ms by bot id=8208421266
+2026-02-01 00:25:59 - aiogram.dispatcher - INFO - Start polling
+2026-02-01 00:26:00 - aiogram.dispatcher - INFO - Run polling for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-02-01 00:26:03 - aiogram.event - INFO - Update id=619261059 is handled. Duration 266 ms by bot id=8208421266
+2026-02-01 00:26:17 - aiogram.event - INFO - Update id=619261060 is handled. Duration 375 ms by bot id=8208421266
+2026-02-01 00:26:42 - aiogram.event - INFO - Update id=619261061 is handled. Duration 203 ms by bot id=8208421266
+2026-02-01 00:26:48 - aiogram.event - INFO - Update id=619261062 is handled. Duration 296 ms by bot id=8208421266
+2026-02-01 00:26:52 - aiogram.event - INFO - Update id=619261063 is handled. Duration 344 ms by bot id=8208421266
+2026-02-01 00:26:57 - aiogram.event - INFO - Update id=619261064 is handled. Duration 266 ms by bot id=8208421266
+2026-02-01 00:26:59 - aiogram.event - INFO - Update id=619261065 is handled. Duration 265 ms by bot id=8208421266
+2026-02-01 00:28:30 - aiogram.event - INFO - Update id=619261066 is handled. Duration 593 ms by bot id=8208421266
+2026-02-01 00:29:44 - aiogram.event - INFO - Update id=619261067 is handled. Duration 360 ms by bot id=8208421266
+2026-02-01 00:29:47 - aiogram.event - INFO - Update id=619261068 is handled. Duration 296 ms by bot id=8208421266
+2026-02-01 00:29:51 - aiogram.event - INFO - Update id=619261069 is handled. Duration 141 ms by bot id=8208421266
+2026-02-01 00:30:13 - aiogram.event - INFO - Update id=619261070 is handled. Duration 233 ms by bot id=8208421266
+2026-02-01 00:31:14 - aiogram.event - INFO - Update id=619261071 is handled. Duration 343 ms by bot id=8208421266
+2026-02-01 00:32:09 - aiogram.event - INFO - Update id=619261072 is handled. Duration 328 ms by bot id=8208421266
+2026-02-01 00:32:18 - aiogram.event - INFO - Update id=619261073 is handled. Duration 171 ms by bot id=8208421266
+2026-02-01 00:32:30 - aiogram.event - INFO - Update id=619261074 is handled. Duration 171 ms by bot id=8208421266
+2026-02-01 00:32:45 - aiogram.event - INFO - Update id=619261075 is handled. Duration 218 ms by bot id=8208421266
+2026-02-01 00:32:54 - aiogram.event - INFO - Update id=619261076 is handled. Duration 125 ms by bot id=8208421266
+2026-02-01 00:32:57 - aiogram.event - INFO - Update id=619261077 is handled. Duration 406 ms by bot id=8208421266
+2026-02-01 00:44:44 - aiogram.event - INFO - Update id=619261078 is handled. Duration 281 ms by bot id=8208421266
+2026-02-01 00:47:59 - aiogram.dispatcher - INFO - Start polling
+2026-02-01 00:47:59 - aiogram.dispatcher - INFO - Run polling for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-02-01 00:48:03 - aiogram.event - INFO - Update id=619261079 is handled. Duration 858 ms by bot id=8208421266
+2026-02-01 00:48:29 - aiogram.dispatcher - INFO - Start polling
+2026-02-01 00:48:29 - aiogram.dispatcher - INFO - Run polling for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-02-01 00:48:30 - aiogram.event - INFO - Update id=619261080 is handled. Duration 311 ms by bot id=8208421266
+2026-02-01 00:56:29 - aiogram.dispatcher - INFO - Start polling
+2026-02-01 00:56:29 - aiogram.dispatcher - INFO - Run polling for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-02-01 00:56:31 - aiogram.event - INFO - Update id=619261081 is handled. Duration 406 ms by bot id=8208421266
+2026-02-01 00:56:51 - aiogram.event - INFO - Update id=619261082 is handled. Duration 250 ms by bot id=8208421266
+2026-02-01 00:57:19 - aiogram.event - INFO - Update id=619261083 is handled. Duration 250 ms by bot id=8208421266
+2026-02-01 00:59:15 - aiogram.dispatcher - INFO - Start polling
+2026-02-01 00:59:15 - aiogram.dispatcher - INFO - Run polling for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-02-01 00:59:16 - aiogram.event - INFO - Update id=619261084 is handled. Duration 188 ms by bot id=8208421266
+2026-02-01 01:00:34 - aiogram.dispatcher - INFO - Start polling
+2026-02-01 01:00:34 - aiogram.dispatcher - INFO - Run polling for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-02-01 01:00:36 - aiogram.event - INFO - Update id=619261085 is handled. Duration 219 ms by bot id=8208421266
+2026-02-01 01:01:37 - aiogram.event - INFO - Update id=619261086 is handled. Duration 188 ms by bot id=8208421266
+2026-02-01 01:03:30 - aiogram.event - INFO - Update id=619261087 is handled. Duration 139 ms by bot id=8208421266
+2026-02-01 01:16:46 - aiogram.dispatcher - INFO - Start polling
+2026-02-01 01:16:46 - aiogram.dispatcher - INFO - Run polling for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-02-01 01:16:47 - aiogram.event - INFO - Update id=619261088 is handled. Duration 312 ms by bot id=8208421266
+2026-02-01 01:25:23 - aiogram.event - INFO - Update id=619261089 is handled. Duration 171 ms by bot id=8208421266
+2026-02-01 01:26:34 - aiogram.event - INFO - Update id=619261090 is handled. Duration 188 ms by bot id=8208421266
+2026-02-01 01:28:36 - aiogram.event - INFO - Update id=619261091 is handled. Duration 186 ms by bot id=8208421266
+2026-02-01 01:28:54 - aiogram.event - INFO - Update id=619261092 is handled. Duration 250 ms by bot id=8208421266
+2026-02-01 01:41:41 - aiogram.event - INFO - Update id=619261093 is handled. Duration 125 ms by bot id=8208421266
+2026-02-01 02:18:49 - aiogram.dispatcher - INFO - Start polling
+2026-02-01 02:18:49 - aiogram.dispatcher - INFO - Run polling for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-02-01 02:18:56 - aiogram.event - INFO - Update id=619261094 is handled. Duration 171 ms by bot id=8208421266
+2026-02-01 02:18:58 - aiogram.event - INFO - Update id=619261095 is handled. Duration 186 ms by bot id=8208421266
+2026-02-01 02:19:22 - aiogram.event - INFO - Update id=619261096 is handled. Duration 203 ms by bot id=8208421266
+2026-02-01 02:19:30 - aiogram.event - INFO - Update id=619261097 is handled. Duration 125 ms by bot id=8208421266
+2026-02-01 02:20:51 - aiogram.event - INFO - Update id=619261098 is handled. Duration 203 ms by bot id=8208421266
+2026-02-01 02:20:54 - aiogram.event - INFO - Update id=619261099 is handled. Duration 108 ms by bot id=8208421266
+2026-02-01 02:20:55 - aiogram.event - INFO - Update id=619261100 is handled. Duration 125 ms by bot id=8208421266
+2026-02-01 02:20:56 - aiogram.event - INFO - Update id=619261101 is handled. Duration 61 ms by bot id=8208421266
+2026-02-01 02:20:59 - aiogram.event - INFO - Update id=619261102 is handled. Duration 281 ms by bot id=8208421266
+2026-02-01 02:21:01 - aiogram.event - INFO - Update id=619261103 is handled. Duration 171 ms by bot id=8208421266
+2026-02-01 02:21:02 - aiogram.event - INFO - Update id=619261104 is handled. Duration 93 ms by bot id=8208421266
+2026-02-01 02:21:03 - aiogram.event - INFO - Update id=619261105 is handled. Duration 203 ms by bot id=8208421266
+2026-02-01 02:21:05 - aiogram.event - INFO - Update id=619261106 is handled. Duration 125 ms by bot id=8208421266
+2026-02-01 02:21:08 - aiogram.event - INFO - Update id=619261107 is handled. Duration 218 ms by bot id=8208421266
+2026-02-01 02:21:09 - aiogram.event - INFO - Update id=619261108 is handled. Duration 78 ms by bot id=8208421266
+2026-02-01 02:21:10 - aiogram.event - INFO - Update id=619261109 is handled. Duration 218 ms by bot id=8208421266
+2026-02-01 02:21:12 - aiogram.event - INFO - Update id=619261110 is handled. Duration 235 ms by bot id=8208421266
+2026-02-01 02:21:14 - aiogram.event - INFO - Update id=619261111 is handled. Duration 234 ms by bot id=8208421266
+2026-02-01 02:21:23 - aiogram.event - INFO - Update id=619261112 is handled. Duration 188 ms by bot id=8208421266
+2026-02-01 02:21:25 - aiogram.event - INFO - Update id=619261113 is handled. Duration 125 ms by bot id=8208421266
+2026-02-01 02:21:27 - aiogram.event - INFO - Update id=619261114 is handled. Duration 62 ms by bot id=8208421266
+2026-02-01 02:21:28 - aiogram.event - INFO - Update id=619261115 is handled. Duration 109 ms by bot id=8208421266
+2026-02-01 02:21:30 - aiogram.event - INFO - Update id=619261116 is handled. Duration 203 ms by bot id=8208421266
+2026-02-01 02:21:31 - aiogram.event - INFO - Update id=619261117 is handled. Duration 203 ms by bot id=8208421266
+2026-02-01 02:21:33 - aiogram.event - INFO - Update id=619261118 is handled. Duration 125 ms by bot id=8208421266
+2026-02-01 02:21:40 - aiogram.event - INFO - Update id=619261119 is handled. Duration 125 ms by bot id=8208421266
+2026-02-01 02:22:05 - aiogram.event - INFO - Update id=619261120 is handled. Duration 141 ms by bot id=8208421266
+2026-02-01 02:22:17 - aiogram.event - INFO - Update id=619261121 is handled. Duration 110 ms by bot id=8208421266
+2026-02-01 02:22:19 - aiogram.event - INFO - Update id=619261122 is handled. Duration 187 ms by bot id=8208421266
+2026-02-01 02:22:21 - aiogram.event - INFO - Update id=619261123 is handled. Duration 156 ms by bot id=8208421266
+2026-02-01 02:22:23 - aiogram.event - INFO - Update id=619261124 is handled. Duration 219 ms by bot id=8208421266
+2026-02-01 02:22:23 - aiogram.event - INFO - Update id=619261125 is handled. Duration 203 ms by bot id=8208421266
+2026-02-01 02:22:26 - aiogram.event - INFO - Update id=619261126 is handled. Duration 110 ms by bot id=8208421266
+2026-02-01 02:22:29 - aiogram.event - INFO - Update id=619261127 is handled. Duration 108 ms by bot id=8208421266
+2026-02-01 02:22:33 - aiogram.event - INFO - Update id=619261128 is handled. Duration 156 ms by bot id=8208421266
+2026-02-01 02:23:06 - aiogram.event - INFO - Update id=619261129 is handled. Duration 234 ms by bot id=8208421266
+2026-02-01 02:23:07 - aiogram.event - INFO - Update id=619261130 is handled. Duration 186 ms by bot id=8208421266
+2026-02-01 02:23:36 - aiogram.event - INFO - Update id=619261131 is handled. Duration 250 ms by bot id=8208421266
+2026-02-01 02:23:37 - aiogram.event - INFO - Update id=619261132 is handled. Duration 125 ms by bot id=8208421266
+2026-02-01 02:23:38 - aiogram.event - INFO - Update id=619261133 is handled. Duration 140 ms by bot id=8208421266
+2026-02-01 02:23:39 - aiogram.event - INFO - Update id=619261134 is handled. Duration 218 ms by bot id=8208421266
+2026-02-01 02:23:40 - aiogram.event - INFO - Update id=619261135 is handled. Duration 281 ms by bot id=8208421266
+2026-02-01 02:23:44 - aiogram.event - INFO - Update id=619261136 is handled. Duration 108 ms by bot id=8208421266
+2026-02-01 02:23:47 - aiogram.event - INFO - Update id=619261137 is handled. Duration 235 ms by bot id=8208421266
+2026-02-01 02:31:41 - aiogram.event - INFO - Update id=619261138 is handled. Duration 311 ms by bot id=8208421266
+2026-02-01 02:37:13 - aiogram.dispatcher - INFO - Start polling
+2026-02-01 02:37:13 - aiogram.dispatcher - INFO - Run polling for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-02-01 02:37:19 - aiogram.event - INFO - Update id=619261139 is handled. Duration 264 ms by bot id=8208421266
+2026-02-01 02:37:20 - aiogram.event - INFO - Update id=619261140 is handled. Duration 125 ms by bot id=8208421266
+2026-02-01 02:37:22 - aiogram.event - INFO - Update id=619261141 is handled. Duration 156 ms by bot id=8208421266
+2026-02-01 02:37:23 - aiogram.event - INFO - Update id=619261142 is handled. Duration 156 ms by bot id=8208421266
+2026-02-01 02:37:36 - aiogram.event - INFO - Update id=619261143 is handled. Duration 125 ms by bot id=8208421266
+2026-02-01 02:37:42 - aiogram.event - INFO - Update id=619261144 is handled. Duration 108 ms by bot id=8208421266
+2026-02-01 02:38:19 - aiogram.event - INFO - Update id=619261145 is handled. Duration 219 ms by bot id=8208421266
+2026-02-01 02:38:29 - aiogram.event - INFO - Update id=619261146 is handled. Duration 171 ms by bot id=8208421266
+2026-02-01 02:38:32 - aiogram.event - INFO - Update id=619261147 is handled. Duration 110 ms by bot id=8208421266
+2026-02-01 02:38:34 - aiogram.event - INFO - Update id=619261148 is handled. Duration 187 ms by bot id=8208421266
+2026-02-01 02:38:35 - aiogram.event - INFO - Update id=619261149 is handled. Duration 125 ms by bot id=8208421266
+2026-02-01 02:38:37 - aiogram.event - INFO - Update id=619261150 is handled. Duration 171 ms by bot id=8208421266
+2026-02-01 02:38:37 - aiogram.event - INFO - Update id=619261151 is handled. Duration 156 ms by bot id=8208421266
+2026-02-01 02:38:40 - aiogram.event - INFO - Update id=619261152 is handled. Duration 250 ms by bot id=8208421266
+2026-02-01 02:38:47 - aiogram.event - INFO - Update id=619261153 is handled. Duration 172 ms by bot id=8208421266
+2026-02-01 02:38:48 - aiogram.event - INFO - Update id=619261154 is handled. Duration 218 ms by bot id=8208421266
+2026-02-01 02:38:54 - aiogram.event - INFO - Update id=619261155 is handled. Duration 108 ms by bot id=8208421266
+2026-02-01 02:40:34 - aiogram.event - INFO - Update id=619261156 is handled. Duration 203 ms by bot id=8208421266
+2026-02-01 02:40:36 - aiogram.event - INFO - Update id=619261157 is handled. Duration 313 ms by bot id=8208421266
+2026-02-01 02:40:37 - aiogram.event - INFO - Update id=619261158 is handled. Duration 188 ms by bot id=8208421266
+2026-02-01 02:40:38 - aiogram.event - INFO - Update id=619261159 is handled. Duration 139 ms by bot id=8208421266
+2026-02-01 02:40:39 - aiogram.event - INFO - Update id=619261160 is handled. Duration 186 ms by bot id=8208421266
+2026-02-01 02:40:40 - aiogram.event - INFO - Update id=619261161 is handled. Duration 188 ms by bot id=8208421266
+2026-02-01 02:40:47 - aiogram.event - INFO - Update id=619261162 is handled. Duration 125 ms by bot id=8208421266
+2026-02-01 02:40:48 - aiogram.event - INFO - Update id=619261163 is handled. Duration 93 ms by bot id=8208421266
+2026-02-01 02:40:49 - aiogram.event - INFO - Update id=619261164 is handled. Duration 171 ms by bot id=8208421266
+2026-02-01 02:40:52 - aiogram.event - INFO - Update id=619261165 is handled. Duration 250 ms by bot id=8208421266
+2026-02-01 02:44:53 - aiogram.event - INFO - Update id=619261166 is handled. Duration 125 ms by bot id=8208421266
+2026-02-01 02:44:59 - aiogram.event - INFO - Update id=619261167 is handled. Duration 108 ms by bot id=8208421266
+2026-02-01 02:45:01 - aiogram.event - INFO - Update id=619261168 is handled. Duration 125 ms by bot id=8208421266
+2026-02-01 02:45:02 - aiogram.event - INFO - Update id=619261169 is handled. Duration 77 ms by bot id=8208421266
+2026-02-01 02:45:09 - aiogram.event - INFO - Update id=619261170 is handled. Duration 155 ms by bot id=8208421266
+2026-02-01 02:45:15 - aiogram.event - INFO - Update id=619261171 is handled. Duration 171 ms by bot id=8208421266
+2026-02-01 02:45:16 - aiogram.event - INFO - Update id=619261172 is handled. Duration 125 ms by bot id=8208421266
+2026-02-01 02:45:18 - aiogram.event - INFO - Update id=619261173 is handled. Duration 186 ms by bot id=8208421266
+2026-02-01 02:45:19 - aiogram.event - INFO - Update id=619261174 is handled. Duration 389 ms by bot id=8208421266
+2026-02-01 02:45:24 - aiogram.event - INFO - Update id=619261175 is not handled. Duration 62 ms by bot id=8208421266
+2026-02-01 02:45:24 - aiogram.event - ERROR - Cause exception while process update id=619261175 by bot id=8208421266
+TypeError: unsupported operand type(s) for -: 'int' and 'datetime.datetime'
+Traceback (most recent call last):
+  File "D:\Python\EwhorWatchdog\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\EwhorWatchdog\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\EwhorWatchdog\venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\EwhorWatchdog\venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\EwhorWatchdog\venv\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\EwhorWatchdog\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\EwhorWatchdog\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "D:\Python\EwhorWatchdog\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\EwhorWatchdog\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\EwhorWatchdog\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\EwhorWatchdog\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 170, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\EwhorWatchdog\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\EwhorWatchdog\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\EwhorWatchdog\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\EwhorWatchdog\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Python\EwhorWatchdog\middlewares\auth.py", line 188, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Python\EwhorWatchdog\middlewares\auth.py", line 131, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Python\EwhorWatchdog\middlewares\auth.py", line 72, in __call__
+    result = await handler(event, data)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Python\EwhorWatchdog\middlewares\auth.py", line 39, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\EwhorWatchdog\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "d:\Python\EwhorWatchdog\handlers\sfs.py", line 310, in sfs_handle_forward_after_join
+    if not _is_forward_valid_age(forward_ts):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Python\EwhorWatchdog\handlers\sfs.py", line 284, in _is_forward_valid_age
+    age_sec = now_ts - forward_ts
+              ~~~~~~~^~~~~~~~~~~~
+TypeError: unsupported operand type(s) for -: 'int' and 'datetime.datetime'
+2026-02-01 02:46:42 - aiogram.dispatcher - INFO - Start polling
+2026-02-01 02:46:42 - aiogram.dispatcher - INFO - Run polling for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-02-01 02:46:46 - aiogram.event - INFO - Update id=619261176 is handled. Duration 141 ms by bot id=8208421266
+2026-02-01 02:46:47 - aiogram.event - INFO - Update id=619261177 is handled. Duration 155 ms by bot id=8208421266
+2026-02-01 02:46:49 - aiogram.event - INFO - Update id=619261178 is handled. Duration 171 ms by bot id=8208421266
+2026-02-01 02:46:58 - aiogram.event - INFO - Update id=619261179 is handled. Duration 94 ms by bot id=8208421266
+2026-02-01 02:48:18 - aiogram.dispatcher - INFO - Start polling
+2026-02-01 02:48:18 - aiogram.dispatcher - INFO - Run polling for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-02-01 02:48:21 - aiogram.event - INFO - Update id=619261180 is handled. Duration 186 ms by bot id=8208421266
+2026-02-01 02:48:22 - aiogram.event - INFO - Update id=619261181 is handled. Duration 203 ms by bot id=8208421266
+2026-02-01 02:48:24 - aiogram.event - INFO - Update id=619261182 is handled. Duration 110 ms by bot id=8208421266
+2026-02-01 02:48:30 - aiogram.event - INFO - Update id=619261183 is handled. Duration 46 ms by bot id=8208421266
+2026-02-01 02:48:53 - aiogram.dispatcher - INFO - Start polling
+2026-02-01 02:48:53 - aiogram.dispatcher - INFO - Run polling for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-02-01 02:48:55 - aiogram.event - INFO - Update id=619261184 is handled. Duration 140 ms by bot id=8208421266
+2026-02-01 02:48:57 - aiogram.event - INFO - Update id=619261185 is handled. Duration 110 ms by bot id=8208421266
+2026-02-01 02:49:01 - aiogram.event - INFO - Update id=619261186 is handled. Duration 171 ms by bot id=8208421266
+2026-02-01 02:49:08 - aiogram.event - INFO - Update id=619261187 is handled. Duration 63 ms by bot id=8208421266
+2026-02-01 02:51:45 - aiogram.dispatcher - INFO - Start polling
+2026-02-01 02:51:45 - aiogram.dispatcher - INFO - Run polling for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-02-01 02:51:47 - aiogram.event - INFO - Update id=619261188 is handled. Duration 141 ms by bot id=8208421266
+2026-02-01 02:51:49 - aiogram.event - INFO - Update id=619261189 is handled. Duration 125 ms by bot id=8208421266
+2026-02-01 02:51:50 - aiogram.event - INFO - Update id=619261190 is handled. Duration 108 ms by bot id=8208421266
+2026-02-01 02:52:08 - aiogram.event - INFO - Update id=619261191 is handled. Duration 139 ms by bot id=8208421266
+2026-02-01 02:52:16 - aiogram.event - INFO - Update id=619261192 is handled. Duration 125 ms by bot id=8208421266
+2026-02-01 02:52:26 - aiogram.event - INFO - Update id=619261193 is handled. Duration 125 ms by bot id=8208421266
+2026-02-01 02:52:31 - aiogram.event - INFO - Update id=619261194 is handled. Duration 343 ms by bot id=8208421266
+2026-02-01 02:52:32 - aiogram.event - INFO - Update id=619261195 is handled. Duration 78 ms by bot id=8208421266
+2026-02-01 02:52:33 - aiogram.event - INFO - Update id=619261196 is handled. Duration 203 ms by bot id=8208421266
+2026-02-01 02:52:36 - aiogram.event - INFO - Update id=619261197 is handled. Duration 108 ms by bot id=8208421266
+2026-02-01 02:52:38 - aiogram.event - INFO - Update id=619261198 is handled. Duration 61 ms by bot id=8208421266
+2026-02-01 02:53:11 - aiogram.event - INFO - Update id=619261199 is handled. Duration 188 ms by bot id=8208421266
+2026-02-01 02:53:12 - aiogram.event - INFO - Update id=619261200 is handled. Duration 186 ms by bot id=8208421266
+2026-02-01 02:53:14 - aiogram.event - INFO - Update id=619261201 is handled. Duration 93 ms by bot id=8208421266
+2026-02-01 02:53:16 - aiogram.event - INFO - Update id=619261202 is handled. Duration 186 ms by bot id=8208421266
+2026-02-01 02:53:22 - aiogram.event - INFO - Update id=619261203 is handled. Duration 141 ms by bot id=8208421266
+2026-02-01 02:53:25 - aiogram.event - INFO - Update id=619261204 is handled. Duration 125 ms by bot id=8208421266
+2026-02-01 02:53:26 - aiogram.event - INFO - Update id=619261205 is handled. Duration 187 ms by bot id=8208421266
+2026-02-01 02:53:28 - aiogram.event - INFO - Update id=619261206 is handled. Duration 203 ms by bot id=8208421266
+2026-02-01 02:53:29 - aiogram.event - INFO - Update id=619261207 is handled. Duration 171 ms by bot id=8208421266
+2026-02-01 02:53:31 - aiogram.event - INFO - Update id=619261208 is handled. Duration 438 ms by bot id=8208421266
+2026-02-01 02:53:32 - aiogram.event - INFO - Update id=619261209 is handled. Duration 234 ms by bot id=8208421266
+2026-02-01 02:53:38 - aiogram.event - INFO - Update id=619261210 is handled. Duration 156 ms by bot id=8208421266
+2026-02-01 02:53:42 - aiogram.event - INFO - Update id=619261211 is handled. Duration 110 ms by bot id=8208421266
+2026-02-01 02:53:48 - aiogram.event - INFO - Update id=619261212 is handled. Duration 125 ms by bot id=8208421266
+2026-02-01 02:53:51 - aiogram.event - INFO - Update id=619261213 is handled. Duration 109 ms by bot id=8208421266
+2026-02-01 02:53:59 - aiogram.event - INFO - Update id=619261214 is handled. Duration 171 ms by bot id=8208421266
+2026-02-01 02:54:02 - aiogram.event - INFO - Update id=619261215 is handled. Duration 110 ms by bot id=8208421266
+2026-02-01 02:58:11 - aiogram.event - INFO - Update id=619261216 is handled. Duration 312 ms by bot id=8208421266
+2026-02-01 03:02:26 - aiogram.event - INFO - Update id=619261217 is handled. Duration 218 ms by bot id=8208421266
+2026-02-01 03:08:24 - aiogram.event - INFO - Update id=619261218 is handled. Duration 0 ms by bot id=8208421266
+2026-02-01 03:08:48 - aiogram.dispatcher - INFO - Start polling
+2026-02-01 03:08:48 - aiogram.dispatcher - INFO - Run polling for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-02-01 03:08:56 - aiogram.event - INFO - Update id=619261219 is handled. Duration 171 ms by bot id=8208421266
+2026-02-01 03:08:58 - aiogram.event - INFO - Update id=619261220 is handled. Duration 125 ms by bot id=8208421266
+2026-02-01 03:08:58 - aiogram.event - INFO - Update id=619261221 is handled. Duration 110 ms by bot id=8208421266
+2026-02-01 03:09:08 - aiogram.event - INFO - Update id=619261222 is handled. Duration 78 ms by bot id=8208421266
+2026-02-01 03:20:47 - aiogram.event - INFO - Update id=619261223 is handled. Duration 141 ms by bot id=8208421266
+2026-02-01 03:23:12 - aiogram.event - INFO - Update id=619261224 is handled. Duration 14 ms by bot id=8208421266
+2026-02-01 03:29:58 - aiogram.dispatcher - INFO - Start polling
+2026-02-01 03:29:58 - aiogram.dispatcher - INFO - Run polling for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-02-01 03:30:03 - aiogram.event - INFO - Update id=619261225 is handled. Duration 171 ms by bot id=8208421266
+2026-02-01 03:30:05 - aiogram.event - INFO - Update id=619261226 is handled. Duration 139 ms by bot id=8208421266
+2026-02-01 03:30:07 - aiogram.event - INFO - Update id=619261227 is handled. Duration 125 ms by bot id=8208421266
+2026-02-01 03:30:11 - aiogram.event - INFO - Update id=619261228 is handled. Duration 125 ms by bot id=8208421266
+2026-02-01 03:30:13 - aiogram.event - INFO - Update id=619261229 is handled. Duration 108 ms by bot id=8208421266
+2026-02-01 03:30:28 - aiogram.event - INFO - Update id=619261230 is handled. Duration 78 ms by bot id=8208421266
+2026-02-01 03:30:36 - aiogram.event - INFO - Update id=619261231 is handled. Duration 108 ms by bot id=8208421266
+2026-02-01 03:30:39 - aiogram.event - INFO - Update id=619261232 is handled. Duration 156 ms by bot id=8208421266
+2026-02-01 03:30:43 - aiogram.event - INFO - Update id=619261233 is handled. Duration 250 ms by bot id=8208421266
+2026-02-01 03:30:56 - aiogram.event - INFO - Update id=619261234 is handled. Duration 141 ms by bot id=8208421266
+2026-02-01 03:30:58 - aiogram.event - INFO - Update id=619261235 is handled. Duration 125 ms by bot id=8208421266
+2026-02-01 03:31:00 - aiogram.event - INFO - Update id=619261236 is handled. Duration 235 ms by bot id=8208421266
+2026-02-01 03:31:01 - aiogram.event - INFO - Update id=619261237 is handled. Duration 125 ms by bot id=8208421266
+2026-02-01 03:34:05 - aiogram.event - INFO - Update id=619261238 is handled. Duration 359 ms by bot id=8208421266
+2026-02-01 03:34:07 - aiogram.event - INFO - Update id=619261239 is handled. Duration 125 ms by bot id=8208421266
+2026-02-01 03:34:10 - aiogram.event - INFO - Update id=619261240 is handled. Duration 391 ms by bot id=8208421266
+2026-02-01 03:34:12 - aiogram.event - INFO - Update id=619261241 is handled. Duration 188 ms by bot id=8208421266
+2026-02-01 03:34:52 - aiogram.dispatcher - INFO - Start polling
+2026-02-01 03:34:52 - aiogram.dispatcher - INFO - Run polling for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-02-01 03:34:56 - aiogram.event - INFO - Update id=619261242 is handled. Duration 328 ms by bot id=8208421266
+2026-02-01 03:34:57 - aiogram.event - INFO - Update id=619261243 is handled. Duration 125 ms by bot id=8208421266
+2026-02-01 03:34:59 - aiogram.event - INFO - Update id=619261244 is handled. Duration 203 ms by bot id=8208421266
+2026-02-01 03:35:01 - aiogram.event - INFO - Update id=619261245 is handled. Duration 250 ms by bot id=8208421266
+2026-02-01 03:35:02 - aiogram.event - INFO - Update id=619261246 is handled. Duration 389 ms by bot id=8208421266
+2026-02-01 03:35:03 - aiogram.event - INFO - Update id=619261247 is handled. Duration 296 ms by bot id=8208421266
+2026-02-01 03:35:04 - aiogram.event - INFO - Update id=619261248 is handled. Duration 547 ms by bot id=8208421266
+2026-02-01 03:35:18 - aiogram.event - INFO - Update id=619261249 is handled. Duration 62 ms by bot id=8208421266
+2026-02-01 03:35:31 - aiogram.event - INFO - Update id=619261250 is handled. Duration 139 ms by bot id=8208421266
+2026-02-01 03:35:33 - aiogram.event - INFO - Update id=619261251 is handled. Duration 109 ms by bot id=8208421266
+2026-02-01 03:35:44 - aiogram.event - INFO - Update id=619261252 is handled. Duration 250 ms by bot id=8208421266
+2026-02-01 03:35:46 - aiogram.event - INFO - Update id=619261253 is handled. Duration 109 ms by bot id=8208421266
+2026-02-01 03:35:47 - aiogram.event - INFO - Update id=619261254 is handled. Duration 109 ms by bot id=8208421266
+2026-02-01 03:38:38 - aiogram.dispatcher - INFO - Start polling
+2026-02-01 03:38:38 - aiogram.dispatcher - INFO - Run polling for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-02-01 03:38:53 - aiogram.event - INFO - Update id=619261255 is handled. Duration 203 ms by bot id=8208421266
+2026-02-01 03:38:54 - aiogram.event - INFO - Update id=619261256 is handled. Duration 125 ms by bot id=8208421266
+2026-02-01 03:39:12 - aiogram.event - INFO - Update id=619261257 is handled. Duration 186 ms by bot id=8208421266
+2026-02-01 03:39:15 - aiogram.event - INFO - Update id=619261258 is handled. Duration 421 ms by bot id=8208421266
+2026-02-01 03:39:16 - aiogram.event - INFO - Update id=619261259 is handled. Duration 203 ms by bot id=8208421266
+2026-02-01 03:39:19 - aiogram.event - INFO - Update id=619261260 is handled. Duration 155 ms by bot id=8208421266
+2026-02-01 03:39:21 - aiogram.event - INFO - Update id=619261261 is handled. Duration 108 ms by bot id=8208421266
+2026-02-01 03:39:22 - aiogram.event - INFO - Update id=619261262 is handled. Duration 125 ms by bot id=8208421266
+2026-02-01 03:39:23 - aiogram.event - INFO - Update id=619261263 is handled. Duration 188 ms by bot id=8208421266
+2026-02-01 03:39:24 - aiogram.event - INFO - Update id=619261264 is handled. Duration 125 ms by bot id=8208421266
+2026-02-01 03:41:07 - aiogram.dispatcher - INFO - Start polling
+2026-02-01 03:41:07 - aiogram.dispatcher - INFO - Run polling for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-02-01 03:41:13 - aiogram.event - INFO - Update id=619261265 is handled. Duration 140 ms by bot id=8208421266
+2026-02-01 03:41:14 - aiogram.event - INFO - Update id=619261266 is handled. Duration 109 ms by bot id=8208421266
+2026-02-01 03:41:16 - aiogram.event - INFO - Update id=619261267 is handled. Duration 93 ms by bot id=8208421266
+2026-02-01 03:41:20 - aiogram.event - INFO - Update id=619261268 is handled. Duration 110 ms by bot id=8208421266
+2026-02-01 03:41:20 - aiogram.event - INFO - Update id=619261269 is handled. Duration 110 ms by bot id=8208421266
+2026-02-01 03:41:22 - aiogram.event - INFO - Update id=619261270 is handled. Duration 171 ms by bot id=8208421266
+2026-02-01 03:41:23 - aiogram.event - INFO - Update id=619261271 is handled. Duration 141 ms by bot id=8208421266
+2026-02-01 03:41:27 - aiogram.event - INFO - Update id=619261272 is handled. Duration 233 ms by bot id=8208421266
+2026-02-01 03:41:32 - aiogram.event - INFO - Update id=619261273 is handled. Duration 186 ms by bot id=8208421266
+2026-02-01 03:41:34 - aiogram.event - INFO - Update id=619261274 is handled. Duration 203 ms by bot id=8208421266
+2026-02-01 03:41:35 - aiogram.event - INFO - Update id=619261275 is handled. Duration 218 ms by bot id=8208421266
+2026-02-01 03:41:46 - aiogram.event - INFO - Update id=619261276 is handled. Duration 63 ms by bot id=8208421266
+2026-02-01 03:41:49 - aiogram.event - INFO - Update id=619261277 is handled. Duration 108 ms by bot id=8208421266
+2026-02-01 03:41:51 - aiogram.event - INFO - Update id=619261278 is handled. Duration 108 ms by bot id=8208421266
+2026-02-01 03:42:43 - aiogram.event - INFO - Update id=619261279 is not handled. Duration 0 ms by bot id=8208421266
+2026-02-01 03:42:53 - aiogram.event - INFO - Update id=619261280 is handled. Duration 3235 ms by bot id=8208421266
+2026-02-01 03:42:55 - aiogram.event - INFO - Update id=619261281 is handled. Duration 109 ms by bot id=8208421266
+2026-02-01 03:42:56 - aiogram.event - INFO - Update id=619261282 is handled. Duration 188 ms by bot id=8208421266
+2026-02-01 03:42:58 - aiogram.event - INFO - Update id=619261283 is handled. Duration 171 ms by bot id=8208421266
+2026-02-01 03:42:58 - aiogram.event - INFO - Update id=619261284 is handled. Duration 155 ms by bot id=8208421266
+2026-02-01 03:43:11 - aiogram.event - INFO - Update id=619261285 is handled. Duration 0 ms by bot id=8208421266
+2026-02-01 03:43:20 - aiogram.event - INFO - Update id=619261286 is handled. Duration 187 ms by bot id=8208421266
+2026-02-01 03:43:21 - aiogram.event - INFO - Update id=619261287 is handled. Duration 156 ms by bot id=8208421266
+2026-02-01 03:43:22 - aiogram.event - INFO - Update id=619261288 is handled. Duration 109 ms by bot id=8208421266
+2026-02-01 03:43:23 - aiogram.event - INFO - Update id=619261289 is handled. Duration 78 ms by bot id=8208421266
+2026-02-01 03:44:04 - aiogram.event - INFO - Update id=619261290 is handled. Duration 171 ms by bot id=8208421266
+2026-02-01 03:44:06 - aiogram.event - INFO - Update id=619261291 is handled. Duration 125 ms by bot id=8208421266
+2026-02-01 03:44:41 - aiogram.event - INFO - Update id=619261292 is handled. Duration 156 ms by bot id=8208421266
+2026-02-01 03:44:46 - aiogram.event - INFO - Update id=619261293 is handled. Duration 155 ms by bot id=8208421266
+2026-02-01 03:44:50 - aiogram.event - INFO - Update id=619261294 is handled. Duration 109 ms by bot id=8208421266
+2026-02-01 03:44:52 - aiogram.event - INFO - Update id=619261295 is handled. Duration 108 ms by bot id=8208421266
+2026-02-01 03:44:53 - aiogram.event - INFO - Update id=619261296 is handled. Duration 188 ms by bot id=8208421266
+2026-02-01 03:44:54 - aiogram.event - INFO - Update id=619261297 is handled. Duration 141 ms by bot id=8208421266
+2026-02-01 03:45:02 - aiogram.event - INFO - Update id=619261298 is handled. Duration 78 ms by bot id=8208421266
+2026-02-01 03:45:06 - aiogram.event - INFO - Update id=619261299 is handled. Duration 125 ms by bot id=8208421266
+2026-02-01 03:45:08 - aiogram.event - INFO - Update id=619261300 is handled. Duration 233 ms by bot id=8208421266
+2026-02-01 03:45:10 - aiogram.event - INFO - Update id=619261301 is handled. Duration 140 ms by bot id=8208421266
+2026-02-01 03:45:11 - aiogram.event - INFO - Update id=619261302 is handled. Duration 110 ms by bot id=8208421266
+2026-02-01 03:45:13 - aiogram.event - INFO - Update id=619261303 is handled. Duration 46 ms by bot id=8208421266
+2026-02-01 03:45:57 - aiogram.event - INFO - Update id=619261304 is handled. Duration 3203 ms by bot id=8208421266
+2026-02-01 03:46:07 - aiogram.event - INFO - Update id=619261305 is handled. Duration 250 ms by bot id=8208421266
+2026-02-01 03:46:17 - aiogram.event - INFO - Update id=619261306 is not handled. Duration 14 ms by bot id=8208421266
+2026-02-01 03:46:20 - aiogram.event - INFO - Update id=619261307 is handled. Duration 108 ms by bot id=8208421266
+2026-02-01 03:46:21 - aiogram.event - INFO - Update id=619261308 is handled. Duration 108 ms by bot id=8208421266
+2026-02-01 03:46:22 - aiogram.event - INFO - Update id=619261309 is handled. Duration 109 ms by bot id=8208421266
+2026-02-01 03:46:26 - aiogram.event - INFO - Update id=619261310 is handled. Duration 110 ms by bot id=8208421266
+2026-02-01 03:46:27 - aiogram.event - INFO - Update id=619261311 is handled. Duration 188 ms by bot id=8208421266
+2026-02-01 03:46:28 - aiogram.event - INFO - Update id=619261312 is handled. Duration 156 ms by bot id=8208421266
+2026-02-01 03:46:29 - aiogram.event - INFO - Update id=619261313 is handled. Duration 141 ms by bot id=8208421266
+2026-02-01 03:46:31 - aiogram.event - INFO - Update id=619261314 is handled. Duration 125 ms by bot id=8208421266
+2026-02-01 03:53:53 - aiogram.dispatcher - INFO - Start polling
+2026-02-01 03:53:53 - aiogram.dispatcher - INFO - Run polling for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-02-01 03:53:56 - aiogram.event - INFO - Update id=619261315 is handled. Duration 297 ms by bot id=8208421266
+2026-02-01 03:54:04 - aiogram.event - INFO - Update id=619261316 is handled. Duration 6328 ms by bot id=8208421266
+2026-02-01 03:54:06 - aiogram.event - INFO - Update id=619261317 is handled. Duration 218 ms by bot id=8208421266
+2026-02-01 03:55:16 - aiogram.event - INFO - Update id=619261318 is handled. Duration 125 ms by bot id=8208421266
+2026-02-01 03:55:18 - aiogram.event - INFO - Update id=619261319 is handled. Duration 140 ms by bot id=8208421266
+2026-02-01 03:55:20 - aiogram.event - INFO - Update id=619261320 is handled. Duration 156 ms by bot id=8208421266
+2026-02-01 03:55:21 - aiogram.event - INFO - Update id=619261321 is handled. Duration 186 ms by bot id=8208421266
+2026-02-01 03:55:32 - aiogram.event - INFO - Update id=619261322 is handled. Duration 62 ms by bot id=8208421266
+2026-02-01 03:55:36 - aiogram.event - INFO - Update id=619261323 is handled. Duration 110 ms by bot id=8208421266
+2026-02-01 03:55:37 - aiogram.event - INFO - Update id=619261324 is handled. Duration 125 ms by bot id=8208421266
+2026-02-01 03:57:56 - aiogram.dispatcher - INFO - Start polling
+2026-02-01 03:57:56 - aiogram.dispatcher - INFO - Run polling for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-02-01 03:57:59 - aiogram.event - INFO - Update id=619261325 is handled. Duration 203 ms by bot id=8208421266
+2026-02-01 03:58:01 - aiogram.event - INFO - Update id=619261326 is handled. Duration 108 ms by bot id=8208421266
+2026-02-01 03:58:04 - aiogram.event - INFO - Update id=619261327 is handled. Duration 108 ms by bot id=8208421266
+2026-02-01 03:58:12 - aiogram.event - INFO - Update id=619261328 is handled. Duration 6266 ms by bot id=8208421266
+2026-02-01 03:58:13 - aiogram.event - INFO - Update id=619261329 is handled. Duration 125 ms by bot id=8208421266
+2026-02-01 03:58:29 - aiogram.event - INFO - Update id=619261330 is handled. Duration 108 ms by bot id=8208421266
+2026-02-01 03:58:42 - aiogram.event - INFO - Update id=619261331 is handled. Duration 125 ms by bot id=8208421266
+2026-02-01 03:58:44 - aiogram.event - INFO - Update id=619261332 is handled. Duration 125 ms by bot id=8208421266
+2026-02-01 03:58:46 - aiogram.event - INFO - Update id=619261333 is handled. Duration 233 ms by bot id=8208421266
+2026-02-01 03:58:55 - aiogram.event - INFO - Update id=619261334 is handled. Duration 62 ms by bot id=8208421266
+2026-02-01 03:59:10 - aiogram.event - INFO - Update id=619261335 is handled. Duration 93 ms by bot id=8208421266
+2026-02-01 03:59:17 - aiogram.event - INFO - Update id=619261336 is handled. Duration 171 ms by bot id=8208421266
+2026-02-01 03:59:18 - aiogram.event - INFO - Update id=619261337 is handled. Duration 125 ms by bot id=8208421266
+2026-02-01 04:07:45 - aiogram.dispatcher - INFO - Start polling
+2026-02-01 04:07:45 - aiogram.dispatcher - INFO - Run polling for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-02-01 04:07:47 - aiogram.event - INFO - Update id=619261338 is handled. Duration 203 ms by bot id=8208421266
+2026-02-01 04:07:49 - aiogram.event - INFO - Update id=619261339 is handled. Duration 328 ms by bot id=8208421266
+2026-02-01 04:07:58 - aiogram.event - INFO - Update id=619261340 is handled. Duration 93 ms by bot id=8208421266
+2026-02-01 04:08:15 - aiogram.event - INFO - Update id=619261341 is handled. Duration 296 ms by bot id=8208421266
+2026-02-01 04:08:17 - aiogram.event - INFO - Update id=619261342 is handled. Duration 125 ms by bot id=8208421266
+2026-02-01 04:08:18 - aiogram.event - INFO - Update id=619261343 is handled. Duration 203 ms by bot id=8208421266
+2026-02-01 04:08:20 - aiogram.event - INFO - Update id=619261344 is handled. Duration 125 ms by bot id=8208421266
+2026-02-01 04:08:25 - aiogram.event - INFO - Update id=619261345 is handled. Duration 109 ms by bot id=8208421266
+2026-02-01 04:09:03 - aiogram.event - INFO - Update id=619261346 is handled. Duration 125 ms by bot id=8208421266
+2026-02-01 04:09:04 - aiogram.event - INFO - Update id=619261347 is handled. Duration 328 ms by bot id=8208421266
+2026-02-01 04:09:05 - aiogram.event - INFO - Update id=619261348 is handled. Duration 110 ms by bot id=8208421266
+2026-02-01 04:09:07 - aiogram.event - INFO - Update id=619261349 is handled. Duration 108 ms by bot id=8208421266
+2026-02-01 04:09:13 - aiogram.event - INFO - Update id=619261350 is handled. Duration 250 ms by bot id=8208421266
+2026-02-01 04:09:14 - aiogram.event - INFO - Update id=619261351 is handled. Duration 187 ms by bot id=8208421266
+2026-02-01 04:09:16 - aiogram.event - INFO - Update id=619261352 is handled. Duration 219 ms by bot id=8208421266
+2026-02-01 04:09:17 - aiogram.event - INFO - Update id=619261353 is handled. Duration 172 ms by bot id=8208421266
+2026-02-01 04:09:19 - aiogram.event - INFO - Update id=619261354 is handled. Duration 703 ms by bot id=8208421266
+2026-02-01 04:09:22 - aiogram.event - INFO - Update id=619261355 is handled. Duration 46 ms by bot id=8208421266
+2026-02-01 04:09:54 - aiogram.event - INFO - Update id=619261356 is handled. Duration 203 ms by bot id=8208421266
+2026-02-01 04:11:37 - aiogram.event - INFO - Update id=619261357 is handled. Duration 109 ms by bot id=8208421266
+2026-02-01 04:12:10 - aiogram.event - INFO - Update id=619261358 is handled. Duration 108 ms by bot id=8208421266
+2026-02-01 04:12:11 - aiogram.event - INFO - Update id=619261359 is handled. Duration 281 ms by bot id=8208421266
+2026-02-01 04:14:00 - aiogram.dispatcher - INFO - Start polling
+2026-02-01 04:14:00 - aiogram.dispatcher - INFO - Run polling for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-02-01 04:14:04 - aiogram.event - INFO - Update id=619261360 is handled. Duration 250 ms by bot id=8208421266
+2026-02-01 04:14:06 - aiogram.event - INFO - Update id=619261361 is handled. Duration 656 ms by bot id=8208421266
+2026-02-01 04:14:29 - aiogram.event - INFO - Update id=619261362 is handled. Duration 389 ms by bot id=8208421266
+2026-02-01 04:15:40 - aiogram.event - INFO - Update id=619261363 is handled. Duration 281 ms by bot id=8208421266
+2026-02-01 04:16:04 - aiogram.event - INFO - Update id=619261364 is handled. Duration 235 ms by bot id=8208421266
+2026-02-01 04:16:05 - aiogram.event - INFO - Update id=619261365 is handled. Duration 155 ms by bot id=8208421266
+2026-02-01 04:16:08 - aiogram.event - INFO - Update id=619261366 is handled. Duration 125 ms by bot id=8208421266
+2026-02-01 04:16:14 - aiogram.event - INFO - Update id=619261367 is handled. Duration 171 ms by bot id=8208421266
+2026-02-01 04:16:16 - aiogram.event - INFO - Update id=619261368 is handled. Duration 218 ms by bot id=8208421266
+2026-02-01 04:16:17 - aiogram.event - INFO - Update id=619261369 is handled. Duration 125 ms by bot id=8208421266
+2026-02-01 04:16:18 - aiogram.event - INFO - Update id=619261370 is handled. Duration 78 ms by bot id=8208421266
+2026-02-01 04:21:25 - aiogram.event - INFO - Update id=619261371 is handled. Duration 155 ms by bot id=8208421266
+2026-02-01 04:23:50 - aiogram.dispatcher - INFO - Start polling
+2026-02-01 04:23:50 - aiogram.dispatcher - INFO - Run polling for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-02-01 04:23:54 - aiogram.event - INFO - Update id=619261372 is handled. Duration 203 ms by bot id=8208421266
+2026-02-01 04:24:24 - aiogram.event - INFO - Update id=619261373 is handled. Duration 219 ms by bot id=8208421266
+2026-02-01 04:25:08 - aiogram.event - INFO - Update id=619261374 is handled. Duration 156 ms by bot id=8208421266
+2026-02-01 04:26:17 - aiogram.event - INFO - Update id=619261375 is handled. Duration 233 ms by bot id=8208421266
+2026-02-01 04:26:34 - aiogram.event - INFO - Update id=619261376 is handled. Duration 187 ms by bot id=8208421266
+2026-02-01 04:26:49 - aiogram.event - INFO - Update id=619261377 is handled. Duration 125 ms by bot id=8208421266
+2026-02-01 04:29:21 - aiogram.event - INFO - Update id=619261378 is handled. Duration 0 ms by bot id=8208421266
+2026-02-01 04:34:44 - aiogram.dispatcher - INFO - Start polling
+2026-02-01 04:34:44 - aiogram.dispatcher - INFO - Run polling for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-02-01 04:34:48 - aiogram.event - INFO - Update id=619261379 is handled. Duration 234 ms by bot id=8208421266
+2026-02-01 04:34:50 - aiogram.event - INFO - Update id=619261380 is handled. Duration 141 ms by bot id=8208421266
+2026-02-01 04:35:15 - aiogram.event - INFO - Update id=619261381 is handled. Duration 188 ms by bot id=8208421266
+2026-02-01 04:35:17 - aiogram.event - INFO - Update id=619261382 is handled. Duration 125 ms by bot id=8208421266
+2026-02-01 04:35:21 - aiogram.event - INFO - Update id=619261383 is handled. Duration 110 ms by bot id=8208421266
+2026-02-01 04:43:52 - aiogram.dispatcher - INFO - Start polling
+2026-02-01 04:43:53 - aiogram.dispatcher - INFO - Run polling for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-02-01 04:43:57 - aiogram.event - INFO - Update id=619261384 is handled. Duration 281 ms by bot id=8208421266
+2026-02-01 04:43:58 - aiogram.event - INFO - Update id=619261385 is handled. Duration 141 ms by bot id=8208421266
+2026-02-01 04:44:17 - aiogram.event - INFO - Update id=619261386 is handled. Duration 0 ms by bot id=8208421266
+2026-02-01 04:44:23 - aiogram.event - INFO - Update id=619261387 is handled. Duration 266 ms by bot id=8208421266
+2026-02-01 04:46:25 - aiogram.dispatcher - INFO - Start polling
+2026-02-01 04:46:26 - aiogram.dispatcher - INFO - Run polling for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-02-01 04:46:59 - aiogram.event - INFO - Update id=619261388 is handled. Duration 0 ms by bot id=8208421266
+2026-02-01 04:47:02 - aiogram.event - INFO - Update id=619261389 is handled. Duration 155 ms by bot id=8208421266
+2026-02-01 04:48:36 - aiogram.dispatcher - INFO - Start polling
+2026-02-01 04:48:36 - aiogram.dispatcher - INFO - Run polling for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-02-01 04:48:46 - aiogram.event - INFO - Update id=619261390 is handled. Duration 0 ms by bot id=8208421266
+2026-02-01 04:48:48 - aiogram.event - INFO - Update id=619261391 is handled. Duration 156 ms by bot id=8208421266
+2026-02-01 04:50:06 - aiogram.event - INFO - Update id=619261392 is handled. Duration 156 ms by bot id=8208421266
+2026-02-01 04:53:45 - aiogram.dispatcher - INFO - Start polling
+2026-02-01 04:53:45 - aiogram.dispatcher - INFO - Run polling for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-02-01 04:53:46 - aiogram.event - INFO - Update id=619261393 is handled. Duration 233 ms by bot id=8208421266
+2026-02-01 04:54:10 - aiogram.event - INFO - Update id=619261394 is handled. Duration 156 ms by bot id=8208421266
+2026-02-01 05:05:49 - aiogram.dispatcher - INFO - Start polling
+2026-02-01 05:05:49 - aiogram.dispatcher - INFO - Run polling for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-02-01 05:05:54 - aiogram.event - INFO - Update id=619261395 is handled. Duration 156 ms by bot id=8208421266
+2026-02-01 05:06:09 - aiogram.event - INFO - Update id=619261396 is handled. Duration 94 ms by bot id=8208421266
+2026-02-01 05:06:22 - aiogram.event - INFO - Update id=619261397 is handled. Duration 141 ms by bot id=8208421266
+2026-02-01 05:07:38 - aiogram.event - INFO - Update id=619261398 is handled. Duration 203 ms by bot id=8208421266
+2026-02-01 05:07:47 - aiogram.event - INFO - Update id=619261399 is handled. Duration 171 ms by bot id=8208421266
+2026-02-01 05:08:50 - aiogram.event - INFO - Update id=619261400 is handled. Duration 203 ms by bot id=8208421266
+2026-02-01 05:08:54 - aiogram.event - INFO - Update id=619261401 is handled. Duration 187 ms by bot id=8208421266
+2026-02-01 05:08:55 - aiogram.event - INFO - Update id=619261402 is handled. Duration 63 ms by bot id=8208421266
+2026-02-01 05:08:59 - aiogram.event - INFO - Update id=619261403 is handled. Duration 62 ms by bot id=8208421266
+2026-02-01 05:09:03 - aiogram.event - INFO - Update id=619261404 is handled. Duration 125 ms by bot id=8208421266
+2026-02-01 05:09:35 - aiogram.event - INFO - Update id=619261405 is handled. Duration 139 ms by bot id=8208421266
+2026-02-01 05:09:40 - aiogram.event - INFO - Update id=619261406 is handled. Duration 125 ms by bot id=8208421266
+2026-02-01 05:12:54 - aiogram.dispatcher - INFO - Start polling
+2026-02-01 05:12:54 - aiogram.dispatcher - INFO - Run polling for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-02-01 05:12:59 - aiogram.event - INFO - Update id=619261407 is handled. Duration 203 ms by bot id=8208421266
+2026-02-01 05:13:05 - aiogram.event - INFO - Update id=619261408 is handled. Duration 250 ms by bot id=8208421266
+2026-02-01 05:13:06 - aiogram.event - INFO - Update id=619261409 is handled. Duration 78 ms by bot id=8208421266
+2026-02-01 05:16:28 - aiogram.event - INFO - Update id=619261410 is handled. Duration 266 ms by bot id=8208421266
+2026-02-01 05:16:30 - aiogram.event - INFO - Update id=619261411 is handled. Duration 125 ms by bot id=8208421266
+2026-02-01 05:16:33 - aiogram.event - INFO - Update id=619261412 is handled. Duration 140 ms by bot id=8208421266
+2026-02-01 05:16:38 - aiogram.event - INFO - Update id=619261413 is handled. Duration 93 ms by bot id=8208421266
+2026-02-01 05:16:41 - aiogram.event - INFO - Update id=619261414 is handled. Duration 438 ms by bot id=8208421266
+2026-02-01 05:16:48 - aiogram.event - INFO - Update id=619261415 is handled. Duration 203 ms by bot id=8208421266
+2026-02-01 05:16:50 - aiogram.event - INFO - Update id=619261416 is handled. Duration 297 ms by bot id=8208421266
+2026-02-01 05:16:51 - aiogram.event - INFO - Update id=619261417 is handled. Duration 235 ms by bot id=8208421266
+2026-02-01 05:16:52 - aiogram.event - INFO - Update id=619261418 is handled. Duration 281 ms by bot id=8208421266
+2026-02-01 05:16:54 - aiogram.event - INFO - Update id=619261419 is handled. Duration 311 ms by bot id=8208421266
+2026-02-01 05:16:55 - aiogram.event - INFO - Update id=619261420 is handled. Duration 250 ms by bot id=8208421266
+2026-02-01 05:17:25 - aiogram.dispatcher - INFO - Start polling
+2026-02-01 05:17:25 - aiogram.dispatcher - INFO - Run polling for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-02-01 05:17:27 - aiogram.event - INFO - Update id=619261421 is handled. Duration 250 ms by bot id=8208421266
+2026-02-01 05:17:29 - aiogram.event - INFO - Update id=619261422 is handled. Duration 406 ms by bot id=8208421266
+2026-02-01 05:17:31 - aiogram.event - INFO - Update id=619261423 is handled. Duration 313 ms by bot id=8208421266
+2026-02-01 05:17:32 - aiogram.event - INFO - Update id=619261424 is handled. Duration 188 ms by bot id=8208421266
+2026-02-01 05:19:14 - aiogram.dispatcher - INFO - Start polling
+2026-02-01 05:19:14 - aiogram.dispatcher - INFO - Run polling for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-02-01 05:19:17 - aiogram.event - INFO - Update id=619261425 is handled. Duration 328 ms by bot id=8208421266
+2026-02-01 05:19:21 - aiogram.event - INFO - Update id=619261426 is handled. Duration 61 ms by bot id=8208421266
+2026-02-01 05:20:05 - aiogram.dispatcher - INFO - Start polling
+2026-02-01 05:20:05 - aiogram.dispatcher - INFO - Run polling for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-02-01 05:20:09 - aiogram.event - INFO - Update id=619261427 is handled. Duration 219 ms by bot id=8208421266
+2026-02-01 05:20:11 - aiogram.event - INFO - Update id=619261428 is handled. Duration 312 ms by bot id=8208421266
+2026-02-01 05:20:12 - aiogram.event - INFO - Update id=619261429 is handled. Duration 171 ms by bot id=8208421266
+2026-02-01 05:20:13 - aiogram.event - INFO - Update id=619261430 is handled. Duration 296 ms by bot id=8208421266
+2026-02-01 05:20:14 - aiogram.event - INFO - Update id=619261431 is handled. Duration 313 ms by bot id=8208421266
+2026-02-01 05:20:15 - aiogram.event - INFO - Update id=619261432 is handled. Duration 328 ms by bot id=8208421266
+2026-02-01 05:20:19 - aiogram.event - INFO - Update id=619261433 is handled. Duration 344 ms by bot id=8208421266
+2026-02-01 05:20:45 - aiogram.event - INFO - Update id=619261434 is handled. Duration 375 ms by bot id=8208421266
+2026-02-01 05:20:48 - aiogram.event - INFO - Update id=619261435 is handled. Duration 218 ms by bot id=8208421266
+2026-02-01 05:20:55 - aiogram.event - INFO - Update id=619261436 is handled. Duration 514 ms by bot id=8208421266
+2026-02-01 05:21:02 - aiogram.event - INFO - Update id=619261437 is handled. Duration 188 ms by bot id=8208421266
+2026-02-01 05:21:18 - aiogram.dispatcher - INFO - Start polling
+2026-02-01 05:21:18 - aiogram.dispatcher - INFO - Run polling for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-02-01 05:21:21 - aiogram.event - INFO - Update id=619261438 is handled. Duration 250 ms by bot id=8208421266
+2026-02-01 05:21:22 - aiogram.event - INFO - Update id=619261439 is handled. Duration 375 ms by bot id=8208421266
+2026-02-01 05:21:23 - aiogram.event - INFO - Update id=619261440 is handled. Duration 375 ms by bot id=8208421266
+2026-02-01 05:22:17 - aiogram.event - INFO - Update id=619261441 is handled. Duration 438 ms by bot id=8208421266
+2026-02-01 05:22:19 - aiogram.event - INFO - Update id=619261442 is handled. Duration 171 ms by bot id=8208421266
+2026-02-01 05:37:51 - aiogram.event - INFO - Update id=619261443 is handled. Duration 593 ms by bot id=8208421266
+2026-02-01 05:37:55 - aiogram.event - INFO - Update id=619261444 is handled. Duration 203 ms by bot id=8208421266
+2026-02-01 05:40:35 - aiogram.dispatcher - INFO - Start polling
+2026-02-01 05:40:35 - aiogram.dispatcher - INFO - Run polling for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-02-01 05:40:50 - aiogram.event - INFO - Update id=619261445 is handled. Duration 218 ms by bot id=8208421266
+2026-02-01 05:40:55 - aiogram.event - INFO - Update id=619261446 is handled. Duration 641 ms by bot id=8208421266
+2026-02-01 05:40:56 - aiogram.event - INFO - Update id=619261447 is handled. Duration 203 ms by bot id=8208421266
+2026-02-01 05:40:58 - aiogram.event - INFO - Update id=619261448 is handled. Duration 389 ms by bot id=8208421266
+2026-02-01 05:40:59 - aiogram.event - INFO - Update id=619261449 is handled. Duration 405 ms by bot id=8208421266
+2026-02-01 05:55:02 - aiogram.dispatcher - INFO - Polling stopped
+2026-02-01 05:55:02 - aiogram.dispatcher - INFO - Polling stopped for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-02-01 05:55:19 - aiogram.dispatcher - INFO - Start polling
+2026-02-01 05:55:19 - aiogram.dispatcher - INFO - Run polling for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-02-01 05:55:24 - aiogram.event - INFO - Update id=619261450 is handled. Duration 234 ms by bot id=8208421266
+2026-02-01 05:55:35 - aiogram.event - INFO - Update id=619261451 is handled. Duration 328 ms by bot id=8208421266
+2026-02-01 05:55:37 - aiogram.event - INFO - Update id=619261452 is handled. Duration 250 ms by bot id=8208421266
+2026-02-01 05:56:16 - aiogram.event - INFO - Update id=619261453 is not handled. Duration 0 ms by bot id=8208421266
+2026-02-01 05:56:23 - aiogram.event - INFO - Update id=619261454 is handled. Duration 562 ms by bot id=8208421266
+2026-02-01 05:56:28 - aiogram.event - INFO - Update id=619261455 is handled. Duration 500 ms by bot id=8208421266
+2026-02-01 05:56:30 - aiogram.event - INFO - Update id=619261456 is handled. Duration 375 ms by bot id=8208421266
+2026-02-01 05:57:06 - aiogram.event - INFO - Update id=619261457 is handled. Duration 203 ms by bot id=8208421266
+2026-02-01 05:57:09 - aiogram.event - INFO - Update id=619261458 is handled. Duration 703 ms by bot id=8208421266
+2026-02-01 05:57:15 - aiogram.event - INFO - Update id=619261459 is handled. Duration 125 ms by bot id=8208421266
+2026-02-01 05:57:16 - aiogram.event - INFO - Update id=619261460 is handled. Duration 109 ms by bot id=8208421266
+2026-02-01 05:57:19 - aiogram.event - INFO - Update id=619261461 is handled. Duration 125 ms by bot id=8208421266
+2026-02-01 05:57:21 - aiogram.event - INFO - Update id=619261462 is handled. Duration 235 ms by bot id=8208421266
+2026-02-01 05:57:28 - aiogram.event - INFO - Update id=619261463 is handled. Duration 452 ms by bot id=8208421266
+2026-02-01 05:57:34 - aiogram.event - INFO - Update id=619261464 is handled. Duration 453 ms by bot id=8208421266
+2026-02-01 05:57:37 - aiogram.event - INFO - Update id=619261465 is handled. Duration 265 ms by bot id=8208421266
+2026-02-01 05:57:40 - aiogram.event - INFO - Update id=619261466 is handled. Duration 219 ms by bot id=8208421266
+2026-02-01 05:57:41 - aiogram.event - INFO - Update id=619261467 is handled. Duration 140 ms by bot id=8208421266
+2026-02-01 05:57:43 - aiogram.event - INFO - Update id=619261468 is handled. Duration 531 ms by bot id=8208421266
+2026-02-01 05:58:05 - aiogram.event - INFO - Update id=619261469 is handled. Duration 203 ms by bot id=8208421266
+2026-02-01 05:58:09 - aiogram.event - INFO - Update id=619261470 is handled. Duration 264 ms by bot id=8208421266
+2026-02-01 05:58:14 - aiogram.event - INFO - Update id=619261471 is handled. Duration 608 ms by bot id=8208421266
+2026-02-01 05:58:27 - aiogram.event - INFO - Update id=619261472 is handled. Duration 422 ms by bot id=8208421266
+2026-02-01 05:59:58 - aiogram.event - INFO - Update id=619261473 is handled. Duration 250 ms by bot id=8208421266
+2026-02-01 06:00:09 - aiogram.event - INFO - Update id=619261474 is handled. Duration 109 ms by bot id=8208421266
+2026-02-01 06:00:11 - aiogram.event - INFO - Update id=619261475 is handled. Duration 125 ms by bot id=8208421266
+2026-02-01 06:00:12 - aiogram.event - INFO - Update id=619261476 is handled. Duration 296 ms by bot id=8208421266
+2026-02-01 06:00:16 - aiogram.event - INFO - Update id=619261477 is not handled. Duration 250 ms by bot id=8208421266
+2026-02-01 06:00:16 - aiogram.event - ERROR - Cause exception while process update id=619261477 by bot id=8208421266
+TelegramBadRequest: Telegram server says - Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+Traceback (most recent call last):
+  File "D:\Python\EwhorWatchdog\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\EwhorWatchdog\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\EwhorWatchdog\venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\EwhorWatchdog\venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\EwhorWatchdog\venv\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\EwhorWatchdog\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\EwhorWatchdog\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "D:\Python\EwhorWatchdog\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\EwhorWatchdog\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\EwhorWatchdog\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\EwhorWatchdog\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 170, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\EwhorWatchdog\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\EwhorWatchdog\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\EwhorWatchdog\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\EwhorWatchdog\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Python\EwhorWatchdog\middlewares\auth.py", line 203, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Python\EwhorWatchdog\middlewares\auth.py", line 146, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Python\EwhorWatchdog\middlewares\auth.py", line 87, in __call__
+    result = await handler(event, data)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Python\EwhorWatchdog\middlewares\auth.py", line 36, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\EwhorWatchdog\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "d:\Python\EwhorWatchdog\handlers\superadmin.py", line 156, in superadmin_channels_filter
+    await _render_channels_page(callback, 0, filt)
+  File "d:\Python\EwhorWatchdog\handlers\superadmin.py", line 210, in _render_channels_page
+    await callback.message.edit_text(
+  File "D:\Python\EwhorWatchdog\venv\Lib\site-packages\aiogram\methods\base.py", line 84, in emit
+    return await bot(self)
+           ^^^^^^^^^^^^^^^
+  File "D:\Python\EwhorWatchdog\venv\Lib\site-packages\aiogram\client\bot.py", line 488, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\EwhorWatchdog\venv\Lib\site-packages\aiogram\client\session\base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\EwhorWatchdog\venv\Lib\site-packages\aiogram\client\session\aiohttp.py", line 189, in make_request
+    response = self.check_response(
+               ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\EwhorWatchdog\venv\Lib\site-packages\aiogram\client\session\base.py", line 120, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+2026-02-01 06:01:11 - aiogram.event - INFO - Update id=619261478 is handled. Duration 93 ms by bot id=8208421266
+2026-02-01 06:05:14 - aiogram.dispatcher - INFO - Polling stopped for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-02-01 06:05:14 - aiogram.dispatcher - INFO - Polling stopped
+2026-02-01 06:05:22 - aiogram.dispatcher - INFO - Start polling
+2026-02-01 06:05:22 - aiogram.dispatcher - INFO - Run polling for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-02-01 06:05:24 - aiogram.event - INFO - Update id=619261479 is handled. Duration 250 ms by bot id=8208421266
+2026-02-01 06:05:27 - aiogram.event - INFO - Update id=619261480 is handled. Duration 139 ms by bot id=8208421266
+2026-02-01 06:05:29 - aiogram.event - INFO - Update id=619261481 is handled. Duration 235 ms by bot id=8208421266
+2026-02-01 06:05:32 - aiogram.event - INFO - Update id=619261482 is handled. Duration 125 ms by bot id=8208421266
+2026-02-01 06:05:34 - aiogram.event - INFO - Update id=619261483 is handled. Duration 610 ms by bot id=8208421266
+2026-02-01 06:05:36 - aiogram.event - INFO - Update id=619261484 is handled. Duration 141 ms by bot id=8208421266
+2026-02-01 06:05:50 - aiogram.event - INFO - Update id=619261485 is handled. Duration 577 ms by bot id=8208421266
+2026-02-01 06:05:53 - aiogram.event - INFO - Update id=619261486 is handled. Duration 483 ms by bot id=8208421266
+2026-02-01 06:05:54 - aiogram.event - INFO - Update id=619261487 is handled. Duration 235 ms by bot id=8208421266
+2026-02-01 06:06:00 - aiogram.event - INFO - Update id=619261488 is handled. Duration 483 ms by bot id=8208421266
+2026-02-01 06:06:02 - aiogram.event - INFO - Update id=619261489 is handled. Duration 500 ms by bot id=8208421266
+2026-02-01 06:06:06 - aiogram.event - INFO - Update id=619261490 is handled. Duration 343 ms by bot id=8208421266
+2026-02-01 06:06:08 - aiogram.event - INFO - Update id=619261491 is handled. Duration 625 ms by bot id=8208421266
+2026-02-01 06:06:10 - aiogram.event - INFO - Update id=619261492 is handled. Duration 561 ms by bot id=8208421266
+2026-02-01 06:06:11 - aiogram.event - INFO - Update id=619261493 is handled. Duration 640 ms by bot id=8208421266
+2026-02-01 06:06:14 - aiogram.event - INFO - Update id=619261494 is handled. Duration 687 ms by bot id=8208421266
+2026-02-01 06:06:37 - aiogram.event - INFO - Update id=619261495 is handled. Duration 514 ms by bot id=8208421266
+2026-02-01 06:06:42 - aiogram.event - INFO - Update id=619261496 is handled. Duration 125 ms by bot id=8208421266
+2026-02-01 06:06:44 - aiogram.event - INFO - Update id=619261497 is handled. Duration 125 ms by bot id=8208421266
+2026-02-01 06:06:46 - aiogram.event - INFO - Update id=619261498 is handled. Duration 578 ms by bot id=8208421266
+2026-02-01 06:06:48 - aiogram.event - INFO - Update id=619261499 is handled. Duration 156 ms by bot id=8208421266
+2026-02-01 06:06:50 - aiogram.event - INFO - Update id=619261500 is handled. Duration 93 ms by bot id=8208421266
+2026-02-01 06:06:54 - aiogram.event - INFO - Update id=619261501 is handled. Duration 297 ms by bot id=8208421266
+2026-02-01 06:07:09 - aiogram.event - INFO - Update id=619261502 is handled. Duration 297 ms by bot id=8208421266
+2026-02-01 06:07:10 - aiogram.event - INFO - Update id=619261503 is handled. Duration 265 ms by bot id=8208421266
+2026-02-01 06:07:12 - aiogram.event - INFO - Update id=619261504 is handled. Duration 250 ms by bot id=8208421266
+2026-02-01 06:07:13 - aiogram.event - INFO - Update id=619261505 is handled. Duration 110 ms by bot id=8208421266
+2026-02-01 06:07:15 - aiogram.event - INFO - Update id=619261506 is handled. Duration 250 ms by bot id=8208421266
+2026-02-01 06:07:17 - aiogram.event - INFO - Update id=619261507 is handled. Duration 296 ms by bot id=8208421266
+2026-02-01 06:07:20 - aiogram.event - INFO - Update id=619261508 is handled. Duration 218 ms by bot id=8208421266
+2026-02-01 06:07:22 - aiogram.event - INFO - Update id=619261509 is handled. Duration 578 ms by bot id=8208421266
+2026-02-01 06:07:24 - aiogram.event - INFO - Update id=619261510 is handled. Duration 250 ms by bot id=8208421266
+2026-02-01 06:07:25 - aiogram.event - INFO - Update id=619261511 is handled. Duration 250 ms by bot id=8208421266
+2026-02-01 06:07:28 - aiogram.event - INFO - Update id=619261512 is handled. Duration 203 ms by bot id=8208421266
+2026-02-01 06:07:37 - aiogram.event - INFO - Update id=619261513 is handled. Duration 266 ms by bot id=8208421266
+2026-02-01 06:07:40 - aiogram.event - INFO - Update id=619261514 is handled. Duration 264 ms by bot id=8208421266
+2026-02-01 06:08:00 - aiogram.event - INFO - Update id=619261515 is handled. Duration 297 ms by bot id=8208421266
+2026-02-01 06:08:13 - aiogram.event - INFO - Update id=619261516 is handled. Duration 156 ms by bot id=8208421266
+2026-02-01 06:08:14 - aiogram.event - INFO - Update id=619261517 is handled. Duration 108 ms by bot id=8208421266
+2026-02-01 06:11:24 - aiogram.event - INFO - Update id=619261518 is handled. Duration 186 ms by bot id=8208421266
+2026-02-01 06:11:27 - aiogram.event - INFO - Update id=619261519 is handled. Duration 281 ms by bot id=8208421266
+2026-02-01 06:11:40 - aiogram.event - INFO - Update id=619261520 is handled. Duration 110 ms by bot id=8208421266
+2026-02-01 06:13:02 - aiogram.event - INFO - Update id=619261521 is handled. Duration 186 ms by bot id=8208421266
+2026-02-01 06:13:11 - aiogram.event - INFO - Update id=619261522 is handled. Duration 610 ms by bot id=8208421266
+2026-02-01 06:13:13 - aiogram.event - INFO - Update id=619261523 is handled. Duration 93 ms by bot id=8208421266
+2026-02-01 06:13:14 - aiogram.event - INFO - Update id=619261524 is handled. Duration 234 ms by bot id=8208421266
+2026-02-01 06:13:15 - aiogram.event - INFO - Update id=619261525 is handled. Duration 108 ms by bot id=8208421266
+2026-02-01 06:13:16 - aiogram.event - INFO - Update id=619261526 is handled. Duration 110 ms by bot id=8208421266
+2026-02-01 06:13:19 - aiogram.event - INFO - Update id=619261527 is handled. Duration 110 ms by bot id=8208421266
+2026-02-01 06:13:21 - aiogram.event - INFO - Update id=619261528 is handled. Duration 108 ms by bot id=8208421266
+2026-02-01 06:13:23 - aiogram.event - INFO - Update id=619261529 is handled. Duration 110 ms by bot id=8208421266
+2026-02-01 06:17:22 - aiogram.dispatcher - INFO - Start polling
+2026-02-01 06:17:22 - aiogram.dispatcher - INFO - Run polling for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-02-01 06:17:25 - aiogram.event - INFO - Update id=619261530 is handled. Duration 343 ms by bot id=8208421266
+2026-02-01 06:17:26 - aiogram.event - INFO - Update id=619261531 is handled. Duration 141 ms by bot id=8208421266
+2026-02-01 06:17:28 - aiogram.event - INFO - Update id=619261532 is handled. Duration 311 ms by bot id=8208421266
+2026-02-01 06:17:32 - aiogram.event - INFO - Update id=619261533 is handled. Duration 156 ms by bot id=8208421266
+2026-02-01 06:17:33 - aiogram.event - INFO - Update id=619261534 is handled. Duration 296 ms by bot id=8208421266
+2026-02-01 06:17:34 - aiogram.event - INFO - Update id=619261535 is handled. Duration 156 ms by bot id=8208421266
+2026-02-01 06:17:38 - aiogram.event - INFO - Update id=619261536 is handled. Duration 110 ms by bot id=8208421266
+2026-02-01 06:17:53 - aiogram.event - INFO - Update id=619261537 is handled. Duration 406 ms by bot id=8208421266
+2026-02-01 06:17:59 - aiogram.event - INFO - Update id=619261538 is handled. Duration 125 ms by bot id=8208421266
+2026-02-01 06:18:08 - aiogram.event - INFO - Update id=619261539 is handled. Duration 125 ms by bot id=8208421266
+2026-02-01 06:18:20 - aiogram.event - INFO - Update id=619261540 is handled. Duration 328 ms by bot id=8208421266
+2026-02-01 06:18:23 - aiogram.event - INFO - Update id=619261541 is handled. Duration 578 ms by bot id=8208421266
+2026-02-01 06:18:32 - aiogram.event - INFO - Update id=619261542 is handled. Duration 343 ms by bot id=8208421266
+2026-02-01 06:19:14 - aiogram.dispatcher - INFO - Start polling
+2026-02-01 06:19:14 - aiogram.dispatcher - INFO - Run polling for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-02-01 06:19:18 - aiogram.event - INFO - Update id=619261543 is handled. Duration 406 ms by bot id=8208421266
+2026-02-01 06:19:38 - aiogram.event - INFO - Update id=619261544 is handled. Duration 735 ms by bot id=8208421266
+2026-02-01 06:19:59 - aiogram.dispatcher - INFO - Start polling
+2026-02-01 06:19:59 - aiogram.dispatcher - INFO - Run polling for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-02-01 06:20:02 - aiogram.event - INFO - Update id=619261545 is handled. Duration 406 ms by bot id=8208421266
+2026-02-01 06:20:10 - aiogram.event - INFO - Update id=619261546 is handled. Duration 125 ms by bot id=8208421266
+2026-02-01 06:20:13 - aiogram.event - INFO - Update id=619261547 is handled. Duration 156 ms by bot id=8208421266
+2026-02-01 06:20:26 - aiogram.event - INFO - Update id=619261548 is handled. Duration 375 ms by bot id=8208421266
+2026-02-01 06:24:39 - aiogram.event - INFO - Update id=619261549 is handled. Duration 389 ms by bot id=8208421266
+2026-02-01 06:25:12 - aiogram.event - INFO - Update id=619261550 is handled. Duration 93 ms by bot id=8208421266
+2026-02-01 06:25:41 - aiogram.event - INFO - Update id=619261551 is handled. Duration 343 ms by bot id=8208421266
+2026-02-01 06:25:43 - aiogram.event - INFO - Update id=619261552 is handled. Duration 281 ms by bot id=8208421266
+2026-02-01 06:39:17 - aiogram.event - INFO - Update id=619261554 is not handled. Duration 0 ms by bot id=8208421266
+2026-02-01 06:39:18 - aiogram.event - INFO - Update id=619261553 is handled. Duration 343 ms by bot id=8208421266
+2026-02-01 06:43:21 - aiogram.event - INFO - Update id=619261555 is handled. Duration 94 ms by bot id=8208421266
+2026-02-01 06:44:05 - aiogram.event - INFO - Update id=619261556 is handled. Duration 531 ms by bot id=8208421266
+2026-02-01 06:44:06 - aiogram.event - INFO - Update id=619261557 is handled. Duration 468 ms by bot id=8208421266
+2026-02-01 06:52:48 - aiogram.dispatcher - INFO - Start polling
+2026-02-01 06:52:48 - aiogram.dispatcher - INFO - Run polling for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-02-01 06:52:52 - aiogram.event - INFO - Update id=619261558 is handled. Duration 610 ms by bot id=8208421266
+2026-02-01 06:52:57 - aiogram.event - INFO - Update id=619261559 is handled. Duration 671 ms by bot id=8208421266
+2026-02-01 06:53:02 - aiogram.event - INFO - Update id=619261560 is handled. Duration 422 ms by bot id=8208421266
+2026-02-01 06:53:04 - aiogram.event - INFO - Update id=619261561 is handled. Duration 390 ms by bot id=8208421266
+2026-02-01 06:53:20 - aiogram.event - INFO - Update id=619261562 is handled. Duration 468 ms by bot id=8208421266
+2026-02-01 06:53:25 - aiogram.event - INFO - Update id=619261563 is handled. Duration 94 ms by bot id=8208421266
+2026-02-01 06:53:27 - aiogram.event - INFO - Update id=619261564 is handled. Duration 93 ms by bot id=8208421266
+2026-02-01 06:53:29 - aiogram.event - INFO - Update id=619261565 is handled. Duration 93 ms by bot id=8208421266
+2026-02-01 06:53:37 - aiogram.event - INFO - Update id=619261566 is handled. Duration 94 ms by bot id=8208421266
+2026-02-01 06:54:41 - aiogram.event - INFO - Update id=619261567 is handled. Duration 93 ms by bot id=8208421266
+2026-02-01 06:54:47 - aiogram.event - INFO - Update id=619261568 is handled. Duration 562 ms by bot id=8208421266
+2026-02-01 06:55:06 - aiogram.event - INFO - Update id=619261569 is handled. Duration 717 ms by bot id=8208421266
+2026-02-01 06:55:09 - aiogram.event - INFO - Update id=619261570 is handled. Duration 546 ms by bot id=8208421266
+2026-02-01 06:55:10 - aiogram.event - INFO - Update id=619261571 is handled. Duration 92 ms by bot id=8208421266
+2026-02-01 06:55:14 - aiogram.event - INFO - Update id=619261572 is handled. Duration 93 ms by bot id=8208421266
+2026-02-01 06:55:26 - aiogram.event - INFO - Update id=619261573 is handled. Duration 500 ms by bot id=8208421266
+2026-02-01 06:55:30 - aiogram.event - INFO - Update id=619261574 is handled. Duration 562 ms by bot id=8208421266
+2026-02-01 06:55:32 - aiogram.event - INFO - Update id=619261575 is handled. Duration 453 ms by bot id=8208421266
+2026-02-01 06:55:40 - aiogram.event - INFO - Update id=619261576 is handled. Duration 93 ms by bot id=8208421266
+2026-02-01 06:55:41 - aiogram.event - INFO - Update id=619261577 is handled. Duration 93 ms by bot id=8208421266
+2026-02-01 06:55:42 - aiogram.event - INFO - Update id=619261578 is handled. Duration 77 ms by bot id=8208421266
+2026-02-01 06:55:43 - aiogram.event - INFO - Update id=619261579 is handled. Duration 92 ms by bot id=8208421266
+2026-02-01 06:55:45 - aiogram.event - INFO - Update id=619261580 is handled. Duration 93 ms by bot id=8208421266
+2026-02-01 06:55:46 - aiogram.event - INFO - Update id=619261581 is handled. Duration 110 ms by bot id=8208421266
+2026-02-01 06:57:35 - aiogram.event - INFO - Update id=619261582 is handled. Duration 93 ms by bot id=8208421266
+2026-02-01 06:57:35 - aiogram.event - INFO - Update id=619261583 is handled. Duration 93 ms by bot id=8208421266
+2026-02-01 06:57:36 - aiogram.event - INFO - Update id=619261584 is handled. Duration 108 ms by bot id=8208421266
+2026-02-01 06:57:40 - aiogram.event - INFO - Update id=619261585 is handled. Duration 108 ms by bot id=8208421266
+2026-02-01 06:57:42 - aiogram.event - INFO - Update id=619261586 is handled. Duration 77 ms by bot id=8208421266
+2026-02-01 06:57:43 - aiogram.event - INFO - Update id=619261587 is handled. Duration 93 ms by bot id=8208421266
+2026-02-01 06:57:43 - aiogram.event - INFO - Update id=619261588 is handled. Duration 93 ms by bot id=8208421266
+2026-02-01 06:58:29 - aiogram.event - INFO - Update id=619261589 is handled. Duration 452 ms by bot id=8208421266
+2026-02-01 06:58:32 - aiogram.event - INFO - Update id=619261590 is handled. Duration 390 ms by bot id=8208421266
+2026-02-01 06:58:34 - aiogram.event - INFO - Update id=619261591 is handled. Duration 500 ms by bot id=8208421266
+2026-02-01 06:58:36 - aiogram.event - INFO - Update id=619261592 is handled. Duration 375 ms by bot id=8208421266
+2026-02-01 06:58:58 - aiogram.event - INFO - Update id=619261593 is handled. Duration 343 ms by bot id=8208421266
+2026-02-01 06:59:02 - aiogram.event - INFO - Update id=619261594 is handled. Duration 468 ms by bot id=8208421266
+2026-02-01 06:59:23 - aiogram.event - INFO - Update id=619261595 is handled. Duration 405 ms by bot id=8208421266
+2026-02-01 06:59:46 - aiogram.event - INFO - Update id=619261596 is handled. Duration 108 ms by bot id=8208421266
+2026-02-01 06:59:47 - aiogram.event - INFO - Update id=619261597 is handled. Duration 109 ms by bot id=8208421266
+2026-02-01 06:59:47 - aiogram.event - INFO - Update id=619261598 is handled. Duration 92 ms by bot id=8208421266
+2026-02-01 06:59:47 - aiogram.event - INFO - Update id=619261599 is handled. Duration 93 ms by bot id=8208421266
+2026-02-01 06:59:59 - aiogram.event - INFO - Update id=619261600 is handled. Duration 141 ms by bot id=8208421266
+2026-02-01 07:00:00 - aiogram.event - INFO - Update id=619261601 is handled. Duration 343 ms by bot id=8208421266
+2026-02-01 07:00:02 - aiogram.event - INFO - Update id=619261602 is handled. Duration 93 ms by bot id=8208421266
+2026-02-01 07:00:09 - aiogram.event - INFO - Update id=619261603 is handled. Duration 264 ms by bot id=8208421266
+2026-02-01 07:00:59 - aiogram.dispatcher - INFO - Start polling
+2026-02-01 07:00:59 - aiogram.dispatcher - INFO - Run polling for bot @EwhoreWatchdog_bot id=8208421266 - 'EwhoreWatchdog_bot'
+2026-02-01 07:01:09 - aiogram.event - INFO - Update id=619261604 is handled. Duration 328 ms by bot id=8208421266
+2026-02-01 07:01:13 - aiogram.event - INFO - Update id=619261605 is handled. Duration 125 ms by bot id=8208421266
+2026-02-01 07:01:18 - aiogram.event - INFO - Update id=619261606 is handled. Duration 125 ms by bot id=8208421266
+2026-02-01 07:01:20 - aiogram.event - INFO - Update id=619261607 is handled. Duration 125 ms by bot id=8208421266
+2026-02-01 07:01:21 - aiogram.event - INFO - Update id=619261608 is handled. Duration 203 ms by bot id=8208421266
+2026-02-01 07:01:23 - aiogram.event - INFO - Update id=619261609 is handled. Duration 125 ms by bot id=8208421266
+2026-02-01 07:01:24 - aiogram.event - INFO - Update id=619261610 is handled. Duration 171 ms by bot id=8208421266
+2026-02-01 07:01:28 - aiogram.event - INFO - Update id=619261611 is handled. Duration 110 ms by bot id=8208421266
+2026-02-01 07:01:30 - aiogram.event - INFO - Update id=619261612 is handled. Duration 93 ms by bot id=8208421266
+2026-02-01 07:01:31 - aiogram.event - INFO - Update id=619261613 is handled. Duration 875 ms by bot id=8208421266
+2026-02-01 07:01:34 - aiogram.event - INFO - Update id=619261614 is handled. Duration 93 ms by bot id=8208421266
+2026-02-01 07:01:37 - aiogram.event - INFO - Update id=619261615 is handled. Duration 547 ms by bot id=8208421266
+2026-02-01 07:01:40 - aiogram.event - INFO - Update id=619261616 is handled. Duration 139 ms by bot id=8208421266
+2026-02-01 07:01:47 - aiogram.event - INFO - Update id=619261617 is handled. Duration 235 ms by bot id=8208421266
+2026-02-01 07:01:53 - aiogram.event - INFO - Update id=619261618 is handled. Duration 93 ms by bot id=8208421266
+2026-02-01 07:02:08 - aiogram.event - INFO - Update id=619261619 is handled. Duration 375 ms by bot id=8208421266
+2026-02-01 07:02:12 - aiogram.event - INFO - Update id=619261620 is handled. Duration 312 ms by bot id=8208421266
+2026-02-01 07:02:16 - aiogram.event - INFO - Update id=619261621 is handled. Duration 217 ms by bot id=8208421266
+2026-02-01 07:02:27 - aiogram.event - INFO - Update id=619261622 is handled. Duration 141 ms by bot id=8208421266
+2026-02-01 07:02:28 - aiogram.event - INFO - Update id=619261623 is handled. Duration 125 ms by bot id=8208421266
+2026-02-01 07:02:31 - aiogram.event - INFO - Update id=619261624 is handled. Duration 125 ms by bot id=8208421266
+2026-02-01 07:02:32 - aiogram.event - INFO - Update id=619261625 is handled. Duration 233 ms by bot id=8208421266
+2026-02-01 07:02:35 - aiogram.event - INFO - Update id=619261626 is handled. Duration 108 ms by bot id=8208421266
+2026-02-01 07:02:40 - aiogram.event - INFO - Update id=619261627 is handled. Duration 218 ms by bot id=8208421266
+2026-02-01 07:02:42 - aiogram.event - INFO - Update id=619261628 is handled. Duration 485 ms by bot id=8208421266
+2026-02-01 07:02:44 - aiogram.event - INFO - Update id=619261629 is handled. Duration 125 ms by bot id=8208421266
+2026-02-01 07:02:52 - aiogram.event - INFO - Update id=619261630 is handled. Duration 125 ms by bot id=8208421266
+2026-02-01 07:02:54 - aiogram.event - INFO - Update id=619261631 is handled. Duration 141 ms by bot id=8208421266
+2026-02-01 07:02:55 - aiogram.event - INFO - Update id=619261632 is handled. Duration 250 ms by bot id=8208421266
+2026-02-01 07:02:56 - aiogram.event - INFO - Update id=619261633 is handled. Duration 390 ms by bot id=8208421266
+2026-02-01 07:03:04 - aiogram.event - INFO - Update id=619261634 is handled. Duration 157 ms by bot id=8208421266
+2026-02-01 07:03:07 - aiogram.event - INFO - Update id=619261635 is handled. Duration 93 ms by bot id=8208421266
+2026-02-01 07:03:08 - aiogram.event - INFO - Update id=619261636 is handled. Duration 187 ms by bot id=8208421266
+2026-02-01 07:03:10 - aiogram.event - INFO - Update id=619261637 is handled. Duration 312 ms by bot id=8208421266
+2026-02-01 07:03:14 - aiogram.event - INFO - Update id=619261638 is handled. Duration 202 ms by bot id=8208421266
+2026-02-01 07:03:14 - aiogram.event - INFO - Update id=619261639 is handled. Duration 110 ms by bot id=8208421266
+2026-02-01 07:03:50 - aiogram.event - INFO - Update id=619261640 is handled. Duration 78 ms by bot id=8208421266
+2026-02-01 07:04:07 - aiogram.event - INFO - Update id=619261641 is handled. Duration 78 ms by bot id=8208421266
+2026-02-01 07:05:16 - aiogram.event - INFO - Update id=619261642 is handled. Duration 93 ms by bot id=8208421266
+2026-02-01 07:05:21 - aiogram.event - INFO - Update id=619261643 is handled. Duration 93 ms by bot id=8208421266
+2026-02-01 07:05:27 - aiogram.event - INFO - Update id=619261644 is handled. Duration 93 ms by bot id=8208421266
+2026-02-01 07:05:27 - aiogram.event - INFO - Update id=619261645 is handled. Duration 94 ms by bot id=8208421266
+2026-02-01 07:05:39 - aiogram.event - INFO - Update id=619261646 is handled. Duration 93 ms by bot id=8208421266

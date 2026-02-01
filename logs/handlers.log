@@ -1,0 +1,984 @@
+2026-01-31 05:05:40 - handlers - INFO - Wykryto forward z kanału: premiumtest (-1003565350305)
+2026-01-31 05:05:56 - handlers - INFO - Admin ustawił kanał premium przez forward: -1003565350305
+2026-01-31 05:11:34 - handlers - INFO - 🔍 DEBUG ChatMember: chat_id=-1003565350305, user_id=1342685360, old_status=ChatMemberStatus.MEMBER, new_status=ChatMemberStatus.LEFT
+2026-01-31 05:11:41 - handlers - INFO - 🔍 DEBUG ChatMember: chat_id=-1003565350305, user_id=1342685360, old_status=ChatMemberStatus.LEFT, new_status=ChatMemberStatus.MEMBER
+2026-01-31 05:14:27 - handlers - INFO - 🔍 DEBUG ChatMember: chat_id=-1003565350305, user_id=1342685360, old_status=ChatMemberStatus.MEMBER, new_status=ChatMemberStatus.LEFT
+2026-01-31 05:14:30 - handlers - INFO - 🔍 DEBUG ChatMember: chat_id=-1003565350305, user_id=1342685360, old_status=ChatMemberStatus.LEFT, new_status=ChatMemberStatus.MEMBER
+2026-01-31 05:14:30 - handlers - INFO - ✅ User JOINED: old_status=ChatMemberStatus.LEFT, new_status=ChatMemberStatus.MEMBER
+2026-01-31 05:14:30 - handlers - INFO - Użytkownik 1342685360 (sprzedamgruz) dołączył do kanału -1003565350305
+2026-01-31 05:14:30 - handlers - INFO - 📋 Skonfigurowane kanały: Premium=-1003565350305, Free=None, Event na kanale=-1003565350305
+2026-01-31 05:14:31 - handlers - INFO - Wysłano powiadomienie o dołączeniu do Premium: 1342685360
+2026-01-31 05:17:33 - handlers - INFO - 🔍 DEBUG ChatMember: chat_id=-1003565350305, user_id=1342685360, old_status=ChatMemberStatus.MEMBER, new_status=ChatMemberStatus.LEFT
+2026-01-31 05:17:36 - handlers - INFO - 🔍 DEBUG ChatMember: chat_id=-1003565350305, user_id=1342685360, old_status=ChatMemberStatus.LEFT, new_status=ChatMemberStatus.MEMBER
+2026-01-31 05:17:36 - handlers - INFO - ✅ User JOINED: old_status=ChatMemberStatus.LEFT, new_status=ChatMemberStatus.MEMBER
+2026-01-31 05:17:36 - handlers - INFO - Użytkownik 1342685360 (sprzedamgruz) dołączył do kanału -1003565350305
+2026-01-31 05:17:36 - handlers - INFO - 📋 Skonfigurowane kanały: Premium=-1003565350305, Free=None, Event na kanale=-1003565350305
+2026-01-31 05:17:36 - handlers - INFO - Wysłano powiadomienie o dołączeniu do Premium: 1342685360
+2026-01-31 05:17:44 - handlers - INFO - Wybrano tier: Bronze dla użytkownika 1342685360
+2026-01-31 05:20:56 - handlers - INFO - 🔍 DEBUG ChatMember: chat_id=-1003565350305, user_id=1342685360, old_status=ChatMemberStatus.MEMBER, new_status=ChatMemberStatus.LEFT
+2026-01-31 05:20:59 - handlers - INFO - 🔍 DEBUG ChatMember: chat_id=-1003565350305, user_id=1342685360, old_status=ChatMemberStatus.LEFT, new_status=ChatMemberStatus.MEMBER
+2026-01-31 05:20:59 - handlers - INFO - ✅ User JOINED: old_status=ChatMemberStatus.LEFT, new_status=ChatMemberStatus.MEMBER
+2026-01-31 05:20:59 - handlers - INFO - Użytkownik 1342685360 (sprzedamgruz) dołączył do kanału -1003565350305
+2026-01-31 05:20:59 - handlers - INFO - 📋 Skonfigurowane kanały: Premium=-1003565350305, Free=None, Event na kanale=-1003565350305
+2026-01-31 05:20:59 - handlers - INFO - Wysłano powiadomienie o dołączeniu do Premium: 1342685360
+2026-01-31 05:21:02 - handlers - INFO - Wybrano tier: Bronze dla użytkownika 1342685360
+2026-01-31 05:21:04 - handlers - ERROR - Błąd wyboru czasu trwania: invalid literal for int() with base 10: 'custom'
+2026-01-31 05:21:09 - handlers - ERROR - Błąd wyboru czasu trwania: invalid literal for int() with base 10: 'custom'
+2026-01-31 05:21:16 - handlers - ERROR - Błąd wyboru czasu trwania: invalid literal for int() with base 10: 'custom'
+2026-01-31 05:22:44 - handlers - INFO - 🔍 DEBUG ChatMember: chat_id=-1003565350305, user_id=1342685360, old_status=ChatMemberStatus.MEMBER, new_status=ChatMemberStatus.LEFT
+2026-01-31 05:22:47 - handlers - INFO - 🔍 DEBUG ChatMember: chat_id=-1003565350305, user_id=1342685360, old_status=ChatMemberStatus.LEFT, new_status=ChatMemberStatus.MEMBER
+2026-01-31 05:22:47 - handlers - INFO - ✅ User JOINED: old_status=ChatMemberStatus.LEFT, new_status=ChatMemberStatus.MEMBER
+2026-01-31 05:22:47 - handlers - INFO - Użytkownik 1342685360 (sprzedamgruz) dołączył do kanału -1003565350305
+2026-01-31 05:22:47 - handlers - INFO - 📋 Skonfigurowane kanały: Premium=-1003565350305, Free=None, Event na kanale=-1003565350305
+2026-01-31 05:22:47 - handlers - INFO - Wysłano powiadomienie o dołączeniu do Premium: 1342685360
+2026-01-31 05:22:49 - handlers - INFO - Wybrano tier: Bronze dla użytkownika 1342685360
+2026-01-31 05:22:50 - handlers - INFO - Admin chce wpisać niestandardową datę dla user_id=1342685360
+2026-01-31 05:27:22 - handlers - INFO - 🔍 DEBUG ChatMember: chat_id=-1003565350305, user_id=1342685360, old_status=ChatMemberStatus.MEMBER, new_status=ChatMemberStatus.LEFT
+2026-01-31 05:27:24 - handlers - INFO - 🔍 DEBUG ChatMember: chat_id=-1003565350305, user_id=1342685360, old_status=ChatMemberStatus.LEFT, new_status=ChatMemberStatus.MEMBER
+2026-01-31 05:27:24 - handlers - INFO - ✅ User JOINED: old_status=ChatMemberStatus.LEFT, new_status=ChatMemberStatus.MEMBER
+2026-01-31 05:27:24 - handlers - INFO - Użytkownik 1342685360 (sprzedamgruz) dołączył do kanału -1003565350305
+2026-01-31 05:27:24 - handlers - INFO - 📋 Skonfigurowane kanały: Premium=-1003565350305, Free=None, Event na kanale=-1003565350305
+2026-01-31 05:27:24 - handlers - INFO - Wysłano powiadomienie o dołączeniu do Premium: 1342685360
+2026-01-31 05:27:27 - handlers - INFO - Wybrano tier: Silver dla użytkownika 1342685360
+2026-01-31 05:27:28 - handlers - INFO - Admin chce wpisać niestandardową datę dla user_id=1342685360
+2026-01-31 05:28:03 - handlers - WARNING - Nie można wysłać wiadomości powitalnej: Telegram server says - Forbidden: bot can't initiate conversation with a user
+2026-01-31 05:33:56 - handlers - INFO - 🔍 DEBUG ChatMember: chat_id=-1003565350305, user_id=1342685360, old_status=ChatMemberStatus.MEMBER, new_status=ChatMemberStatus.LEFT
+2026-01-31 05:36:57 - handlers - INFO - 🔍 DEBUG ChatMember: chat_id=-1003565350305, user_id=1342685360, old_status=ChatMemberStatus.LEFT, new_status=ChatMemberStatus.MEMBER
+2026-01-31 05:36:57 - handlers - INFO - ✅ User JOINED: old_status=ChatMemberStatus.LEFT, new_status=ChatMemberStatus.MEMBER
+2026-01-31 05:36:57 - handlers - INFO - Użytkownik 1342685360 (sprzedamgruz) dołączył do kanału -1003565350305
+2026-01-31 05:36:57 - handlers - INFO - 📋 Skonfigurowane kanały: Premium=-1003565350305, Free=None, Event na kanale=-1003565350305
+2026-01-31 05:36:57 - handlers - INFO - Wysłano powiadomienie o dołączeniu do Premium: 1342685360
+2026-01-31 05:37:09 - handlers - INFO - 🔍 DEBUG ChatMember: chat_id=-1003565350305, user_id=1342685360, old_status=ChatMemberStatus.MEMBER, new_status=ChatMemberStatus.LEFT
+2026-01-31 05:39:25 - handlers - INFO - 🔍 DEBUG ChatMember: chat_id=-1003565350305, user_id=1342685360, old_status=ChatMemberStatus.LEFT, new_status=ChatMemberStatus.MEMBER
+2026-01-31 05:39:25 - handlers - INFO - ✅ User JOINED: old_status=ChatMemberStatus.LEFT, new_status=ChatMemberStatus.MEMBER
+2026-01-31 05:39:25 - handlers - INFO - Użytkownik 1342685360 (sprzedamgruz) dołączył do kanału -1003565350305
+2026-01-31 05:39:25 - handlers - INFO - 📋 Skonfigurowane kanały: Premium=-1003565350305, Free=None, Event na kanale=-1003565350305
+2026-01-31 05:39:25 - handlers - INFO - Wysłano powiadomienie o dołączeniu do Premium: 1342685360
+2026-01-31 05:39:50 - handlers - INFO - 🔍 DEBUG ChatMember: chat_id=-1003565350305, user_id=1342685360, old_status=ChatMemberStatus.MEMBER, new_status=ChatMemberStatus.LEFT
+2026-01-31 05:39:50 - handlers - ERROR - Błąd obsługi chat member update: type object 'ChatMemberStatus' has no attribute 'BANNED'
+2026-01-31 05:41:06 - handlers - ERROR - Błąd ręcznego kickowania: Telegram server says - Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 24
+2026-01-31 05:41:27 - handlers - INFO - 🔍 DEBUG ChatMember: chat_id=-1003565350305, user_id=1342685360, old_status=ChatMemberStatus.LEFT, new_status=ChatMemberStatus.KICKED
+2026-01-31 05:41:27 - handlers - ERROR - Błąd obsługi chat member update: type object 'ChatMemberStatus' has no attribute 'BANNED'
+2026-01-31 05:41:27 - handlers - INFO - 🔍 DEBUG ChatMember: chat_id=-1003565350305, user_id=1342685360, old_status=ChatMemberStatus.KICKED, new_status=ChatMemberStatus.LEFT
+2026-01-31 05:41:27 - handlers - ERROR - Błąd obsługi chat member update: type object 'ChatMemberStatus' has no attribute 'BANNED'
+2026-01-31 05:41:27 - handlers - INFO - Ręcznie usunięto użytkownika: 1342685360
+2026-01-31 05:41:35 - handlers - INFO - 🔍 DEBUG ChatMember: chat_id=-1003565350305, user_id=1342685360, old_status=ChatMemberStatus.LEFT, new_status=ChatMemberStatus.MEMBER
+2026-01-31 05:41:35 - handlers - ERROR - Błąd obsługi chat member update: type object 'ChatMemberStatus' has no attribute 'BANNED'
+2026-01-31 05:42:05 - handlers - INFO - 🔍 DEBUG ChatMember: chat_id=-1003565350305, user_id=5794369342, old_status=ChatMemberStatus.LEFT, new_status=ChatMemberStatus.MEMBER
+2026-01-31 05:42:05 - handlers - ERROR - Błąd obsługi chat member update: type object 'ChatMemberStatus' has no attribute 'BANNED'
+2026-01-31 05:46:55 - handlers - INFO - 🔍 DEBUG ChatMember: chat_id=-1003565350305, user_id=1342685360, old_status=ChatMemberStatus.MEMBER, new_status=ChatMemberStatus.LEFT
+2026-01-31 05:46:57 - handlers - INFO - 🔍 DEBUG ChatMember: chat_id=-1003565350305, user_id=1342685360, old_status=ChatMemberStatus.LEFT, new_status=ChatMemberStatus.MEMBER
+2026-01-31 05:46:57 - handlers - INFO - ✅ User JOINED: old_status=ChatMemberStatus.LEFT, new_status=ChatMemberStatus.MEMBER
+2026-01-31 05:46:57 - handlers - INFO - Użytkownik 1342685360 (sprzedamgruz) dołączył do kanału -1003565350305
+2026-01-31 05:46:57 - handlers - INFO - 📋 Skonfigurowane kanały: Premium=-1003565350305, Free=None, Event na kanale=-1003565350305
+2026-01-31 05:46:57 - handlers - INFO - Wysłano powiadomienie o dołączeniu do Premium: 1342685360
+2026-01-31 13:17:35 - handlers - ERROR - Błąd obsługi chat member update: type object 'ChatMemberStatus' has no attribute 'BANNED'
+Traceback (most recent call last):
+  File "D:\Python\EwhorWatchdog\handlers\events.py", line 44, in handle_chat_member_update
+    is_banned = new_status == ChatMemberStatus.BANNED
+                              ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: type object 'ChatMemberStatus' has no attribute 'BANNED'
+2026-01-31 13:19:03 - handlers - ERROR - Błąd obsługi chat member update: type object 'ChatMemberStatus' has no attribute 'BANNED'
+Traceback (most recent call last):
+  File "D:\Python\EwhorWatchdog\handlers\events.py", line 44, in handle_chat_member_update
+    is_banned = new_status == ChatMemberStatus.BANNED
+                              ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: type object 'ChatMemberStatus' has no attribute 'BANNED'
+2026-01-31 13:20:39 - handlers - INFO - 🔴 User LEFT (Voluntary): 1342685360 z kanału -1003565350305
+2026-01-31 13:20:39 - handlers - INFO - ✅ Zaktualizowano status 1342685360 na 'left'
+2026-01-31 13:20:48 - handlers - INFO - 🟢 User JOINED: 1342685360 do kanału -1003565350305
+2026-01-31 13:20:48 - handlers - INFO - Wysłano powiadomienie o dołączeniu: 1342685360
+2026-01-31 13:20:59 - handlers - INFO - Wybrano tier: Bronze dla użytkownika 1342685360
+2026-01-31 13:21:18 - handlers - WARNING - Nie można wysłać powitania: Telegram server says - Forbidden: bot can't initiate conversation with a user
+2026-01-31 13:21:34 - handlers - INFO - 🚫 User BANNED: 1342685360 z kanału -1003565350305
+2026-01-31 13:21:51 - handlers - INFO - 🟢 User JOINED: 1342685360 do kanału -1003565350305
+2026-01-31 13:21:52 - handlers - INFO - Wysłano powiadomienie o dołączeniu: 1342685360
+2026-01-31 13:25:54 - handlers - INFO - 🔴 User LEFT (Voluntary): 1342685360 z kanału -1003565350305
+2026-01-31 13:25:54 - handlers - INFO - ✅ Zaktualizowano status 1342685360 na 'left'
+2026-01-31 13:26:10 - handlers - INFO - 🟢 User JOINED: 1342685360 do kanału -1003565350305
+2026-01-31 13:26:11 - handlers - INFO - Wysłano powiadomienie o dołączeniu: 1342685360
+2026-01-31 13:26:15 - handlers - INFO - Wybrano tier: Bronze dla użytkownika 1342685360
+2026-01-31 13:26:27 - handlers - WARNING - Nie można wysłać powitania: Telegram server says - Forbidden: bot can't initiate conversation with a user
+2026-01-31 13:26:54 - handlers - INFO - 🚫 User BANNED: 1342685360 z kanału -1003565350305
+2026-01-31 13:31:52 - handlers - INFO - Rozpoczęto tworzenie posta
+2026-01-31 13:31:57 - handlers - INFO - Zapisano treść posta: text
+2026-01-31 13:32:12 - handlers - INFO - Rozpoczęto tworzenie posta
+2026-01-31 13:32:16 - handlers - INFO - Zapisano treść posta: text
+2026-01-31 13:32:17 - handlers - INFO - Pominięto dodawanie przycisków
+2026-01-31 13:32:19 - handlers - INFO - Wysłano post na kanał: text
+2026-01-31 13:32:25 - handlers - INFO - Rozpoczęto tworzenie posta
+2026-01-31 13:32:29 - handlers - INFO - Zapisano treść posta: text
+2026-01-31 13:32:53 - handlers - INFO - Pominięto dodawanie przycisków
+2026-01-31 13:33:11 - handlers - INFO - Zaplanowano post na 2026-01-31 13:34:00
+2026-01-31 13:34:11 - handlers - INFO - Wysłano post na kanał: text
+2026-01-31 13:35:24 - handlers - INFO - 🔴 User LEFT (Voluntary): 5794369342 z kanału -1003565350305
+2026-01-31 13:35:29 - handlers - INFO - 🟢 User JOINED: 5794369342 do kanału -1003565350305
+2026-01-31 13:35:29 - handlers - INFO - Wysłano powiadomienie o dołączeniu: 5794369342
+2026-01-31 13:36:00 - handlers - INFO - Wybrano tier: Silver dla użytkownika 5794369342
+2026-01-31 13:36:20 - handlers - WARNING - Nie można wysłać powitania do 5794369342: Telegram server says - Forbidden: bot can't initiate conversation with a user
+2026-01-31 13:50:41 - handlers - ERROR - Błąd komendy edit: type object 'SubscriptionManager' has no attribute 'get_subscription_by_username'
+Traceback (most recent call last):
+  File "D:\Python\EwhorWatchdog\handlers\admin_edit.py", line 55, in cmd_edit_subscription
+    sub = await SubscriptionManager.get_subscription_by_username(username)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: type object 'SubscriptionManager' has no attribute 'get_subscription_by_username'
+2026-01-31 15:40:38 - handlers - ERROR - Błąd obsługi chat member update: name 'db_manager' is not defined
+Traceback (most recent call last):
+  File "D:\Python\EwhorWatchdog\handlers\events.py", line 73, in handle_chat_member_update
+    connection = await db_manager.get_connection()
+                       ^^^^^^^^^^
+NameError: name 'db_manager' is not defined
+2026-01-31 15:40:41 - handlers - ERROR - Błąd obsługi chat member update: name 'db_manager' is not defined
+Traceback (most recent call last):
+  File "D:\Python\EwhorWatchdog\handlers\events.py", line 73, in handle_chat_member_update
+    connection = await db_manager.get_connection()
+                       ^^^^^^^^^^
+NameError: name 'db_manager' is not defined
+2026-01-31 15:41:51 - handlers - ERROR - Błąd obsługi chat member update: name 'db_manager' is not defined
+Traceback (most recent call last):
+  File "D:\Python\EwhorWatchdog\handlers\events.py", line 73, in handle_chat_member_update
+NameError: name 'db_manager' is not defined
+2026-01-31 15:41:55 - handlers - ERROR - Błąd obsługi chat member update: name 'db_manager' is not defined
+Traceback (most recent call last):
+  File "D:\Python\EwhorWatchdog\handlers\events.py", line 73, in handle_chat_member_update
+NameError: name 'db_manager' is not defined
+2026-01-31 15:43:43 - handlers - INFO - 🔴 User LEFT: 5794369342 z kanału -1003565350305 (Owner: 8489479793)
+2026-01-31 15:43:46 - handlers - INFO - 🟢 User JOINED: 5794369342 do kanału -1003565350305 (Owner: 8489479793)
+2026-01-31 17:28:49 - handlers - INFO - 🟢 User JOINED: 1342685360 do kanału -1003808918566 (Owner: 8489479793)
+2026-01-31 17:28:50 - handlers - INFO - Wysłano powiadomienie o dołączeniu do właściciela 8489479793
+2026-01-31 17:28:56 - handlers - INFO - Wybrano tier: Bronze dla użytkownika 1342685360
+2026-01-31 17:29:13 - handlers - ERROR - Błąd przetwarzania daty: SubscriptionManager.create_subscription() missing 1 required positional argument: 'owner_id'
+Traceback (most recent call last):
+  File "D:\Python\EwhorWatchdog\handlers\admin_subs.py", line 277, in handle_custom_date_input
+    success = await SubscriptionManager.create_subscription(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SubscriptionManager.create_subscription() missing 1 required positional argument: 'owner_id'
+2026-01-31 17:44:41 - handlers - ERROR - Delete channel error: cmd_start() got an unexpected keyword argument 'context'
+2026-01-31 17:50:28 - handlers - INFO - 🟢 User JOINED: 1342685360 do kanału -1003565350305 (Owner: 8489479793)
+2026-01-31 17:52:02 - handlers - INFO - 🔴 User LEFT: 1342685360 z kanału -1003565350305 (Owner: 8489479793, Type: premium)
+2026-01-31 17:52:35 - handlers - INFO - 🟢 User JOINED: 1342685360 do kanału -1003565350305 (Owner: 8489479793, Type: premium)
+2026-01-31 17:52:36 - handlers - INFO - Wysłano powiadomienie o dołączeniu do właściciela 8489479793
+2026-01-31 17:52:42 - handlers - INFO - Wybrano tier: Bronze dla user 1342685360 w kanale -1003565350305
+2026-01-31 17:56:26 - handlers - INFO - 🔴 User LEFT: 1342685360 z kanału -1003565350305 (Owner: 8489479793, Type: premium)
+2026-01-31 17:56:37 - handlers - INFO - 🟢 User JOINED: 1342685360 do kanału -1003565350305 (Owner: 8489479793, Type: premium)
+2026-01-31 17:56:37 - handlers - INFO - Wysłano powiadomienie o dołączeniu do właściciela 8489479793
+2026-01-31 17:56:40 - handlers - INFO - Wybrano tier: Bronze dla user 1342685360 w kanale -1003565350305
+2026-01-31 17:57:26 - handlers - INFO - 🚫 User BANNED: 1342685360 z kanału -1003808918566 (Owner: 8489479793)
+2026-01-31 18:07:17 - handlers - ERROR - Delete channel error: cmd_start() got an unexpected keyword argument 'context'
+2026-01-31 18:07:37 - handlers - INFO - 🚫 User BANNED: 1342685360 z kanału -1003565350305 (Owner: 8489479793)
+2026-01-31 18:43:57 - handlers - INFO - 🔴 User LEFT: 5794369342 z kanału -1003565350305 (Owner: 8489479793, Type: premium)
+2026-01-31 18:44:00 - handlers - INFO - 🟢 User JOINED: 5794369342 do kanału -1003565350305 (Owner: 8489479793, Type: premium)
+2026-01-31 18:44:00 - handlers - INFO - Wysłano powiadomienie o dołączeniu do właściciela 8489479793
+2026-01-31 18:44:05 - handlers - INFO - Wybrano tier: Bronze dla user 5794369342 w kanale -1003565350305
+2026-01-31 18:44:06 - handlers - WARNING - Nie można wysłać powitania do 5794369342: Telegram server says - Forbidden: bot can't initiate conversation with a user
+2026-01-31 18:45:31 - handlers - INFO - 🚫 User BANNED: 5794369342 z kanału -1003565350305 (Owner: 8489479793)
+2026-01-31 18:45:31 - handlers - ERROR - Kick error: SubscriptionManager.update_subscription_status() missing 1 required positional argument: 'status'
+2026-01-31 19:41:53 - handlers - ERROR - Unban error: 1 validation error for CallbackQuery
+data
+  Instance is frozen [type=frozen_instance, input_value='list_banned_-1003565350305', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.8/v/frozen_instance
+2026-01-31 19:41:57 - handlers - ERROR - Unban error: 1 validation error for CallbackQuery
+data
+  Instance is frozen [type=frozen_instance, input_value='list_banned_-1003565350305', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.8/v/frozen_instance
+2026-01-31 19:42:43 - handlers - INFO - 🚫 User BANNED: 1342685360 z kanału -1003565350305 (Owner: 8489479793)
+2026-01-31 21:15:44 - handlers - INFO - 🟢 User JOINED: 5794369342 do kanału -1003565350305 (Owner: 8489479793, Type: premium)
+2026-01-31 21:15:44 - handlers - INFO - Wysłano powiadomienie o dołączeniu do właściciela 8489479793
+2026-01-31 21:15:53 - handlers - INFO - Wybrano tier: Bronze dla user 5794369342 w kanale -1003565350305
+2026-01-31 21:16:14 - handlers - WARNING - Nie można wysłać powitania do 5794369342: Telegram server says - Forbidden: bot can't initiate conversation with a user
+2026-01-31 21:19:39 - handlers - INFO - 🟢 User JOINED: 5794369342 do kanału -1003790387759 (Owner: 8489479793, Type: free)
+2026-01-31 21:57:13 - handlers - ERROR - Unban error: 1 validation error for CallbackQuery
+data
+  Instance is frozen [type=frozen_instance, input_value='list_banned_-1003565350305', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.8/v/frozen_instance
+2026-01-31 21:57:19 - handlers - INFO - 🚫 User BANNED: 1342685360 z kanału -1003565350305 (Owner: 8489479793)
+2026-01-31 22:01:10 - handlers - ERROR - Unban error: 1 validation error for CallbackQuery
+data
+  Instance is frozen [type=frozen_instance, input_value='list_banned_-1003565350305', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.8/v/frozen_instance
+2026-01-31 22:25:20 - handlers - INFO - Wysłano post na kanał -1003790387759: photo
+2026-01-31 22:57:25 - handlers - INFO - Wysłano post na kanał -1003565350305: text
+2026-01-31 22:57:28 - handlers - INFO - Wysłano post na kanał -1003565350305: text
+2026-01-31 22:57:30 - handlers - INFO - Wysłano post na kanał -1003790387759: text
+2026-01-31 23:07:22 - handlers - INFO - Wysłano post na kanał -1003790387759: photo
+2026-01-31 23:07:49 - handlers - INFO - 🟢 User JOINED: 1342685360 do kanału -1003790387759 (Owner: 8489479793, Type: free)
+2026-01-31 23:19:56 - handlers - INFO - Wysłano post na kanał -1003790387759: text
+2026-02-01 00:30:13 - handlers - INFO - 🟢 User JOINED: 5704725243 do kanału -1002032389748 (Owner: 7829319839, Type: free)
+2026-02-01 02:52:07 - handlers - INFO - SFS forward (odśwież statystyki): wiek wiadomości (data oryginału na kanale) = 9h 40m (34832 s)
+2026-02-01 02:53:38 - handlers - INFO - SFS forward po dołączeniu: wiek wiadomości (data oryginału na kanale) = 21h 48m (78485 s)
+2026-02-01 02:53:59 - handlers - INFO - SFS forward (odśwież statystyki): wiek wiadomości (data oryginału na kanale) = 21h 48m (78506 s)
+2026-02-01 02:58:11 - handlers - INFO - 🟢 User JOINED: 8321990497 do kanału -1002032389748 (Owner: 7829319839, Type: free)
+2026-02-01 03:02:25 - handlers - INFO - 🟢 User JOINED: 5781218980 do kanału -1002032389748 (Owner: 7829319839, Type: free)
+2026-02-01 03:08:24 - handlers - INFO - 🔴 User LEFT: 8218608662 z kanału -1002032389748 (Owner: 7829319839, Type: free)
+2026-02-01 03:09:08 - handlers - INFO - SFS forward (odśwież statystyki): wiek wiadomości (data oryginału na kanale) = 22h 3m (79415 s)
+2026-02-01 03:09:08 - handlers - INFO - SFS views: brak pola views w wiadomości (sprawdzone: message.views, channel_views, forward_origin, model_dump)
+2026-02-01 03:20:47 - handlers - INFO - 🟢 User JOINED: 609517172 do kanału -1002032389748 (Owner: 7829319839, Type: free)
+2026-02-01 03:23:12 - handlers - INFO - 🚫 User BANNED: 609517172 z kanału -1002032389748 (Owner: 7829319839)
+2026-02-01 03:30:28 - handlers - INFO - SFS forward (odśwież statystyki): wiek wiadomości (data oryginału na kanale) = 13h 58m (50289 s)
+2026-02-01 03:30:28 - handlers - INFO - SFS views: brak pola views w wiadomości (sprawdzone: message.views, channel_views, forward_origin, model_dump)
+2026-02-01 03:35:18 - handlers - INFO - SFS forward po dołączeniu: wiek wiadomości (data oryginału na kanale) = 2m (123 s)
+2026-02-01 03:35:18 - handlers - INFO - SFS views: brak pola views w wiadomości (sprawdzone: message.views, channel_views, forward_origin, model_dump)
+2026-02-01 03:35:43 - handlers - INFO - SFS forward (odśwież statystyki): wiek wiadomości (data oryginału na kanale) = 2m (148 s)
+2026-02-01 03:35:43 - handlers - INFO - SFS views: brak pola views w wiadomości (sprawdzone: message.views, channel_views, forward_origin, model_dump)
+2026-02-01 03:38:44 - handlers - INFO - SFS: okresowy auto-fill views dla 1 wpisów (bez refreshed_at)
+2026-02-01 03:38:50 - handlers - INFO - SFS: okresowy auto-fill views dla 1 wpisów (bez refreshed_at)
+2026-02-01 03:38:56 - handlers - INFO - SFS: okresowy auto-fill views dla 1 wpisów (bez refreshed_at)
+2026-02-01 03:39:02 - handlers - INFO - SFS: okresowy auto-fill views dla 1 wpisów (bez refreshed_at)
+2026-02-01 03:39:08 - handlers - INFO - SFS: okresowy auto-fill views dla 1 wpisów (bez refreshed_at)
+2026-02-01 03:39:14 - handlers - INFO - SFS: okresowy auto-fill views dla 1 wpisów (bez refreshed_at)
+2026-02-01 03:39:20 - handlers - INFO - SFS: okresowy auto-fill views dla 1 wpisów (bez refreshed_at)
+2026-02-01 03:39:26 - handlers - INFO - SFS: okresowy auto-fill views dla 1 wpisów (bez refreshed_at)
+2026-02-01 03:39:32 - handlers - INFO - SFS: okresowy auto-fill views dla 1 wpisów (bez refreshed_at)
+2026-02-01 03:39:38 - handlers - INFO - SFS: okresowy auto-fill views dla 1 wpisów (bez refreshed_at)
+2026-02-01 03:39:44 - handlers - INFO - SFS: okresowy auto-fill views dla 1 wpisów (bez refreshed_at)
+2026-02-01 03:39:50 - handlers - INFO - SFS: okresowy auto-fill views dla 1 wpisów (bez refreshed_at)
+2026-02-01 03:39:56 - handlers - INFO - SFS: okresowy auto-fill views dla 1 wpisów (bez refreshed_at)
+2026-02-01 03:40:02 - handlers - INFO - SFS: okresowy auto-fill views dla 1 wpisów (bez refreshed_at)
+2026-02-01 03:40:08 - handlers - INFO - SFS: okresowy auto-fill views dla 1 wpisów (bez refreshed_at)
+2026-02-01 03:40:14 - handlers - INFO - SFS: okresowy auto-fill views dla 1 wpisów (bez refreshed_at)
+2026-02-01 03:40:20 - handlers - INFO - SFS: okresowy auto-fill views dla 1 wpisów (bez refreshed_at)
+2026-02-01 03:40:26 - handlers - INFO - SFS: okresowy auto-fill views dla 1 wpisów (bez refreshed_at)
+2026-02-01 03:40:32 - handlers - INFO - SFS: okresowy auto-fill views dla 1 wpisów (bez refreshed_at)
+2026-02-01 03:40:38 - handlers - INFO - SFS: okresowy auto-fill views dla 1 wpisów (bez refreshed_at)
+2026-02-01 03:40:44 - handlers - INFO - SFS: okresowy auto-fill views dla 1 wpisów (bez refreshed_at)
+2026-02-01 03:40:50 - handlers - INFO - SFS: okresowy auto-fill views dla 1 wpisów (bez refreshed_at)
+2026-02-01 03:40:56 - handlers - INFO - SFS: okresowy auto-fill views dla 1 wpisów (bez refreshed_at)
+2026-02-01 03:41:02 - handlers - INFO - SFS: okresowy auto-fill views dla 1 wpisów (bez refreshed_at)
+2026-02-01 03:41:13 - handlers - INFO - SFS: okresowy auto-fill views dla 1 wpisów (bez refreshed_at)
+2026-02-01 03:41:19 - handlers - INFO - SFS: okresowy auto-fill views dla 1 wpisów (bez refreshed_at)
+2026-02-01 03:41:37 - handlers - INFO - SFS: okresowy auto-fill views dla 1 wpisów (bez refreshed_at)
+2026-02-01 03:41:43 - handlers - INFO - SFS: okresowy auto-fill views dla 1 wpisów (bez refreshed_at)
+2026-02-01 03:41:46 - handlers - INFO - SFS forward po dołączeniu: wiek wiadomości (data oryginału na kanale) = 8m (511 s)
+2026-02-01 03:41:46 - handlers - INFO - SFS views: brak pola views w wiadomości (sprawdzone: message.views, channel_views, forward_origin, model_dump)
+2026-02-01 03:41:49 - handlers - INFO - SFS: okresowy auto-fill views dla 1 wpisów (bez refreshed_at)
+2026-02-01 03:41:55 - handlers - INFO - SFS: okresowy auto-fill views dla 1 wpisów (bez refreshed_at)
+2026-02-01 03:42:01 - handlers - INFO - SFS: okresowy auto-fill views dla 1 wpisów (bez refreshed_at)
+2026-02-01 03:42:07 - handlers - INFO - SFS: okresowy auto-fill views dla 1 wpisów (bez refreshed_at)
+2026-02-01 03:42:13 - handlers - INFO - SFS: okresowy auto-fill views dla 1 wpisów (bez refreshed_at)
+2026-02-01 03:42:19 - handlers - INFO - SFS: okresowy auto-fill views dla 1 wpisów (bez refreshed_at)
+2026-02-01 03:42:25 - handlers - INFO - SFS: okresowy auto-fill views dla 1 wpisów (bez refreshed_at)
+2026-02-01 03:42:31 - handlers - INFO - SFS: okresowy auto-fill views dla 1 wpisów (bez refreshed_at)
+2026-02-01 03:42:37 - handlers - INFO - SFS: okresowy auto-fill views dla 1 wpisów (bez refreshed_at)
+2026-02-01 03:42:43 - handlers - INFO - SFS: okresowy auto-fill views dla 1 wpisów (bez refreshed_at)
+2026-02-01 03:42:49 - handlers - INFO - SFS: okresowy auto-fill views dla 1 wpisów (bez refreshed_at)
+2026-02-01 03:42:50 - handlers - INFO - SFS: okresowy auto-fill views dla 1 wpisów (bez refreshed_at)
+2026-02-01 03:42:55 - handlers - INFO - SFS: okresowy auto-fill views dla 1 wpisów (bez refreshed_at)
+2026-02-01 03:44:55 - handlers - INFO - SFS: okresowy auto-fill views dla 1 wpisów (bez refreshed_at)
+2026-02-01 03:45:01 - handlers - INFO - SFS: okresowy auto-fill views dla 1 wpisów (bez refreshed_at)
+2026-02-01 03:45:02 - handlers - INFO - SFS forward po dołączeniu: wiek wiadomości (data oryginału na kanale) = 2d 11h (214092 s)
+2026-02-01 03:45:02 - handlers - INFO - SFS views: brak pola views w wiadomości (sprawdzone: message.views, channel_views, forward_origin, model_dump)
+2026-02-01 03:45:07 - handlers - INFO - SFS: okresowy auto-fill views dla 1 wpisów (bez refreshed_at)
+2026-02-01 03:45:13 - handlers - INFO - SFS: okresowy auto-fill views dla 1 wpisów (bez refreshed_at)
+2026-02-01 03:45:19 - handlers - INFO - SFS: okresowy auto-fill views dla 1 wpisów (bez refreshed_at)
+2026-02-01 03:45:25 - handlers - INFO - SFS: okresowy auto-fill views dla 1 wpisów (bez refreshed_at)
+2026-02-01 03:45:31 - handlers - INFO - SFS: okresowy auto-fill views dla 1 wpisów (bez refreshed_at)
+2026-02-01 03:45:37 - handlers - INFO - SFS: okresowy auto-fill views dla 1 wpisów (bez refreshed_at)
+2026-02-01 03:45:43 - handlers - INFO - SFS: okresowy auto-fill views dla 1 wpisów (bez refreshed_at)
+2026-02-01 03:45:49 - handlers - INFO - SFS: okresowy auto-fill views dla 1 wpisów (bez refreshed_at)
+2026-02-01 03:45:54 - handlers - INFO - SFS: okresowy auto-fill views dla 1 wpisów (bez refreshed_at)
+2026-02-01 03:45:55 - handlers - INFO - SFS: okresowy auto-fill views dla 1 wpisów (bez refreshed_at)
+2026-02-01 03:46:01 - handlers - INFO - SFS: okresowy auto-fill views dla 1 wpisów (bez refreshed_at)
+2026-02-01 03:46:07 - handlers - INFO - SFS: okresowy auto-fill views dla 1 wpisów (bez refreshed_at)
+2026-02-01 03:46:13 - handlers - INFO - SFS: okresowy auto-fill views dla 1 wpisów (bez refreshed_at)
+2026-02-01 03:46:19 - handlers - INFO - SFS: okresowy auto-fill views dla 1 wpisów (bez refreshed_at)
+2026-02-01 03:46:25 - handlers - INFO - SFS: okresowy auto-fill views dla 1 wpisów (bez refreshed_at)
+2026-02-01 03:46:31 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:46:37 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:46:43 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:46:49 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:46:55 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:47:01 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:47:07 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:47:13 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:47:19 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:47:25 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:47:31 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:47:37 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:47:43 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:47:49 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:47:55 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:48:01 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:48:07 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:48:13 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:48:19 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:48:25 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:48:31 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:48:37 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:48:43 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:48:49 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:48:55 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:49:01 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:49:07 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:49:13 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:49:19 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:49:25 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:49:31 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:49:37 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:49:43 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:49:49 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:49:55 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:50:01 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:50:07 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:50:13 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:50:19 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:50:25 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:50:31 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:50:37 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:50:43 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:50:49 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:50:55 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:51:01 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:51:07 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:51:13 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:51:19 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:51:25 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:51:31 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:51:37 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:51:43 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:51:49 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:51:55 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:52:01 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:52:07 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:52:13 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:52:19 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:52:25 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:52:31 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:52:37 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:52:43 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:52:49 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:52:55 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:53:01 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:53:07 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:53:13 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:53:19 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:53:25 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:53:31 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:53:37 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:53:43 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:53:57 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:53:58 - handlers - INFO - SFS auto-fill: ustawiono members_count=0 dla owner_id=7829319839 (brak views)
+2026-02-01 03:53:59 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:53:59 - handlers - INFO - SFS auto-fill: ustawiono members_count=0 dla owner_id=7829319839 (brak views)
+2026-02-01 03:54:01 - handlers - INFO - SFS auto-fill: ustawiono members_count=0 dla owner_id=8489479793 (brak views)
+2026-02-01 03:54:02 - handlers - INFO - SFS auto-fill: ustawiono members_count=0 dla owner_id=8489479793 (brak views)
+2026-02-01 03:54:05 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:54:05 - handlers - INFO - SFS auto-fill: ustawiono members_count=0 dla owner_id=7829319839 (brak views)
+2026-02-01 03:54:08 - handlers - INFO - SFS auto-fill: ustawiono members_count=0 dla owner_id=8489479793 (brak views)
+2026-02-01 03:54:11 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:54:11 - handlers - INFO - SFS auto-fill: ustawiono members_count=0 dla owner_id=7829319839 (brak views)
+2026-02-01 03:54:14 - handlers - INFO - SFS auto-fill: ustawiono members_count=0 dla owner_id=8489479793 (brak views)
+2026-02-01 03:54:17 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:54:17 - handlers - INFO - SFS auto-fill: ustawiono members_count=0 dla owner_id=7829319839 (brak views)
+2026-02-01 03:54:20 - handlers - INFO - SFS auto-fill: ustawiono members_count=0 dla owner_id=8489479793 (brak views)
+2026-02-01 03:54:23 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:54:23 - handlers - INFO - SFS auto-fill: ustawiono members_count=0 dla owner_id=7829319839 (brak views)
+2026-02-01 03:54:26 - handlers - INFO - SFS auto-fill: ustawiono members_count=0 dla owner_id=8489479793 (brak views)
+2026-02-01 03:54:29 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:54:29 - handlers - INFO - SFS auto-fill: ustawiono members_count=0 dla owner_id=7829319839 (brak views)
+2026-02-01 03:54:32 - handlers - INFO - SFS auto-fill: ustawiono members_count=0 dla owner_id=8489479793 (brak views)
+2026-02-01 03:54:35 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:54:35 - handlers - INFO - SFS auto-fill: ustawiono members_count=0 dla owner_id=7829319839 (brak views)
+2026-02-01 03:54:38 - handlers - INFO - SFS auto-fill: ustawiono members_count=0 dla owner_id=8489479793 (brak views)
+2026-02-01 03:54:41 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:54:41 - handlers - INFO - SFS auto-fill: ustawiono members_count=0 dla owner_id=7829319839 (brak views)
+2026-02-01 03:54:44 - handlers - INFO - SFS auto-fill: ustawiono members_count=0 dla owner_id=8489479793 (brak views)
+2026-02-01 03:54:47 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:54:47 - handlers - INFO - SFS auto-fill: ustawiono members_count=0 dla owner_id=7829319839 (brak views)
+2026-02-01 03:54:50 - handlers - INFO - SFS auto-fill: ustawiono members_count=0 dla owner_id=8489479793 (brak views)
+2026-02-01 03:54:53 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:54:53 - handlers - INFO - SFS auto-fill: ustawiono members_count=0 dla owner_id=7829319839 (brak views)
+2026-02-01 03:54:56 - handlers - INFO - SFS auto-fill: ustawiono members_count=0 dla owner_id=8489479793 (brak views)
+2026-02-01 03:54:59 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:54:59 - handlers - INFO - SFS auto-fill: ustawiono members_count=0 dla owner_id=7829319839 (brak views)
+2026-02-01 03:55:02 - handlers - INFO - SFS auto-fill: ustawiono members_count=0 dla owner_id=8489479793 (brak views)
+2026-02-01 03:55:05 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:55:05 - handlers - INFO - SFS auto-fill: ustawiono members_count=0 dla owner_id=7829319839 (brak views)
+2026-02-01 03:55:08 - handlers - INFO - SFS auto-fill: ustawiono members_count=0 dla owner_id=8489479793 (brak views)
+2026-02-01 03:55:11 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:55:11 - handlers - INFO - SFS auto-fill: ustawiono members_count=0 dla owner_id=7829319839 (brak views)
+2026-02-01 03:55:14 - handlers - INFO - SFS auto-fill: ustawiono members_count=0 dla owner_id=8489479793 (brak views)
+2026-02-01 03:55:17 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:55:17 - handlers - INFO - SFS auto-fill: ustawiono members_count=0 dla owner_id=7829319839 (brak views)
+2026-02-01 03:55:20 - handlers - INFO - SFS auto-fill: ustawiono members_count=0 dla owner_id=8489479793 (brak views)
+2026-02-01 03:55:23 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:55:23 - handlers - INFO - SFS auto-fill: ustawiono members_count=0 dla owner_id=7829319839 (brak views)
+2026-02-01 03:55:26 - handlers - INFO - SFS auto-fill: ustawiono members_count=0 dla owner_id=8489479793 (brak views)
+2026-02-01 03:55:29 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:55:29 - handlers - INFO - SFS auto-fill: ustawiono members_count=0 dla owner_id=7829319839 (brak views)
+2026-02-01 03:55:32 - handlers - INFO - SFS auto-fill: ustawiono members_count=0 dla owner_id=8489479793 (brak views)
+2026-02-01 03:55:32 - handlers - INFO - SFS forward po dołączeniu: wiek wiadomości (data oryginału na kanale) = 22h 49m (82199 s)
+2026-02-01 03:55:32 - handlers - INFO - SFS views: brak pola views w wiadomości (sprawdzone: message.views, channel_views, forward_origin, model_dump)
+2026-02-01 03:55:35 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:55:35 - handlers - INFO - SFS auto-fill: ustawiono members_count=0 dla owner_id=7829319839 (brak views)
+2026-02-01 03:55:38 - handlers - INFO - SFS auto-fill: ustawiono members_count=0 dla owner_id=8489479793 (brak views)
+2026-02-01 03:55:41 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:55:41 - handlers - INFO - SFS auto-fill: ustawiono members_count=0 dla owner_id=7829319839 (brak views)
+2026-02-01 03:55:44 - handlers - INFO - SFS auto-fill: ustawiono members_count=0 dla owner_id=8489479793 (brak views)
+2026-02-01 03:55:47 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:55:47 - handlers - INFO - SFS auto-fill: ustawiono members_count=0 dla owner_id=7829319839 (brak views)
+2026-02-01 03:55:50 - handlers - INFO - SFS auto-fill: ustawiono members_count=0 dla owner_id=8489479793 (brak views)
+2026-02-01 03:55:53 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:55:53 - handlers - INFO - SFS auto-fill: ustawiono members_count=0 dla owner_id=7829319839 (brak views)
+2026-02-01 03:55:56 - handlers - INFO - SFS auto-fill: ustawiono members_count=0 dla owner_id=8489479793 (brak views)
+2026-02-01 03:55:59 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:55:59 - handlers - INFO - SFS auto-fill: ustawiono members_count=0 dla owner_id=7829319839 (brak views)
+2026-02-01 03:56:02 - handlers - INFO - SFS auto-fill: ustawiono members_count=0 dla owner_id=8489479793 (brak views)
+2026-02-01 03:56:05 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:56:05 - handlers - INFO - SFS auto-fill: ustawiono members_count=0 dla owner_id=7829319839 (brak views)
+2026-02-01 03:56:08 - handlers - INFO - SFS auto-fill: ustawiono members_count=0 dla owner_id=8489479793 (brak views)
+2026-02-01 03:56:11 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:56:11 - handlers - INFO - SFS auto-fill: ustawiono members_count=0 dla owner_id=7829319839 (brak views)
+2026-02-01 03:56:14 - handlers - INFO - SFS auto-fill: ustawiono members_count=0 dla owner_id=8489479793 (brak views)
+2026-02-01 03:56:17 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:56:17 - handlers - INFO - SFS auto-fill: ustawiono members_count=0 dla owner_id=7829319839 (brak views)
+2026-02-01 03:56:20 - handlers - INFO - SFS auto-fill: ustawiono members_count=0 dla owner_id=8489479793 (brak views)
+2026-02-01 03:56:23 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:56:23 - handlers - INFO - SFS auto-fill: ustawiono members_count=0 dla owner_id=7829319839 (brak views)
+2026-02-01 03:56:26 - handlers - INFO - SFS auto-fill: ustawiono members_count=0 dla owner_id=8489479793 (brak views)
+2026-02-01 03:56:29 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:56:29 - handlers - INFO - SFS auto-fill: ustawiono members_count=0 dla owner_id=7829319839 (brak views)
+2026-02-01 03:56:32 - handlers - INFO - SFS auto-fill: ustawiono members_count=0 dla owner_id=8489479793 (brak views)
+2026-02-01 03:56:35 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:56:35 - handlers - INFO - SFS auto-fill: ustawiono members_count=0 dla owner_id=7829319839 (brak views)
+2026-02-01 03:56:38 - handlers - INFO - SFS auto-fill: ustawiono members_count=0 dla owner_id=8489479793 (brak views)
+2026-02-01 03:56:41 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:56:41 - handlers - INFO - SFS auto-fill: ustawiono members_count=0 dla owner_id=7829319839 (brak views)
+2026-02-01 03:56:44 - handlers - INFO - SFS auto-fill: ustawiono members_count=0 dla owner_id=8489479793 (brak views)
+2026-02-01 03:56:47 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:56:47 - handlers - INFO - SFS auto-fill: ustawiono members_count=0 dla owner_id=7829319839 (brak views)
+2026-02-01 03:56:50 - handlers - INFO - SFS auto-fill: ustawiono members_count=0 dla owner_id=8489479793 (brak views)
+2026-02-01 03:56:53 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:56:53 - handlers - INFO - SFS auto-fill: ustawiono members_count=0 dla owner_id=7829319839 (brak views)
+2026-02-01 03:56:56 - handlers - INFO - SFS auto-fill: ustawiono members_count=0 dla owner_id=8489479793 (brak views)
+2026-02-01 03:56:59 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:56:59 - handlers - INFO - SFS auto-fill: ustawiono members_count=0 dla owner_id=7829319839 (brak views)
+2026-02-01 03:57:02 - handlers - INFO - SFS auto-fill: ustawiono members_count=0 dla owner_id=8489479793 (brak views)
+2026-02-01 03:57:05 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:57:05 - handlers - INFO - SFS auto-fill: ustawiono members_count=0 dla owner_id=7829319839 (brak views)
+2026-02-01 03:57:08 - handlers - INFO - SFS auto-fill: ustawiono members_count=0 dla owner_id=8489479793 (brak views)
+2026-02-01 03:57:11 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:57:11 - handlers - INFO - SFS auto-fill: ustawiono members_count=0 dla owner_id=7829319839 (brak views)
+2026-02-01 03:57:14 - handlers - INFO - SFS auto-fill: ustawiono members_count=0 dla owner_id=8489479793 (brak views)
+2026-02-01 03:57:17 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:57:17 - handlers - INFO - SFS auto-fill: ustawiono members_count=0 dla owner_id=7829319839 (brak views)
+2026-02-01 03:57:20 - handlers - INFO - SFS auto-fill: ustawiono members_count=0 dla owner_id=8489479793 (brak views)
+2026-02-01 03:57:23 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:57:23 - handlers - INFO - SFS auto-fill: ustawiono members_count=0 dla owner_id=7829319839 (brak views)
+2026-02-01 03:57:26 - handlers - INFO - SFS auto-fill: ustawiono members_count=0 dla owner_id=8489479793 (brak views)
+2026-02-01 03:57:29 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:57:29 - handlers - INFO - SFS auto-fill: ustawiono members_count=0 dla owner_id=7829319839 (brak views)
+2026-02-01 03:57:32 - handlers - INFO - SFS auto-fill: ustawiono members_count=0 dla owner_id=8489479793 (brak views)
+2026-02-01 03:57:35 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:57:35 - handlers - INFO - SFS auto-fill: ustawiono members_count=0 dla owner_id=7829319839 (brak views)
+2026-02-01 03:57:38 - handlers - INFO - SFS auto-fill: ustawiono members_count=0 dla owner_id=8489479793 (brak views)
+2026-02-01 03:57:41 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:57:41 - handlers - INFO - SFS auto-fill: ustawiono members_count=0 dla owner_id=7829319839 (brak views)
+2026-02-01 03:57:44 - handlers - INFO - SFS auto-fill: ustawiono members_count=0 dla owner_id=8489479793 (brak views)
+2026-02-01 03:57:47 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:57:47 - handlers - INFO - SFS auto-fill: ustawiono members_count=0 dla owner_id=7829319839 (brak views)
+2026-02-01 03:57:50 - handlers - INFO - SFS auto-fill: ustawiono members_count=0 dla owner_id=8489479793 (brak views)
+2026-02-01 03:58:02 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:58:02 - handlers - INFO - SFS auto-fill: ustawiono members_count=2590 dla owner_id=7829319839 (brak views)
+2026-02-01 03:58:05 - handlers - INFO - SFS auto-fill: ustawiono members_count=3 dla owner_id=8489479793 (brak views)
+2026-02-01 03:58:05 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:58:05 - handlers - INFO - SFS auto-fill: ustawiono members_count=2590 dla owner_id=7829319839 (brak views)
+2026-02-01 03:58:08 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:58:08 - handlers - INFO - SFS auto-fill: ustawiono members_count=2590 dla owner_id=7829319839 (brak views)
+2026-02-01 03:58:08 - handlers - INFO - SFS auto-fill: ustawiono members_count=3 dla owner_id=8489479793 (brak views)
+2026-02-01 03:58:11 - handlers - INFO - SFS auto-fill: ustawiono members_count=3 dla owner_id=8489479793 (brak views)
+2026-02-01 03:58:14 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:58:14 - handlers - INFO - SFS auto-fill: ustawiono members_count=2590 dla owner_id=7829319839 (brak views)
+2026-02-01 03:58:17 - handlers - INFO - SFS auto-fill: ustawiono members_count=3 dla owner_id=8489479793 (brak views)
+2026-02-01 03:58:20 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:58:20 - handlers - INFO - SFS auto-fill: ustawiono members_count=2590 dla owner_id=7829319839 (brak views)
+2026-02-01 03:58:23 - handlers - INFO - SFS auto-fill: ustawiono members_count=3 dla owner_id=8489479793 (brak views)
+2026-02-01 03:58:26 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:58:26 - handlers - INFO - SFS auto-fill: ustawiono members_count=2590 dla owner_id=7829319839 (brak views)
+2026-02-01 03:58:29 - handlers - INFO - SFS auto-fill: ustawiono members_count=3 dla owner_id=8489479793 (brak views)
+2026-02-01 03:58:32 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:58:32 - handlers - INFO - SFS auto-fill: ustawiono members_count=2590 dla owner_id=7829319839 (brak views)
+2026-02-01 03:58:35 - handlers - INFO - SFS auto-fill: ustawiono members_count=3 dla owner_id=8489479793 (brak views)
+2026-02-01 03:58:38 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:58:38 - handlers - INFO - SFS auto-fill: ustawiono members_count=2590 dla owner_id=7829319839 (brak views)
+2026-02-01 03:58:41 - handlers - INFO - SFS auto-fill: ustawiono members_count=3 dla owner_id=8489479793 (brak views)
+2026-02-01 03:58:44 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:58:44 - handlers - INFO - SFS auto-fill: ustawiono members_count=2590 dla owner_id=7829319839 (brak views)
+2026-02-01 03:58:47 - handlers - INFO - SFS auto-fill: ustawiono members_count=3 dla owner_id=8489479793 (brak views)
+2026-02-01 03:58:50 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:58:50 - handlers - INFO - SFS auto-fill: ustawiono members_count=2590 dla owner_id=7829319839 (brak views)
+2026-02-01 03:58:53 - handlers - INFO - SFS auto-fill: ustawiono members_count=3 dla owner_id=8489479793 (brak views)
+2026-02-01 03:58:56 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:58:56 - handlers - INFO - SFS auto-fill: ustawiono members_count=2590 dla owner_id=7829319839 (brak views)
+2026-02-01 03:58:59 - handlers - INFO - SFS auto-fill: ustawiono members_count=3 dla owner_id=8489479793 (brak views)
+2026-02-01 03:59:02 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:59:02 - handlers - INFO - SFS auto-fill: ustawiono members_count=2590 dla owner_id=7829319839 (brak views)
+2026-02-01 03:59:05 - handlers - INFO - SFS auto-fill: ustawiono members_count=3 dla owner_id=8489479793 (brak views)
+2026-02-01 03:59:08 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:59:08 - handlers - INFO - SFS auto-fill: ustawiono members_count=2590 dla owner_id=7829319839 (brak views)
+2026-02-01 03:59:10 - handlers - INFO - SFS forward (odśwież statystyki): wiek wiadomości (data oryginału na kanale) = 22h 53m (82417 s)
+2026-02-01 03:59:10 - handlers - INFO - SFS views: brak pola views w wiadomości (sprawdzone: message.views, channel_views, forward_origin, model_dump)
+2026-02-01 03:59:11 - handlers - INFO - SFS auto-fill: ustawiono members_count=3 dla owner_id=8489479793 (brak views)
+2026-02-01 03:59:14 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:59:14 - handlers - INFO - SFS auto-fill: ustawiono members_count=2590 dla owner_id=7829319839 (brak views)
+2026-02-01 03:59:17 - handlers - INFO - SFS auto-fill: ustawiono members_count=3 dla owner_id=8489479793 (brak views)
+2026-02-01 03:59:20 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:59:20 - handlers - INFO - SFS auto-fill: ustawiono members_count=2590 dla owner_id=7829319839 (brak views)
+2026-02-01 03:59:23 - handlers - INFO - SFS auto-fill: ustawiono members_count=3 dla owner_id=8489479793 (brak views)
+2026-02-01 03:59:26 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:59:26 - handlers - INFO - SFS auto-fill: ustawiono members_count=2590 dla owner_id=7829319839 (brak views)
+2026-02-01 03:59:29 - handlers - INFO - SFS auto-fill: ustawiono members_count=3 dla owner_id=8489479793 (brak views)
+2026-02-01 03:59:32 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:59:32 - handlers - INFO - SFS auto-fill: ustawiono members_count=2590 dla owner_id=7829319839 (brak views)
+2026-02-01 03:59:35 - handlers - INFO - SFS auto-fill: ustawiono members_count=3 dla owner_id=8489479793 (brak views)
+2026-02-01 03:59:38 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:59:38 - handlers - INFO - SFS auto-fill: ustawiono members_count=2590 dla owner_id=7829319839 (brak views)
+2026-02-01 03:59:41 - handlers - INFO - SFS auto-fill: ustawiono members_count=3 dla owner_id=8489479793 (brak views)
+2026-02-01 03:59:44 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:59:44 - handlers - INFO - SFS auto-fill: ustawiono members_count=2590 dla owner_id=7829319839 (brak views)
+2026-02-01 03:59:47 - handlers - INFO - SFS auto-fill: ustawiono members_count=3 dla owner_id=8489479793 (brak views)
+2026-02-01 03:59:50 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:59:50 - handlers - INFO - SFS auto-fill: ustawiono members_count=2590 dla owner_id=7829319839 (brak views)
+2026-02-01 03:59:53 - handlers - INFO - SFS auto-fill: ustawiono members_count=3 dla owner_id=8489479793 (brak views)
+2026-02-01 03:59:56 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 03:59:56 - handlers - INFO - SFS auto-fill: ustawiono members_count=2590 dla owner_id=7829319839 (brak views)
+2026-02-01 03:59:59 - handlers - INFO - SFS auto-fill: ustawiono members_count=3 dla owner_id=8489479793 (brak views)
+2026-02-01 04:00:02 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 04:00:02 - handlers - INFO - SFS auto-fill: ustawiono members_count=2590 dla owner_id=7829319839 (brak views)
+2026-02-01 04:00:05 - handlers - INFO - SFS auto-fill: ustawiono members_count=3 dla owner_id=8489479793 (brak views)
+2026-02-01 04:00:08 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 04:00:08 - handlers - INFO - SFS auto-fill: ustawiono members_count=2590 dla owner_id=7829319839 (brak views)
+2026-02-01 04:00:11 - handlers - INFO - SFS auto-fill: ustawiono members_count=3 dla owner_id=8489479793 (brak views)
+2026-02-01 04:00:14 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 04:00:14 - handlers - INFO - SFS auto-fill: ustawiono members_count=2590 dla owner_id=7829319839 (brak views)
+2026-02-01 04:00:17 - handlers - INFO - SFS auto-fill: ustawiono members_count=3 dla owner_id=8489479793 (brak views)
+2026-02-01 04:00:20 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 04:00:20 - handlers - INFO - SFS auto-fill: ustawiono members_count=2590 dla owner_id=7829319839 (brak views)
+2026-02-01 04:00:23 - handlers - INFO - SFS auto-fill: ustawiono members_count=3 dla owner_id=8489479793 (brak views)
+2026-02-01 04:00:26 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 04:00:26 - handlers - INFO - SFS auto-fill: ustawiono members_count=2590 dla owner_id=7829319839 (brak views)
+2026-02-01 04:00:29 - handlers - INFO - SFS auto-fill: ustawiono members_count=3 dla owner_id=8489479793 (brak views)
+2026-02-01 04:00:32 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 04:00:32 - handlers - INFO - SFS auto-fill: ustawiono members_count=2590 dla owner_id=7829319839 (brak views)
+2026-02-01 04:00:35 - handlers - INFO - SFS auto-fill: ustawiono members_count=3 dla owner_id=8489479793 (brak views)
+2026-02-01 04:00:38 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 04:00:38 - handlers - INFO - SFS auto-fill: ustawiono members_count=2590 dla owner_id=7829319839 (brak views)
+2026-02-01 04:00:41 - handlers - INFO - SFS auto-fill: ustawiono members_count=3 dla owner_id=8489479793 (brak views)
+2026-02-01 04:00:44 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 04:00:44 - handlers - INFO - SFS auto-fill: ustawiono members_count=2590 dla owner_id=7829319839 (brak views)
+2026-02-01 04:00:47 - handlers - INFO - SFS auto-fill: ustawiono members_count=3 dla owner_id=8489479793 (brak views)
+2026-02-01 04:00:50 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 04:00:50 - handlers - INFO - SFS auto-fill: ustawiono members_count=2590 dla owner_id=7829319839 (brak views)
+2026-02-01 04:00:53 - handlers - INFO - SFS auto-fill: ustawiono members_count=3 dla owner_id=8489479793 (brak views)
+2026-02-01 04:00:56 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 04:00:56 - handlers - INFO - SFS auto-fill: ustawiono members_count=2590 dla owner_id=7829319839 (brak views)
+2026-02-01 04:00:59 - handlers - INFO - SFS auto-fill: ustawiono members_count=3 dla owner_id=8489479793 (brak views)
+2026-02-01 04:01:02 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 04:01:02 - handlers - INFO - SFS auto-fill: ustawiono members_count=2590 dla owner_id=7829319839 (brak views)
+2026-02-01 04:01:05 - handlers - INFO - SFS auto-fill: ustawiono members_count=3 dla owner_id=8489479793 (brak views)
+2026-02-01 04:01:08 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 04:01:08 - handlers - INFO - SFS auto-fill: ustawiono members_count=2590 dla owner_id=7829319839 (brak views)
+2026-02-01 04:01:11 - handlers - INFO - SFS auto-fill: ustawiono members_count=3 dla owner_id=8489479793 (brak views)
+2026-02-01 04:01:14 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 04:01:14 - handlers - INFO - SFS auto-fill: ustawiono members_count=2590 dla owner_id=7829319839 (brak views)
+2026-02-01 04:01:17 - handlers - INFO - SFS auto-fill: ustawiono members_count=3 dla owner_id=8489479793 (brak views)
+2026-02-01 04:01:20 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 04:01:20 - handlers - INFO - SFS auto-fill: ustawiono members_count=2590 dla owner_id=7829319839 (brak views)
+2026-02-01 04:01:23 - handlers - INFO - SFS auto-fill: ustawiono members_count=3 dla owner_id=8489479793 (brak views)
+2026-02-01 04:01:26 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 04:01:26 - handlers - INFO - SFS auto-fill: ustawiono members_count=2590 dla owner_id=7829319839 (brak views)
+2026-02-01 04:01:29 - handlers - INFO - SFS auto-fill: ustawiono members_count=3 dla owner_id=8489479793 (brak views)
+2026-02-01 04:01:32 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 04:01:32 - handlers - INFO - SFS auto-fill: ustawiono members_count=2590 dla owner_id=7829319839 (brak views)
+2026-02-01 04:01:35 - handlers - INFO - SFS auto-fill: ustawiono members_count=3 dla owner_id=8489479793 (brak views)
+2026-02-01 04:01:38 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 04:01:38 - handlers - INFO - SFS auto-fill: ustawiono members_count=2590 dla owner_id=7829319839 (brak views)
+2026-02-01 04:01:41 - handlers - INFO - SFS auto-fill: ustawiono members_count=3 dla owner_id=8489479793 (brak views)
+2026-02-01 04:01:44 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 04:01:44 - handlers - INFO - SFS auto-fill: ustawiono members_count=2590 dla owner_id=7829319839 (brak views)
+2026-02-01 04:01:47 - handlers - INFO - SFS auto-fill: ustawiono members_count=3 dla owner_id=8489479793 (brak views)
+2026-02-01 04:01:50 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 04:01:50 - handlers - INFO - SFS auto-fill: ustawiono members_count=2590 dla owner_id=7829319839 (brak views)
+2026-02-01 04:01:53 - handlers - INFO - SFS auto-fill: ustawiono members_count=3 dla owner_id=8489479793 (brak views)
+2026-02-01 04:01:56 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 04:01:56 - handlers - INFO - SFS auto-fill: ustawiono members_count=2590 dla owner_id=7829319839 (brak views)
+2026-02-01 04:01:59 - handlers - INFO - SFS auto-fill: ustawiono members_count=3 dla owner_id=8489479793 (brak views)
+2026-02-01 04:02:02 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 04:02:02 - handlers - INFO - SFS auto-fill: ustawiono members_count=2590 dla owner_id=7829319839 (brak views)
+2026-02-01 04:02:05 - handlers - INFO - SFS auto-fill: ustawiono members_count=3 dla owner_id=8489479793 (brak views)
+2026-02-01 04:02:08 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 04:02:08 - handlers - INFO - SFS auto-fill: ustawiono members_count=2590 dla owner_id=7829319839 (brak views)
+2026-02-01 04:02:11 - handlers - INFO - SFS auto-fill: ustawiono members_count=3 dla owner_id=8489479793 (brak views)
+2026-02-01 04:02:14 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 04:02:14 - handlers - INFO - SFS auto-fill: ustawiono members_count=2590 dla owner_id=7829319839 (brak views)
+2026-02-01 04:02:17 - handlers - INFO - SFS auto-fill: ustawiono members_count=3 dla owner_id=8489479793 (brak views)
+2026-02-01 04:02:20 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 04:02:20 - handlers - INFO - SFS auto-fill: ustawiono members_count=2590 dla owner_id=7829319839 (brak views)
+2026-02-01 04:02:23 - handlers - INFO - SFS auto-fill: ustawiono members_count=3 dla owner_id=8489479793 (brak views)
+2026-02-01 04:02:26 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 04:02:26 - handlers - INFO - SFS auto-fill: ustawiono members_count=2590 dla owner_id=7829319839 (brak views)
+2026-02-01 04:02:29 - handlers - INFO - SFS auto-fill: ustawiono members_count=3 dla owner_id=8489479793 (brak views)
+2026-02-01 04:02:32 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 04:02:32 - handlers - INFO - SFS auto-fill: ustawiono members_count=2590 dla owner_id=7829319839 (brak views)
+2026-02-01 04:02:35 - handlers - INFO - SFS auto-fill: ustawiono members_count=3 dla owner_id=8489479793 (brak views)
+2026-02-01 04:02:38 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 04:02:38 - handlers - INFO - SFS auto-fill: ustawiono members_count=2590 dla owner_id=7829319839 (brak views)
+2026-02-01 04:02:41 - handlers - INFO - SFS auto-fill: ustawiono members_count=3 dla owner_id=8489479793 (brak views)
+2026-02-01 04:02:44 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 04:02:44 - handlers - INFO - SFS auto-fill: ustawiono members_count=2590 dla owner_id=7829319839 (brak views)
+2026-02-01 04:02:47 - handlers - INFO - SFS auto-fill: ustawiono members_count=3 dla owner_id=8489479793 (brak views)
+2026-02-01 04:02:50 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 04:02:50 - handlers - INFO - SFS auto-fill: ustawiono members_count=2590 dla owner_id=7829319839 (brak views)
+2026-02-01 04:02:53 - handlers - INFO - SFS auto-fill: ustawiono members_count=3 dla owner_id=8489479793 (brak views)
+2026-02-01 04:02:56 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 04:02:56 - handlers - INFO - SFS auto-fill: ustawiono members_count=2590 dla owner_id=7829319839 (brak views)
+2026-02-01 04:02:59 - handlers - INFO - SFS auto-fill: ustawiono members_count=3 dla owner_id=8489479793 (brak views)
+2026-02-01 04:03:02 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 04:03:02 - handlers - INFO - SFS auto-fill: ustawiono members_count=2590 dla owner_id=7829319839 (brak views)
+2026-02-01 04:03:05 - handlers - INFO - SFS auto-fill: ustawiono members_count=3 dla owner_id=8489479793 (brak views)
+2026-02-01 04:03:08 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 04:03:08 - handlers - INFO - SFS auto-fill: ustawiono members_count=2590 dla owner_id=7829319839 (brak views)
+2026-02-01 04:03:11 - handlers - INFO - SFS auto-fill: ustawiono members_count=3 dla owner_id=8489479793 (brak views)
+2026-02-01 04:03:14 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 04:03:14 - handlers - INFO - SFS auto-fill: ustawiono members_count=2590 dla owner_id=7829319839 (brak views)
+2026-02-01 04:03:17 - handlers - INFO - SFS auto-fill: ustawiono members_count=3 dla owner_id=8489479793 (brak views)
+2026-02-01 04:03:20 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 04:03:20 - handlers - INFO - SFS auto-fill: ustawiono members_count=2590 dla owner_id=7829319839 (brak views)
+2026-02-01 04:03:23 - handlers - INFO - SFS auto-fill: ustawiono members_count=3 dla owner_id=8489479793 (brak views)
+2026-02-01 04:03:26 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 04:03:26 - handlers - INFO - SFS auto-fill: ustawiono members_count=2590 dla owner_id=7829319839 (brak views)
+2026-02-01 04:03:29 - handlers - INFO - SFS auto-fill: ustawiono members_count=3 dla owner_id=8489479793 (brak views)
+2026-02-01 04:03:32 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 04:03:32 - handlers - INFO - SFS auto-fill: ustawiono members_count=2590 dla owner_id=7829319839 (brak views)
+2026-02-01 04:03:35 - handlers - INFO - SFS auto-fill: ustawiono members_count=3 dla owner_id=8489479793 (brak views)
+2026-02-01 04:03:38 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 04:03:38 - handlers - INFO - SFS auto-fill: ustawiono members_count=2590 dla owner_id=7829319839 (brak views)
+2026-02-01 04:03:41 - handlers - INFO - SFS auto-fill: ustawiono members_count=3 dla owner_id=8489479793 (brak views)
+2026-02-01 04:03:44 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 04:03:44 - handlers - INFO - SFS auto-fill: ustawiono members_count=2590 dla owner_id=7829319839 (brak views)
+2026-02-01 04:03:47 - handlers - INFO - SFS auto-fill: ustawiono members_count=3 dla owner_id=8489479793 (brak views)
+2026-02-01 04:03:50 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 04:03:50 - handlers - INFO - SFS auto-fill: ustawiono members_count=2590 dla owner_id=7829319839 (brak views)
+2026-02-01 04:03:53 - handlers - INFO - SFS auto-fill: ustawiono members_count=3 dla owner_id=8489479793 (brak views)
+2026-02-01 04:03:56 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 04:03:56 - handlers - INFO - SFS auto-fill: ustawiono members_count=2590 dla owner_id=7829319839 (brak views)
+2026-02-01 04:03:59 - handlers - INFO - SFS auto-fill: ustawiono members_count=3 dla owner_id=8489479793 (brak views)
+2026-02-01 04:04:02 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 04:04:02 - handlers - INFO - SFS auto-fill: ustawiono members_count=2590 dla owner_id=7829319839 (brak views)
+2026-02-01 04:04:05 - handlers - INFO - SFS auto-fill: ustawiono members_count=3 dla owner_id=8489479793 (brak views)
+2026-02-01 04:04:08 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 04:04:08 - handlers - INFO - SFS auto-fill: ustawiono members_count=2590 dla owner_id=7829319839 (brak views)
+2026-02-01 04:04:11 - handlers - INFO - SFS auto-fill: ustawiono members_count=3 dla owner_id=8489479793 (brak views)
+2026-02-01 04:04:14 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 04:04:14 - handlers - INFO - SFS auto-fill: ustawiono members_count=2590 dla owner_id=7829319839 (brak views)
+2026-02-01 04:04:17 - handlers - INFO - SFS auto-fill: ustawiono members_count=3 dla owner_id=8489479793 (brak views)
+2026-02-01 04:04:20 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 04:04:20 - handlers - INFO - SFS auto-fill: ustawiono members_count=2590 dla owner_id=7829319839 (brak views)
+2026-02-01 04:04:23 - handlers - INFO - SFS auto-fill: ustawiono members_count=3 dla owner_id=8489479793 (brak views)
+2026-02-01 04:04:26 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 04:04:26 - handlers - INFO - SFS auto-fill: ustawiono members_count=2590 dla owner_id=7829319839 (brak views)
+2026-02-01 04:04:29 - handlers - INFO - SFS auto-fill: ustawiono members_count=3 dla owner_id=8489479793 (brak views)
+2026-02-01 04:04:32 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 04:04:32 - handlers - INFO - SFS auto-fill: ustawiono members_count=2590 dla owner_id=7829319839 (brak views)
+2026-02-01 04:04:35 - handlers - INFO - SFS auto-fill: ustawiono members_count=3 dla owner_id=8489479793 (brak views)
+2026-02-01 04:04:38 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 04:04:38 - handlers - INFO - SFS auto-fill: ustawiono members_count=2590 dla owner_id=7829319839 (brak views)
+2026-02-01 04:04:41 - handlers - INFO - SFS auto-fill: ustawiono members_count=3 dla owner_id=8489479793 (brak views)
+2026-02-01 04:04:44 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 04:04:44 - handlers - INFO - SFS auto-fill: ustawiono members_count=2590 dla owner_id=7829319839 (brak views)
+2026-02-01 04:04:47 - handlers - INFO - SFS auto-fill: ustawiono members_count=3 dla owner_id=8489479793 (brak views)
+2026-02-01 04:04:50 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 04:04:50 - handlers - INFO - SFS auto-fill: ustawiono members_count=2590 dla owner_id=7829319839 (brak views)
+2026-02-01 04:04:53 - handlers - INFO - SFS auto-fill: ustawiono members_count=3 dla owner_id=8489479793 (brak views)
+2026-02-01 04:04:56 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 04:04:56 - handlers - INFO - SFS auto-fill: ustawiono members_count=2590 dla owner_id=7829319839 (brak views)
+2026-02-01 04:04:59 - handlers - INFO - SFS auto-fill: ustawiono members_count=3 dla owner_id=8489479793 (brak views)
+2026-02-01 04:05:02 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 04:05:02 - handlers - INFO - SFS auto-fill: ustawiono members_count=2590 dla owner_id=7829319839 (brak views)
+2026-02-01 04:05:05 - handlers - INFO - SFS auto-fill: ustawiono members_count=3 dla owner_id=8489479793 (brak views)
+2026-02-01 04:05:08 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 04:05:08 - handlers - INFO - SFS auto-fill: ustawiono members_count=2590 dla owner_id=7829319839 (brak views)
+2026-02-01 04:05:11 - handlers - INFO - SFS auto-fill: ustawiono members_count=3 dla owner_id=8489479793 (brak views)
+2026-02-01 04:05:14 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 04:05:14 - handlers - INFO - SFS auto-fill: ustawiono members_count=2590 dla owner_id=7829319839 (brak views)
+2026-02-01 04:05:17 - handlers - INFO - SFS auto-fill: ustawiono members_count=3 dla owner_id=8489479793 (brak views)
+2026-02-01 04:05:20 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 04:05:20 - handlers - INFO - SFS auto-fill: ustawiono members_count=2590 dla owner_id=7829319839 (brak views)
+2026-02-01 04:05:23 - handlers - INFO - SFS auto-fill: ustawiono members_count=3 dla owner_id=8489479793 (brak views)
+2026-02-01 04:05:26 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 04:05:26 - handlers - INFO - SFS auto-fill: ustawiono members_count=2590 dla owner_id=7829319839 (brak views)
+2026-02-01 04:05:29 - handlers - INFO - SFS auto-fill: ustawiono members_count=3 dla owner_id=8489479793 (brak views)
+2026-02-01 04:05:32 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 04:05:32 - handlers - INFO - SFS auto-fill: ustawiono members_count=2590 dla owner_id=7829319839 (brak views)
+2026-02-01 04:05:35 - handlers - INFO - SFS auto-fill: ustawiono members_count=3 dla owner_id=8489479793 (brak views)
+2026-02-01 04:05:38 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 04:05:38 - handlers - INFO - SFS auto-fill: ustawiono members_count=2590 dla owner_id=7829319839 (brak views)
+2026-02-01 04:05:41 - handlers - INFO - SFS auto-fill: ustawiono members_count=3 dla owner_id=8489479793 (brak views)
+2026-02-01 04:05:44 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 04:05:44 - handlers - INFO - SFS auto-fill: ustawiono members_count=2590 dla owner_id=7829319839 (brak views)
+2026-02-01 04:05:47 - handlers - INFO - SFS auto-fill: ustawiono members_count=3 dla owner_id=8489479793 (brak views)
+2026-02-01 04:05:50 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 04:05:50 - handlers - INFO - SFS auto-fill: ustawiono members_count=2590 dla owner_id=7829319839 (brak views)
+2026-02-01 04:05:53 - handlers - INFO - SFS auto-fill: ustawiono members_count=3 dla owner_id=8489479793 (brak views)
+2026-02-01 04:05:56 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 04:05:56 - handlers - INFO - SFS auto-fill: ustawiono members_count=2590 dla owner_id=7829319839 (brak views)
+2026-02-01 04:05:59 - handlers - INFO - SFS auto-fill: ustawiono members_count=3 dla owner_id=8489479793 (brak views)
+2026-02-01 04:06:02 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 04:06:02 - handlers - INFO - SFS auto-fill: ustawiono members_count=2590 dla owner_id=7829319839 (brak views)
+2026-02-01 04:06:05 - handlers - INFO - SFS auto-fill: ustawiono members_count=3 dla owner_id=8489479793 (brak views)
+2026-02-01 04:06:08 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 04:06:08 - handlers - INFO - SFS auto-fill: ustawiono members_count=2590 dla owner_id=7829319839 (brak views)
+2026-02-01 04:06:11 - handlers - INFO - SFS auto-fill: ustawiono members_count=3 dla owner_id=8489479793 (brak views)
+2026-02-01 04:06:14 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 04:06:14 - handlers - INFO - SFS auto-fill: ustawiono members_count=2590 dla owner_id=7829319839 (brak views)
+2026-02-01 04:06:17 - handlers - INFO - SFS auto-fill: ustawiono members_count=3 dla owner_id=8489479793 (brak views)
+2026-02-01 04:06:20 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 04:06:20 - handlers - INFO - SFS auto-fill: ustawiono members_count=2590 dla owner_id=7829319839 (brak views)
+2026-02-01 04:06:23 - handlers - INFO - SFS auto-fill: ustawiono members_count=3 dla owner_id=8489479793 (brak views)
+2026-02-01 04:06:26 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 04:06:26 - handlers - INFO - SFS auto-fill: ustawiono members_count=2590 dla owner_id=7829319839 (brak views)
+2026-02-01 04:06:29 - handlers - INFO - SFS auto-fill: ustawiono members_count=3 dla owner_id=8489479793 (brak views)
+2026-02-01 04:06:32 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 04:06:32 - handlers - INFO - SFS auto-fill: ustawiono members_count=2590 dla owner_id=7829319839 (brak views)
+2026-02-01 04:06:35 - handlers - INFO - SFS auto-fill: ustawiono members_count=3 dla owner_id=8489479793 (brak views)
+2026-02-01 04:06:38 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 04:06:38 - handlers - INFO - SFS auto-fill: ustawiono members_count=2590 dla owner_id=7829319839 (brak views)
+2026-02-01 04:06:41 - handlers - INFO - SFS auto-fill: ustawiono members_count=3 dla owner_id=8489479793 (brak views)
+2026-02-01 04:06:44 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 04:06:44 - handlers - INFO - SFS auto-fill: ustawiono members_count=2590 dla owner_id=7829319839 (brak views)
+2026-02-01 04:06:47 - handlers - INFO - SFS auto-fill: ustawiono members_count=3 dla owner_id=8489479793 (brak views)
+2026-02-01 04:06:50 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 04:06:50 - handlers - INFO - SFS auto-fill: ustawiono members_count=2590 dla owner_id=7829319839 (brak views)
+2026-02-01 04:06:53 - handlers - INFO - SFS auto-fill: ustawiono members_count=3 dla owner_id=8489479793 (brak views)
+2026-02-01 04:06:56 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 04:06:56 - handlers - INFO - SFS auto-fill: ustawiono members_count=2590 dla owner_id=7829319839 (brak views)
+2026-02-01 04:06:59 - handlers - INFO - SFS auto-fill: ustawiono members_count=3 dla owner_id=8489479793 (brak views)
+2026-02-01 04:07:02 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 04:07:02 - handlers - INFO - SFS auto-fill: ustawiono members_count=2590 dla owner_id=7829319839 (brak views)
+2026-02-01 04:07:05 - handlers - INFO - SFS auto-fill: ustawiono members_count=3 dla owner_id=8489479793 (brak views)
+2026-02-01 04:07:08 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 04:07:08 - handlers - INFO - SFS auto-fill: ustawiono members_count=2590 dla owner_id=7829319839 (brak views)
+2026-02-01 04:07:11 - handlers - INFO - SFS auto-fill: ustawiono members_count=3 dla owner_id=8489479793 (brak views)
+2026-02-01 04:07:14 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 04:07:14 - handlers - INFO - SFS auto-fill: ustawiono members_count=2590 dla owner_id=7829319839 (brak views)
+2026-02-01 04:07:17 - handlers - INFO - SFS auto-fill: ustawiono members_count=3 dla owner_id=8489479793 (brak views)
+2026-02-01 04:07:20 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 04:07:20 - handlers - INFO - SFS auto-fill: ustawiono members_count=2590 dla owner_id=7829319839 (brak views)
+2026-02-01 04:07:23 - handlers - INFO - SFS auto-fill: ustawiono members_count=3 dla owner_id=8489479793 (brak views)
+2026-02-01 04:07:26 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 04:07:26 - handlers - INFO - SFS auto-fill: ustawiono members_count=2590 dla owner_id=7829319839 (brak views)
+2026-02-01 04:07:29 - handlers - INFO - SFS auto-fill: ustawiono members_count=3 dla owner_id=8489479793 (brak views)
+2026-02-01 04:07:32 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 04:07:32 - handlers - INFO - SFS auto-fill: ustawiono members_count=2590 dla owner_id=7829319839 (brak views)
+2026-02-01 04:07:35 - handlers - INFO - SFS auto-fill: ustawiono members_count=3 dla owner_id=8489479793 (brak views)
+2026-02-01 04:07:38 - handlers - INFO - SFS: okresowy auto-fill views dla 2 wpisów (bez refreshed_at)
+2026-02-01 04:07:38 - handlers - INFO - SFS auto-fill: ustawiono members_count=2590 dla owner_id=7829319839 (brak views)
+2026-02-01 04:07:50 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:07:56 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:08:02 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:08:08 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:08:14 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:08:20 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:08:26 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:08:32 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:08:38 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:08:44 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:08:50 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:08:56 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:09:02 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:09:08 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:09:14 - handlers - INFO - SFS: aktualizacja subów dla 1 wpisów
+2026-02-01 04:09:20 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:09:26 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:09:32 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:09:38 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:09:44 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:09:50 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:09:56 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:10:02 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:10:08 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:10:14 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:10:20 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:10:26 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:10:32 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:10:38 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:10:44 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:10:50 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:10:56 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:11:02 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:11:08 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:11:14 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:11:20 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:11:26 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:11:32 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:11:38 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:11:44 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:11:50 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:11:56 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:12:02 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:12:08 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:12:14 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:12:20 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:12:26 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:12:32 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:12:38 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:12:44 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:12:50 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:12:56 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:13:02 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:13:08 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:13:14 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:13:20 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:13:26 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:13:32 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:13:38 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:13:44 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:13:50 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:14:06 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:14:12 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:14:18 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:14:24 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:14:30 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:14:36 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:14:42 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:14:48 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:14:54 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:15:00 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:15:06 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:15:12 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:15:18 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:15:24 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:15:30 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:15:36 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:15:42 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:15:48 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:15:54 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:16:00 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:16:06 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:16:12 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:16:18 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:16:24 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:16:30 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:16:36 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:16:42 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:16:48 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:16:54 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:17:00 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:17:06 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:17:12 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:17:18 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:17:24 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:17:30 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:17:36 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:17:42 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:17:48 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:17:54 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:18:00 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:18:06 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:18:12 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:18:18 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:18:24 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:18:30 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:18:36 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:18:42 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:18:48 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:18:54 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:19:00 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:19:06 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:19:12 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:19:18 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:19:24 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:19:30 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:19:36 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:19:42 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:19:48 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:19:54 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:20:00 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:20:06 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:20:12 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:20:18 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:20:24 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:20:30 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:20:36 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:20:42 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:20:48 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:20:54 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:21:00 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:21:06 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:21:12 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:21:18 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:21:24 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:21:30 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:21:36 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:21:42 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:21:48 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:21:54 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:22:00 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:22:06 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:22:12 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:22:18 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:22:24 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:22:30 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:22:36 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:22:42 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:22:48 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:22:54 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:23:00 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:23:06 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:23:12 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:23:18 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:23:24 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:23:30 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:23:36 - handlers - INFO - SFS: aktualizacja subów dla 2 wpisów
+2026-02-01 04:25:08 - handlers - INFO - 🟢 User JOINED: 7829319839 do kanału -1003565350305 (Owner: 8489479793, Type: free)
+2026-02-01 04:44:17 - handlers - INFO - 🔴 User LEFT: 5794369342 z kanału -1003565350305 (Owner: 8489479793, Type: free)
+2026-02-01 04:44:22 - handlers - INFO - 🟢 User JOINED: 5794369342 do kanału -1003565350305 (Owner: 8489479793, Type: free)
+2026-02-01 04:46:59 - handlers - INFO - 🔴 User LEFT: 5794369342 z kanału -1003565350305 (Owner: 8489479793, Type: free)
+2026-02-01 04:47:02 - handlers - INFO - 🟢 User JOINED: 5794369342 do kanału -1003565350305 (Owner: 8489479793, Type: free)
+2026-02-01 04:48:46 - handlers - INFO - 🔴 User LEFT: 5794369342 z kanału -1003565350305 (Owner: 8489479793, Type: free)
+2026-02-01 04:48:48 - handlers - INFO - 🟢 User JOINED: 5794369342 do kanału -1003565350305 (Owner: 8489479793, Type: free)
+2026-02-01 06:07:37 - handlers - INFO - 🟢 User JOINED: 6398009821 do kanału -1002032389748 (Owner: 7829319839, Type: free)
+2026-02-01 06:17:53 - handlers - WARNING - inbox forward to admin: Telegram server says - Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 47
+2026-02-01 06:18:20 - handlers - WARNING - inbox forward to admin: Telegram server says - Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 47
+2026-02-01 06:18:32 - handlers - WARNING - inbox forward to admin: Telegram server says - Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 47
+2026-02-01 06:19:18 - handlers - WARNING - inbox forward to admin: Telegram server says - Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 47
+2026-02-01 06:24:39 - handlers - INFO - 🟢 User JOINED: 7835568756 do kanału -1002032389748 (Owner: 7829319839, Type: free)
+2026-02-01 06:25:41 - handlers - INFO - 🟢 User JOINED: 6605434971 do kanału -1002032389748 (Owner: 7829319839, Type: free)
+2026-02-01 06:25:43 - handlers - INFO - 🟢 User JOINED: 6693949035 do kanału -1002032389748 (Owner: 7829319839, Type: free)
+2026-02-01 06:39:17 - handlers - INFO - 🟢 User JOINED: 609517172 do kanału -1002032389748 (Owner: 7829319839, Type: free)
+2026-02-01 06:43:21 - handlers - INFO - 🔴 User LEFT: 7835568756 z kanału -1002032389748 (Owner: 7829319839, Type: free)
+2026-02-01 06:53:25 - handlers - INFO - Join request (free) zapisany: channel=-1002032389748 user_id=6097862944
+2026-02-01 06:53:27 - handlers - INFO - Join request (free) zapisany: channel=-1002032389748 user_id=8012809976
+2026-02-01 06:53:29 - handlers - INFO - Join request (free) zapisany: channel=-1002032389748 user_id=8269902153
+2026-02-01 06:53:37 - handlers - INFO - Join request (free) zapisany: channel=-1002032389748 user_id=6005457474
+2026-02-01 06:54:41 - handlers - INFO - Join request (free) zapisany: channel=-1002032389748 user_id=5794369342
+2026-02-01 06:55:10 - handlers - INFO - Join request (free) zapisany: channel=-1002032389748 user_id=5986510614
+2026-02-01 06:55:14 - handlers - INFO - Join request (free) zapisany: channel=-1002032389748 user_id=8274447791
+2026-02-01 06:55:40 - handlers - INFO - Join request (free) zapisany: channel=-1002032389748 user_id=5087992037
+2026-02-01 06:55:41 - handlers - INFO - Join request (free) zapisany: channel=-1002032389748 user_id=8336663989
+2026-02-01 06:55:42 - handlers - INFO - Join request (free) zapisany: channel=-1002032389748 user_id=7689823896
+2026-02-01 06:55:43 - handlers - INFO - Join request (free) zapisany: channel=-1002032389748 user_id=7801652271
+2026-02-01 06:55:45 - handlers - INFO - Join request (free) zapisany: channel=-1002032389748 user_id=7362015642
+2026-02-01 06:55:46 - handlers - INFO - Join request (free) zapisany: channel=-1002032389748 user_id=7654809498
+2026-02-01 06:57:35 - handlers - INFO - Join request (free) zapisany: channel=-1002032389748 user_id=6613289475
+2026-02-01 06:57:35 - handlers - INFO - Join request (free) zapisany: channel=-1002032389748 user_id=6960589459
+2026-02-01 06:57:36 - handlers - INFO - Join request (free) zapisany: channel=-1002032389748 user_id=1512376001
+2026-02-01 06:57:40 - handlers - INFO - Join request (free) zapisany: channel=-1002032389748 user_id=6207158645
+2026-02-01 06:57:42 - handlers - INFO - Join request (free) zapisany: channel=-1002032389748 user_id=8407908685
+2026-02-01 06:57:43 - handlers - INFO - Join request (free) zapisany: channel=-1002032389748 user_id=6090856410
+2026-02-01 06:57:43 - handlers - INFO - Join request (free) zapisany: channel=-1002032389748 user_id=6367553291
+2026-02-01 06:59:46 - handlers - INFO - Join request (free) zapisany: channel=-1002032389748 user_id=6339581735
+2026-02-01 06:59:47 - handlers - INFO - Join request (free) zapisany: channel=-1002032389748 user_id=6000086623
+2026-02-01 06:59:47 - handlers - INFO - Join request (free) zapisany: channel=-1002032389748 user_id=1775378843
+2026-02-01 06:59:47 - handlers - INFO - Join request (free) zapisany: channel=-1002032389748 user_id=7275181134
+2026-02-01 06:59:59 - handlers - INFO - Join request (free) zapisany: channel=-1002032389748 user_id=8478187126
+2026-02-01 07:00:02 - handlers - INFO - Join request (free) zapisany: channel=-1002032389748 user_id=8258720681
+2026-02-01 07:01:30 - handlers - INFO - Join request (free) zapisany: channel=-1002032389748 user_id=7306579685
+2026-02-01 07:01:34 - handlers - INFO - Join request (free) zapisany: channel=-1002032389748 user_id=6045538423
+2026-02-01 07:01:53 - handlers - INFO - Join request (free) zapisany: channel=-1002032389748 user_id=5166950511
+2026-02-01 07:03:50 - handlers - INFO - Join request (free) zapisany: channel=-1002032389748 user_id=7187131279
+2026-02-01 07:04:07 - handlers - INFO - Join request (free) zapisany: channel=-1002032389748 user_id=7483651899
+2026-02-01 07:05:16 - handlers - INFO - Join request (free) zapisany: channel=-1002032389748 user_id=8580156110
+2026-02-01 07:05:21 - handlers - INFO - Join request (free) zapisany: channel=-1002032389748 user_id=6713380996
+2026-02-01 07:05:27 - handlers - INFO - Join request (free) zapisany: channel=-1002032389748 user_id=8222585945
+2026-02-01 07:05:27 - handlers - INFO - Join request (free) zapisany: channel=-1002032389748 user_id=1762751504
+2026-02-01 07:05:39 - handlers - INFO - Join request (free) zapisany: channel=-1002032389748 user_id=7600629838

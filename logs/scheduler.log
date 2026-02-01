@@ -417,3 +417,5 @@
 2026-02-01 18:01:26 - scheduler - INFO - Zbanowano 1 użytkowników
 2026-02-01 18:05:25 - scheduler - INFO - Znaleziono 1 wygasłych subskrypcji
 2026-02-01 18:05:26 - scheduler - INFO - Zbanowano 1 użytkowników
+2026-02-01 18:16:32 - scheduler - INFO - Scheduler uruchomiony (publish co 1 min)
+2026-02-01 18:21:31 - scheduler - INFO - Scheduler uruchomiony (publish co 1 min)

@@ -3,6 +3,7 @@ from aiogram import Router, F
 from aiogram.types import Message, CallbackQuery, InlineKeyboardMarkup, InlineKeyboardButton
 from aiogram.filters import Command
 from aiogram.fsm.context import FSMContext
+from aiogram.exceptions import TelegramBadRequest
 from config import settings
 from database.models import ChannelManager, BotUsersManager
 from utils.states import ChannelSetup
@@ -109,30 +110,56 @@ async def refresh_channels(callback: CallbackQuery, state: FSMContext):
     """Odświeżenie listy kanałów"""
     try:
         await callback.message.delete()
-    except:
+    except Exception:
         pass
-    # Tutaj poprawka: używamy callback.from_user.id zamiast callback.message.from_user.id
-    await show_main_menu(callback.message, callback.from_user.id, state)
+    try:
+        await show_main_menu(callback.message, callback.from_user.id, state)
+    except TelegramBadRequest as e:
+        if "business connection" in str(e).lower():
+            try:
+                await callback.answer(
+                    "Bot nie obsługuje czatu przez konto biznesowe. Użyj bota w zwykłym czacie.",
+                    show_alert=True,
+                )
+            except Exception:
+                pass
+            return
+        raise
 
 @start_router.callback_query(F.data == "add_new_channel_help")
 async def add_new_channel_help(callback: CallbackQuery, state: FSMContext):
     """Pomoc przy dodawaniu kanału"""
-    
-    # Ustawienie stanu
     await state.set_state(ChannelSetup.waiting_for_channel_forward)
 
-    await callback.message.edit_text(
+    text = (
         "<b>DODAWANIE NOWEGO KANAŁU</b> ➕\n\n"
         "1. Dodaj bota jako Administratora do swojego kanału.\n"
         "2. Wyślij tam dowolną wiadomość.\n"
         "3. Przekaż ją tutaj.\n"
-        "4. Wybierz typ kanału (Premium lub Free).",
-        "WAGA: Bot NIE potrzebuje ŻADNYCH uprawnień do kanału, ale jeśli chcesz zachować pełną funkcjonalność managera subskrybcji, SFS i powiadomień, to zachęcamy włączyć zarządzanie członkami i publikowanie wiadomości.",
-        parse_mode=ParseMode.HTML,
-        reply_markup=InlineKeyboardMarkup(inline_keyboard=[[
-            InlineKeyboardButton(text="🔙 Wróć", callback_data="refresh_channels")
-        ]])
+        "4. Wybierz typ kanału (Premium lub Free).\n\n"
+        "WAGA: Bot NIE potrzebuje ŻADNYCH uprawnień do kanału, ale jeśli chcesz zachować pełną funkcjonalność managera subskrybcji, SFS i powiadomień, to zachęcamy włączyć zarządzanie członkami i publikowanie wiadomości."
     )
+    reply_markup = InlineKeyboardMarkup(inline_keyboard=[[
+        InlineKeyboardButton(text="🔙 Wróć", callback_data="refresh_channels")
+    ]])
+
+    try:
+        await callback.message.edit_text(
+            text,
+            parse_mode=ParseMode.HTML,
+            reply_markup=reply_markup,
+        )
+    except TelegramBadRequest as e:
+        if "business connection" in str(e).lower():
+            try:
+                await callback.answer(
+                    "Bot nie obsługuje czatu przez konto biznesowe. Użyj bota w zwykłym czacie (napisz /start do bota).",
+                    show_alert=True,
+                )
+            except Exception:
+                pass
+            return
+        raise
 
 @start_router.callback_query(F.data.startswith("select_channel_"))
 async def select_channel(callback: CallbackQuery, state: FSMContext):
@@ -149,17 +176,26 @@ async def select_channel(callback: CallbackQuery, state: FSMContext):
         # Zapisz aktywny kanał w sesji
         await state.update_data(active_channel_id=channel_id)
 
-        await callback.message.edit_text(
+        text = (
             "✅ <b>Wybrany kanał</b> 🎯\n\n"
             "Wszystkie akcje dotyczą teraz tego kanału.\n\n"
             "<b>Narzędzia:</b> 🛠️\n"
             "/start — panel kanału (użytkownicy, statystyki, ustawienia)\n"
             "/newpost — nowy post\n"
-            "/stats — statystyki",
-            reply_markup=InlineKeyboardMarkup(inline_keyboard=[[
-                InlineKeyboardButton(text="🔙 Zmień kanał", callback_data="refresh_channels")
-            ]]),
-            parse_mode=ParseMode.HTML
+            "/stats — statystyki"
         )
+        reply_markup = InlineKeyboardMarkup(inline_keyboard=[[
+            InlineKeyboardButton(text="🔙 Zmień kanał", callback_data="refresh_channels")
+        ]])
+        try:
+            await callback.message.edit_text(text, parse_mode=ParseMode.HTML, reply_markup=reply_markup)
+        except TelegramBadRequest as e:
+            if "business connection" in str(e).lower():
+                try:
+                    await callback.answer("Użyj bota w zwykłym czacie (nie przez konto biznesowe).", show_alert=True)
+                except Exception:
+                    pass
+                return
+            raise
     except Exception as e:
         await callback.answer("Błąd wyboru kanału")

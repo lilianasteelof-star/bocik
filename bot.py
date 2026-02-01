@@ -10,8 +10,9 @@ from aiogram import Bot, Dispatcher
 from aiogram.client.default import DefaultBotProperties
 from aiogram.enums import ParseMode
 from aiogram.fsm.storage.memory import MemoryStorage
-from aiogram.types import BotCommand, BotCommandScopeDefault, Message, MenuButtonCommands
+from aiogram.types import BotCommand, BotCommandScopeDefault, Message, MenuButtonCommands, CallbackQuery
 from aiogram.filters import Command
+from aiogram.exceptions import TelegramBadRequest
 
 # Import konfiguracji
 from config import settings
@@ -70,6 +71,7 @@ class PremiumBot:
         self._setup_middleware()
         self._setup_routers()
         self._setup_commands()
+        self._setup_error_handlers()
     
     def _setup_middleware(self):
         """Konfiguracja middleware"""
@@ -120,7 +122,24 @@ class PremiumBot:
         self.dp.include_router(inbox_router)  # Na końcu – łapie tylko nieobsłużone wiadomości (inbox)
         
         logger.info("Routery skonfigurowane")
-    
+
+    def _setup_error_handlers(self):
+        """Globalna obsługa błędów (np. business connection not found)."""
+        @self.dp.errors(TelegramBadRequest)
+        async def on_telegram_bad_request(event, exception: TelegramBadRequest):
+            if "business connection" not in str(exception).lower():
+                raise exception
+            callback = event.callback_query if hasattr(event, "callback_query") and event.callback_query else (event if isinstance(event, CallbackQuery) else None)
+            if callback:
+                try:
+                    await callback.answer(
+                        "Bot nie obsługuje czatu przez konto biznesowe. Użyj bota w zwykłym czacie (napisz /start do bota).",
+                        show_alert=True,
+                    )
+                except Exception:
+                    pass
+            logger.debug("Business connection update obsłużony: %s", exception)
+
     def _setup_commands(self):
         """Konfiguracja podstawowych komend"""
         
